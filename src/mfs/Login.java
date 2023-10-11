@@ -1,15 +1,24 @@
 package mfs;
 
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
+
+
+
 
 public class Login extends javax.swing.JFrame {  
     
     public static String us = "Entrenamiento";
     public static String pass = "Entrenamientopower";
 
+    
+
+
     public Login() {
         initComponents();
     }
+    
+
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -22,10 +31,11 @@ public class Login extends javax.swing.JFrame {
         Password = new javax.swing.JPasswordField();
         label2 = new java.awt.Label();
         label3 = new java.awt.Label();
-        button1 = new java.awt.Button();
-        button2 = new java.awt.Button();
-        button3 = new java.awt.Button();
+        Log = new java.awt.Button();
+        Clear = new java.awt.Button();
+        Exit = new java.awt.Button();
         jLabel1 = new javax.swing.JLabel();
+        Log2 = new java.awt.Button();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("JLogin");
@@ -47,6 +57,11 @@ public class Login extends javax.swing.JFrame {
         User.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 UserActionPerformed(evt);
+            }
+        });
+        User.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                UserKeyTyped(evt);
             }
         });
 
@@ -92,25 +107,32 @@ public class Login extends javax.swing.JFrame {
 
         User.getAccessibleContext().setAccessibleName("");
 
-        button1.setActionCommand("Log On");
-        button1.setLabel("Log On");
-        button1.addActionListener(new java.awt.event.ActionListener() {
+        Log.setActionCommand("Log On");
+        Log.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Log.setLabel("Log On");
+        Log.setName("Log On"); // NOI18N
+        Log.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button1ActionPerformed(evt);
+                LogActionPerformed(evt);
+            }
+        });
+        Log.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                LogKeyPressed(evt);
             }
         });
 
-        button2.setLabel("Clear");
-        button2.addActionListener(new java.awt.event.ActionListener() {
+        Clear.setLabel("Clear");
+        Clear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button2ActionPerformed(evt);
+                ClearActionPerformed(evt);
             }
         });
 
-        button3.setLabel("Exit");
-        button3.addActionListener(new java.awt.event.ActionListener() {
+        Exit.setLabel("Exit");
+        Exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                button3ActionPerformed(evt);
+                ExitActionPerformed(evt);
             }
         });
 
@@ -127,7 +149,7 @@ public class Login extends javax.swing.JFrame {
                 .addGap(89, 89, 89)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Log, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -135,9 +157,9 @@ public class Login extends javax.swing.JFrame {
                         .addGap(89, 89, 89))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(button2, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Clear, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(152, 152, 152)
-                        .addComponent(button3, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(Exit, javax.swing.GroupLayout.PREFERRED_SIZE, 99, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(97, 97, 97))))
         );
         jPanel1Layout.setVerticalGroup(
@@ -153,11 +175,15 @@ public class Login extends javax.swing.JFrame {
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(56, 56, 56)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(button2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(button3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(button1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(Clear, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Exit, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Log, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(59, 59, 59))
         );
+
+        Log.getAccessibleContext().setAccessibleParent(Log);
+
+        Log2.setLabel("button1");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -166,7 +192,9 @@ public class Login extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(490, 490, 490)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(499, Short.MAX_VALUE))
+                .addGap(144, 144, 144)
+                .addComponent(Log2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(298, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -174,6 +202,10 @@ public class Login extends javax.swing.JFrame {
                 .addGap(171, 171, 171)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(251, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(Log2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(328, 328, 328))
         );
 
         pack();
@@ -183,12 +215,13 @@ public class Login extends javax.swing.JFrame {
    // TODO add your handling code here:
     }//GEN-LAST:event_UserActionPerformed
 
-    private void button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3ActionPerformed
+    private void ExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExitActionPerformed
         System.exit(0);
-    }//GEN-LAST:event_button3ActionPerformed
+    }//GEN-LAST:event_ExitActionPerformed
 
-    private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
-       String user = User.getText();
+    private void LogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogActionPerformed
+
+        String user = User.getText();
        String password = new String (Password.getPassword());
        
        if (user.equals(us) && password.equals(pass)){
@@ -200,12 +233,24 @@ public class Login extends javax.swing.JFrame {
             Password.setText("");
             JOptionPane.showMessageDialog(null, "Contraseña y/o Usuario incorrectos ");
        }
-    }//GEN-LAST:event_button1ActionPerformed
+    }//GEN-LAST:event_LogActionPerformed
 
-    private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
+    private void ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClearActionPerformed
         User.setText("");
         Password.setText("");
-    }//GEN-LAST:event_button2ActionPerformed
+    }//GEN-LAST:event_ClearActionPerformed
+
+    private void UserKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_UserKeyTyped
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_ENTER){
+           
+        }
+    }//GEN-LAST:event_UserKeyTyped
+
+    private void LogKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_LogKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_LogKeyPressed
+
 
     /**
      * @param args the command line arguments
@@ -243,11 +288,12 @@ public class Login extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public java.awt.Button Clear;
+    public java.awt.Button Exit;
+    public java.awt.Button Log;
+    public java.awt.Button Log2;
     public javax.swing.JPasswordField Password;
     public javax.swing.JTextField User;
-    private java.awt.Button button1;
-    private java.awt.Button button2;
-    private java.awt.Button button3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
