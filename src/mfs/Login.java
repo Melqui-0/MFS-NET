@@ -10,12 +10,10 @@ public class Login extends javax.swing.JFrame {
     
     public static String us = "Entrenamiento";
     public static String pass = "Entrenamientopower";
-
     
-
-
     public Login() {
         initComponents();
+        
     }
     
 
@@ -35,11 +33,15 @@ public class Login extends javax.swing.JFrame {
         Clear = new java.awt.Button();
         Exit = new java.awt.Button();
         jLabel1 = new javax.swing.JLabel();
-        Log2 = new java.awt.Button();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("JLogin");
         setName("Login"); // NOI18N
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                formKeyTyped(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
 
@@ -66,6 +68,11 @@ public class Login extends javax.swing.JFrame {
         });
 
         Password.setName("Password"); // NOI18N
+        Password.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                PasswordKeyTyped(evt);
+            }
+        });
 
         label2.setAlignment(java.awt.Label.CENTER);
         label2.setBackground(new java.awt.Color(204, 204, 204));
@@ -183,8 +190,6 @@ public class Login extends javax.swing.JFrame {
 
         Log.getAccessibleContext().setAccessibleParent(Log);
 
-        Log2.setLabel("button1");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -192,9 +197,7 @@ public class Login extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(490, 490, 490)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(144, 144, 144)
-                .addComponent(Log2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(298, Short.MAX_VALUE))
+                .addContainerGap(499, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -202,10 +205,6 @@ public class Login extends javax.swing.JFrame {
                 .addGap(171, 171, 171)
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(251, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(Log2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(328, 328, 328))
         );
 
         pack();
@@ -220,13 +219,10 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_ExitActionPerformed
 
     private void LogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogActionPerformed
-
-        String user = User.getText();
+       String user = User.getText();
        String password = new String (Password.getPassword());
-       
        if (user.equals(us) && password.equals(pass)){
-            Inicio abrir = new Inicio();
-            abrir.setVisible(true);
+            all.abrir.setVisible(true);
             this.setVisible(false);
        } else {
             User.setText("");
@@ -243,13 +239,30 @@ public class Login extends javax.swing.JFrame {
     private void UserKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_UserKeyTyped
         char enter = evt.getKeyChar();
         if (enter == KeyEvent.VK_ENTER){
-           
+           LogActionPerformed(null);
         }
     }//GEN-LAST:event_UserKeyTyped
 
     private void LogKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_LogKeyPressed
-        // TODO add your handling code here:
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_L){
+           LogActionPerformed(null);
+        }
     }//GEN-LAST:event_LogKeyPressed
+
+    private void PasswordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PasswordKeyTyped
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_ENTER){
+           LogActionPerformed(null);
+        }
+    }//GEN-LAST:event_PasswordKeyTyped
+
+    private void formKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyTyped
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_L){
+           LogActionPerformed(null);
+        }
+    }//GEN-LAST:event_formKeyTyped
 
 
     /**
@@ -291,7 +304,6 @@ public class Login extends javax.swing.JFrame {
     public java.awt.Button Clear;
     public java.awt.Button Exit;
     public java.awt.Button Log;
-    public java.awt.Button Log2;
     public javax.swing.JPasswordField Password;
     public javax.swing.JTextField User;
     private javax.swing.JLabel jLabel1;
