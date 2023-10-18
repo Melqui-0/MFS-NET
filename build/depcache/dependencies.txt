@@ -18,6 +18,7 @@ mfs.Barcode$1
 javax.swing.UIManager
 mfs.Barcode$2
 mfs.Barcode$3
+mfs.Barcode$4
 javax.swing.JTextField
 javax.swing.GroupLayout$Group
 [Ljavax.swing.UIManager$LookAndFeelInfo;
@@ -33,10 +34,13 @@ java.lang.String
 javax.swing.JFrame
 java.awt.EventQueue
 java.lang.IllegalAccessException
+java.lang.invoke.MethodHandles$Lookup
 javax.swing.JButton
 java.awt.Font
 javax.swing.GroupLayout$Alignment
+java.lang.invoke.MethodHandles
 java.awt.event.KeyEvent
+javax.swing.JOptionPane
 java.util.logging.Logger
 javax.swing.LayoutStyle
 javax.swing.JLabel
@@ -44,6 +48,7 @@ javax.swing.GroupLayout
 java.lang.ClassNotFoundException
 java.lang.Class
 javax.swing.GroupLayout$ParallelGroup
+java.lang.invoke.StringConcatFactory
 javax.swing.WindowConstants
 ||:mfs.Barcode$2
 mfs.Barcode
@@ -81,6 +86,11 @@ javax.swing.WindowConstants
 ||:mfs.Barcode$3
 mfs.Barcode
 mfs.Barcode$3
+java.awt.event.ActionListener
+java.lang.Object
+||:mfs.Barcode$4
+mfs.Barcode
+mfs.Barcode$4
 java.lang.Object
 java.lang.Runnable
 ||:mfs.Opciones
