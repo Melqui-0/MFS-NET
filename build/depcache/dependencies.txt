@@ -20,6 +20,7 @@ mfs.Barcode$2
 mfs.Barcode$3
 mfs.Barcode$4
 javax.swing.JTextField
+mfs.Barcode$5
 javax.swing.GroupLayout$Group
 [Ljavax.swing.UIManager$LookAndFeelInfo;
 javax.swing.UIManager$LookAndFeelInfo
@@ -42,6 +43,7 @@ java.lang.invoke.MethodHandles
 java.awt.event.KeyEvent
 javax.swing.JOptionPane
 java.util.logging.Logger
+mfs.all
 javax.swing.LayoutStyle
 javax.swing.JLabel
 javax.swing.GroupLayout
@@ -50,6 +52,7 @@ java.lang.Class
 javax.swing.GroupLayout$ParallelGroup
 java.lang.invoke.StringConcatFactory
 javax.swing.WindowConstants
+mfs.Empty
 ||:mfs.Barcode$2
 mfs.Barcode
 mfs.Barcode$2
@@ -90,7 +93,12 @@ java.awt.event.ActionListener
 java.lang.Object
 ||:mfs.Barcode$4
 mfs.Barcode
+java.awt.event.ActionListener
 mfs.Barcode$4
+java.lang.Object
+||:mfs.Barcode$5
+mfs.Barcode
+mfs.Barcode$5
 java.lang.Object
 java.lang.Runnable
 ||:mfs.Opciones

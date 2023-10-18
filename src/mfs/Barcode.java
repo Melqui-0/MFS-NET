@@ -13,11 +13,14 @@ import javax.swing.JOptionPane;
  */
 public class Barcode extends javax.swing.JFrame {
 
-
+    /**
+     *
+     */
     public String npescaneado;
+
     
     public Barcode() {
-        this.npescaneado = npscan.getText();
+        //this.npescaneado = npscan.getText();
         initComponents();
         
     }
@@ -148,15 +151,15 @@ public class Barcode extends javax.swing.JFrame {
     }//GEN-LAST:event_npscanActionPerformed
 
     private void npscanKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_npscanKeyTyped
-
         char enter = evt.getKeyChar();
         if (enter == KeyEvent.VK_ENTER){
+            this.npescaneado = npscan.getText();
             if (npescaneado.startsWith("p") | npescaneado.startsWith("P")){
                 if (npescaneado.length() == 8){    
-                npfinal.setText("0000" + npescaneado.substring(1).toUpperCase());
+                npfinal.setText("00000" + npescaneado.substring(1).toUpperCase());
                 npscan.setText("");
             }else{
-            JOptionPane.showMessageDialog(null, "Invalid barcode...");   
+            JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
             npscan.setText("");
             }
             }
@@ -167,7 +170,14 @@ public class Barcode extends javax.swing.JFrame {
         //String npescaneado = npscan.getText();
         //boolean min = npescaneado.substring(0).startsWith("p");
         //boolean may = npescaneado.substring(0).startsWith("P");
-        //if (npescaneado.equals(all.empty.npaescanear)){
+        if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear.getText())){
+            all.empty.npaescanear.setText("000" + npescaneado.substring(1).toUpperCase());
+            all.empty.idsp.setText("I");
+            all.empty.npecaneado.setText("000" + npescaneado.substring(1).toUpperCase());
+            this.setVisible(false);
+        }else {   
+            JOptionPane.showMessageDialog(null, all.empty.npaescanear);
+        }
          //   npfinal.setText(npescaneado);
         //}else{
         //    JOptionPane.showMessageDialog(null, "Invalid barcode...");            

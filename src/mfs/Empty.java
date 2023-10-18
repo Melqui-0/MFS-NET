@@ -55,10 +55,9 @@ public class Empty extends javax.swing.JFrame {
         jLabel15 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
+        idsp = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
+        npecaneado = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
         jLabel23 = new javax.swing.JLabel();
         jLabel24 = new javax.swing.JLabel();
@@ -148,7 +147,7 @@ public class Empty extends javax.swing.JFrame {
         });
 
         npaescanear.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear.setText("00069Y2042");
+        npaescanear.setText("69Y2042");
 
         jLabel15.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel15.setText("QT:");
@@ -159,20 +158,17 @@ public class Empty extends javax.swing.JFrame {
         jLabel17.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel17.setText("IDSP:");
 
-        jLabel18.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel18.setText("A");
+        idsp.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp.setText("A");
 
         jLabel19.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel19.setText("DESCRIPCIÓN");
 
-        jLabel20.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel20.setText("PF  2L01");
-
-        jLabel21.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel21.setText("000069Y2042");
+        npecaneado.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado.setText("PF  2L01-");
 
         jLabel22.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel22.setText("ISQ: YL102032R87W");
+        jLabel22.setText("-             -            -");
 
         jLabel23.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         jLabel23.setText("00001");
@@ -189,32 +185,28 @@ public class Empty extends javax.swing.JFrame {
                 .addGroup(NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(NPSLayout.createSequentialGroup()
                         .addGroup(NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(npaescanear)
                             .addGroup(NPSLayout.createSequentialGroup()
                                 .addComponent(jLabel17)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel18)))
-                        .addGroup(NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(idsp))
                             .addGroup(NPSLayout.createSequentialGroup()
-                                .addGap(42, 42, 42)
-                                .addComponent(jLabel19))
-                            .addGroup(NPSLayout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(jLabel15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel24)))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(NPSLayout.createSequentialGroup()
-                        .addComponent(jLabel20)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel21)
+                                .addComponent(npaescanear)
+                                .addGap(18, 18, 18)
+                                .addComponent(jLabel15)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel22)
-                        .addGap(64, 64, 64))))
+                        .addGroup(NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPSLayout.createSequentialGroup()
+                                .addComponent(jLabel23)
+                                .addGap(23, 23, 23)
+                                .addComponent(jLabel16))
+                            .addComponent(jLabel19))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel24))
+                    .addGroup(NPSLayout.createSequentialGroup()
+                        .addComponent(npecaneado, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel22)))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
         NPSLayout.setVerticalGroup(
             NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -229,12 +221,11 @@ public class Empty extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel17)
-                    .addComponent(jLabel18)
+                    .addComponent(idsp)
                     .addComponent(jLabel19))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel20)
-                    .addComponent(jLabel21)
+                    .addComponent(npecaneado)
                     .addComponent(jLabel22))
                 .addContainerGap(14, Short.MAX_VALUE))
         );
@@ -300,7 +291,7 @@ public class Empty extends javax.swing.JFrame {
                         .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())))
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(NPS, javax.swing.GroupLayout.PREFERRED_SIZE, 315, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(NPS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
@@ -404,6 +395,7 @@ public class Empty extends javax.swing.JFrame {
     private javax.swing.JLabel Cntr;
     public javax.swing.JPanel NPS;
     public javax.swing.JLabel User500;
+    public javax.swing.JLabel idsp;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -412,11 +404,8 @@ public class Empty extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel24;
@@ -431,6 +420,7 @@ public class Empty extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     public javax.swing.JLabel npaescanear;
+    public javax.swing.JLabel npecaneado;
     public javax.swing.JLabel work500;
     // End of variables declaration//GEN-END:variables
 }

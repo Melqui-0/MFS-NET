@@ -244,10 +244,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_UserKeyTyped
 
     private void LogKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_LogKeyPressed
-        char enter = evt.getKeyChar();
-        if (enter == KeyEvent.VK_L){
-           LogActionPerformed(null);
-        }
+
     }//GEN-LAST:event_LogKeyPressed
 
     private void PasswordKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PasswordKeyTyped
@@ -258,10 +255,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_PasswordKeyTyped
 
     private void formKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyTyped
-        char enter = evt.getKeyChar();
-        if (enter == KeyEvent.VK_L){
-           LogActionPerformed(null);
-        }
+
     }//GEN-LAST:event_formKeyTyped
 
 
