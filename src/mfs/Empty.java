@@ -13,6 +13,8 @@ public class Empty extends javax.swing.JFrame {
     /**
      * Creates new form Empty500easy
      */
+    
+    //New String ins = String "I";
     public Empty() {
         javax.swing.JFrame frame = new javax.swing.JFrame();
         javax.swing.JButton btn = new javax.swing.JButton("Click");
@@ -738,7 +740,7 @@ public class Empty extends javax.swing.JFrame {
     }//GEN-LAST:event_NPS3MouseClicked
 
     private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        //if(idsp & idsp1.hashCode()){
+        //if(idsp.equals("I")){
         // para abrir el barcode tratar de poner un IF para que valide en cual se esta usando    
         //}
     }//GEN-LAST:event_jCheckBox1ActionPerformed
