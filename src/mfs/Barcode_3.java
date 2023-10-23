@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author 102976781
  */
-public class Barcode extends javax.swing.JFrame {
+public class Barcode_3 extends javax.swing.JFrame {
 
     /**
      *
@@ -19,7 +19,7 @@ public class Barcode extends javax.swing.JFrame {
     public String npescaneado;
 
     
-    public Barcode() {
+    public Barcode_3 () {
         //this.npescaneado = npscan.getText();
         initComponents();
         
@@ -215,11 +215,11 @@ public class Barcode extends javax.swing.JFrame {
     }//GEN-LAST:event_npscanKeyTyped
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear.getText())){
-            all.empty.npaescanear.setText("000" + npescaneado.substring(1).toUpperCase());
-            all.empty.idsp.setText("I");
-            all.empty.npecaneado.setText("000" + npescaneado.substring(1).toUpperCase());
-            all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
+        if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear3.getText())){
+            all.empty.npaescanear3.setText("000" + npescaneado.substring(1).toUpperCase());
+            all.empty.idsp3.setText("I");
+            all.empty.npecaneado3.setText("000" + npescaneado.substring(1).toUpperCase());
+            all.empty.cantidadfinal3.setText(all.empty.cantidadrequerida3.getText());
             this.setVisible(false);
         }else {   
             JOptionPane.showMessageDialog(null, "FC15 ");

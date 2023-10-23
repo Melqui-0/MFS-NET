@@ -18,4 +18,7 @@ public class all {
     public static Dificult dificultad = new Dificult();
     public static Empty empty = new Empty();
     public static Barcode barcode =  new Barcode();
+    public static Barcode_1 barcode_1 = new Barcode_1();
+    public static Barcode_2 barcode_2 = new Barcode_2();
+    public static Barcode_3 barcode_3 = new Barcode_3();
 }
