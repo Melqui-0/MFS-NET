@@ -4,6 +4,7 @@
  */
 package mfs;
 
+import java.awt.Color;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 
@@ -37,7 +38,7 @@ public class Barcode extends javax.swing.JFrame {
     private void initComponents() {
 
         npscan = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
+        partnumber = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
@@ -45,11 +46,13 @@ public class Barcode extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         npfinal = new javax.swing.JLabel();
         ecfinal = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        sequence = new javax.swing.JLabel();
         secfinal = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        npfinal3 = new javax.swing.JLabel();
-        otra = new javax.swing.JLabel();
+        ecnumber = new javax.swing.JLabel();
+        machinefinal = new javax.swing.JLabel();
+        machine = new javax.swing.JLabel();
+        countryfinal = new javax.swing.JLabel();
+        country = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -65,8 +68,8 @@ public class Barcode extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jLabel2.setText("Part Number:");
+        partnumber.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        partnumber.setText("Part Number:");
 
         jButton1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jButton1.setText("F2 = Log Part");
@@ -97,18 +100,23 @@ public class Barcode extends javax.swing.JFrame {
 
         ecfinal.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
 
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jLabel3.setText("Sequence Number");
+        sequence.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        sequence.setText("Sequence Number");
 
         secfinal.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
 
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jLabel4.setText("Ec Number:");
+        ecnumber.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        ecnumber.setText("Ec Number:");
 
-        npfinal3.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        machinefinal.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
 
-        otra.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        otra.setText("Part Number:");
+        machine.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        machine.setText("Machine Serial:");
+
+        countryfinal.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+
+        country.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        country.setText("Country:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -135,20 +143,24 @@ public class Barcode extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel4))
+                            .addComponent(partnumber)
+                            .addComponent(ecnumber))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(npfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(ecfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(otra, javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.Alignment.TRAILING))
+                            .addComponent(machine, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(sequence, javax.swing.GroupLayout.Alignment.TRAILING))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(secfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(npfinal3, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(machinefinal, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(country)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(countryfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(97, 97, 97))
         );
         layout.setVerticalGroup(
@@ -163,11 +175,11 @@ public class Barcode extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
+                            .addComponent(partnumber)
                             .addComponent(npfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
+                            .addComponent(ecnumber)
                             .addComponent(ecfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -179,15 +191,22 @@ public class Barcode extends javax.swing.JFrame {
                         .addGap(7, 7, 7)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(secfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))
+                            .addComponent(sequence))
                         .addGap(7, 7, 7)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(otra)
-                            .addComponent(npfinal3, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                            .addComponent(machine)
+                            .addComponent(machinefinal, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton4)
-                    .addComponent(jButton3))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton4)
+                            .addComponent(jButton3)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(2, 2, 2)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(country)
+                            .addComponent(countryfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(84, Short.MAX_VALUE))
         );
 
@@ -220,6 +239,17 @@ public class Barcode extends javax.swing.JFrame {
             all.empty.idsp.setText("I");
             all.empty.npecaneado.setText("000" + npescaneado.substring(1).toUpperCase());
             all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
+            all.empty.NPS.setBackground(Color.CYAN);
+            all.empty.npaescanear.setForeground(Color.WHITE);
+            all.empty.QT.setForeground(Color.WHITE);
+            all.empty.cantidadrequerida.setForeground(Color.WHITE);
+            all.empty.FQT.setForeground(Color.WHITE);
+            all.empty.cantidadfinal.setForeground(Color.WHITE);
+            all.empty.DISP.setForeground(Color.WHITE);
+            all.empty.idsp.setForeground(Color.WHITE);
+            all.empty.descripcion.setForeground(Color.WHITE);
+            all.empty.npecaneado.setForeground(Color.WHITE);
+            all.empty.serial.setForeground(Color.WHITE);
             this.setVisible(false);
         }else {   
             JOptionPane.showMessageDialog(null, "FC15 ");
@@ -269,19 +299,21 @@ public class Barcode extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public javax.swing.JLabel country;
+    public javax.swing.JLabel countryfinal;
     public javax.swing.JLabel ecfinal;
+    public javax.swing.JLabel ecnumber;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
+    public javax.swing.JLabel machine;
+    public javax.swing.JLabel machinefinal;
     public javax.swing.JLabel npfinal;
-    public javax.swing.JLabel npfinal3;
     public javax.swing.JTextField npscan;
-    public javax.swing.JLabel otra;
+    public javax.swing.JLabel partnumber;
     public javax.swing.JLabel secfinal;
+    public javax.swing.JLabel sequence;
     // End of variables declaration//GEN-END:variables
 }

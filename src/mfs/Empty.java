@@ -54,53 +54,55 @@ public class Empty extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         User500 = new javax.swing.JLabel();
         work500 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
-        NPS1 = new javax.swing.JPanel();
-        npaescanear1 = new javax.swing.JLabel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        idsp1 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        npecaneado1 = new javax.swing.JLabel();
-        serial1 = new javax.swing.JLabel();
-        cantidadrequerida1 = new javax.swing.JLabel();
-        cantidadfinal1 = new javax.swing.JLabel();
+        bloque1 = new javax.swing.JPanel();
         NPS = new javax.swing.JPanel();
         npaescanear = new javax.swing.JLabel();
-        jLabel15 = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel17 = new javax.swing.JLabel();
+        QT = new javax.swing.JLabel();
+        FQT = new javax.swing.JLabel();
+        DISP = new javax.swing.JLabel();
         idsp = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
+        descripcion = new javax.swing.JLabel();
         npecaneado = new javax.swing.JLabel();
         serial = new javax.swing.JLabel();
         cantidadrequerida = new javax.swing.JLabel();
         cantidadfinal = new javax.swing.JLabel();
-        NPS3 = new javax.swing.JPanel();
+        jPanel5 = new javax.swing.JPanel();
+        check = new javax.swing.JCheckBox();
+        jLabel10 = new javax.swing.JLabel();
+        NPS2 = new javax.swing.JPanel();
         npaescanear2 = new javax.swing.JLabel();
-        jLabel36 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
+        QT2 = new javax.swing.JLabel();
+        FQT2 = new javax.swing.JLabel();
+        DISP2 = new javax.swing.JLabel();
         idsp2 = new javax.swing.JLabel();
-        jLabel39 = new javax.swing.JLabel();
+        descripcion2 = new javax.swing.JLabel();
         npecaneado2 = new javax.swing.JLabel();
         serial2 = new javax.swing.JLabel();
         cantidadrequerida2 = new javax.swing.JLabel();
         cantidadfinal2 = new javax.swing.JLabel();
-        NPS2 = new javax.swing.JPanel();
+        NPS3 = new javax.swing.JPanel();
         npaescanear3 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
+        QT3 = new javax.swing.JLabel();
+        FQT3 = new javax.swing.JLabel();
+        DISP3 = new javax.swing.JLabel();
         idsp3 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
+        descripcion3 = new javax.swing.JLabel();
         npecaneado3 = new javax.swing.JLabel();
         serial3 = new javax.swing.JLabel();
         cantidadrequerida3 = new javax.swing.JLabel();
         cantidadfinal3 = new javax.swing.JLabel();
-        jPanel5 = new javax.swing.JPanel();
-        jCheckBox1 = new javax.swing.JCheckBox();
+        NPS1 = new javax.swing.JPanel();
+        npaescanear1 = new javax.swing.JLabel();
+        QT1 = new javax.swing.JLabel();
+        FQT1 = new javax.swing.JLabel();
+        DISP1 = new javax.swing.JLabel();
+        idsp1 = new javax.swing.JLabel();
+        descripcion1 = new javax.swing.JLabel();
+        npecaneado1 = new javax.swing.JLabel();
+        serial1 = new javax.swing.JLabel();
+        cantidadrequerida1 = new javax.swing.JLabel();
+        cantidadfinal1 = new javax.swing.JLabel();
+        jScrollBar1 = new javax.swing.JScrollBar();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -180,101 +182,7 @@ public class Empty extends javax.swing.JFrame {
 
         work500.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
 
-        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        NPS1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        NPS1.setFocusable(false);
-        NPS1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                NPS1MouseClicked(evt);
-            }
-        });
-
-        npaescanear1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear1.setText("69Y1649");
-
-        jLabel18.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel18.setText("QT:");
-
-        jLabel20.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel20.setText("FQT:");
-
-        jLabel21.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel21.setText("IDSP:");
-
-        idsp1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        idsp1.setText("A");
-
-        jLabel25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel25.setText("LINE CORD, ");
-
-        npecaneado1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado1.setText("PF  2L01-");
-
-        serial1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        serial1.setText("-             -            -");
-
-        cantidadrequerida1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida1.setText("00001");
-
-        cantidadfinal1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadfinal1.setText("00000");
-
-        javax.swing.GroupLayout NPS1Layout = new javax.swing.GroupLayout(NPS1);
-        NPS1.setLayout(NPS1Layout);
-        NPS1Layout.setHorizontalGroup(
-            NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(NPS1Layout.createSequentialGroup()
-                        .addGroup(NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(NPS1Layout.createSequentialGroup()
-                                .addComponent(jLabel21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(idsp1))
-                            .addGroup(NPS1Layout.createSequentialGroup()
-                                .addComponent(npaescanear1)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel18)))
-                        .addGroup(NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(NPS1Layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadrequerida1)
-                                .addGap(23, 23, 23)
-                                .addComponent(jLabel20)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadfinal1))
-                            .addGroup(NPS1Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(NPS1Layout.createSequentialGroup()
-                        .addComponent(npecaneado1, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(serial1)))
-                .addContainerGap(26, Short.MAX_VALUE))
-        );
-        NPS1Layout.setVerticalGroup(
-            NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npaescanear1)
-                    .addComponent(jLabel18)
-                    .addComponent(jLabel20)
-                    .addComponent(cantidadrequerida1)
-                    .addComponent(cantidadfinal1))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel21)
-                    .addComponent(idsp1)
-                    .addComponent(jLabel25))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npecaneado1)
-                    .addComponent(serial1))
-                .addContainerGap(14, Short.MAX_VALUE))
-        );
+        bloque1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         NPS.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         NPS.setFocusable(false);
@@ -285,22 +193,22 @@ public class Empty extends javax.swing.JFrame {
         });
 
         npaescanear.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear.setText("69Y1649");
+        npaescanear.setText("01KL468");
 
-        jLabel15.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel15.setText("QT:");
+        QT.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT.setText("QT:");
 
-        jLabel16.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel16.setText("FQT:");
+        FQT.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT.setText("FQT:");
 
-        jLabel17.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel17.setText("IDSP:");
+        DISP.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP.setText("IDSP:");
 
         idsp.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         idsp.setText("A");
 
-        jLabel19.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel19.setText("DESCRIPCIÓN");
+        descripcion.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion.setText("DESCRIPCIÓN");
 
         npecaneado.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado.setText("PF  2L01-");
@@ -324,27 +232,27 @@ public class Empty extends javax.swing.JFrame {
                     .addGroup(NPSLayout.createSequentialGroup()
                         .addGroup(NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(NPSLayout.createSequentialGroup()
-                                .addComponent(jLabel17)
+                                .addComponent(DISP)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(idsp))
                             .addGroup(NPSLayout.createSequentialGroup()
                                 .addComponent(npaescanear)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel15)))
+                                .addComponent(QT)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(NPSLayout.createSequentialGroup()
                                 .addComponent(cantidadrequerida)
                                 .addGap(23, 23, 23)
-                                .addComponent(jLabel16))
-                            .addComponent(jLabel19))
+                                .addComponent(FQT))
+                            .addComponent(descripcion))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(cantidadfinal))
                     .addGroup(NPSLayout.createSequentialGroup()
                         .addComponent(npecaneado, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(serial)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         NPSLayout.setVerticalGroup(
             NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -352,15 +260,15 @@ public class Empty extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(npaescanear)
-                    .addComponent(jLabel15)
-                    .addComponent(jLabel16)
+                    .addComponent(QT)
+                    .addComponent(FQT)
                     .addComponent(cantidadrequerida)
                     .addComponent(cantidadfinal))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel17)
+                    .addComponent(DISP)
                     .addComponent(idsp)
-                    .addComponent(jLabel19))
+                    .addComponent(descripcion))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(npecaneado)
@@ -368,31 +276,79 @@ public class Empty extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        NPS3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        NPS3.setFocusable(false);
-        NPS3.addMouseListener(new java.awt.event.MouseAdapter() {
+        javax.swing.GroupLayout bloque1Layout = new javax.swing.GroupLayout(bloque1);
+        bloque1.setLayout(bloque1Layout);
+        bloque1Layout.setHorizontalGroup(
+            bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bloque1Layout.createSequentialGroup()
+                .addComponent(NPS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        bloque1Layout.setVerticalGroup(
+            bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bloque1Layout.createSequentialGroup()
+                .addComponent(NPS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 597, Short.MAX_VALUE))
+        );
+
+        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        check.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        check.setText("Incompleto");
+        check.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                checkActionPerformed(evt);
+            }
+        });
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/imagen.png"))); // NOI18N
+
+        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
+        jPanel5.setLayout(jPanel5Layout);
+        jPanel5Layout.setHorizontalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(check)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(jPanel5Layout.createSequentialGroup()
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 893, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        jPanel5Layout.setVerticalGroup(
+            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel5Layout.createSequentialGroup()
+                .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 565, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(80, 80, 80)
+                .addComponent(check)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS2.setFocusable(false);
+        NPS2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                NPS3MouseClicked(evt);
+                NPS2MouseClicked(evt);
             }
         });
 
         npaescanear2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npaescanear2.setText("69Y1649");
 
-        jLabel36.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel36.setText("QT:");
+        QT2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT2.setText("QT:");
 
-        jLabel37.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel37.setText("FQT:");
+        FQT2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT2.setText("FQT:");
 
-        jLabel38.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel38.setText("IDSP:");
+        DISP2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP2.setText("IDSP:");
 
         idsp2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         idsp2.setText("A");
 
-        jLabel39.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel39.setText("DESCRIPCIÓN");
+        descripcion2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion2.setText("DESCRIPCIÓN");
 
         npecaneado2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado2.setText("PF  2L01-");
@@ -406,85 +362,85 @@ public class Empty extends javax.swing.JFrame {
         cantidadfinal2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal2.setText("00000");
 
-        javax.swing.GroupLayout NPS3Layout = new javax.swing.GroupLayout(NPS3);
-        NPS3.setLayout(NPS3Layout);
-        NPS3Layout.setHorizontalGroup(
-            NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS3Layout.createSequentialGroup()
+        javax.swing.GroupLayout NPS2Layout = new javax.swing.GroupLayout(NPS2);
+        NPS2.setLayout(NPS2Layout);
+        NPS2Layout.setHorizontalGroup(
+            NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(NPS3Layout.createSequentialGroup()
-                        .addGroup(NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(NPS3Layout.createSequentialGroup()
-                                .addComponent(jLabel38)
+                .addGroup(NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(NPS2Layout.createSequentialGroup()
+                        .addGroup(NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(NPS2Layout.createSequentialGroup()
+                                .addComponent(DISP2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(idsp2))
-                            .addGroup(NPS3Layout.createSequentialGroup()
+                            .addGroup(NPS2Layout.createSequentialGroup()
                                 .addComponent(npaescanear2)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel36)))
+                                .addComponent(QT2)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(NPS3Layout.createSequentialGroup()
+                        .addGroup(NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS2Layout.createSequentialGroup()
                                 .addComponent(cantidadrequerida2)
                                 .addGap(23, 23, 23)
-                                .addComponent(jLabel37))
-                            .addComponent(jLabel39))
+                                .addComponent(FQT2))
+                            .addComponent(descripcion2))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(cantidadfinal2))
-                    .addGroup(NPS3Layout.createSequentialGroup()
+                    .addGroup(NPS2Layout.createSequentialGroup()
                         .addComponent(npecaneado2, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(serial2)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        NPS3Layout.setVerticalGroup(
-            NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS3Layout.createSequentialGroup()
+        NPS2Layout.setVerticalGroup(
+            NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(npaescanear2)
-                    .addComponent(jLabel36)
-                    .addComponent(jLabel37)
+                    .addComponent(QT2)
+                    .addComponent(FQT2)
                     .addComponent(cantidadrequerida2)
                     .addComponent(cantidadfinal2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel38)
+                .addGroup(NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP2)
                     .addComponent(idsp2)
-                    .addComponent(jLabel39))
+                    .addComponent(descripcion2))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(npecaneado2)
                     .addComponent(serial2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        NPS2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        NPS2.setFocusable(false);
-        NPS2.addMouseListener(new java.awt.event.MouseAdapter() {
+        NPS3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS3.setFocusable(false);
+        NPS3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                NPS2MouseClicked(evt);
+                NPS3MouseClicked(evt);
             }
         });
 
         npaescanear3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npaescanear3.setText("69Y1649");
 
-        jLabel29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel29.setText("QT:");
+        QT3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT3.setText("QT:");
 
-        jLabel30.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel30.setText("FQT:");
+        FQT3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT3.setText("FQT:");
 
-        jLabel31.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel31.setText("IDSP:");
+        DISP3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP3.setText("IDSP:");
 
         idsp3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         idsp3.setText("A");
 
-        jLabel32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        jLabel32.setText("DESCRIPCIÓN");
+        descripcion3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion3.setText("DESCRIPCIÓN");
 
         npecaneado3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado3.setText("PF  2L01-");
@@ -498,106 +454,152 @@ public class Empty extends javax.swing.JFrame {
         cantidadfinal3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal3.setText("00000");
 
-        javax.swing.GroupLayout NPS2Layout = new javax.swing.GroupLayout(NPS2);
-        NPS2.setLayout(NPS2Layout);
-        NPS2Layout.setHorizontalGroup(
-            NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS2Layout.createSequentialGroup()
+        javax.swing.GroupLayout NPS3Layout = new javax.swing.GroupLayout(NPS3);
+        NPS3.setLayout(NPS3Layout);
+        NPS3Layout.setHorizontalGroup(
+            NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(NPS2Layout.createSequentialGroup()
-                        .addGroup(NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(NPS2Layout.createSequentialGroup()
-                                .addComponent(jLabel31)
+                .addGroup(NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(NPS3Layout.createSequentialGroup()
+                        .addGroup(NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(NPS3Layout.createSequentialGroup()
+                                .addComponent(DISP3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(idsp3))
-                            .addGroup(NPS2Layout.createSequentialGroup()
+                            .addGroup(NPS3Layout.createSequentialGroup()
                                 .addComponent(npaescanear3)
                                 .addGap(18, 18, 18)
-                                .addComponent(jLabel29)))
+                                .addComponent(QT3)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(NPS2Layout.createSequentialGroup()
+                        .addGroup(NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS3Layout.createSequentialGroup()
                                 .addComponent(cantidadrequerida3)
                                 .addGap(23, 23, 23)
-                                .addComponent(jLabel30))
-                            .addComponent(jLabel32))
+                                .addComponent(FQT3))
+                            .addComponent(descripcion3))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(cantidadfinal3))
-                    .addGroup(NPS2Layout.createSequentialGroup()
+                    .addGroup(NPS3Layout.createSequentialGroup()
                         .addComponent(npecaneado3, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(serial3)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        NPS2Layout.setVerticalGroup(
-            NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS2Layout.createSequentialGroup()
+        NPS3Layout.setVerticalGroup(
+            NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(npaescanear3)
-                    .addComponent(jLabel29)
-                    .addComponent(jLabel30)
+                    .addComponent(QT3)
+                    .addComponent(FQT3)
                     .addComponent(cantidadrequerida3)
                     .addComponent(cantidadfinal3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel31)
+                .addGroup(NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP3)
                     .addComponent(idsp3)
-                    .addComponent(jLabel32))
+                    .addComponent(descripcion3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(npecaneado3)
                     .addComponent(serial3))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(NPS1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(NPS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(NPS3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(NPS2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addComponent(NPS1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-        );
-
-        jPanel5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jCheckBox1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jCheckBox1.setText("Incompleto");
-        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jCheckBox1ActionPerformed(evt);
+        NPS1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS1.setFocusable(false);
+        NPS1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS1MouseClicked(evt);
             }
         });
 
-        javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
-        jPanel5.setLayout(jPanel5Layout);
-        jPanel5Layout.setHorizontalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jCheckBox1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        npaescanear1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear1.setText("69Y1649");
+
+        QT1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT1.setText("QT:");
+
+        FQT1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT1.setText("FQT:");
+
+        DISP1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP1.setText("IDSP:");
+
+        idsp1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp1.setText("A");
+
+        descripcion1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion1.setText("LINE CORD, ");
+
+        npecaneado1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado1.setText("PF  2L01-");
+
+        serial1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial1.setText("-             -            -");
+
+        cantidadrequerida1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida1.setText("00001");
+
+        cantidadfinal1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal1.setText("00000");
+
+        javax.swing.GroupLayout NPS1Layout = new javax.swing.GroupLayout(NPS1);
+        NPS1.setLayout(NPS1Layout);
+        NPS1Layout.setHorizontalGroup(
+            NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(NPS1Layout.createSequentialGroup()
+                        .addGroup(NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(NPS1Layout.createSequentialGroup()
+                                .addComponent(DISP1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp1))
+                            .addGroup(NPS1Layout.createSequentialGroup()
+                                .addComponent(npaescanear1)
+                                .addGap(18, 18, 18)
+                                .addComponent(QT1)))
+                        .addGroup(NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(NPS1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida1)
+                                .addGap(23, 23, 23)
+                                .addComponent(FQT1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal1))
+                            .addGroup(NPS1Layout.createSequentialGroup()
+                                .addGap(18, 18, 18)
+                                .addComponent(descripcion1, javax.swing.GroupLayout.PREFERRED_SIZE, 128, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(NPS1Layout.createSequentialGroup()
+                        .addComponent(npecaneado1, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(serial1)))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
-        jPanel5Layout.setVerticalGroup(
-            jPanel5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel5Layout.createSequentialGroup()
-                .addGap(16, 16, 16)
-                .addComponent(jCheckBox1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        NPS1Layout.setVerticalGroup(
+            NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear1)
+                    .addComponent(QT1)
+                    .addComponent(FQT1)
+                    .addComponent(cantidadrequerida1)
+                    .addComponent(cantidadfinal1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP1)
+                    .addComponent(idsp1)
+                    .addComponent(descripcion1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado1)
+                    .addComponent(serial1))
+                .addContainerGap(14, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
@@ -657,9 +659,21 @@ public class Empty extends javax.swing.JFrame {
                         .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())))
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(bloque1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(NPS1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGap(51, 51, 51)
+                        .addComponent(NPS2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(NPS3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
         jPanel3Layout.setVerticalGroup(
@@ -699,21 +713,36 @@ public class Empty extends javax.swing.JFrame {
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(607, Short.MAX_VALUE))
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(bloque1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jPanel5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(NPS1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(NPS3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(110, 110, 110))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(NPS2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addComponent(jScrollBar1, javax.swing.GroupLayout.PREFERRED_SIZE, 1000, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1269, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
@@ -721,7 +750,10 @@ public class Empty extends javax.swing.JFrame {
 
     private void NPSMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPSMouseClicked
         all.barcode.setVisible(true);
-        all.barcode.otra.setVisible(false);
+        all.barcode.machinefinal.setVisible(false);
+        all.barcode.machine.setVisible(false);
+        all.barcode.country.setVisible(false);
+        all.barcode.countryfinal.setVisible(false);
     }//GEN-LAST:event_NPSMouseClicked
 
     private void NPS1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS1MouseClicked
@@ -729,21 +761,23 @@ public class Empty extends javax.swing.JFrame {
         all.barcode_1.otra.setVisible(false);
     }//GEN-LAST:event_NPS1MouseClicked
 
-    private void NPS2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS2MouseClicked
-        all.barcode_2.setVisible(true);
-        all.barcode_2.otra.setVisible(false);
-    }//GEN-LAST:event_NPS2MouseClicked
-
     private void NPS3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS3MouseClicked
         all.barcode_3.setVisible(true);
         all.barcode_3.otra.setVisible(false);
     }//GEN-LAST:event_NPS3MouseClicked
 
-    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
-        //if(idsp.equals("I")){
+    private void NPS2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS2MouseClicked
+        all.barcode_2.setVisible(true);
+        all.barcode_2.otra.setVisible(false);
+    }//GEN-LAST:event_NPS2MouseClicked
+
+    private void checkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_checkActionPerformed
+        if(idsp.getText().equals("I") && idsp2.getText().equals("I") && idsp2.getText().equals("I") && idsp3.getText().equals("I")){
+            check.setText("Completo");
+            check.setSelected(true);
         // para abrir el barcode tratar de poner un IF para que valide en cual se esta usando    
-        //}
-    }//GEN-LAST:event_jCheckBox1ActionPerformed
+        }
+    }//GEN-LAST:event_checkActionPerformed
 
     /**
      * @param args the command line arguments
@@ -785,11 +819,24 @@ public class Empty extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel Cntr;
+    public javax.swing.JLabel DISP;
+    public javax.swing.JLabel DISP1;
+    public javax.swing.JLabel DISP2;
+    public javax.swing.JLabel DISP3;
+    public javax.swing.JLabel FQT;
+    public javax.swing.JLabel FQT1;
+    public javax.swing.JLabel FQT2;
+    public javax.swing.JLabel FQT3;
     public javax.swing.JPanel NPS;
     public javax.swing.JPanel NPS1;
     public javax.swing.JPanel NPS2;
     public javax.swing.JPanel NPS3;
+    public javax.swing.JLabel QT;
+    public javax.swing.JLabel QT1;
+    public javax.swing.JLabel QT2;
+    public javax.swing.JLabel QT3;
     public javax.swing.JLabel User500;
+    public javax.swing.JPanel bloque1;
     public javax.swing.JLabel cantidadfinal;
     public javax.swing.JLabel cantidadfinal1;
     public javax.swing.JLabel cantidadfinal2;
@@ -798,34 +845,23 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel cantidadrequerida1;
     public javax.swing.JLabel cantidadrequerida2;
     public javax.swing.JLabel cantidadrequerida3;
+    public javax.swing.JCheckBox check;
+    public javax.swing.JLabel descripcion;
+    public javax.swing.JLabel descripcion1;
+    public javax.swing.JLabel descripcion2;
+    public javax.swing.JLabel descripcion3;
     public javax.swing.JLabel idsp;
     public javax.swing.JLabel idsp1;
     public javax.swing.JLabel idsp2;
     public javax.swing.JLabel idsp3;
-    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
-    private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel17;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
-    private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -835,8 +871,8 @@ public class Empty extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JScrollBar jScrollBar1;
     public javax.swing.JLabel npaescanear;
     public javax.swing.JLabel npaescanear1;
     public javax.swing.JLabel npaescanear2;

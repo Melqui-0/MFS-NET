@@ -4,6 +4,7 @@
  */
 package mfs;
 
+import java.awt.Color;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 
@@ -220,6 +221,17 @@ public class Barcode_1 extends javax.swing.JFrame {
             all.empty.idsp1.setText("I");
             all.empty.npecaneado1.setText("000" + npescaneado.substring(1).toUpperCase());
             all.empty.cantidadfinal1.setText(all.empty.cantidadrequerida1.getText());
+            all.empty.NPS1.setBackground(Color.BLUE);
+            all.empty.npaescanear1.setForeground(Color.WHITE);
+            all.empty.QT1.setForeground(Color.WHITE);
+            all.empty.cantidadrequerida1.setForeground(Color.WHITE);
+            all.empty.FQT1.setForeground(Color.WHITE);
+            all.empty.cantidadfinal1.setForeground(Color.WHITE);
+            all.empty.DISP1.setForeground(Color.WHITE);
+            all.empty.idsp1.setForeground(Color.WHITE);
+            all.empty.descripcion1.setForeground(Color.WHITE);
+            all.empty.npecaneado1.setForeground(Color.WHITE);
+            all.empty.serial1.setForeground(Color.WHITE);
             this.setVisible(false);
         }else {   
             JOptionPane.showMessageDialog(null, "FC15 ");
