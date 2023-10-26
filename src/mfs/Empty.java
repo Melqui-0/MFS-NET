@@ -4,6 +4,8 @@
  */
 package mfs;
 
+import java.awt.Dimension;
+
 /**
  *
  * @author 102976781
@@ -20,6 +22,8 @@ public class Empty extends javax.swing.JFrame {
         javax.swing.JButton btn = new javax.swing.JButton("Click");
         
         frame.add(btn);
+        
+        setPreferredSize(new Dimension(1024, 1280));
         
         
         
