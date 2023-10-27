@@ -229,6 +229,9 @@ public class Barcode extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
             npscan.setText("");
             }
+            }else{
+            JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
+            npscan.setText("");
             }
         }
     }//GEN-LAST:event_npscanKeyTyped

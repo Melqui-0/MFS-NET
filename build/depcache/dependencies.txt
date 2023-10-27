@@ -756,12 +756,13 @@ mfs.Barcode_1
 javax.swing.GroupLayout$Alignment
 mfs.Barcode_2
 javax.swing.BorderFactory
+javax.swing.JOptionPane
 java.util.logging.Logger
 mfs.all
+java.awt.event.MouseEvent
 javax.swing.LayoutStyle
 java.awt.Dimension
 javax.swing.JLabel
-javax.swing.JScrollBar
 javax.swing.JCheckBox
 javax.swing.GroupLayout
 java.lang.Object
