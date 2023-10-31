@@ -24,6 +24,7 @@ public class Barcode extends javax.swing.JFrame {
         //this.npescaneado = npscan.getText();
         initComponents();
         
+        
     }
 
     /**
@@ -39,7 +40,7 @@ public class Barcode extends javax.swing.JFrame {
 
         npscan = new javax.swing.JTextField();
         partnumber = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        Logpart = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -71,11 +72,11 @@ public class Barcode extends javax.swing.JFrame {
         partnumber.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         partnumber.setText("Part Number:");
 
-        jButton1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jButton1.setText("F2 = Log Part");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Logpart.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        Logpart.setText("F2 = Log Part");
+        Logpart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                LogpartActionPerformed(evt);
             }
         });
 
@@ -133,7 +134,7 @@ public class Barcode extends javax.swing.JFrame {
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
+                            .addComponent(Logpart)
                             .addComponent(jButton3))
                         .addGap(36, 36, 36)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -185,7 +186,7 @@ public class Barcode extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
+                            .addComponent(Logpart)
                             .addComponent(jButton2)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(7, 7, 7)
@@ -229,14 +230,22 @@ public class Barcode extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
             npscan.setText("");
             }
-            }else{
+            } else if (npescaneado.startsWith("11s") | npescaneado.startsWith("11S")){
+                if (npescaneado.length() == 22){    
+                npfinal.setText("00000" + npescaneado.substring(3, 10).toUpperCase());
+                ecfinal.setText("10000P45486");
+                secfinal.setText(npescaneado.substring(10));
+                npscan.setText("");
+            }
+                    }
+            else{
             JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
             npscan.setText("");
             }
         }
     }//GEN-LAST:event_npscanKeyTyped
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void LogpartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogpartActionPerformed
         if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear.getText())){
             all.empty.npaescanear.setText("000" + npescaneado.substring(1).toUpperCase());
             all.empty.idsp.setText("I");
@@ -254,10 +263,28 @@ public class Barcode extends javax.swing.JFrame {
             all.empty.npecaneado.setForeground(Color.WHITE);
             all.empty.serial.setForeground(Color.WHITE);
             this.setVisible(false);
+        }   else if (this.npescaneado.substring(3, 10).toUpperCase().equals(all.empty.npaescanear.getText())){
+            all.empty.npaescanear.setText("000" + npescaneado.substring(3, 10).toUpperCase());
+            all.empty.idsp.setText("I");
+            all.empty.npecaneado.setText("000" + npescaneado.substring(3, 10).toUpperCase());
+            all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
+            all.empty.serial.setText(npescaneado.substring(10));
+            all.empty.NPS.setBackground(Color.CYAN);
+            all.empty.npaescanear.setForeground(Color.WHITE);
+            all.empty.QT.setForeground(Color.WHITE);
+            all.empty.cantidadrequerida.setForeground(Color.WHITE);
+            all.empty.FQT.setForeground(Color.WHITE);
+            all.empty.cantidadfinal.setForeground(Color.WHITE);
+            all.empty.DISP.setForeground(Color.WHITE);
+            all.empty.idsp.setForeground(Color.WHITE);
+            all.empty.descripcion.setForeground(Color.WHITE);
+            all.empty.npecaneado.setForeground(Color.WHITE);
+            all.empty.serial.setForeground(Color.WHITE);
+            this.setVisible(false);
         }else {   
             JOptionPane.showMessageDialog(null, "FC15 ");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_LogpartActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         this.setVisible(false);
@@ -302,11 +329,11 @@ public class Barcode extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Logpart;
     public javax.swing.JLabel country;
     public javax.swing.JLabel countryfinal;
     public javax.swing.JLabel ecfinal;
     public javax.swing.JLabel ecnumber;
-    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
