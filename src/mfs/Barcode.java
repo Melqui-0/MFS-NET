@@ -246,7 +246,7 @@ public class Barcode extends javax.swing.JFrame {
     }//GEN-LAST:event_npscanKeyTyped
 
     private void LogpartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogpartActionPerformed
-        if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear.getText())){
+        if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear)){
             all.empty.npaescanear.setText("000" + npescaneado.substring(1).toUpperCase());
             all.empty.idsp.setText("I");
             all.empty.npecaneado.setText("000" + npescaneado.substring(1).toUpperCase());
