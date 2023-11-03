@@ -31,6 +31,8 @@ public class Empty extends javax.swing.JFrame {
     }
     
     int xx, yy;
+    String pn;
+    String nps [];
         final String label1 [] = {
         "PN","EC","SEC","MS","CN"
         };
@@ -1046,12 +1048,12 @@ public class Empty extends javax.swing.JFrame {
                 all.barcode_1.setVisible(true);
                 all.barcode_1.machinefinal.setVisible(false);
                 all.barcode_1.machine.setVisible(false);
-                all.barcode_1.country.setVisible(false);
-                all.barcode_1.countryfinal.setVisible(false);
+
             } else {
                 JOptionPane.showMessageDialog(null, "No se puede volver a escaner...");
             }
         } else {
+            pn = this.npaescanear.getText().toUpperCase();
             this.NPS1.setBackground(Color.black);
             this.DISP1.setForeground(Color.white);
             this.FQT1.setForeground(Color.white);
@@ -1070,10 +1072,7 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp3.getText().equals("A")){
                 all.barcode_3.setVisible(true);
-                all.barcode_3.machinefinal.setVisible(false);
-                all.barcode_3.machine.setVisible(false);
-                all.barcode_3.country.setVisible(false);
-                all.barcode_3.countryfinal.setVisible(false);
+
             } else {
                 JOptionPane.showMessageDialog(null, "No se puede volver a escaner...");
             }
@@ -1096,10 +1095,7 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp2.getText().equals("A")){
                 all.barcode_2.setVisible(true);
-                all.barcode_2.machinefinal.setVisible(false);
-                all.barcode_2.machine.setVisible(false);
-                all.barcode_2.country.setVisible(false);
-                all.barcode_2.countryfinal.setVisible(false);
+
             } else {
                 JOptionPane.showMessageDialog(null, "No se puede volver a escaner...");
             }
@@ -1124,15 +1120,31 @@ public class Empty extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         Map<String, String[]> map = new HashMap <>();
-        map.put("01KL468", label1);
-        map.put("46C6380", label2);
+        map.put("01KL468", label3);
+        map.put("46C6380", label4);
+        map.put("69Y1649", label3);
         System.out.println(Arrays.toString(label3));
         System.out.println("lo que hay aqui en 486:" + Arrays.toString(map.get("01KL468")));
         System.out.println("lo que hay aqui en 380:" + Arrays.toString(map.get("46C6380")));
-        if (map.containsKey("01KL468")){
-            //h
-            //final String a = 
+        nps = map.get(pn);
+        System.out.println(pn);
+        System.out.println(Arrays.toString(nps));
+        if (nps == label1){
+            all.barcode.setVisible(true);
         }
+        if (nps == label2){
+            all.barcode_1.setVisible(true);
+        }
+        if (nps == label3){
+            all.barcode_2.setVisible(true);
+        }
+        if (nps == label4){
+            all.barcode_3.setVisible(true);
+        }
+        //for (int i = 0; i < nps.length; i++){
+          //  if (nps[i].Arraysequals(label1)){
+            //}
+        //}
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void formMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMousePressed
@@ -1164,6 +1176,7 @@ public class Empty extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "No se puede volver a escaner...");
             }
         } else {
+            pn = this.npaescanear.getText().toUpperCase();
             this.NPS.setBackground(Color.black);
             this.DISP.setForeground(Color.white);
             this.FQT.setForeground(Color.white);

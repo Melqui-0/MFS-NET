@@ -12,7 +12,7 @@ import javax.swing.JOptionPane;
  *
  * @author 102976781
  */
-public class Barcode_2 extends javax.swing.JFrame {
+public class Barcode_4 extends javax.swing.JFrame {
 
     /**
      *
@@ -20,9 +20,10 @@ public class Barcode_2 extends javax.swing.JFrame {
     public String npescaneado;
 
     
-    public Barcode_2 () {
+    public Barcode_4() {
         //this.npescaneado = npscan.getText();
         initComponents();
+        
         
     }
 
@@ -38,17 +39,13 @@ public class Barcode_2 extends javax.swing.JFrame {
     private void initComponents() {
 
         npscan = new javax.swing.JTextField();
-        jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        partnumber = new javax.swing.JLabel();
+        Logpart = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         npfinal = new javax.swing.JLabel();
-        ecfinal = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        secfinal = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -64,14 +61,14 @@ public class Barcode_2 extends javax.swing.JFrame {
             }
         });
 
-        jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jLabel2.setText("Part Number:");
+        partnumber.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        partnumber.setText("Part Number:");
 
-        jButton1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jButton1.setText("F2 = Log Part");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        Logpart.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        Logpart.setText("F2 = Log Part");
+        Logpart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                LogpartActionPerformed(evt);
             }
         });
 
@@ -94,16 +91,6 @@ public class Barcode_2 extends javax.swing.JFrame {
 
         npfinal.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
 
-        ecfinal.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-
-        jLabel3.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jLabel3.setText("Sequence Number");
-
-        secfinal.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-
-        jLabel4.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jLabel4.setText("Ec Number:");
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -119,26 +106,16 @@ public class Barcode_2 extends javax.swing.JFrame {
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
+                            .addComponent(Logpart)
                             .addComponent(jButton3))
                         .addGap(36, 36, 36)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel4))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(npfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ecfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(secfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 105, Short.MAX_VALUE)
+                .addComponent(partnumber)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(npfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 216, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97))
         );
         layout.setVerticalGroup(
@@ -153,27 +130,16 @@ public class Barcode_2 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2)
-                            .addComponent(npfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(ecfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(partnumber)
+                            .addComponent(npfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Logpart)
+                    .addComponent(jButton2))
+                .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2))
-                        .addGap(27, 27, 27)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton4)
-                            .addComponent(jButton3)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(7, 7, 7)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(secfinal, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel3))))
+                    .addComponent(jButton4)
+                    .addComponent(jButton3))
                 .addContainerGap(84, Short.MAX_VALUE))
         );
 
@@ -199,9 +165,8 @@ public class Barcode_2 extends javax.swing.JFrame {
             } else if (npescaneado.startsWith("11s") | npescaneado.startsWith("11S")){
                 if (npescaneado.length() == 22){    
                 npfinal.setText("00000" + npescaneado.substring(3, 10).toUpperCase());
-                if (npescaneado.substring(3, 10).equals("01KL468")){
-                ecfinal.setText("10000P45486");}
-                secfinal.setText(npescaneado.substring(10));
+                //ecfinal.setText("10000P45486");
+                //secfinal.setText(npescaneado.substring(10));
                 npscan.setText("");
             } else{
                     JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
@@ -215,28 +180,46 @@ public class Barcode_2 extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_npscanKeyTyped
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear2.getText())){
-            all.empty.npaescanear2.setText("000" + npescaneado.substring(1).toUpperCase());
-            all.empty.idsp2.setText("I");
-            all.empty.npecaneado2.setText("000" + npescaneado.substring(1).toUpperCase());
-            all.empty.cantidadfinal2.setText(all.empty.cantidadrequerida2.getText());
-            all.empty.NPS2.setBackground(Color.BLUE);
-            all.empty.npaescanear2.setForeground(Color.WHITE);
-            all.empty.QT2.setForeground(Color.WHITE);
-            all.empty.cantidadrequerida2.setForeground(Color.WHITE);
-            all.empty.FQT2.setForeground(Color.WHITE);
-            all.empty.cantidadfinal2.setForeground(Color.WHITE);
-            all.empty.DISP2.setForeground(Color.WHITE);
-            all.empty.idsp2.setForeground(Color.WHITE);
-            all.empty.descripcion2.setForeground(Color.WHITE);
-            all.empty.npecaneado2.setForeground(Color.WHITE);
-            all.empty.serial2.setForeground(Color.WHITE);
+    private void LogpartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogpartActionPerformed
+        if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear)){
+            all.empty.npaescanear.setText("000" + npescaneado.substring(1).toUpperCase());
+            all.empty.idsp.setText("I");
+            all.empty.npecaneado.setText("000" + npescaneado.substring(1).toUpperCase());
+            all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
+            all.empty.NPS.setBackground(Color.BLUE);
+            all.empty.npaescanear.setForeground(Color.WHITE);
+            all.empty.QT.setForeground(Color.WHITE);
+            all.empty.cantidadrequerida.setForeground(Color.WHITE);
+            all.empty.FQT.setForeground(Color.WHITE);
+            all.empty.cantidadfinal.setForeground(Color.WHITE);
+            all.empty.DISP.setForeground(Color.WHITE);
+            all.empty.idsp.setForeground(Color.WHITE);
+            all.empty.descripcion.setForeground(Color.WHITE);
+            all.empty.npecaneado.setForeground(Color.WHITE);
+            all.empty.serial.setForeground(Color.WHITE);
+            this.setVisible(false);
+        }   else if (this.npescaneado.substring(3, 10).toUpperCase().equals(all.empty.npaescanear.getText())){
+            all.empty.npaescanear.setText("000" + npescaneado.substring(3, 10).toUpperCase());
+            all.empty.idsp.setText("I");
+            all.empty.npecaneado.setText("000" + npescaneado.substring(3, 10).toUpperCase());
+            all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
+            all.empty.serial.setText(npescaneado.substring(10));
+            all.empty.NPS.setBackground(Color.BLUE);
+            all.empty.npaescanear.setForeground(Color.WHITE);
+            all.empty.QT.setForeground(Color.WHITE);
+            all.empty.cantidadrequerida.setForeground(Color.WHITE);
+            all.empty.FQT.setForeground(Color.WHITE);
+            all.empty.cantidadfinal.setForeground(Color.WHITE);
+            all.empty.DISP.setForeground(Color.WHITE);
+            all.empty.idsp.setForeground(Color.WHITE);
+            all.empty.descripcion.setForeground(Color.WHITE);
+            all.empty.npecaneado.setForeground(Color.WHITE);
+            all.empty.serial.setForeground(Color.WHITE);
             this.setVisible(false);
         }else {   
             JOptionPane.showMessageDialog(null, "FC15 ");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_LogpartActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         this.setVisible(false);
@@ -261,37 +244,35 @@ public class Barcode_2 extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Barcode.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Barcode_4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Barcode.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Barcode_4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Barcode.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Barcode_4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Barcode.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Barcode_4.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Barcode().setVisible(true);
+                new Barcode_4().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    public javax.swing.JLabel ecfinal;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton Logpart;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     public javax.swing.JLabel npfinal;
     public javax.swing.JTextField npscan;
-    public javax.swing.JLabel secfinal;
+    public javax.swing.JLabel partnumber;
     // End of variables declaration//GEN-END:variables
 }
