@@ -25,5 +25,6 @@ public class all {
     public static Barcode_4 barcode_4 = new Barcode_4();
     public static Barcode_6 barcode_6 = new Barcode_6();
     public static Barcode_7 barcode_7 = new Barcode_7();
+    public static Barcode_8 barcode_8 = new Barcode_8();
     public static int bar = 3;
 }

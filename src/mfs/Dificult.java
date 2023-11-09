@@ -85,9 +85,7 @@ public class Dificult extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        all.empty.User500.setText(Login.us);
-        all.empty.work500.setText(WorkUnit.work);
-        all.empty.setVisible(true);
+        all.opcempty.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
