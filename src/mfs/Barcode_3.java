@@ -6,7 +6,12 @@ package mfs;
 
 import java.awt.Color;
 import java.awt.event.KeyEvent;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import javax.swing.JOptionPane;
+import static mfs.Empty.nps;
+import static mfs.Empty.pn;
 
 /**
  *
@@ -18,6 +23,32 @@ public class Barcode_3 extends javax.swing.JFrame {
      *
      */
     public String npescaneado;
+    public static String jkl;
+    public static String qwe [];
+        final String KL421 [] = {
+            "10000P17711"
+        };
+        final String KL425 [] = {
+            "ECP17711"
+        };
+        final String KU137 [] = {
+            "ECP17739"
+        };
+        //final String KL468 [] = {
+          //  "ECP45486"
+        //};
+        final String FP534 [] = {
+            "ECP45202"
+        };
+        final String J1952 [] = {
+            "ECH86399"
+        };
+        final String KU111 [] = {
+            "ECP17780"
+        };
+        final String KU112 [] = {
+            "ECP17780"
+        };
 
     
     public Barcode_3 () {
@@ -172,7 +203,11 @@ public class Barcode_3 extends javax.swing.JFrame {
                 if (npescaneado.length() == 8){    
                 npfinal.setText("00000" + npescaneado.substring(1).toUpperCase());
                 npscan.setText("");
-            }else{
+            }} else if (npescaneado.startsWith("ec") | npescaneado.startsWith("EC")){
+                if (npescaneado.length() == 8){    
+                ecfinal.setText("10000" + npescaneado.substring(2).toUpperCase());
+                npscan.setText("");
+                }else{
             JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
             npscan.setText("");
             }
@@ -181,7 +216,19 @@ public class Barcode_3 extends javax.swing.JFrame {
     }//GEN-LAST:event_npscanKeyTyped
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear3.getText())){
+        Map<String, String[]> mapnp = new HashMap <>();
+        mapnp.put("01KL421", KL421);
+        mapnp.put("01KL425", KL425);
+        mapnp.put("01KU137", KU137);
+        mapnp.put("01KL111", KU111);
+        mapnp.put("01KU112", KU112);
+        mapnp.put("39J1952", J1952);
+        mapnp.put("03FP534", FP534);
+        nps = mapnp.get(pn);
+        if (nps == KL421){
+            jkl = Arrays.toString(KL421);
+            System.out.println(jkl);
+            if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear3.getText()) && ecfinal.getText().equals(jkl)){
             all.empty.npaescanear3.setText("000" + npescaneado.substring(1).toUpperCase());
             all.empty.idsp3.setText("I");
             all.empty.npecaneado3.setText("000" + npescaneado.substring(1).toUpperCase());
@@ -198,8 +245,9 @@ public class Barcode_3 extends javax.swing.JFrame {
             all.empty.npecaneado3.setForeground(Color.WHITE);
             all.empty.serial3.setForeground(Color.WHITE);
             this.setVisible(false);
-        }else {   
+        } else {   
             JOptionPane.showMessageDialog(null, "FC15 ");
+        }
         }
     }//GEN-LAST:event_jButton1ActionPerformed
 

@@ -6,7 +6,11 @@ package mfs;
 
 import java.awt.Color;
 import java.awt.event.KeyEvent;
+import java.util.HashMap;
+import java.util.Map;
 import javax.swing.JOptionPane;
+import static mfs.Empty.nps;
+import static mfs.Empty.pn;
 
 /**
  *
@@ -18,6 +22,33 @@ public class Barcode extends javax.swing.JFrame {
      *
      */
     public String npescaneado;
+    public static String jkl;
+    public static String qwe [];
+    boolean sele ;
+        final String KL421 [] = {
+            "ECP17711"
+        };
+        final String KL425 [] = {
+            "ECP17711"
+        };
+        final String KU137 [] = {
+            "ECP17739"
+        };
+        //final String KL468 [] = {
+          //  "ECP45486"
+        //};
+        final String FP534 [] = {
+            "ECP45202"
+        };
+        final String J1952 [] = {
+            "ECH86399"
+        };
+        final String KU111 [] = {
+            "ECP17780"
+        };
+        final String KU112 [] = {
+            "ECP17780"
+        };
 
     
     public Barcode() {
@@ -249,6 +280,18 @@ public class Barcode extends javax.swing.JFrame {
     }//GEN-LAST:event_npscanKeyTyped
 
     private void LogpartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogpartActionPerformed
+        Map<String, String[]> mapnp = new HashMap <>();
+        mapnp.put("01KL421", KL421);
+        mapnp.put("01KL425", KL425);
+        mapnp.put("01KU137", KU137);
+        mapnp.put("01KL111", KU111);
+        mapnp.put("01KU112", KU112);
+        mapnp.put("39J1952", J1952);
+        mapnp.put("03FP534", FP534);
+        nps = mapnp.get(pn);
+        if (nps == KL421){
+            all.barcode.setVisible(true);
+        }
         if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear.getText())){
             all.empty.npaescanear.setText("000" + npescaneado.substring(1).toUpperCase());
             all.empty.idsp.setText("I");

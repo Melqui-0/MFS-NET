@@ -82,19 +82,7 @@ public class Opciones extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void PDU231ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PDU231ActionPerformed
-        all.empty.npaescanear10.setText("03FP231");
-        all.empty.npaescanear15.setText("03FP231");
-        all.empty.npaescanear18.setText("03FP231");
-        all.empty.npaescanear21.setText("03FP231");
-        all.empty.npaescanear13.setText("12J5289");
-        all.empty.npaescanear16.setText("12J5289");
-        all.empty.npaescanear19.setText("12J5289");
-        all.empty.npaescanear22.setText("12J5289");
-        all.empty.npaescanear14.setText("00N8709");
-        all.empty.npaescanear17.setText("00N8709");
-        all.empty.npaescanear20.setText("00N8709");
-        all.empty.npaescanear23.setText("00N8709");
-        all.empty.setVisible(true);
+        all.empty_231.setVisible(true);
     }//GEN-LAST:event_PDU231ActionPerformed
 
     private void PDU485ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PDU485ActionPerformed
