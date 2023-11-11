@@ -33,6 +33,7 @@ public class Empty extends javax.swing.JFrame {
     
     int xx, yy;
     public static String pn;
+    public static int nm;
     public static String nps [];
     boolean sele ;
         final String label1 [] = {
@@ -3940,12 +3941,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp1.getText().equals("A")){
                 pn = this.npaescanear1.getText().toUpperCase();
+                nm = 1;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear1.getText().toUpperCase();
+            nm = 1;
             this.NPS1.setBackground(Color.black);
             this.DISP1.setForeground(Color.white);
             this.FQT1.setForeground(Color.white);
@@ -3964,12 +3967,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp3.getText().equals("A")){
                 pn = this.npaescanear3.getText().toUpperCase();
+                nm = 3;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear3.getText().toUpperCase();
+            nm = 3;
             this.NPS3.setBackground(Color.black);
             this.DISP3.setForeground(Color.white);
             this.FQT3.setForeground(Color.white);
@@ -3988,12 +3993,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp2.getText().equals("A")){
                 pn = this.npaescanear2.getText().toUpperCase();
+                nm = 2;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear2.getText().toUpperCase();
+            nm = 2;
             this.NPS2.setBackground(Color.black);
             this.DISP2.setForeground(Color.white);
             this.FQT2.setForeground(Color.white);
@@ -4019,7 +4026,7 @@ public class Empty extends javax.swing.JFrame {
         map.put("03FP534", label6);
         map.put("44V4664", label7);
         map.put("01KL396", label5);
-        map.put("39J1952", label5);
+        map.put("39J1952", label4);
         map.put("03JG485", label8);
         map.put("03FP231", label8);
         map.put("46C6380", label5);
@@ -4030,27 +4037,35 @@ public class Empty extends javax.swing.JFrame {
         nps = map.get(pn);
         if (nps == label1){
             all.barcode.setVisible(true);
+            JOptionPane.showMessageDialog(null, pn);
         }
         if (nps == label2){
             all.barcode_1.setVisible(true);
+            JOptionPane.showMessageDialog(null, pn);
         }
         if (nps == label3){
             all.barcode_2.setVisible(true);
+            JOptionPane.showMessageDialog(null, pn);
         }
         if (nps == label4){
             all.barcode_3.setVisible(true);
+            JOptionPane.showMessageDialog(null, pn);
         }
         if (nps == label5){
             all.barcode_4.setVisible(true);
+            JOptionPane.showMessageDialog(null, pn);
         }
         if (nps == label6){
             all.barcode_6.setVisible(true);
+            JOptionPane.showMessageDialog(null, pn);
         }
         if (nps == label7){
             all.barcode_7.setVisible(true);
+            JOptionPane.showMessageDialog(null, pn);
         }
         if (nps == label8){
             all.barcode_8.setVisible(true);
+            JOptionPane.showMessageDialog(null, pn);
         }
         //for (int i = 0; i < nps.length; i++){
           //  if (nps[i].Arraysequals(label1)){
@@ -4079,13 +4094,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp.getText().equals("A")){
                 pn = this.npaescanear.getText().toUpperCase();
+                nm = 0;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         }  else if (evt.getClickCount() == 1){
             pn = this.npaescanear.getText().toUpperCase();
-            sele = true;
+            nm = 0;
             this.NPS.setBackground(Color.black);
             this.DISP.setForeground(Color.white);
             this.FQT.setForeground(Color.white);
@@ -4106,12 +4122,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp5.getText().equals("A")){
                 pn = this.npaescanear5.getText().toUpperCase();
+                nm = 5;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else if (evt.getClickCount() == 1){
             pn = this.npaescanear5.getText().toUpperCase();
+            nm = 5;
             this.NPS5.setBackground(Color.black);
             this.DISP5.setForeground(Color.white);
             this.FQT5.setForeground(Color.white);
@@ -4140,12 +4158,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp4.getText().equals("A")){
                 pn = this.npaescanear4.getText().toUpperCase();
+                nm = 4;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear4.getText().toUpperCase();
+            nm = 4;
             this.NPS4.setBackground(Color.black);
             this.DISP4.setForeground(Color.white);
             this.FQT4.setForeground(Color.white);
@@ -4164,12 +4184,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp6.getText().equals("A")){
                 pn = this.npaescanear6.getText().toUpperCase();
+                nm = 6;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear6.getText().toUpperCase();
+            nm = 6;
             this.NPS6.setBackground(Color.black);
             this.DISP6.setForeground(Color.white);
             this.FQT6.setForeground(Color.white);
@@ -4194,12 +4216,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp7.getText().equals("A")){
                 pn = this.npaescanear7.getText().toUpperCase();
+                nm = 7;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear7.getText().toUpperCase();
+            nm = 7;
             this.NPS7.setBackground(Color.black);
             this.DISP7.setForeground(Color.white);
             this.FQT7.setForeground(Color.white);
@@ -4224,12 +4248,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp9.getText().equals("A")){
                 pn = this.npaescanear9.getText().toUpperCase();
+                nm = 9;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear9.getText().toUpperCase();
+            nm = 9;
             this.NPS9.setBackground(Color.black);
             this.DISP9.setForeground(Color.white);
             this.FQT9.setForeground(Color.white);
@@ -4254,12 +4280,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp10.getText().equals("A")){
                 pn = this.npaescanear10.getText().toUpperCase();
+                nm = 10;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear10.getText().toUpperCase();
+            nm = 10;
             this.NPS10.setBackground(Color.black);
             this.DISP10.setForeground(Color.white);
             this.FQT10.setForeground(Color.white);
@@ -4278,12 +4306,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp13.getText().equals("A")){
                 pn = this.npaescanear13.getText().toUpperCase();
+                nm = 13;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear13.getText().toUpperCase();
+            nm = 13;
             this.NPS13.setBackground(Color.black);
             this.DISP13.setForeground(Color.white);
             this.FQT13.setForeground(Color.white);
@@ -4302,12 +4332,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp14.getText().equals("A")){
                 pn = this.npaescanear14.getText().toUpperCase();
+                nm = 14;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear14.getText().toUpperCase();
+            nm = 14;
             this.NPS14.setBackground(Color.black);
             this.DISP14.setForeground(Color.white);
             this.FQT14.setForeground(Color.white);
@@ -4326,12 +4358,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp15.getText().equals("A")){
                 pn = this.npaescanear15.getText().toUpperCase();
+                nm = 15;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear15.getText().toUpperCase();
+            nm = 15;
             this.NPS15.setBackground(Color.black);
             this.DISP15.setForeground(Color.white);
             this.FQT15.setForeground(Color.white);
@@ -4350,12 +4384,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp16.getText().equals("A")){
                 pn = this.npaescanear16.getText().toUpperCase();
+                nm = 16;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear16.getText().toUpperCase();
+            nm = 16;
             this.NPS16.setBackground(Color.black);
             this.DISP16.setForeground(Color.white);
             this.FQT16.setForeground(Color.white);
@@ -4374,12 +4410,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp17.getText().equals("A")){
                 pn = this.npaescanear17.getText().toUpperCase();
+                nm = 17;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear17.getText().toUpperCase();
+            nm = 17;
             this.NPS17.setBackground(Color.black);
             this.DISP17.setForeground(Color.white);
             this.FQT17.setForeground(Color.white);
@@ -4398,12 +4436,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp18.getText().equals("A")){
                 pn = this.npaescanear18.getText().toUpperCase();
+                nm = 18;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear18.getText().toUpperCase();
+            nm = 18;
             this.NPS18.setBackground(Color.black);
             this.DISP18.setForeground(Color.white);
             this.FQT18.setForeground(Color.white);
@@ -4422,12 +4462,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp19.getText().equals("A")){
                 pn = this.npaescanear19.getText().toUpperCase();
+                nm = 19;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear19.getText().toUpperCase();
+            nm = 19;
             this.NPS19.setBackground(Color.black);
             this.DISP19.setForeground(Color.white);
             this.FQT19.setForeground(Color.white);
@@ -4446,12 +4488,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp20.getText().equals("A")){
                 pn = this.npaescanear20.getText().toUpperCase();
+                nm = 20;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear20.getText().toUpperCase();
+            nm = 20;
             this.NPS20.setBackground(Color.black);
             this.DISP20.setForeground(Color.white);
             this.FQT20.setForeground(Color.white);
@@ -4470,12 +4514,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp21.getText().equals("A")){
                 pn = this.npaescanear21.getText().toUpperCase();
+                nm = 21;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear21.getText().toUpperCase();
+            nm = 21;
             this.NPS21.setBackground(Color.black);
             this.DISP21.setForeground(Color.white);
             this.FQT21.setForeground(Color.white);
@@ -4494,12 +4540,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp22.getText().equals("A")){
                 pn = this.npaescanear22.getText().toUpperCase();
+                nm = 22;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear22.getText().toUpperCase();
+            nm = 22;
             this.NPS22.setBackground(Color.black);
             this.DISP22.setForeground(Color.white);
             this.FQT22.setForeground(Color.white);
@@ -4518,12 +4566,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp23.getText().equals("A")){
                 pn = this.npaescanear23.getText().toUpperCase();
+                nm = 23;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear23.getText().toUpperCase();
+            nm = 23;
             this.NPS23.setBackground(Color.black);
             this.DISP23.setForeground(Color.white);
             this.FQT23.setForeground(Color.white);
@@ -4548,6 +4598,7 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp24.getText().equals("A")){
                 pn = this.npaescanear24.getText().toUpperCase();
+                nm = 24;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");

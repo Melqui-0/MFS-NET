@@ -7,6 +7,7 @@ package mfs;
 import java.awt.Color;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
+import static mfs.Empty.pn;
 
 /**
  *
@@ -17,7 +18,9 @@ public class Barcode_8 extends javax.swing.JFrame {
     /**
      *
      */
-    public String npescaneado;
+    
+    String npescaneado, npingresado;
+    
 
     
     public Barcode_8() {
@@ -173,68 +176,52 @@ public class Barcode_8 extends javax.swing.JFrame {
             if (npescaneado.startsWith("p") | npescaneado.startsWith("P")){
                 if (npescaneado.length() == 8){    
                 npfinal.setText("00000" + npescaneado.substring(1).toUpperCase());
+                npingresado = npescaneado;
                 npscan.setText("");
-            }else{
-            JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
-            npscan.setText("");
-            }
-            } else if (npescaneado.startsWith("11s") | npescaneado.startsWith("11S")){
-                if (npescaneado.length() == 22){    
-                npfinal.setText("00000" + npescaneado.substring(3, 10).toUpperCase());
-                if (npescaneado.substring(3, 10).equals("01KL468")){
-                }
-                npscan.setText("");
-            } else{
+                }else{
                     JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
                     npscan.setText("");
                 }
+            } else if (npescaneado.startsWith("11s") | npescaneado.startsWith("11S")){
+                if (npescaneado.length() == 22){   
+                    npfinal.setText("00000" + npescaneado.substring(3, 10).toUpperCase());
+                    npingresado = npescaneado.substring(3, 10);
+                    if (npescaneado.substring(3, 10).equals("01KL468")){
                     }
-            else{
-            JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
-            npscan.setText("");
+                    npscan.setText("");
+                } else{
+                    JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
+                    npscan.setText("");
+                }
+            } else{
+                JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
+                npscan.setText("");
             }
         }
     }//GEN-LAST:event_npscanKeyTyped
 
     private void LogpartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogpartActionPerformed
-        if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear.getText())){
-            all.empty.npaescanear.setText("000" + npescaneado.substring(1).toUpperCase());
-            all.empty.idsp.setText("I");
-            all.empty.npecaneado.setText("000" + npescaneado.substring(1).toUpperCase());
-            all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
-            all.empty.NPS.setBackground(Color.BLUE);
-            all.empty.npaescanear.setForeground(Color.WHITE);
-            all.empty.QT.setForeground(Color.WHITE);
-            all.empty.cantidadrequerida.setForeground(Color.WHITE);
-            all.empty.FQT.setForeground(Color.WHITE);
-            all.empty.cantidadfinal.setForeground(Color.WHITE);
-            all.empty.DISP.setForeground(Color.WHITE);
-            all.empty.idsp.setForeground(Color.WHITE);
-            all.empty.descripcion.setForeground(Color.WHITE);
-            all.empty.npecaneado.setForeground(Color.WHITE);
-            all.empty.serial.setForeground(Color.WHITE);
-            this.setVisible(false);
-        }   else if (this.npescaneado.substring(3, 10).toUpperCase().equals(all.empty.npaescanear.getText())){
-            all.empty.npaescanear.setText("000" + npescaneado.substring(3, 10).toUpperCase());
-            all.empty.idsp.setText("I");
-            all.empty.npecaneado.setText("000" + npescaneado.substring(3, 10).toUpperCase());
-            all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
-            all.empty.serial.setText(npescaneado.substring(10));
-            all.empty.NPS.setBackground(Color.BLUE);
-            all.empty.npaescanear.setForeground(Color.WHITE);
-            all.empty.QT.setForeground(Color.WHITE);
-            all.empty.cantidadrequerida.setForeground(Color.WHITE);
-            all.empty.FQT.setForeground(Color.WHITE);
-            all.empty.cantidadfinal.setForeground(Color.WHITE);
-            all.empty.DISP.setForeground(Color.WHITE);
-            all.empty.idsp.setForeground(Color.WHITE);
-            all.empty.descripcion.setForeground(Color.WHITE);
-            all.empty.npecaneado.setForeground(Color.WHITE);
-            all.empty.serial.setForeground(Color.WHITE);
-            this.setVisible(false);
-        }else {   
-            JOptionPane.showMessageDialog(null, "FC15 ");
+    if (pn.equals("03JG485")){
+        if 
+        if (this.npingresado.substring(1).toUpperCase().equals(all.empty.npaescanear28.getText())){
+            all.empty.npaescanear28.setText("000" + npingresado.substring(1).toUpperCase());
+            all.empty.idsp28.setText("I");
+            all.empty.npecaneado28.setText("000" + npingresado.substring(1).toUpperCase());
+            all.empty.cantidadfinal28.setText(all.empty.cantidadrequerida3.getText());
+            all.empty.NPS28.setBackground(Color.BLUE);
+            all.empty.npaescanear28.setForeground(Color.WHITE);
+            all.empty.QT28.setForeground(Color.WHITE);
+            all.empty.cantidadrequerida28.setForeground(Color.WHITE);
+            all.empty.FQT28.setForeground(Color.WHITE);
+            all.empty.cantidadfinal28.setForeground(Color.WHITE);
+            all.empty.DISP28.setForeground(Color.WHITE);
+            all.empty.idsp28.setForeground(Color.WHITE);
+            all.empty.descripcion28.setForeground(Color.WHITE);
+            all.empty.npecaneado28.setForeground(Color.WHITE);
+            all.empty.serial28.setForeground(Color.WHITE);
+            this.setVisible(false);      
         }
+    }
     }//GEN-LAST:event_LogpartActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

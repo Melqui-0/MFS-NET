@@ -9,8 +9,8 @@ import javax.swing.JOptionPane;
 
 public class Login extends javax.swing.JFrame {  
     
-    public static String us = "Entrenamiento";
-    public static String pass = "Entrenamientopower";
+    public static String us = "1";
+    public static String pass = "1";
     
     int xx;
     int yy;
