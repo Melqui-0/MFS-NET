@@ -52,7 +52,6 @@ public class Login extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("JLogin");
         setName("Login"); // NOI18N
-        setPreferredSize(new java.awt.Dimension(1280, 1024));
         addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 formMouseDragged(evt);
@@ -155,6 +154,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+        Clear.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Clear.setLabel("Clear");
         Clear.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -162,6 +162,7 @@ public class Login extends javax.swing.JFrame {
             }
         });
 
+        Exit.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Exit.setLabel("Exit");
         Exit.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

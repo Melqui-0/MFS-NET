@@ -67,6 +67,9 @@
           <Font name="Century Gothic" size="28" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="03FP231"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PDU231ActionPerformed"/>
@@ -81,6 +84,9 @@
           <Font name="Century Gothic" size="28" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="03JG485"/>
+        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+          <Color id="Hand Cursor"/>
+        </Property>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="PDU485ActionPerformed"/>

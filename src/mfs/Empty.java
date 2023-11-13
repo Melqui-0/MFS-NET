@@ -831,30 +831,30 @@ public class Empty extends javax.swing.JFrame {
         NPS3Layout.setHorizontalGroup(
             NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(NPS3Layout.createSequentialGroup()
+                .addGap(18, 18, 18)
                 .addGroup(NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(NPS3Layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(npecaneado3, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(serial3))
-                    .addGroup(NPS3Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
                         .addComponent(DISP3)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(idsp3)
                         .addGap(48, 48, 48)
                         .addComponent(descripcion3))
-                    .addGroup(NPS3Layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(npaescanear3)
-                        .addGap(31, 31, 31)
-                        .addComponent(QT3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cantidadrequerida3)
-                        .addGap(22, 22, 22)
-                        .addComponent(FQT3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cantidadfinal3)))
+                    .addGroup(NPS3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(NPS3Layout.createSequentialGroup()
+                            .addComponent(npecaneado3, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(serial3))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, NPS3Layout.createSequentialGroup()
+                            .addGap(13, 13, 13)
+                            .addComponent(npaescanear3)
+                            .addGap(31, 31, 31)
+                            .addComponent(QT3)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(cantidadrequerida3)
+                            .addGap(22, 22, 22)
+                            .addComponent(FQT3)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(cantidadfinal3))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         NPS3Layout.setVerticalGroup(
@@ -922,12 +922,6 @@ public class Empty extends javax.swing.JFrame {
         NPS2.setLayout(NPS2Layout);
         NPS2Layout.setHorizontalGroup(
             NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS2Layout.createSequentialGroup()
-                .addGap(12, 12, 12)
-                .addComponent(npecaneado2, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(serial2)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, NPS2Layout.createSequentialGroup()
                 .addGap(35, 35, 35)
                 .addComponent(npaescanear2)
@@ -940,14 +934,21 @@ public class Empty extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(cantidadfinal2)
                 .addGap(37, 37, 37))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, NPS2Layout.createSequentialGroup()
+            .addGroup(NPS2Layout.createSequentialGroup()
                 .addGap(18, 18, 18)
-                .addComponent(DISP2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(idsp2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(descripcion2)
-                .addGap(58, 58, 58))
+                .addGroup(NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(NPS2Layout.createSequentialGroup()
+                        .addComponent(npecaneado2, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(23, 23, 23)
+                        .addComponent(serial2)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(NPS2Layout.createSequentialGroup()
+                        .addComponent(DISP2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(idsp2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(descripcion2)
+                        .addGap(58, 58, 58))))
         );
         NPS2Layout.setVerticalGroup(
             NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4605,6 +4606,7 @@ public class Empty extends javax.swing.JFrame {
             }
         } else {
             pn = this.npaescanear24.getText().toUpperCase();
+            nm = 24;
             this.NPS24.setBackground(Color.black);
             this.DISP24.setForeground(Color.white);
             this.FQT24.setForeground(Color.white);
@@ -4622,12 +4624,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp25.getText().equals("A")){
                 pn = this.npaescanear25.getText().toUpperCase();
+                nm = 25;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear25.getText().toUpperCase();
+            nm = 25;
             this.NPS25.setBackground(Color.black);
             this.DISP25.setForeground(Color.white);
             this.FQT25.setForeground(Color.white);
@@ -4646,12 +4650,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp26.getText().equals("A")){
                 pn = this.npaescanear26.getText().toUpperCase();
+                nm = 26;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear26.getText().toUpperCase();
+            nm = 26;
             this.NPS26.setBackground(Color.black);
             this.DISP26.setForeground(Color.white);
             this.FQT26.setForeground(Color.white);
@@ -4670,12 +4676,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp27.getText().equals("A")){
                 pn = this.npaescanear27.getText().toUpperCase();
+                nm = 27;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear27.getText().toUpperCase();
+            nm = 27;
             this.NPS27.setBackground(Color.black);
             this.DISP27.setForeground(Color.white);
             this.FQT27.setForeground(Color.white);
@@ -4700,12 +4708,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp28.getText().equals("A")){
                 pn = this.npaescanear28.getText().toUpperCase();
+                nm = 28;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear28.getText().toUpperCase();
+            nm = 28;
             this.NPS28.setBackground(Color.black);
             this.DISP28.setForeground(Color.white);
             this.FQT28.setForeground(Color.white);
@@ -4724,12 +4734,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp30.getText().equals("A")){
                 pn = this.npaescanear30.getText().toUpperCase();
+                nm = 30;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear30.getText().toUpperCase();
+            nm = 30;
             this.NPS30.setBackground(Color.black);
             this.DISP30.setForeground(Color.white);
             this.FQT30.setForeground(Color.white);
@@ -4748,12 +4760,14 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp31.getText().equals("A")){
                 pn = this.npaescanear31.getText().toUpperCase();
+                nm = 31;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
         } else {
             pn = this.npaescanear31.getText().toUpperCase();
+            nm = 31;
             this.NPS31.setBackground(Color.black);
             this.DISP31.setForeground(Color.white);
             this.FQT31.setForeground(Color.white);

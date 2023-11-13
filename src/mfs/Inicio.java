@@ -27,7 +27,6 @@ public class Inicio extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Inicio");
         setBackground(new java.awt.Color(255, 255, 255));
-        setPreferredSize(new java.awt.Dimension(1280, 1024));
 
         jPanel1.setBackground(new java.awt.Color(218, 218, 218));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -35,6 +34,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/F2.jpg"))); // NOI18N
         jButton1.setText("Chg Pwd");
+        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -46,6 +46,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f3.jpg"))); // NOI18N
         jButton2.setText("Sing Off");
+        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton2.addActionListener(new java.awt.event.ActionListener() {
@@ -58,6 +59,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f4.jpg"))); // NOI18N
         jButton3.setText("Exist Work");
         jButton3.setToolTipText("");
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton3.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -70,6 +72,7 @@ public class Inicio extends javax.swing.JFrame {
         jButton4.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f5.jpg"))); // NOI18N
         jButton4.setText("New Work");
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton4.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -77,12 +80,14 @@ public class Inicio extends javax.swing.JFrame {
         jButton5.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f6.jpg"))); // NOI18N
         jButton5.setText("Ext Func");
+        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jButton6.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f7.jpg"))); // NOI18N
         jButton6.setText("Re-Apply");
+        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 

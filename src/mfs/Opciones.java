@@ -37,6 +37,7 @@ public class Opciones extends javax.swing.JFrame {
 
         PDU231.setFont(new java.awt.Font("Century Gothic", 1, 28)); // NOI18N
         PDU231.setText("03FP231");
+        PDU231.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         PDU231.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PDU231ActionPerformed(evt);
@@ -45,6 +46,7 @@ public class Opciones extends javax.swing.JFrame {
 
         PDU485.setFont(new java.awt.Font("Century Gothic", 1, 28)); // NOI18N
         PDU485.setText("03JG485");
+        PDU485.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         PDU485.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PDU485ActionPerformed(evt);

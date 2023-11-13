@@ -3,10 +3,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
 package mfs;
-
 import java.awt.Color;
-import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
+import static mfs.Empty.nm;
+
 
 /**
  *
@@ -17,7 +17,7 @@ public class Barcode_7 extends javax.swing.JFrame {
     /**
      *
      */
-    public String npescaneado;
+
 
     
     public Barcode_7() {
@@ -40,9 +40,9 @@ public class Barcode_7 extends javax.swing.JFrame {
 
         npscan = new javax.swing.JTextField();
         Logpart = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        Cancel = new javax.swing.JButton();
+        Sustituto = new javax.swing.JButton();
+        Country = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -67,19 +67,19 @@ public class Barcode_7 extends javax.swing.JFrame {
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jButton2.setText("Esc = Cancel");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        Cancel.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        Cancel.setText("Esc = Cancel");
+        Cancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                CancelActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jButton3.setText("F4 = Sustitute");
+        Sustituto.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        Sustituto.setText("F4 = Sustitute");
 
-        jButton4.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jButton4.setText("F6 = Country");
+        Country.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        Country.setText("F6 = Country");
 
         jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jLabel1.setText("Scan in Barcode...");
@@ -100,11 +100,11 @@ public class Barcode_7 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(Logpart)
-                            .addComponent(jButton3))
+                            .addComponent(Sustituto))
                         .addGap(36, 36, 36)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(Cancel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Country, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(576, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -117,11 +117,11 @@ public class Barcode_7 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Logpart)
-                    .addComponent(jButton2))
+                    .addComponent(Cancel))
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton4)
-                    .addComponent(jButton3))
+                    .addComponent(Country)
+                    .addComponent(Sustituto))
                 .addContainerGap(84, Short.MAX_VALUE))
         );
 
@@ -133,77 +133,110 @@ public class Barcode_7 extends javax.swing.JFrame {
     }//GEN-LAST:event_npscanActionPerformed
 
     private void npscanKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_npscanKeyTyped
-        char enter = evt.getKeyChar();
-        if (enter == KeyEvent.VK_ENTER){
-            this.npescaneado = npscan.getText();
-            if (npescaneado.startsWith("p") | npescaneado.startsWith("P")){
-                if (npescaneado.length() == 8){    
 
-                npscan.setText("");
-            }else{
-            JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
-            npscan.setText("");
-            }
-            } else if (npescaneado.startsWith("11s") | npescaneado.startsWith("11S")){
-                if (npescaneado.length() == 22){    
-
-                npscan.setText("");
-            } else{
-                    JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
-                    npscan.setText("");
-                }
-                    }
-            else{
-            JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
-            npscan.setText("");
-            }
-        }
     }//GEN-LAST:event_npscanKeyTyped
 
     private void LogpartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogpartActionPerformed
-        if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear.getText())){
-            all.empty.npaescanear.setText("000" + npescaneado.substring(1).toUpperCase());
-            all.empty.idsp.setText("I");
-            all.empty.npecaneado.setText("000" + npescaneado.substring(1).toUpperCase());
-            all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
-            all.empty.NPS.setBackground(Color.BLUE);
-            all.empty.npaescanear.setForeground(Color.WHITE);
-            all.empty.QT.setForeground(Color.WHITE);
-            all.empty.cantidadrequerida.setForeground(Color.WHITE);
-            all.empty.FQT.setForeground(Color.WHITE);
-            all.empty.cantidadfinal.setForeground(Color.WHITE);
-            all.empty.DISP.setForeground(Color.WHITE);
-            all.empty.idsp.setForeground(Color.WHITE);
-            all.empty.descripcion.setForeground(Color.WHITE);
-            all.empty.npecaneado.setForeground(Color.WHITE);
-            all.empty.serial.setForeground(Color.WHITE);
-            this.setVisible(false);
-        }   else if (this.npescaneado.substring(3, 10).toUpperCase().equals(all.empty.npaescanear.getText())){
-            all.empty.npaescanear.setText("000" + npescaneado.substring(3, 10).toUpperCase());
-            all.empty.idsp.setText("I");
-            all.empty.npecaneado.setText("000" + npescaneado.substring(3, 10).toUpperCase());
-            all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
-            all.empty.serial.setText(npescaneado.substring(10));
-            all.empty.NPS.setBackground(Color.BLUE);
-            all.empty.npaescanear.setForeground(Color.WHITE);
-            all.empty.QT.setForeground(Color.WHITE);
-            all.empty.cantidadrequerida.setForeground(Color.WHITE);
-            all.empty.FQT.setForeground(Color.WHITE);
-            all.empty.cantidadfinal.setForeground(Color.WHITE);
-            all.empty.DISP.setForeground(Color.WHITE);
-            all.empty.idsp.setForeground(Color.WHITE);
-            all.empty.descripcion.setForeground(Color.WHITE);
-            all.empty.npecaneado.setForeground(Color.WHITE);
-            all.empty.serial.setForeground(Color.WHITE);
-            this.setVisible(false);
-        }else {   
-            JOptionPane.showMessageDialog(null, "FC15 ");
+        switch (nm){
+            case 6:
+                all.empty.npaescanear6.setText("00044V4664");
+                all.empty.idsp6.setText("I");
+                all.empty.npecaneado6.setText("00044V4664");
+                all.empty.cantidadfinal6.setText(all.empty.cantidadrequerida6.getText());
+                all.empty.NPS6.setBackground(Color.BLUE);
+                all.empty.npaescanear6.setForeground(Color.WHITE);
+                all.empty.QT6.setForeground(Color.WHITE);
+                all.empty.cantidadrequerida6.setForeground(Color.WHITE);
+                all.empty.FQT6.setForeground(Color.WHITE);
+                all.empty.cantidadfinal6.setForeground(Color.WHITE);
+                all.empty.DISP6.setForeground(Color.WHITE);
+                all.empty.idsp6.setForeground(Color.WHITE);
+                all.empty.descripcion6.setForeground(Color.WHITE);
+                all.empty.npecaneado6.setForeground(Color.WHITE);
+                all.empty.serial6.setForeground(Color.WHITE);
+                this.setVisible(false);
+                break;
+            case 14:
+                all.empty.npaescanear14.setText("00074F1823");
+                all.empty.idsp14.setText("I");
+                all.empty.npecaneado14.setText("00074F1823");
+                all.empty.cantidadfinal14.setText(all.empty.cantidadrequerida14.getText());
+                all.empty.NPS14.setBackground(Color.BLUE);
+                all.empty.npaescanear14.setForeground(Color.WHITE);
+                all.empty.QT14.setForeground(Color.WHITE);
+                all.empty.cantidadrequerida14.setForeground(Color.WHITE);
+                all.empty.FQT14.setForeground(Color.WHITE);
+                all.empty.cantidadfinal14.setForeground(Color.WHITE);
+                all.empty.DISP14.setForeground(Color.WHITE);
+                all.empty.idsp14.setForeground(Color.WHITE);
+                all.empty.descripcion14.setForeground(Color.WHITE);
+                all.empty.npecaneado14.setForeground(Color.WHITE);
+                all.empty.serial14.setForeground(Color.WHITE);
+                this.setVisible(false);
+                break;
+            case 17:
+                all.empty.npaescanear17.setText("00074F1823");
+                all.empty.idsp17.setText("I");
+                all.empty.npecaneado17.setText("00074F1823");
+                all.empty.cantidadfinal17.setText(all.empty.cantidadrequerida17.getText());
+                all.empty.NPS17.setBackground(Color.BLUE);
+                all.empty.npaescanear17.setForeground(Color.WHITE);
+                all.empty.QT17.setForeground(Color.WHITE);
+                all.empty.cantidadrequerida17.setForeground(Color.WHITE);
+                all.empty.FQT17.setForeground(Color.WHITE);
+                all.empty.cantidadfinal17.setForeground(Color.WHITE);
+                all.empty.DISP17.setForeground(Color.WHITE);
+                all.empty.idsp17.setForeground(Color.WHITE);
+                all.empty.descripcion17.setForeground(Color.WHITE);
+                all.empty.npecaneado17.setForeground(Color.WHITE);
+                all.empty.serial17.setForeground(Color.WHITE);
+                this.setVisible(false);
+                break;
+            case 20:
+                all.empty.npaescanear20.setText("00074F1823");
+                all.empty.idsp20.setText("I");
+                all.empty.npecaneado20.setText("00074F1823");
+                all.empty.cantidadfinal20.setText(all.empty.cantidadrequerida20.getText());
+                all.empty.NPS20.setBackground(Color.BLUE);
+                all.empty.npaescanear20.setForeground(Color.WHITE);
+                all.empty.QT20.setForeground(Color.WHITE);
+                all.empty.cantidadrequerida20.setForeground(Color.WHITE);
+                all.empty.FQT20.setForeground(Color.WHITE);
+                all.empty.cantidadfinal20.setForeground(Color.WHITE);
+                all.empty.DISP20.setForeground(Color.WHITE);
+                all.empty.idsp20.setForeground(Color.WHITE);
+                all.empty.descripcion20.setForeground(Color.WHITE);
+                all.empty.npecaneado20.setForeground(Color.WHITE);
+                all.empty.serial20.setForeground(Color.WHITE);
+                this.setVisible(false);
+                break;
+            case 23:
+                all.empty.npaescanear23.setText("00074F1823");
+                all.empty.idsp23.setText("I");
+                all.empty.npecaneado23.setText("00074F1823");
+                all.empty.cantidadfinal23.setText(all.empty.cantidadrequerida23.getText());
+                all.empty.NPS23.setBackground(Color.BLUE);
+                all.empty.npaescanear23.setForeground(Color.WHITE);
+                all.empty.QT23.setForeground(Color.WHITE);
+                all.empty.cantidadrequerida23.setForeground(Color.WHITE);
+                all.empty.FQT23.setForeground(Color.WHITE);
+                all.empty.cantidadfinal23.setForeground(Color.WHITE);
+                all.empty.DISP23.setForeground(Color.WHITE);
+                all.empty.idsp23.setForeground(Color.WHITE);
+                all.empty.descripcion23.setForeground(Color.WHITE);
+                all.empty.npecaneado23.setForeground(Color.WHITE);
+                all.empty.serial23.setForeground(Color.WHITE);
+                this.setVisible(false);
+                break;
+            default:
+                JOptionPane.showMessageDialog(null, "FC15 ");
+                break;        
         }
     }//GEN-LAST:event_LogpartActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed
         this.setVisible(false);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_CancelActionPerformed
 
     /**
      * @param args the command line arguments
@@ -258,10 +291,10 @@ public class Barcode_7 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Cancel;
+    private javax.swing.JButton Country;
     private javax.swing.JButton Logpart;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
+    private javax.swing.JButton Sustituto;
     private javax.swing.JLabel jLabel1;
     public javax.swing.JTextField npscan;
     // End of variables declaration//GEN-END:variables

@@ -38,6 +38,7 @@ public class WorkUnit extends javax.swing.JFrame {
 
         Enter.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         Enter.setText("Enter");
+        Enter.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Enter.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EnterActionPerformed(evt);
@@ -46,6 +47,7 @@ public class WorkUnit extends javax.swing.JFrame {
 
         Cancelar.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         Cancelar.setText("Cancel");
+        Cancelar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Cancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CancelarActionPerformed(evt);

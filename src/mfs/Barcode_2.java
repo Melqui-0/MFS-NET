@@ -17,7 +17,7 @@ public class Barcode_2 extends javax.swing.JFrame {
     /**
      *
      */
-    public String npescaneado;
+    String npescaneado, npingresado;
 
     
     public Barcode_2 () {
@@ -39,10 +39,10 @@ public class Barcode_2 extends javax.swing.JFrame {
 
         npscan = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        LogPart = new javax.swing.JButton();
+        Cancel = new javax.swing.JButton();
+        Sustituto = new javax.swing.JButton();
+        Country = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         npfinal = new javax.swing.JLabel();
         ecfinal = new javax.swing.JLabel();
@@ -67,27 +67,27 @@ public class Barcode_2 extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jLabel2.setText("Part Number:");
 
-        jButton1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jButton1.setText("F2 = Log Part");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        LogPart.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        LogPart.setText("F2 = Log Part");
+        LogPart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                LogPartActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jButton2.setText("Esc = Cancel");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        Cancel.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        Cancel.setText("Esc = Cancel");
+        Cancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                CancelActionPerformed(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jButton3.setText("F4 = Sustitute");
+        Sustituto.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        Sustituto.setText("F4 = Sustitute");
 
-        jButton4.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jButton4.setText("F6 = Country");
+        Country.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        Country.setText("F6 = Country");
 
         jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jLabel1.setText("Scan in Barcode...");
@@ -119,12 +119,12 @@ public class Barcode_2 extends javax.swing.JFrame {
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1)
-                            .addComponent(jButton3))
+                            .addComponent(LogPart)
+                            .addComponent(Sustituto))
                         .addGap(36, 36, 36)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(Cancel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Country, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -163,12 +163,12 @@ public class Barcode_2 extends javax.swing.JFrame {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(23, 23, 23)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton1)
-                            .addComponent(jButton2))
+                            .addComponent(LogPart)
+                            .addComponent(Cancel))
                         .addGap(27, 27, 27)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton4)
-                            .addComponent(jButton3)))
+                            .addComponent(Country)
+                            .addComponent(Sustituto)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(7, 7, 7)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -191,6 +191,7 @@ public class Barcode_2 extends javax.swing.JFrame {
             if (npescaneado.startsWith("p") | npescaneado.startsWith("P")){
                 if (npescaneado.length() == 8){    
                 npfinal.setText("00000" + npescaneado.substring(1).toUpperCase());
+                npingresado = npescaneado.substring(1);
                 npscan.setText("");
             }else{
             JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
@@ -202,45 +203,49 @@ public class Barcode_2 extends javax.swing.JFrame {
                 if (npescaneado.substring(3, 10).equals("01KL468")){
                 ecfinal.setText("10000P45486");}
                 secfinal.setText(npescaneado.substring(10));
+                npingresado = npescaneado.substring(3, 10);
                 npscan.setText("");
             } else{
                     JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
                     npscan.setText("");
                 }
-                    }
-            else{
+            }else{
             JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
             npscan.setText("");
             }
         }
     }//GEN-LAST:event_npscanKeyTyped
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear2.getText())){
-            all.empty.npaescanear2.setText("000" + npescaneado.substring(1).toUpperCase());
-            all.empty.idsp2.setText("I");
-            all.empty.npecaneado2.setText("000" + npescaneado.substring(1).toUpperCase());
-            all.empty.cantidadfinal2.setText(all.empty.cantidadrequerida2.getText());
-            all.empty.NPS2.setBackground(Color.BLUE);
-            all.empty.npaescanear2.setForeground(Color.WHITE);
-            all.empty.QT2.setForeground(Color.WHITE);
-            all.empty.cantidadrequerida2.setForeground(Color.WHITE);
-            all.empty.FQT2.setForeground(Color.WHITE);
-            all.empty.cantidadfinal2.setForeground(Color.WHITE);
-            all.empty.DISP2.setForeground(Color.WHITE);
-            all.empty.idsp2.setForeground(Color.WHITE);
-            all.empty.descripcion2.setForeground(Color.WHITE);
-            all.empty.npecaneado2.setForeground(Color.WHITE);
-            all.empty.serial2.setForeground(Color.WHITE);
+    private void LogPartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogPartActionPerformed
+        if (this.npingresado.toUpperCase().equals(all.empty.npaescanear.getText())){
+            all.empty.npaescanear.setText("000" + npingresado.toUpperCase());
+            all.empty.idsp.setText("I");
+            all.empty.npecaneado.setText("000" + npingresado.toUpperCase());
+            all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
+            all.empty.serial.setText(npescaneado.substring(10));
+            all.empty.NPS.setBackground(Color.BLUE);
+            all.empty.npaescanear.setForeground(Color.WHITE);
+            all.empty.QT.setForeground(Color.WHITE);
+            all.empty.cantidadrequerida.setForeground(Color.WHITE);
+            all.empty.FQT.setForeground(Color.WHITE);
+            all.empty.cantidadfinal.setForeground(Color.WHITE);
+            all.empty.DISP.setForeground(Color.WHITE);
+            all.empty.idsp.setForeground(Color.WHITE);
+            all.empty.descripcion.setForeground(Color.WHITE);
+            all.empty.npecaneado.setForeground(Color.WHITE);
+            all.empty.serial.setForeground(Color.WHITE);
+            npfinal.setText("");
+            ecfinal.setText("");
+            secfinal.setText("");
             this.setVisible(false);
         }else {   
             JOptionPane.showMessageDialog(null, "FC15 ");
         }
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_LogPartActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed
         this.setVisible(false);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_CancelActionPerformed
 
     /**
      * @param args the command line arguments
@@ -281,11 +286,11 @@ public class Barcode_2 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Cancel;
+    private javax.swing.JButton Country;
+    private javax.swing.JButton LogPart;
+    private javax.swing.JButton Sustituto;
     public javax.swing.JLabel ecfinal;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

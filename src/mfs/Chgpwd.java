@@ -46,6 +46,7 @@ public class Chgpwd extends javax.swing.JFrame {
         jLabel6.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jLabel6.setText("Repeat New Password:");
 
+        button1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         button1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         button1.setLabel("Change");
         button1.addActionListener(new java.awt.event.ActionListener() {
@@ -54,6 +55,7 @@ public class Chgpwd extends javax.swing.JFrame {
             }
         });
 
+        button2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         button2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         button2.setLabel("Clear");
         button2.addActionListener(new java.awt.event.ActionListener() {
@@ -62,6 +64,7 @@ public class Chgpwd extends javax.swing.JFrame {
             }
         });
 
+        button3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         button3.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         button3.setLabel("Cancel");
         button3.addActionListener(new java.awt.event.ActionListener() {
