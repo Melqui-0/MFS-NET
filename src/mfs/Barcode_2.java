@@ -200,9 +200,10 @@ public class Barcode_2 extends javax.swing.JFrame {
             } else if (npescaneado.startsWith("11s") | npescaneado.startsWith("11S")){
                 if (npescaneado.length() == 22){    
                 npfinal.setText("00000" + npescaneado.substring(3, 10).toUpperCase());
-                if (npescaneado.substring(3, 10).equals("01KL468")){
-                ecfinal.setText("10000P45486");}
-                secfinal.setText(npescaneado.substring(10));
+                if (npescaneado.substring(3, 10).toUpperCase().equals("01KL468")){
+                ecfinal.setText("10000P45486");
+                }
+                secfinal.setText(npescaneado.substring(10).toUpperCase());
                 npingresado = npescaneado.substring(3, 10);
                 npscan.setText("");
             } else{
@@ -218,6 +219,27 @@ public class Barcode_2 extends javax.swing.JFrame {
 
     private void LogPartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogPartActionPerformed
         if (this.npingresado.toUpperCase().equals(all.empty.npaescanear.getText())){
+            all.empty.npaescanear.setText("000" + npingresado.toUpperCase());
+            all.empty.idsp.setText("I");
+            all.empty.npecaneado.setText("000" + npingresado.toUpperCase());
+            all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
+            all.empty.serial.setText(npescaneado.substring(10));
+            all.empty.NPS.setBackground(Color.BLUE);
+            all.empty.npaescanear.setForeground(Color.WHITE);
+            all.empty.QT.setForeground(Color.WHITE);
+            all.empty.cantidadrequerida.setForeground(Color.WHITE);
+            all.empty.FQT.setForeground(Color.WHITE);
+            all.empty.cantidadfinal.setForeground(Color.WHITE);
+            all.empty.DISP.setForeground(Color.WHITE);
+            all.empty.idsp.setForeground(Color.WHITE);
+            all.empty.descripcion.setForeground(Color.WHITE);
+            all.empty.npecaneado.setForeground(Color.WHITE);
+            all.empty.serial.setForeground(Color.WHITE);
+            npfinal.setText("");
+            ecfinal.setText("");
+            secfinal.setText("");
+            this.setVisible(false);
+        } else if(this.npingresado.toUpperCase().equals(all.empty.npaescanear.getText().substring(3))){
             all.empty.npaescanear.setText("000" + npingresado.toUpperCase());
             all.empty.idsp.setText("I");
             all.empty.npecaneado.setText("000" + npingresado.toUpperCase());

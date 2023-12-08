@@ -6,7 +6,14 @@ package mfs;
 
 import java.awt.Color;
 import java.awt.event.KeyEvent;
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 import javax.swing.JOptionPane;
+import static mfs.Barcode_3.jkl;
+import static mfs.Barcode_3.qwe;
+import static mfs.Empty.nps;
+import static mfs.Empty.pn;
 
 /**
  *
@@ -17,13 +24,15 @@ public class Barcode_6 extends javax.swing.JFrame {
     /**
      *
      */
-    public String npescaneado;
+    public String npescaneado, npingresado, msingresado, ecescaneado;   
+    final String FP534 [] = {
+        "10000P45202"
+        };
 
     
     public Barcode_6() {
         //this.npescaneado = npscan.getText();
         initComponents();
-        
         
     }
 
@@ -192,67 +201,97 @@ public class Barcode_6 extends javax.swing.JFrame {
             if (npescaneado.startsWith("p") | npescaneado.startsWith("P")){
                 if (npescaneado.length() == 8){    
                 npfinal.setText("00000" + npescaneado.substring(1).toUpperCase());
+                npingresado = npescaneado.substring(1);
                 npscan.setText("");
-            }else{
-            JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
-            npscan.setText("");
-            }
-            } else if (npescaneado.startsWith("11s") | npescaneado.startsWith("11S")){
-                if (npescaneado.length() == 22){    
-                npfinal.setText("00000" + npescaneado.substring(3, 10).toUpperCase());
-                if (npescaneado.substring(3, 10).equals("01KL468")){
-                ecfinal.setText("10000P45486");}
-                npscan.setText("");
-            } else{
+                }else{
                     JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
                     npscan.setText("");
                 }
+            } else if (npescaneado.startsWith("11s") | npescaneado.startsWith("11S")){
+                if (npescaneado.length() == 22){   
+                    npfinal.setText("00000" + npescaneado.substring(3, 10).toUpperCase());
+                    npingresado = npescaneado.substring(3, 10);
+                    if (npescaneado.substring(3, 10).equals("01KL468")){
+                    ecfinal.setText("10000P45486");
                     }
-            else{
-            JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
-            npscan.setText("");
-            }
+                    npscan.setText("");
+                } else{
+                    JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
+                    npscan.setText("");
+                }
+            } else if (npescaneado.startsWith("ec") | npescaneado.startsWith("EC") | npescaneado.startsWith("2P") | npescaneado.startsWith("2p")){
+                if (npescaneado.length() == 8){    
+                    int i = 0;
+                    ecfinal.setText("10000" + npescaneado.substring(2).toUpperCase());
+                    ecescaneado = npescaneado.substring(1);
+                    jkl = ecfinal.getText();
+                    qwe[i]=jkl;
+                    npscan.setText("");
+                } else{
+                    JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
+                    npscan.setText("");
+                }
+            } else if (npescaneado.startsWith("1s") | npescaneado.startsWith("1S")){
+                if (npescaneado.length() == 16){   
+                    machinefinal.setText("00" + npescaneado.substring(11).toUpperCase());
+                    msingresado = npescaneado.substring(11);
+                    npscan.setText("");
+                } else{
+                    JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
+                    npscan.setText("");
+                }
+        }
         }
     }//GEN-LAST:event_npscanKeyTyped
 
     private void LogpartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogpartActionPerformed
-        if (this.npescaneado.substring(1).toUpperCase().equals(all.empty.npaescanear.getText())){
-            all.empty.npaescanear.setText("000" + npescaneado.substring(1).toUpperCase());
-            all.empty.idsp.setText("I");
-            all.empty.npecaneado.setText("000" + npescaneado.substring(1).toUpperCase());
-            all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
-            all.empty.NPS.setBackground(Color.BLUE);
-            all.empty.npaescanear.setForeground(Color.WHITE);
-            all.empty.QT.setForeground(Color.WHITE);
-            all.empty.cantidadrequerida.setForeground(Color.WHITE);
-            all.empty.FQT.setForeground(Color.WHITE);
-            all.empty.cantidadfinal.setForeground(Color.WHITE);
-            all.empty.DISP.setForeground(Color.WHITE);
-            all.empty.idsp.setForeground(Color.WHITE);
-            all.empty.descripcion.setForeground(Color.WHITE);
-            all.empty.npecaneado.setForeground(Color.WHITE);
-            all.empty.serial.setForeground(Color.WHITE);
+        Map<String, String[]> agency = new HashMap <>();
+        agency.put("03FP534", FP534);
+        nps = agency.get(pn);
+        if (nps == FP534){
+        if (this.npingresado.toUpperCase().equals(all.empty.npaescanear4.getText())){
+            if (Arrays.equals(qwe, FP534)){
+                all.empty.npaescanear4.setText("000" + npingresado.toUpperCase());
+                all.empty.idsp4.setText("I");
+                all.empty.npecaneado4.setText("000" + npingresado.toUpperCase());
+                all.empty.cantidadfinal4.setText(all.empty.cantidadrequerida4.getText());
+                all.empty.serial4.setText(msingresado);
+                all.empty.NPS4.setBackground(Color.BLUE);
+                all.empty.npaescanear4.setForeground(Color.WHITE);
+                all.empty.QT4.setForeground(Color.WHITE);
+                all.empty.cantidadrequerida4.setForeground(Color.WHITE);
+                all.empty.FQT4.setForeground(Color.WHITE);
+                all.empty.cantidadfinal4.setForeground(Color.WHITE);
+                all.empty.DISP4.setForeground(Color.WHITE);
+                all.empty.idsp4.setForeground(Color.WHITE);
+                all.empty.descripcion4.setForeground(Color.WHITE);
+                all.empty.npecaneado4.setForeground(Color.WHITE);
+                all.empty.serial4.setForeground(Color.WHITE);
+                this.setVisible(false);
+            }
+        }   else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear4.getText().substring(3))){
+            if (Arrays.equals(qwe, FP534)){
+                all.empty.npaescanear4.setText("000" + npingresado.toUpperCase());
+                all.empty.idsp4.setText("I");
+                all.empty.npecaneado4.setText("000" + npingresado.toUpperCase());
+                all.empty.cantidadfinal4.setText(all.empty.cantidadrequerida4.getText());
+                all.empty.serial4.setText(msingresado);
+                all.empty.NPS4.setBackground(Color.BLUE);
+                all.empty.npaescanear4.setForeground(Color.WHITE);
+                all.empty.QT4.setForeground(Color.WHITE);
+                all.empty.cantidadrequerida4.setForeground(Color.WHITE);
+                all.empty.FQT4.setForeground(Color.WHITE);
+                all.empty.cantidadfinal4.setForeground(Color.WHITE);
+                all.empty.DISP4.setForeground(Color.WHITE);
+                all.empty.idsp4.setForeground(Color.WHITE);
+                all.empty.descripcion4.setForeground(Color.WHITE);
+                all.empty.npecaneado4.setForeground(Color.WHITE);
+                all.empty.serial4.setForeground(Color.WHITE);
             this.setVisible(false);
-        }   else if (this.npescaneado.substring(3, 10).toUpperCase().equals(all.empty.npaescanear.getText())){
-            all.empty.npaescanear.setText("000" + npescaneado.substring(3, 10).toUpperCase());
-            all.empty.idsp.setText("I");
-            all.empty.npecaneado.setText("000" + npescaneado.substring(3, 10).toUpperCase());
-            all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
-            all.empty.serial.setText(npescaneado.substring(10));
-            all.empty.NPS.setBackground(Color.BLUE);
-            all.empty.npaescanear.setForeground(Color.WHITE);
-            all.empty.QT.setForeground(Color.WHITE);
-            all.empty.cantidadrequerida.setForeground(Color.WHITE);
-            all.empty.FQT.setForeground(Color.WHITE);
-            all.empty.cantidadfinal.setForeground(Color.WHITE);
-            all.empty.DISP.setForeground(Color.WHITE);
-            all.empty.idsp.setForeground(Color.WHITE);
-            all.empty.descripcion.setForeground(Color.WHITE);
-            all.empty.npecaneado.setForeground(Color.WHITE);
-            all.empty.serial.setForeground(Color.WHITE);
-            this.setVisible(false);
-        }else {   
+            }
+        } else {   
             JOptionPane.showMessageDialog(null, "FC15 ");
+        }
         }
     }//GEN-LAST:event_LogpartActionPerformed
 

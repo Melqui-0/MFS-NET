@@ -31,6 +31,10 @@ public class Empty extends javax.swing.JFrame {
         this.setExtendedState(this.getExtendedState() | Empty.MAXIMIZED_BOTH);
     }
     
+    private void ChangeListener (){
+        
+    }
+    
     int xx, yy;
     public static String pn;
     public static int nm;
@@ -85,9 +89,9 @@ public class Empty extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         f2 = new javax.swing.JButton();
         EndJob = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        AutoLog = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        Rework = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
@@ -487,7 +491,12 @@ public class Empty extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f4d.png"))); // NOI18N
+        AutoLog.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f4d.png"))); // NOI18N
+        AutoLog.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AutoLogActionPerformed(evt);
+            }
+        });
 
         jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f5d.png"))); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -496,10 +505,10 @@ public class Empty extends javax.swing.JFrame {
             }
         });
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f6d.png"))); // NOI18N
-        jButton5.addActionListener(new java.awt.event.ActionListener() {
+        Rework.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f6d.png"))); // NOI18N
+        Rework.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton5ActionPerformed(evt);
+                ReworkActionPerformed(evt);
             }
         });
 
@@ -525,7 +534,7 @@ public class Empty extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(EndJob)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3)
+                        .addComponent(AutoLog)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton4)
                         .addGap(0, 0, Short.MAX_VALUE))
@@ -533,7 +542,7 @@ public class Empty extends javax.swing.JFrame {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(jButton9)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton5)
+                                .addComponent(Rework)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jButton6)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -555,11 +564,11 @@ public class Empty extends javax.swing.JFrame {
                     .addComponent(f2)
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(EndJob)
-                        .addComponent(jButton3))
+                        .addComponent(AutoLog))
                     .addComponent(jButton4))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton5)
+                    .addComponent(Rework)
                     .addComponent(jButton6)
                     .addComponent(jButton7)
                     .addComponent(jButton8))
@@ -1191,6 +1200,11 @@ public class Empty extends javax.swing.JFrame {
                 change1StateChanged(evt);
             }
         });
+        change1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change1ActionPerformed(evt);
+            }
+        });
 
         jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/PIGTAILRCK.jpg"))); // NOI18N
 
@@ -1437,6 +1451,11 @@ public class Empty extends javax.swing.JFrame {
                 change2StateChanged(evt);
             }
         });
+        change2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change2ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout bloqueimagenLayout = new javax.swing.GroupLayout(bloqueimagen);
         bloqueimagen.setLayout(bloqueimagenLayout);
@@ -1580,6 +1599,11 @@ public class Empty extends javax.swing.JFrame {
         change3.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 change3StateChanged(evt);
+            }
+        });
+        change3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change3ActionPerformed(evt);
             }
         });
 
@@ -1727,6 +1751,11 @@ public class Empty extends javax.swing.JFrame {
         change4.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
                 change4StateChanged(evt);
+            }
+        });
+        change4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change4ActionPerformed(evt);
             }
         });
 
@@ -2953,6 +2982,11 @@ public class Empty extends javax.swing.JFrame {
                 change5StateChanged(evt);
             }
         });
+        change5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change5ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout bloqueimagen3Layout = new javax.swing.GroupLayout(bloqueimagen3);
         bloqueimagen3.setLayout(bloqueimagen3Layout);
@@ -3392,6 +3426,11 @@ public class Empty extends javax.swing.JFrame {
                 change6StateChanged(evt);
             }
         });
+        change6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change6ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout bloqueimagen4Layout = new javax.swing.GroupLayout(bloqueimagen4);
         bloqueimagen4.setLayout(bloqueimagen4Layout);
@@ -3736,6 +3775,11 @@ public class Empty extends javax.swing.JFrame {
                 change7StateChanged(evt);
             }
         });
+        change7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change7ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout bloquebisagrasLayout = new javax.swing.GroupLayout(bloquebisagras);
         bloquebisagras.setLayout(bloquebisagrasLayout);
@@ -4016,9 +4060,209 @@ public class Empty extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_NPS2MouseClicked
 
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
+    private void ReworkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReworkActionPerformed
+        switch (nm){
+            case 0:
+                if (idsp.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 1:
+                if (idsp1.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 2:
+                if (idsp2.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 3:
+                if (idsp3.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 4:
+                if (idsp4.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 5:
+                if (idsp5.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 6:
+                if (idsp6.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 7:
+                if (idsp7.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 9:
+                if (idsp9.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 10:
+                if (idsp10.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 13:
+                if (idsp13.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 14:
+                if (idsp14.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 15:
+                if (idsp15.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 16:
+                if (idsp16.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 17:
+                if (idsp17.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 18:
+                if (idsp18.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 19:
+                if (idsp19.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 20:
+                if (idsp20.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 21:
+                if (idsp21.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 22:
+                if (idsp22.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 23:
+                if (idsp23.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 24:
+                if (idsp24.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 25:
+                if (idsp25.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 26:
+                if (idsp26.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 27:
+                if (idsp27.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 28:
+                if (idsp28.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 30:
+                if (idsp30.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 31:
+                if (idsp31.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            default:
+                JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                break;
+        }
+    }//GEN-LAST:event_ReworkActionPerformed
 
     private void f2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f2ActionPerformed
         Map<String, String[]> map = new HashMap <>();
@@ -4087,7 +4331,8 @@ public class Empty extends javax.swing.JFrame {
 
     private void changeStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_changeStateChanged
         if (idsp.getText().equals("I")){
-            change.setText("Completo");
+            change.setSelected(true);
+            changeActionPerformed(null);
         }
     }//GEN-LAST:event_changeStateChanged
 
@@ -4146,8 +4391,9 @@ public class Empty extends javax.swing.JFrame {
     }//GEN-LAST:event_NPS5MouseClicked
 
     private void change1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change1StateChanged
-        if (idsp1.getText().equals("I") && idsp2.getText().equals("I") && idsp3.getText().equals("I") && idsp5.getText().equals("I")){
-            change.setText("Completo");
+       if (idsp1.getText().equals("I") && idsp2.getText().equals("I") && idsp3.getText().equals("I") && idsp5.getText().equals("I")){
+            change1.setSelected(true);
+            change1ActionPerformed(null);
         }
     }//GEN-LAST:event_change1StateChanged
 
@@ -4209,7 +4455,8 @@ public class Empty extends javax.swing.JFrame {
 
     private void change2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change2StateChanged
          if (idsp4.getText().equals("I") && idsp6.getText().equals("I")){
-            change.setText("Completo");
+            change2.setSelected(true);
+            change2ActionPerformed(null);
         }
     }//GEN-LAST:event_change2StateChanged
 
@@ -4241,7 +4488,8 @@ public class Empty extends javax.swing.JFrame {
 
     private void change3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change3StateChanged
         if (idsp7.getText().equals("I")){
-            change.setText("Completo");
+            change3.setSelected(true);
+            change3ActionPerformed(null);
         }
     }//GEN-LAST:event_change3StateChanged
 
@@ -4273,7 +4521,8 @@ public class Empty extends javax.swing.JFrame {
 
     private void change4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change4StateChanged
         if (idsp9.getText().equals("I")){
-            change.setText("Completo");
+            change4.setSelected(true);
+            change4ActionPerformed(null);
         }
     }//GEN-LAST:event_change4StateChanged
 
@@ -4591,7 +4840,8 @@ public class Empty extends javax.swing.JFrame {
 
     private void change5StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change5StateChanged
         if (idsp10.getText().equals("I") && idsp13.getText().equals("I") && idsp14.getText().equals("I") && idsp15.getText().equals("I") && idsp16.getText().equals("I") && idsp17.getText().equals("I") && idsp18.getText().equals("I") && idsp19.getText().equals("I") && idsp20.getText().equals("I") && idsp21.getText().equals("I") && idsp22.getText().equals("I") && idsp23.getText().equals("I")){
-            change.setText("Completo");
+            change5.setSelected(true);
+            change5ActionPerformed(null);
         }
     }//GEN-LAST:event_change5StateChanged
 
@@ -4700,7 +4950,8 @@ public class Empty extends javax.swing.JFrame {
 
     private void change6StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change6StateChanged
          if (idsp24.getText().equals("I") && idsp25.getText().equals("I") && idsp26.getText().equals("I") && idsp27.getText().equals("I")){
-            change.setText("Completo");
+            change6.setSelected(true);
+            change6ActionPerformed(null);
         }
     }//GEN-LAST:event_change6StateChanged
 
@@ -4784,22 +5035,89 @@ public class Empty extends javax.swing.JFrame {
 
     private void change7StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change7StateChanged
         if (idsp28.getText().equals("I") && idsp30.getText().equals("I") && idsp31.getText().equals("I")){
-            change.setText("Completo");
+            change7.setSelected(true);
+            change7ActionPerformed(null);
         }
     }//GEN-LAST:event_change7StateChanged
 
     private void changeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_changeActionPerformed
-        // TODO add your handling code here:
+        if (change.isSelected()){
+        change.setText("Completo");
+        } else {
+            change.setText("Incompleto");
+        }
     }//GEN-LAST:event_changeActionPerformed
 
     private void EndJobActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EndJobActionPerformed
         if (idsp.getText().equals("I") && idsp1.getText().equals("I") && idsp2.getText().equals("I") && idsp3.getText().equals("I") && idsp4.getText().equals("I") && idsp5.getText().equals("I") && idsp6.getText().equals("I") && idsp7.getText().equals("I") && idsp9.getText().equals("I") && idsp10.getText().equals("I") && idsp13.getText().equals("I") && idsp14.getText().equals("I") && idsp15.getText().equals("I") && idsp16.getText().equals("I") && idsp17.getText().equals("I") && idsp18.getText().equals("I") && idsp19.getText().equals("I") && idsp20.getText().equals("I") && idsp21.getText().equals("I") && idsp22.getText().equals("I") && idsp23.getText().equals("I") && idsp24.getText().equals("I") && idsp25.getText().equals("I") && idsp26.getText().equals("I") && idsp27.getText().equals("I") && idsp28.getText().equals("I") && idsp30.getText().equals("I") && idsp31.getText().equals("I") && change.getText().equals("Completo") && change1.getText().equals("Completo") && change2.getText().equals("Completo") && change3.getText().equals("Completo") && change4.getText().equals("Completo") && change5.getText().equals("Completo") && change6.getText().equals("Completo") && change7.getText().equals("Completo")){
+            if (change.isSelected() && change1.isSelected() && change2.isSelected() && change3.isSelected() && change4.isSelected() && change5.isSelected() && change6.isSelected() && change7.isSelected()){
             JOptionPane.showMessageDialog(null, "Operación finalizada....");
+            }
         } else {
             JOptionPane.showMessageDialog(null, "Faltan pn por ingresar.");
             JOptionPane.showMessageDialog(null, "No se puede finalizar.");
         }
     }//GEN-LAST:event_EndJobActionPerformed
+
+    private void change1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change1ActionPerformed
+        if (change1.isSelected()){
+        change1.setText("Completo");
+        } else {
+            change1.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change1ActionPerformed
+
+    private void change2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change2ActionPerformed
+        if (change2.isSelected()){
+        change2.setText("Completo");
+        } else {
+            change2.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change2ActionPerformed
+
+    private void change3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change3ActionPerformed
+        if (change3.isSelected()){
+        change3.setText("Completo");
+        } else {
+            change3.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change3ActionPerformed
+
+    private void change4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change4ActionPerformed
+        if (change4.isSelected()){
+        change4.setText("Completo");
+        } else {
+            change4.setText("Incompleto");
+        }        
+    }//GEN-LAST:event_change4ActionPerformed
+
+    private void change7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change7ActionPerformed
+        if (change7.isSelected()){
+        change7.setText("Completo");
+        } else {
+            change7.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change7ActionPerformed
+
+    private void change5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change5ActionPerformed
+        if (change5.isSelected()){
+        change5.setText("Completo");
+        } else {
+            change5.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change5ActionPerformed
+
+    private void change6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change6ActionPerformed
+        if (change6.isSelected()){
+        change6.setText("Completo");
+        } else {
+            change6.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change6ActionPerformed
+
+    private void AutoLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AutoLogActionPerformed
+        //if ()
+    }//GEN-LAST:event_AutoLogActionPerformed
 
     /**
      * @param args the command line arguments
@@ -4812,12 +5130,11 @@ public class Empty extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton AutoLog;
     private javax.swing.JLabel Cntr;
     public javax.swing.JLabel DISP;
     public javax.swing.JLabel DISP1;
     public javax.swing.JLabel DISP10;
-    public javax.swing.JLabel DISP11;
-    public javax.swing.JLabel DISP12;
     public javax.swing.JLabel DISP13;
     public javax.swing.JLabel DISP14;
     public javax.swing.JLabel DISP15;
@@ -4835,7 +5152,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel DISP26;
     public javax.swing.JLabel DISP27;
     public javax.swing.JLabel DISP28;
-    public javax.swing.JLabel DISP29;
     public javax.swing.JLabel DISP3;
     public javax.swing.JLabel DISP30;
     public javax.swing.JLabel DISP31;
@@ -4843,14 +5159,11 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel DISP5;
     public javax.swing.JLabel DISP6;
     public javax.swing.JLabel DISP7;
-    public javax.swing.JLabel DISP8;
     public javax.swing.JLabel DISP9;
     private javax.swing.JButton EndJob;
     public javax.swing.JLabel FQT;
     public javax.swing.JLabel FQT1;
     public javax.swing.JLabel FQT10;
-    public javax.swing.JLabel FQT11;
-    public javax.swing.JLabel FQT12;
     public javax.swing.JLabel FQT13;
     public javax.swing.JLabel FQT14;
     public javax.swing.JLabel FQT15;
@@ -4868,7 +5181,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel FQT26;
     public javax.swing.JLabel FQT27;
     public javax.swing.JLabel FQT28;
-    public javax.swing.JLabel FQT29;
     public javax.swing.JLabel FQT3;
     public javax.swing.JLabel FQT30;
     public javax.swing.JLabel FQT31;
@@ -4876,13 +5188,10 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel FQT5;
     public javax.swing.JLabel FQT6;
     public javax.swing.JLabel FQT7;
-    public javax.swing.JLabel FQT8;
     public javax.swing.JLabel FQT9;
     public javax.swing.JPanel NPS;
     public javax.swing.JPanel NPS1;
     public javax.swing.JPanel NPS10;
-    private javax.swing.JPanel NPS11;
-    private javax.swing.JPanel NPS12;
     public javax.swing.JPanel NPS13;
     public javax.swing.JPanel NPS14;
     public javax.swing.JPanel NPS15;
@@ -4900,7 +5209,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JPanel NPS26;
     public javax.swing.JPanel NPS27;
     public javax.swing.JPanel NPS28;
-    private javax.swing.JPanel NPS29;
     public javax.swing.JPanel NPS3;
     public javax.swing.JPanel NPS30;
     public javax.swing.JPanel NPS31;
@@ -4908,13 +5216,10 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JPanel NPS5;
     public javax.swing.JPanel NPS6;
     public javax.swing.JPanel NPS7;
-    private javax.swing.JPanel NPS8;
     public javax.swing.JPanel NPS9;
     public javax.swing.JLabel QT;
     public javax.swing.JLabel QT1;
     public javax.swing.JLabel QT10;
-    public javax.swing.JLabel QT11;
-    public javax.swing.JLabel QT12;
     public javax.swing.JLabel QT13;
     public javax.swing.JLabel QT14;
     public javax.swing.JLabel QT15;
@@ -4932,7 +5237,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel QT26;
     public javax.swing.JLabel QT27;
     public javax.swing.JLabel QT28;
-    public javax.swing.JLabel QT29;
     public javax.swing.JLabel QT3;
     public javax.swing.JLabel QT30;
     public javax.swing.JLabel QT31;
@@ -4940,8 +5244,8 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel QT5;
     public javax.swing.JLabel QT6;
     public javax.swing.JLabel QT7;
-    public javax.swing.JLabel QT8;
     public javax.swing.JLabel QT9;
+    private javax.swing.JButton Rework;
     public javax.swing.JLabel User500;
     public javax.swing.JPanel bisagraslatch;
     public javax.swing.JPanel bloque1;
@@ -4961,8 +5265,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel cantidadfinal;
     public javax.swing.JLabel cantidadfinal1;
     public javax.swing.JLabel cantidadfinal10;
-    public javax.swing.JLabel cantidadfinal11;
-    public javax.swing.JLabel cantidadfinal12;
     public javax.swing.JLabel cantidadfinal13;
     public javax.swing.JLabel cantidadfinal14;
     public javax.swing.JLabel cantidadfinal15;
@@ -4980,7 +5282,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel cantidadfinal26;
     public javax.swing.JLabel cantidadfinal27;
     public javax.swing.JLabel cantidadfinal28;
-    public javax.swing.JLabel cantidadfinal29;
     public javax.swing.JLabel cantidadfinal3;
     public javax.swing.JLabel cantidadfinal30;
     public javax.swing.JLabel cantidadfinal31;
@@ -4988,13 +5289,10 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel cantidadfinal5;
     public javax.swing.JLabel cantidadfinal6;
     public javax.swing.JLabel cantidadfinal7;
-    public javax.swing.JLabel cantidadfinal8;
     public javax.swing.JLabel cantidadfinal9;
     public javax.swing.JLabel cantidadrequerida;
     public javax.swing.JLabel cantidadrequerida1;
     public javax.swing.JLabel cantidadrequerida10;
-    public javax.swing.JLabel cantidadrequerida11;
-    public javax.swing.JLabel cantidadrequerida12;
     public javax.swing.JLabel cantidadrequerida13;
     public javax.swing.JLabel cantidadrequerida14;
     public javax.swing.JLabel cantidadrequerida15;
@@ -5012,7 +5310,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel cantidadrequerida26;
     public javax.swing.JLabel cantidadrequerida27;
     public javax.swing.JLabel cantidadrequerida28;
-    public javax.swing.JLabel cantidadrequerida29;
     public javax.swing.JLabel cantidadrequerida3;
     public javax.swing.JLabel cantidadrequerida30;
     public javax.swing.JLabel cantidadrequerida31;
@@ -5020,7 +5317,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel cantidadrequerida5;
     public javax.swing.JLabel cantidadrequerida6;
     public javax.swing.JLabel cantidadrequerida7;
-    public javax.swing.JLabel cantidadrequerida8;
     public javax.swing.JLabel cantidadrequerida9;
     public javax.swing.JCheckBox change;
     public javax.swing.JCheckBox change1;
@@ -5034,8 +5330,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel descripcion;
     public javax.swing.JLabel descripcion1;
     public javax.swing.JLabel descripcion10;
-    public javax.swing.JLabel descripcion11;
-    public javax.swing.JLabel descripcion12;
     public javax.swing.JLabel descripcion13;
     public javax.swing.JLabel descripcion14;
     public javax.swing.JLabel descripcion15;
@@ -5053,7 +5347,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel descripcion26;
     public javax.swing.JLabel descripcion27;
     public javax.swing.JLabel descripcion28;
-    public javax.swing.JLabel descripcion29;
     public javax.swing.JLabel descripcion3;
     public javax.swing.JLabel descripcion30;
     public javax.swing.JLabel descripcion31;
@@ -5061,14 +5354,11 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel descripcion5;
     public javax.swing.JLabel descripcion6;
     public javax.swing.JLabel descripcion7;
-    public javax.swing.JLabel descripcion8;
     public javax.swing.JLabel descripcion9;
     public javax.swing.JButton f2;
     public javax.swing.JLabel idsp;
     public javax.swing.JLabel idsp1;
     public javax.swing.JLabel idsp10;
-    public javax.swing.JLabel idsp11;
-    public javax.swing.JLabel idsp12;
     public javax.swing.JLabel idsp13;
     public javax.swing.JLabel idsp14;
     public javax.swing.JLabel idsp15;
@@ -5086,7 +5376,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel idsp26;
     public javax.swing.JLabel idsp27;
     public javax.swing.JLabel idsp28;
-    public javax.swing.JLabel idsp29;
     public javax.swing.JLabel idsp3;
     public javax.swing.JLabel idsp30;
     public javax.swing.JLabel idsp31;
@@ -5094,13 +5383,10 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel idsp5;
     public javax.swing.JLabel idsp6;
     public javax.swing.JLabel idsp7;
-    public javax.swing.JLabel idsp8;
     public javax.swing.JLabel idsp9;
     public javax.swing.JPanel imagen;
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JButton jButton7;
     private javax.swing.JButton jButton8;
@@ -5132,8 +5418,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel npaescanear;
     public javax.swing.JLabel npaescanear1;
     public javax.swing.JLabel npaescanear10;
-    public javax.swing.JLabel npaescanear11;
-    public javax.swing.JLabel npaescanear12;
     public javax.swing.JLabel npaescanear13;
     public javax.swing.JLabel npaescanear14;
     public javax.swing.JLabel npaescanear15;
@@ -5151,7 +5435,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel npaescanear26;
     public javax.swing.JLabel npaescanear27;
     public javax.swing.JLabel npaescanear28;
-    public javax.swing.JLabel npaescanear29;
     public javax.swing.JLabel npaescanear3;
     public javax.swing.JLabel npaescanear30;
     public javax.swing.JLabel npaescanear31;
@@ -5159,13 +5442,10 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel npaescanear5;
     public javax.swing.JLabel npaescanear6;
     public javax.swing.JLabel npaescanear7;
-    public javax.swing.JLabel npaescanear8;
     public javax.swing.JLabel npaescanear9;
     public javax.swing.JLabel npecaneado;
     public javax.swing.JLabel npecaneado1;
     public javax.swing.JLabel npecaneado10;
-    public javax.swing.JLabel npecaneado11;
-    public javax.swing.JLabel npecaneado12;
     public javax.swing.JLabel npecaneado13;
     public javax.swing.JLabel npecaneado14;
     public javax.swing.JLabel npecaneado15;
@@ -5183,7 +5463,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel npecaneado26;
     public javax.swing.JLabel npecaneado27;
     public javax.swing.JLabel npecaneado28;
-    public javax.swing.JLabel npecaneado29;
     public javax.swing.JLabel npecaneado3;
     public javax.swing.JLabel npecaneado30;
     public javax.swing.JLabel npecaneado31;
@@ -5191,14 +5470,11 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel npecaneado5;
     public javax.swing.JLabel npecaneado6;
     public javax.swing.JLabel npecaneado7;
-    public javax.swing.JLabel npecaneado8;
     public javax.swing.JLabel npecaneado9;
     public javax.swing.JLabel prueba;
     public javax.swing.JLabel serial;
     public javax.swing.JLabel serial1;
     public javax.swing.JLabel serial10;
-    public javax.swing.JLabel serial11;
-    public javax.swing.JLabel serial12;
     public javax.swing.JLabel serial13;
     public javax.swing.JLabel serial14;
     public javax.swing.JLabel serial15;
@@ -5216,7 +5492,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel serial26;
     public javax.swing.JLabel serial27;
     public javax.swing.JLabel serial28;
-    public javax.swing.JLabel serial29;
     public javax.swing.JLabel serial3;
     public javax.swing.JLabel serial30;
     public javax.swing.JLabel serial31;
@@ -5224,7 +5499,6 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel serial5;
     public javax.swing.JLabel serial6;
     public javax.swing.JLabel serial7;
-    public javax.swing.JLabel serial8;
     public javax.swing.JLabel serial9;
     public javax.swing.JLabel work500;
     // End of variables declaration//GEN-END:variables

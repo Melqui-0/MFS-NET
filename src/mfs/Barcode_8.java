@@ -223,7 +223,28 @@ public class Barcode_8 extends javax.swing.JFrame {
                     npfinal.setText("");
                     secfinal.setText("");
                     this.setVisible(false);
-                }       break;
+                } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear10.getText().substring(3))){
+                    all.empty.npaescanear10.setText("000" + npingresado.toUpperCase());
+                    all.empty.idsp10.setText("I");
+                    all.empty.npecaneado10.setText("000" + npingresado.toUpperCase());
+                    all.empty.cantidadfinal10.setText(all.empty.cantidadrequerida10.getText());
+                    all.empty.serial10.setText(npescaneado.substring(10));
+                    all.empty.NPS10.setBackground(Color.BLUE);
+                    all.empty.npaescanear10.setForeground(Color.WHITE);
+                    all.empty.QT10.setForeground(Color.WHITE);
+                    all.empty.cantidadrequerida10.setForeground(Color.WHITE);
+                    all.empty.FQT10.setForeground(Color.WHITE);
+                    all.empty.cantidadfinal10.setForeground(Color.WHITE);
+                    all.empty.DISP10.setForeground(Color.WHITE);
+                    all.empty.idsp10.setForeground(Color.WHITE);
+                    all.empty.descripcion10.setForeground(Color.WHITE);
+                    all.empty.npecaneado10.setForeground(Color.WHITE);
+                    all.empty.serial10.setForeground(Color.WHITE);
+                    npfinal.setText("");
+                    secfinal.setText("");
+                    this.setVisible(false);
+                }
+                break;
             case 15:
                 if (this.npingresado.toUpperCase().equals(all.empty.npaescanear15.getText())){
                     all.empty.npaescanear10.setText("000" + npingresado.toUpperCase());
@@ -245,7 +266,28 @@ public class Barcode_8 extends javax.swing.JFrame {
                     npfinal.setText("");
                     secfinal.setText("");
                     this.setVisible(false);
-                }       break;
+                } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear15.getText().substring(3))){
+                    all.empty.npaescanear10.setText("000" + npingresado.toUpperCase());
+                    all.empty.idsp15.setText("I");
+                    all.empty.npecaneado15.setText("000" + npingresado.toUpperCase());
+                    all.empty.cantidadfinal15.setText(all.empty.cantidadrequerida15.getText());
+                    all.empty.serial15.setText(npescaneado.substring(10));
+                    all.empty.NPS15.setBackground(Color.BLUE);
+                    all.empty.npaescanear15.setForeground(Color.WHITE);
+                    all.empty.QT15.setForeground(Color.WHITE);
+                    all.empty.cantidadrequerida15.setForeground(Color.WHITE);
+                    all.empty.FQT15.setForeground(Color.WHITE);
+                    all.empty.cantidadfinal15.setForeground(Color.WHITE);
+                    all.empty.DISP15.setForeground(Color.WHITE);
+                    all.empty.idsp15.setForeground(Color.WHITE);
+                    all.empty.descripcion15.setForeground(Color.WHITE);
+                    all.empty.npecaneado15.setForeground(Color.WHITE);
+                    all.empty.serial15.setForeground(Color.WHITE);
+                    npfinal.setText("");
+                    secfinal.setText("");
+                    this.setVisible(false);
+                }
+                break;
             case 18:
                 if (this.npingresado.toUpperCase().equals(all.empty.npaescanear18.getText())){
                     all.empty.npaescanear18.setText("000" + npingresado.toUpperCase());
@@ -267,9 +309,50 @@ public class Barcode_8 extends javax.swing.JFrame {
                     npfinal.setText("");
                     secfinal.setText("");
                     this.setVisible(false);
-                }       break;
+                } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear18.getText().substring(3))){
+                    all.empty.npaescanear18.setText("000" + npingresado.toUpperCase());
+                    all.empty.idsp18.setText("I");
+                    all.empty.npecaneado18.setText("000" + npingresado.toUpperCase());
+                    all.empty.cantidadfinal18.setText(all.empty.cantidadrequerida18.getText());
+                    all.empty.serial18.setText(npescaneado.substring(10));
+                    all.empty.NPS18.setBackground(Color.BLUE);
+                    all.empty.npaescanear18.setForeground(Color.WHITE);
+                    all.empty.QT18.setForeground(Color.WHITE);
+                    all.empty.cantidadrequerida18.setForeground(Color.WHITE);
+                    all.empty.FQT18.setForeground(Color.WHITE);
+                    all.empty.cantidadfinal18.setForeground(Color.WHITE);
+                    all.empty.DISP18.setForeground(Color.WHITE);
+                    all.empty.idsp18.setForeground(Color.WHITE);
+                    all.empty.descripcion18.setForeground(Color.WHITE);
+                    all.empty.npecaneado18.setForeground(Color.WHITE);
+                    all.empty.serial18.setForeground(Color.WHITE);
+                    npfinal.setText("");
+                    secfinal.setText("");
+                    this.setVisible(false);
+                } 
+                break;
             case 21:
                 if (this.npingresado.toUpperCase().equals(all.empty.npaescanear21.getText())){
+                    all.empty.npaescanear21.setText("000" + npingresado.toUpperCase());
+                    all.empty.idsp21.setText("I");
+                    all.empty.npecaneado21.setText("000" + npingresado.toUpperCase());
+                    all.empty.cantidadfinal21.setText(all.empty.cantidadrequerida21.getText());
+                    all.empty.serial21.setText(npescaneado.substring(10));
+                    all.empty.NPS21.setBackground(Color.BLUE);
+                    all.empty.npaescanear21.setForeground(Color.WHITE);
+                    all.empty.QT21.setForeground(Color.WHITE);
+                    all.empty.cantidadrequerida21.setForeground(Color.WHITE);
+                    all.empty.FQT21.setForeground(Color.WHITE);
+                    all.empty.cantidadfinal21.setForeground(Color.WHITE);
+                    all.empty.DISP21.setForeground(Color.WHITE);
+                    all.empty.idsp21.setForeground(Color.WHITE);
+                    all.empty.descripcion21.setForeground(Color.WHITE);
+                    all.empty.npecaneado21.setForeground(Color.WHITE);
+                    all.empty.serial21.setForeground(Color.WHITE);
+                    npfinal.setText("");
+                    secfinal.setText("");
+                    this.setVisible(false);
+                } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear21.getText().substring(3))){
                     all.empty.npaescanear21.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp21.setText("I");
                     all.empty.npecaneado21.setText("000" + npingresado.toUpperCase());
@@ -294,7 +377,7 @@ public class Barcode_8 extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "FC15 ");
                 break;
         }
-    }
+    } // Queda pendiente colocar las opciones para el sutituto (03JG489)
     }//GEN-LAST:event_LogpartActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

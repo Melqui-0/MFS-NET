@@ -49,6 +49,7 @@ public class Barcode_3 extends javax.swing.JFrame {
         final String KU112 [] = {
             "10000P17780"
         };
+        
 
     
     public Barcode_3 () {
@@ -202,7 +203,7 @@ public class Barcode_3 extends javax.swing.JFrame {
             if (npescaneado.startsWith("p") | npescaneado.startsWith("P")){
                 if (npescaneado.length() == 8){    
                 npfinal.setText("00000" + npescaneado.substring(1).toUpperCase());
-                npingresado = npescaneado;
+                npingresado = npescaneado.substring(1);
                 npscan.setText("");
                 }else{
                     JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
@@ -246,11 +247,34 @@ public class Barcode_3 extends javax.swing.JFrame {
         mapnp.put("03FP534", FP534);
         nps = mapnp.get(pn);
         if (nps == KL421){
-            if (this.npingresado.substring(1).toUpperCase().equals(all.empty.npaescanear28.getText())){
+            if (this.npingresado.toUpperCase().equals(all.empty.npaescanear28.getText())){
                 if (Arrays.equals(qwe, KL421)){
-                    all.empty.npaescanear28.setText("000" + npingresado.substring(1).toUpperCase());
+                    all.empty.npaescanear28.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp28.setText("I");
-                    all.empty.npecaneado28.setText("000" + npingresado.substring(1).toUpperCase());
+                    all.empty.npecaneado28.setText("000" + npingresado.toUpperCase());
+                    all.empty.cantidadfinal28.setText(all.empty.cantidadrequerida28.getText());
+                    all.empty.NPS28.setBackground(Color.BLUE);
+                    all.empty.npaescanear28.setForeground(Color.WHITE);
+                    all.empty.QT28.setForeground(Color.WHITE);
+                    all.empty.cantidadrequerida28.setForeground(Color.WHITE);
+                    all.empty.FQT28.setForeground(Color.WHITE);
+                    all.empty.cantidadfinal28.setForeground(Color.WHITE);
+                    all.empty.DISP28.setForeground(Color.WHITE);
+                    all.empty.idsp28.setForeground(Color.WHITE);
+                    all.empty.descripcion28.setForeground(Color.WHITE);
+                    all.empty.npecaneado28.setForeground(Color.WHITE);
+                    all.empty.serial28.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear28.getText().substring(3))){
+                if (Arrays.equals(qwe, KL421)){
+                    all.empty.npaescanear28.setText("000" + npingresado.toUpperCase());
+                    all.empty.idsp28.setText("I");
+                    all.empty.npecaneado28.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal28.setText(all.empty.cantidadrequerida28.getText());
                     all.empty.NPS28.setBackground(Color.BLUE);
                     all.empty.npaescanear28.setForeground(Color.WHITE);
@@ -271,11 +295,34 @@ public class Barcode_3 extends javax.swing.JFrame {
                 }
             }
         } else if (nps == KL425){
-            if (this.npingresado.substring(1).toUpperCase().equals(all.empty.npaescanear30.getText())){
+            if (this.npingresado.toUpperCase().equals(all.empty.npaescanear30.getText())){
                 if (Arrays.equals(qwe, KL425)){
-                    all.empty.npaescanear30.setText("000" + npingresado.substring(1).toUpperCase());
+                    all.empty.npaescanear30.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp30.setText("I");
-                    all.empty.npecaneado30.setText("000" + npingresado.substring(1).toUpperCase());
+                    all.empty.npecaneado30.setText("000" + npingresado.toUpperCase());
+                    all.empty.cantidadfinal30.setText(all.empty.cantidadrequerida30.getText());
+                    all.empty.NPS30.setBackground(Color.BLUE);
+                    all.empty.npaescanear30.setForeground(Color.WHITE);
+                    all.empty.QT30.setForeground(Color.WHITE);
+                    all.empty.cantidadrequerida30.setForeground(Color.WHITE);
+                    all.empty.FQT30.setForeground(Color.WHITE);
+                    all.empty.cantidadfinal30.setForeground(Color.WHITE);
+                    all.empty.DISP30.setForeground(Color.WHITE);
+                    all.empty.idsp30.setForeground(Color.WHITE);
+                    all.empty.descripcion30.setForeground(Color.WHITE);
+                    all.empty.npecaneado30.setForeground(Color.WHITE);
+                    all.empty.serial30.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear30.getText().substring(3))){
+                if (Arrays.equals(qwe, KL425)){
+                    all.empty.npaescanear30.setText("000" + npingresado.toUpperCase());
+                    all.empty.idsp30.setText("I");
+                    all.empty.npecaneado30.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal30.setText(all.empty.cantidadrequerida30.getText());
                     all.empty.NPS30.setBackground(Color.BLUE);
                     all.empty.npaescanear30.setForeground(Color.WHITE);
@@ -296,11 +343,34 @@ public class Barcode_3 extends javax.swing.JFrame {
                 }
             }
         }else if (nps == KU137){
-            if (this.npingresado.substring(1).toUpperCase().equals(all.empty.npaescanear28.getText())){
+            if (this.npingresado.toUpperCase().equals(all.empty.npaescanear28.getText())){
                 if (Arrays.equals(qwe, KL421)){
-                    all.empty.npaescanear28.setText("000" + npingresado.substring(1).toUpperCase());
+                    all.empty.npaescanear28.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp28.setText("I");
-                    all.empty.npecaneado28.setText("000" + npingresado.substring(1).toUpperCase());
+                    all.empty.npecaneado28.setText("000" + npingresado.toUpperCase());
+                    all.empty.cantidadfinal28.setText(all.empty.cantidadrequerida28.getText());
+                    all.empty.NPS28.setBackground(Color.BLUE);
+                    all.empty.npaescanear28.setForeground(Color.WHITE);
+                    all.empty.QT28.setForeground(Color.WHITE);
+                    all.empty.cantidadrequerida28.setForeground(Color.WHITE);
+                    all.empty.FQT28.setForeground(Color.WHITE);
+                    all.empty.cantidadfinal28.setForeground(Color.WHITE);
+                    all.empty.DISP28.setForeground(Color.WHITE);
+                    all.empty.idsp28.setForeground(Color.WHITE);
+                    all.empty.descripcion28.setForeground(Color.WHITE);
+                    all.empty.npecaneado28.setForeground(Color.WHITE);
+                    all.empty.serial28.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear28.getText().substring(3))){
+                if (Arrays.equals(qwe, KL421)){
+                    all.empty.npaescanear28.setText("000" + npingresado.toUpperCase());
+                    all.empty.idsp28.setText("I");
+                    all.empty.npecaneado28.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal28.setText(all.empty.cantidadrequerida28.getText());
                     all.empty.NPS28.setBackground(Color.BLUE);
                     all.empty.npaescanear28.setForeground(Color.WHITE);
@@ -321,12 +391,35 @@ public class Barcode_3 extends javax.swing.JFrame {
                 }
             }
         } else if (nps == KU111){
-            if (this.npingresado.substring(1).toUpperCase().equals(all.empty.npaescanear28.getText())){
+            if (this.npingresado.toUpperCase().equals(all.empty.npaescanear28.getText())){
                 if (Arrays.equals(qwe, KL421)){
-                    all.empty.npaescanear28.setText("000" + npingresado.substring(1).toUpperCase());
+                    all.empty.npaescanear28.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp28.setText("I");
-                    all.empty.npecaneado28.setText("000" + npingresado.substring(1).toUpperCase());
+                    all.empty.npecaneado28.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal28.setText(all.empty.cantidadrequerida3.getText());
+                    all.empty.NPS28.setBackground(Color.BLUE);
+                    all.empty.npaescanear28.setForeground(Color.WHITE);
+                    all.empty.QT28.setForeground(Color.WHITE);
+                    all.empty.cantidadrequerida28.setForeground(Color.WHITE);
+                    all.empty.FQT28.setForeground(Color.WHITE);
+                    all.empty.cantidadfinal28.setForeground(Color.WHITE);
+                    all.empty.DISP28.setForeground(Color.WHITE);
+                    all.empty.idsp28.setForeground(Color.WHITE);
+                    all.empty.descripcion28.setForeground(Color.WHITE);
+                    all.empty.npecaneado28.setForeground(Color.WHITE);
+                    all.empty.serial28.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear28.getText().substring(3))){
+                if (Arrays.equals(qwe, KL421)){
+                    all.empty.npaescanear28.setText("000" + npingresado.toUpperCase());
+                    all.empty.idsp28.setText("I");
+                    all.empty.npecaneado28.setText("000" + npingresado.toUpperCase());
+                    all.empty.cantidadfinal28.setText(all.empty.cantidadrequerida28.getText());
                     all.empty.NPS28.setBackground(Color.BLUE);
                     all.empty.npaescanear28.setForeground(Color.WHITE);
                     all.empty.QT28.setForeground(Color.WHITE);
@@ -346,12 +439,35 @@ public class Barcode_3 extends javax.swing.JFrame {
                 }
             }
         } else if (nps == KU112){
-            if (this.npingresado.substring(1).toUpperCase().equals(all.empty.npaescanear28.getText())){
+            if (this.npingresado.toUpperCase().equals(all.empty.npaescanear28.getText())){
                 if (Arrays.equals(qwe, KL421)){
-                    all.empty.npaescanear28.setText("000" + npingresado.substring(1).toUpperCase());
+                    all.empty.npaescanear28.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp28.setText("I");
-                    all.empty.npecaneado28.setText("000" + npingresado.substring(1).toUpperCase());
+                    all.empty.npecaneado28.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal28.setText(all.empty.cantidadrequerida3.getText());
+                    all.empty.NPS28.setBackground(Color.BLUE);
+                    all.empty.npaescanear28.setForeground(Color.WHITE);
+                    all.empty.QT28.setForeground(Color.WHITE);
+                    all.empty.cantidadrequerida28.setForeground(Color.WHITE);
+                    all.empty.FQT28.setForeground(Color.WHITE);
+                    all.empty.cantidadfinal28.setForeground(Color.WHITE);
+                    all.empty.DISP28.setForeground(Color.WHITE);
+                    all.empty.idsp28.setForeground(Color.WHITE);
+                    all.empty.descripcion28.setForeground(Color.WHITE);
+                    all.empty.npecaneado28.setForeground(Color.WHITE);
+                    all.empty.serial28.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear28.getText().substring(3))){
+                if (Arrays.equals(qwe, KL421)){
+                    all.empty.npaescanear28.setText("000" + npingresado.toUpperCase());
+                    all.empty.idsp28.setText("I");
+                    all.empty.npecaneado28.setText("000" + npingresado.toUpperCase());
+                    all.empty.cantidadfinal28.setText(all.empty.cantidadrequerida28.getText());
                     all.empty.NPS28.setBackground(Color.BLUE);
                     all.empty.npaescanear28.setForeground(Color.WHITE);
                     all.empty.QT28.setForeground(Color.WHITE);
@@ -371,11 +487,34 @@ public class Barcode_3 extends javax.swing.JFrame {
                 }
             }
         } else if (nps == FP534){
-            if (this.npingresado.substring(1).toUpperCase().equals(all.empty.npaescanear4.getText())){
+            if (this.npingresado.toUpperCase().equals(all.empty.npaescanear4.getText())){
                 if (Arrays.equals(qwe, FP534)){
-                    all.empty.npaescanear4.setText("000" + npingresado.substring(1).toUpperCase());
+                    all.empty.npaescanear4.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp4.setText("I");
-                    all.empty.npecaneado4.setText("000" + npingresado.substring(1).toUpperCase());
+                    all.empty.npecaneado4.setText("000" + npingresado.toUpperCase());
+                    all.empty.cantidadfinal4.setText(all.empty.cantidadrequerida4.getText());
+                    all.empty.NPS4.setBackground(Color.BLUE);
+                    all.empty.npaescanear4.setForeground(Color.WHITE);
+                    all.empty.QT4.setForeground(Color.WHITE);
+                    all.empty.cantidadrequerida4.setForeground(Color.WHITE);
+                    all.empty.FQT4.setForeground(Color.WHITE);
+                    all.empty.cantidadfinal4.setForeground(Color.WHITE);
+                    all.empty.DISP4.setForeground(Color.WHITE);
+                    all.empty.idsp4.setForeground(Color.WHITE);
+                    all.empty.descripcion4.setForeground(Color.WHITE);
+                    all.empty.npecaneado4.setForeground(Color.WHITE);
+                    all.empty.serial4.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear4.getText().substring(3))){
+                if (Arrays.equals(qwe, FP534)){
+                    all.empty.npaescanear4.setText("000" + npingresado.toUpperCase());
+                    all.empty.idsp4.setText("I");
+                    all.empty.npecaneado4.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal4.setText(all.empty.cantidadrequerida4.getText());
                     all.empty.NPS4.setBackground(Color.BLUE);
                     all.empty.npaescanear4.setForeground(Color.WHITE);
@@ -396,11 +535,34 @@ public class Barcode_3 extends javax.swing.JFrame {
                 }
             }
         } else if (nps == J1952){
-            if (this.npingresado.substring(1).toUpperCase().equals(all.empty.npaescanear9.getText())){
+            if (this.npingresado.toUpperCase().equals(all.empty.npaescanear9.getText())){
                 if (Arrays.equals(qwe, J1952)){
-                    all.empty.npaescanear9.setText("000" + npingresado.substring(1).toUpperCase());
+                    all.empty.npaescanear9.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp9.setText("I");
-                    all.empty.npecaneado9.setText("000" + npingresado.substring(1).toUpperCase());
+                    all.empty.npecaneado9.setText("000" + npingresado.toUpperCase());
+                    all.empty.cantidadfinal9.setText(all.empty.cantidadrequerida9.getText());
+                    all.empty.NPS9.setBackground(Color.BLUE);
+                    all.empty.npaescanear9.setForeground(Color.WHITE);
+                    all.empty.QT9.setForeground(Color.WHITE);
+                    all.empty.cantidadrequerida9.setForeground(Color.WHITE);
+                    all.empty.FQT9.setForeground(Color.WHITE);
+                    all.empty.cantidadfinal9.setForeground(Color.WHITE);
+                    all.empty.DISP9.setForeground(Color.WHITE);
+                    all.empty.idsp9.setForeground(Color.WHITE);
+                    all.empty.descripcion9.setForeground(Color.WHITE);
+                    all.empty.npecaneado9.setForeground(Color.WHITE);
+                    all.empty.serial9.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear9.getText().substring(3))){
+                if (Arrays.equals(qwe, J1952)){
+                    all.empty.npaescanear9.setText("000" + npingresado.toUpperCase());
+                    all.empty.idsp9.setText("I");
+                    all.empty.npecaneado9.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal9.setText(all.empty.cantidadrequerida9.getText());
                     all.empty.NPS9.setBackground(Color.BLUE);
                     all.empty.npaescanear9.setForeground(Color.WHITE);
