@@ -7,12 +7,12 @@ package mfs;
 import java.awt.Color;
 //import java.awt.Dimension;
 import java.awt.GraphicsEnvironment;
-//import java.awt.Scrollbar;
-import java.util.Arrays;
+import java.awt.event.KeyEvent;
+import java.awt.Scrollbar;
 import java.util.HashMap;
 import java.util.Map;
-import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
+
 
 
 /**
@@ -31,15 +31,11 @@ public class Empty extends javax.swing.JFrame {
         this.setExtendedState(this.getExtendedState() | Empty.MAXIMIZED_BOTH);
     }
     
-    private void ChangeListener (){
-        
-    }
     
     int xx, yy;
-    public static String pn;
-    public static int nm;
+    public static String pn, pn2;
+    public static int nm, TotalWU;
     public static String nps [];
-    boolean sele ;
         final String label1 [] = {
             "PN","EC","SEC","MS","CN"
         };
@@ -69,11 +65,11 @@ public class Empty extends javax.swing.JFrame {
             "PN","SEC"
         };
     
-    public Empty() {
-        this.setUndecorated(true);
+    public Empty() {    
         initComponents();
         extender();
         this.setLayout(null);
+
     }
 
     /**
@@ -90,11 +86,11 @@ public class Empty extends javax.swing.JFrame {
         f2 = new javax.swing.JButton();
         EndJob = new javax.swing.JButton();
         AutoLog = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        ExtFunc = new javax.swing.JButton();
         Rework = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
-        jButton7 = new javax.swing.JButton();
-        jButton8 = new javax.swing.JButton();
+        Suspender = new javax.swing.JButton();
+        ViewIns = new javax.swing.JButton();
+        Remover = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
         jButton10 = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
@@ -112,6 +108,10 @@ public class Empty extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
+        Cronometro = new javax.swing.JLabel();
+        milisegundos = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         User500 = new javax.swing.JLabel();
         work500 = new javax.swing.JLabel();
         cuerpo = new javax.swing.JScrollPane();
@@ -371,54 +371,6 @@ public class Empty extends javax.swing.JFrame {
         bloqueimagen3 = new javax.swing.JPanel();
         prueba = new javax.swing.JLabel();
         change5 = new javax.swing.JCheckBox();
-        bloque7 = new javax.swing.JPanel();
-        NPS24 = new javax.swing.JPanel();
-        npaescanear24 = new javax.swing.JLabel();
-        QT24 = new javax.swing.JLabel();
-        FQT24 = new javax.swing.JLabel();
-        DISP24 = new javax.swing.JLabel();
-        idsp24 = new javax.swing.JLabel();
-        descripcion24 = new javax.swing.JLabel();
-        npecaneado24 = new javax.swing.JLabel();
-        serial24 = new javax.swing.JLabel();
-        cantidadrequerida24 = new javax.swing.JLabel();
-        cantidadfinal24 = new javax.swing.JLabel();
-        NPS25 = new javax.swing.JPanel();
-        npaescanear25 = new javax.swing.JLabel();
-        QT25 = new javax.swing.JLabel();
-        FQT25 = new javax.swing.JLabel();
-        DISP25 = new javax.swing.JLabel();
-        idsp25 = new javax.swing.JLabel();
-        descripcion25 = new javax.swing.JLabel();
-        npecaneado25 = new javax.swing.JLabel();
-        serial25 = new javax.swing.JLabel();
-        cantidadrequerida25 = new javax.swing.JLabel();
-        cantidadfinal25 = new javax.swing.JLabel();
-        NPS26 = new javax.swing.JPanel();
-        npaescanear26 = new javax.swing.JLabel();
-        QT26 = new javax.swing.JLabel();
-        FQT26 = new javax.swing.JLabel();
-        DISP26 = new javax.swing.JLabel();
-        idsp26 = new javax.swing.JLabel();
-        descripcion26 = new javax.swing.JLabel();
-        npecaneado26 = new javax.swing.JLabel();
-        serial26 = new javax.swing.JLabel();
-        cantidadrequerida26 = new javax.swing.JLabel();
-        cantidadfinal26 = new javax.swing.JLabel();
-        NPS27 = new javax.swing.JPanel();
-        npaescanear27 = new javax.swing.JLabel();
-        QT27 = new javax.swing.JLabel();
-        FQT27 = new javax.swing.JLabel();
-        DISP27 = new javax.swing.JLabel();
-        idsp27 = new javax.swing.JLabel();
-        descripcion27 = new javax.swing.JLabel();
-        npecaneado27 = new javax.swing.JLabel();
-        serial27 = new javax.swing.JLabel();
-        cantidadrequerida27 = new javax.swing.JLabel();
-        cantidadfinal27 = new javax.swing.JLabel();
-        bloqueimagen4 = new javax.swing.JPanel();
-        jLabel19 = new javax.swing.JLabel();
-        change6 = new javax.swing.JCheckBox();
         bisagraslatch = new javax.swing.JPanel();
         NPS28 = new javax.swing.JPanel();
         npaescanear28 = new javax.swing.JLabel();
@@ -456,9 +408,57 @@ public class Empty extends javax.swing.JFrame {
         bloquebisagras = new javax.swing.JPanel();
         jLabel20 = new javax.swing.JLabel();
         change7 = new javax.swing.JCheckBox();
+        bisagraslatch1 = new javax.swing.JPanel();
+        NPS29 = new javax.swing.JPanel();
+        npaescanear29 = new javax.swing.JLabel();
+        QT29 = new javax.swing.JLabel();
+        FQT29 = new javax.swing.JLabel();
+        DISP29 = new javax.swing.JLabel();
+        idsp29 = new javax.swing.JLabel();
+        descripcion29 = new javax.swing.JLabel();
+        npecaneado29 = new javax.swing.JLabel();
+        serial29 = new javax.swing.JLabel();
+        cantidadrequerida29 = new javax.swing.JLabel();
+        cantidadfinal29 = new javax.swing.JLabel();
+        NPS32 = new javax.swing.JPanel();
+        npaescanear32 = new javax.swing.JLabel();
+        QT32 = new javax.swing.JLabel();
+        FQT32 = new javax.swing.JLabel();
+        DISP32 = new javax.swing.JLabel();
+        idsp32 = new javax.swing.JLabel();
+        descripcion32 = new javax.swing.JLabel();
+        npecaneado32 = new javax.swing.JLabel();
+        serial32 = new javax.swing.JLabel();
+        cantidadrequerida32 = new javax.swing.JLabel();
+        cantidadfinal32 = new javax.swing.JLabel();
+        NPS33 = new javax.swing.JPanel();
+        npaescanear33 = new javax.swing.JLabel();
+        QT33 = new javax.swing.JLabel();
+        FQT33 = new javax.swing.JLabel();
+        DISP33 = new javax.swing.JLabel();
+        idsp33 = new javax.swing.JLabel();
+        descripcion33 = new javax.swing.JLabel();
+        npecaneado33 = new javax.swing.JLabel();
+        serial33 = new javax.swing.JLabel();
+        cantidadrequerida33 = new javax.swing.JLabel();
+        cantidadfinal33 = new javax.swing.JLabel();
+        NPS35 = new javax.swing.JPanel();
+        npaescanear35 = new javax.swing.JLabel();
+        QT35 = new javax.swing.JLabel();
+        FQT35 = new javax.swing.JLabel();
+        DISP35 = new javax.swing.JLabel();
+        idsp35 = new javax.swing.JLabel();
+        descripcion35 = new javax.swing.JLabel();
+        npecaneado35 = new javax.swing.JLabel();
+        serial35 = new javax.swing.JLabel();
+        cantidadrequerida35 = new javax.swing.JLabel();
+        cantidadfinal35 = new javax.swing.JLabel();
+        Bisagrastraseras = new javax.swing.JPanel();
+        bisagratraserair = new javax.swing.JLabel();
+        change6 = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1280, 1024));
+        setPreferredSize(new java.awt.Dimension(1024, 1280));
         addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 formMouseDragged(evt);
@@ -483,11 +483,21 @@ public class Empty extends javax.swing.JFrame {
                 f2ActionPerformed(evt);
             }
         });
+        f2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                f2KeyTyped(evt);
+            }
+        });
 
         EndJob.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f3d.png"))); // NOI18N
         EndJob.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 EndJobActionPerformed(evt);
+            }
+        });
+        EndJob.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                EndJobKeyTyped(evt);
             }
         });
 
@@ -497,11 +507,21 @@ public class Empty extends javax.swing.JFrame {
                 AutoLogActionPerformed(evt);
             }
         });
+        AutoLog.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                AutoLogKeyTyped(evt);
+            }
+        });
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f5d.png"))); // NOI18N
-        jButton4.addActionListener(new java.awt.event.ActionListener() {
+        ExtFunc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f5d.png"))); // NOI18N
+        ExtFunc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton4ActionPerformed(evt);
+                ExtFuncActionPerformed(evt);
+            }
+        });
+        ExtFunc.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ExtFuncKeyTyped(evt);
             }
         });
 
@@ -511,16 +531,61 @@ public class Empty extends javax.swing.JFrame {
                 ReworkActionPerformed(evt);
             }
         });
+        Rework.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ReworkKeyTyped(evt);
+            }
+        });
 
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f7d.png"))); // NOI18N
+        Suspender.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f7d.png"))); // NOI18N
+        Suspender.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                SuspenderActionPerformed(evt);
+            }
+        });
+        Suspender.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                SuspenderKeyTyped(evt);
+            }
+        });
 
-        jButton7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f8.png"))); // NOI18N
+        ViewIns.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f8.png"))); // NOI18N
+        ViewIns.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ViewInsActionPerformed(evt);
+            }
+        });
+        ViewIns.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                ViewInsKeyTyped(evt);
+            }
+        });
 
-        jButton8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f11.png"))); // NOI18N
+        Remover.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f11.png"))); // NOI18N
+        Remover.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                RemoverActionPerformed(evt);
+            }
+        });
+        Remover.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                RemoverKeyTyped(evt);
+            }
+        });
 
         jButton9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/ncm.png"))); // NOI18N
+        jButton9.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jButton9KeyTyped(evt);
+            }
+        });
 
         jButton10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/viewcoll.png"))); // NOI18N
+        jButton10.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jButton10KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -536,7 +601,7 @@ public class Empty extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(AutoLog)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton4)
+                        .addComponent(ExtFunc)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -544,13 +609,13 @@ public class Empty extends javax.swing.JFrame {
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(Rework)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton6)))
+                                .addComponent(Suspender)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jButton7)
+                                .addComponent(ViewIns)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton8))
+                                .addComponent(Remover))
                             .addGroup(jPanel1Layout.createSequentialGroup()
                                 .addComponent(jButton10)
                                 .addGap(0, 0, Short.MAX_VALUE)))))
@@ -565,13 +630,13 @@ public class Empty extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(EndJob)
                         .addComponent(AutoLog))
-                    .addComponent(jButton4))
+                    .addComponent(ExtFunc))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(Rework)
-                    .addComponent(jButton6)
-                    .addComponent(jButton7)
-                    .addComponent(jButton8))
+                    .addComponent(Suspender)
+                    .addComponent(ViewIns)
+                    .addComponent(Remover))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(jButton9)
@@ -625,20 +690,65 @@ public class Empty extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         jPanel2.setFocusable(false);
 
+        Cronometro.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        Cronometro.setText("0 hrs : 0 m : 0s");
+
+        milisegundos.setFont(new java.awt.Font("Century", 1, 12)); // NOI18N
+        milisegundos.setText(".000");
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/ojo.png"))); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/ojo 2.png"))); // NOI18N
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel2Layout.createSequentialGroup()
+                        .addComponent(Cronometro)
+                        .addGap(10, 10, 10)
+                        .addComponent(milisegundos)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addGap(27, 27, 27)
+                        .addComponent(jButton2)
+                        .addGap(22, 22, 22))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 81, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Cronometro, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(milisegundos))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jButton2, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         User500.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
 
         work500.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+
+        cuerpo.setDoubleBuffered(true);
+        cuerpo.setFocusCycleRoot(true);
+        cuerpo.setPreferredSize(new java.awt.Dimension(1024, 1280));
 
         bloque1.setBackground(new java.awt.Color(255, 255, 255));
         bloque1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -688,9 +798,25 @@ public class Empty extends javax.swing.JFrame {
         NPS.setBackground(new java.awt.Color(255, 255, 255));
         NPS.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         NPS.setFocusable(false);
+        NPS.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                NPSFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                NPSFocusLost(evt);
+            }
+        });
         NPS.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 NPSMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                NPSMousePressed(evt);
+            }
+        });
+        NPS.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                NPSKeyTyped(evt);
             }
         });
 
@@ -722,7 +848,7 @@ public class Empty extends javax.swing.JFrame {
         cantidadrequerida.setText("00001");
 
         cantidadfinal.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadfinal.setText("00000");
+        cantidadfinal.setText("00001");
 
         javax.swing.GroupLayout NPSLayout = new javax.swing.GroupLayout(NPS);
         NPS.setLayout(NPSLayout);
@@ -735,7 +861,7 @@ public class Empty extends javax.swing.JFrame {
                         .addComponent(npecaneado, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(serial, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(NPSLayout.createSequentialGroup()
                         .addGroup(NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(NPSLayout.createSequentialGroup()
@@ -756,7 +882,7 @@ public class Empty extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadfinal)))
                         .addGap(12, 12, 12)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         NPSLayout.setVerticalGroup(
             NPSLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -784,7 +910,7 @@ public class Empty extends javax.swing.JFrame {
         bloque1_1.setLayout(bloque1_1Layout);
         bloque1_1Layout.setHorizontalGroup(
             bloque1_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(NPS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(NPS, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         bloque1_1Layout.setVerticalGroup(
             bloque1_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -802,6 +928,11 @@ public class Empty extends javax.swing.JFrame {
         NPS3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 NPS3MouseClicked(evt);
+            }
+        });
+        NPS3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                NPS3KeyTyped(evt);
             }
         });
 
@@ -3009,450 +3140,6 @@ public class Empty extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        bloque7.setBackground(new java.awt.Color(255, 255, 255));
-        bloque7.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        NPS24.setBackground(new java.awt.Color(255, 255, 255));
-        NPS24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        NPS24.setFocusable(false);
-        NPS24.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                NPS24MouseClicked(evt);
-            }
-        });
-
-        npaescanear24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear24.setText("69Y2042");
-
-        QT24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        QT24.setText("QT:");
-
-        FQT24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        FQT24.setText("FQT:");
-
-        DISP24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        DISP24.setText("IDSP:");
-
-        idsp24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        idsp24.setText("A");
-
-        descripcion24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion24.setText("CABLE PDU COMMUNICAT");
-
-        npecaneado24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado24.setText("PF  2L01-");
-
-        serial24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        serial24.setText("-             -            -");
-
-        cantidadrequerida24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida24.setText("00001");
-
-        cantidadfinal24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadfinal24.setText("00000");
-
-        javax.swing.GroupLayout NPS24Layout = new javax.swing.GroupLayout(NPS24);
-        NPS24.setLayout(NPS24Layout);
-        NPS24Layout.setHorizontalGroup(
-            NPS24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS24Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(NPS24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(NPS24Layout.createSequentialGroup()
-                        .addComponent(npecaneado24, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(serial24, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
-                    .addGroup(NPS24Layout.createSequentialGroup()
-                        .addGap(13, 13, 13)
-                        .addComponent(npaescanear24)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(QT24)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cantidadrequerida24)
-                        .addGap(28, 28, 28)
-                        .addComponent(FQT24)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cantidadfinal24)
-                        .addGap(12, 12, 12))
-                    .addGroup(NPS24Layout.createSequentialGroup()
-                        .addComponent(DISP24)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(idsp24)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(descripcion24)
-                        .addGap(11, 11, 11)))
-                .addContainerGap(30, Short.MAX_VALUE))
-        );
-        NPS24Layout.setVerticalGroup(
-            NPS24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS24Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(NPS24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npaescanear24)
-                    .addComponent(QT24)
-                    .addComponent(FQT24)
-                    .addComponent(cantidadrequerida24)
-                    .addComponent(cantidadfinal24))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(NPS24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DISP24)
-                    .addComponent(idsp24)
-                    .addComponent(descripcion24))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(NPS24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npecaneado24)
-                    .addComponent(serial24))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        NPS25.setBackground(new java.awt.Color(255, 255, 255));
-        NPS25.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        NPS25.setFocusable(false);
-        NPS25.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                NPS25MouseClicked(evt);
-            }
-        });
-
-        npaescanear25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear25.setText("69Y2042");
-
-        QT25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        QT25.setText("QT:");
-
-        FQT25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        FQT25.setText("FQT:");
-
-        DISP25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        DISP25.setText("IDSP:");
-
-        idsp25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        idsp25.setText("A");
-
-        descripcion25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion25.setText("CABLE PDU COMMUNICAT");
-
-        npecaneado25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado25.setText("PF  2L01-");
-
-        serial25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        serial25.setText("-             -            -");
-
-        cantidadrequerida25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida25.setText("00001");
-
-        cantidadfinal25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadfinal25.setText("00000");
-
-        javax.swing.GroupLayout NPS25Layout = new javax.swing.GroupLayout(NPS25);
-        NPS25.setLayout(NPS25Layout);
-        NPS25Layout.setHorizontalGroup(
-            NPS25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS25Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(NPS25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(NPS25Layout.createSequentialGroup()
-                        .addComponent(npecaneado25, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(serial25, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
-                    .addGroup(NPS25Layout.createSequentialGroup()
-                        .addGap(13, 13, 13)
-                        .addComponent(npaescanear25)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(QT25)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cantidadrequerida25)
-                        .addGap(28, 28, 28)
-                        .addComponent(FQT25)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cantidadfinal25)
-                        .addGap(12, 12, 12))
-                    .addGroup(NPS25Layout.createSequentialGroup()
-                        .addComponent(DISP25)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(idsp25)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(descripcion25)
-                        .addGap(11, 11, 11)))
-                .addContainerGap(30, Short.MAX_VALUE))
-        );
-        NPS25Layout.setVerticalGroup(
-            NPS25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS25Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(NPS25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npaescanear25)
-                    .addComponent(QT25)
-                    .addComponent(FQT25)
-                    .addComponent(cantidadrequerida25)
-                    .addComponent(cantidadfinal25))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(NPS25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DISP25)
-                    .addComponent(idsp25)
-                    .addComponent(descripcion25))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(NPS25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npecaneado25)
-                    .addComponent(serial25))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        NPS26.setBackground(new java.awt.Color(255, 255, 255));
-        NPS26.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        NPS26.setFocusable(false);
-        NPS26.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                NPS26MouseClicked(evt);
-            }
-        });
-
-        npaescanear26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear26.setText("69Y2042");
-
-        QT26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        QT26.setText("QT:");
-
-        FQT26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        FQT26.setText("FQT:");
-
-        DISP26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        DISP26.setText("IDSP:");
-
-        idsp26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        idsp26.setText("A");
-
-        descripcion26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion26.setText("CABLE PDU COMMUNICAT");
-
-        npecaneado26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado26.setText("PF  2L01-");
-
-        serial26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        serial26.setText("-             -            -");
-
-        cantidadrequerida26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida26.setText("00001");
-
-        cantidadfinal26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadfinal26.setText("00000");
-
-        javax.swing.GroupLayout NPS26Layout = new javax.swing.GroupLayout(NPS26);
-        NPS26.setLayout(NPS26Layout);
-        NPS26Layout.setHorizontalGroup(
-            NPS26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS26Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(NPS26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(NPS26Layout.createSequentialGroup()
-                        .addComponent(npecaneado26, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(serial26, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
-                    .addGroup(NPS26Layout.createSequentialGroup()
-                        .addGap(13, 13, 13)
-                        .addComponent(npaescanear26)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(QT26)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cantidadrequerida26)
-                        .addGap(28, 28, 28)
-                        .addComponent(FQT26)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(cantidadfinal26)
-                        .addGap(12, 12, 12))
-                    .addGroup(NPS26Layout.createSequentialGroup()
-                        .addComponent(DISP26)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(idsp26)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(descripcion26)
-                        .addGap(11, 11, 11)))
-                .addContainerGap(30, Short.MAX_VALUE))
-        );
-        NPS26Layout.setVerticalGroup(
-            NPS26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS26Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(NPS26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npaescanear26)
-                    .addComponent(QT26)
-                    .addComponent(FQT26)
-                    .addComponent(cantidadrequerida26)
-                    .addComponent(cantidadfinal26))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(NPS26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DISP26)
-                    .addComponent(idsp26)
-                    .addComponent(descripcion26))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(NPS26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npecaneado26)
-                    .addComponent(serial26))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        NPS27.setBackground(new java.awt.Color(255, 255, 255));
-        NPS27.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        NPS27.setFocusable(false);
-        NPS27.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                NPS27MouseClicked(evt);
-            }
-        });
-
-        npaescanear27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear27.setText("69Y2042");
-
-        QT27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        QT27.setText("QT:");
-
-        FQT27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        FQT27.setText("FQT:");
-
-        DISP27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        DISP27.setText("IDSP:");
-
-        idsp27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        idsp27.setText("A");
-
-        descripcion27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion27.setText("MECH        C-rack +pallet");
-
-        npecaneado27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado27.setText("PF  2L01-");
-
-        serial27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        serial27.setText("-             -            -");
-
-        cantidadrequerida27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida27.setText("00001");
-
-        cantidadfinal27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadfinal27.setText("00000");
-
-        javax.swing.GroupLayout NPS27Layout = new javax.swing.GroupLayout(NPS27);
-        NPS27.setLayout(NPS27Layout);
-        NPS27Layout.setHorizontalGroup(
-            NPS27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS27Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(NPS27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(NPS27Layout.createSequentialGroup()
-                        .addComponent(npecaneado27, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(serial27, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
-                    .addGroup(NPS27Layout.createSequentialGroup()
-                        .addGroup(NPS27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(NPS27Layout.createSequentialGroup()
-                                .addComponent(DISP27)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(idsp27)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(descripcion27, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(NPS27Layout.createSequentialGroup()
-                                .addGap(13, 13, 13)
-                                .addComponent(npaescanear27)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(QT27)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadrequerida27)
-                                .addGap(28, 28, 28)
-                                .addComponent(FQT27)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadfinal27)))
-                        .addGap(12, 12, 12)))
-                .addContainerGap(30, Short.MAX_VALUE))
-        );
-        NPS27Layout.setVerticalGroup(
-            NPS27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS27Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(NPS27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npaescanear27)
-                    .addComponent(QT27)
-                    .addComponent(FQT27)
-                    .addComponent(cantidadrequerida27)
-                    .addComponent(cantidadfinal27))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(NPS27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DISP27)
-                    .addComponent(idsp27)
-                    .addComponent(descripcion27))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(NPS27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npecaneado27)
-                    .addComponent(serial27))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout bloque7Layout = new javax.swing.GroupLayout(bloque7);
-        bloque7.setLayout(bloque7Layout);
-        bloque7Layout.setHorizontalGroup(
-            bloque7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloque7Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(bloque7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(NPS24, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS25, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-        );
-        bloque7Layout.setVerticalGroup(
-            bloque7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloque7Layout.createSequentialGroup()
-                .addComponent(NPS24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-
-        bloqueimagen4.setBackground(new java.awt.Color(255, 255, 255));
-        bloqueimagen4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/CBLPDUCOM.jpg"))); // NOI18N
-
-        change6.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        change6.setText("Incompleto");
-        change6.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                change6StateChanged(evt);
-            }
-        });
-        change6.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                change6ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout bloqueimagen4Layout = new javax.swing.GroupLayout(bloqueimagen4);
-        bloqueimagen4.setLayout(bloqueimagen4Layout);
-        bloqueimagen4Layout.setHorizontalGroup(
-            bloqueimagen4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloqueimagen4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(bloqueimagen4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(change6)
-                    .addComponent(jLabel19))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        bloqueimagen4Layout.setVerticalGroup(
-            bloqueimagen4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloqueimagen4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel19)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(change6)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
         bisagraslatch.setBackground(new java.awt.Color(255, 255, 255));
         bisagraslatch.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
@@ -3760,7 +3447,7 @@ public class Empty extends javax.swing.JFrame {
                 .addComponent(NPS30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(NPS31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGap(0, 349, Short.MAX_VALUE))
         );
 
         bloquebisagras.setBackground(new java.awt.Color(255, 255, 255));
@@ -3802,6 +3489,453 @@ public class Empty extends javax.swing.JFrame {
                 .addContainerGap(10, Short.MAX_VALUE))
         );
 
+        bisagraslatch1.setBackground(new java.awt.Color(255, 255, 255));
+        bisagraslatch1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        NPS29.setBackground(new java.awt.Color(255, 255, 255));
+        NPS29.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS29.setFocusable(false);
+        NPS29.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS29MouseClicked(evt);
+            }
+        });
+
+        npaescanear29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear29.setText("01KU111");
+
+        QT29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT29.setText("QT:");
+
+        FQT29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT29.setText("FQT:");
+
+        DISP29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP29.setText("IDSP:");
+
+        idsp29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp29.setText("A");
+
+        descripcion29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion29.setText("HINGE hinge tall pn");
+
+        npecaneado29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado29.setText("PF  2L01-");
+
+        serial29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial29.setText("-             -            -");
+
+        cantidadrequerida29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida29.setText("00001");
+
+        cantidadfinal29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal29.setText("00000");
+
+        javax.swing.GroupLayout NPS29Layout = new javax.swing.GroupLayout(NPS29);
+        NPS29.setLayout(NPS29Layout);
+        NPS29Layout.setHorizontalGroup(
+            NPS29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS29Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS29Layout.createSequentialGroup()
+                        .addComponent(npecaneado29, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial29, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 20, Short.MAX_VALUE))
+                    .addGroup(NPS29Layout.createSequentialGroup()
+                        .addGroup(NPS29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS29Layout.createSequentialGroup()
+                                .addComponent(DISP29)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp29)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion29, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS29Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear29)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT29)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida29)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT29)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal29)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(30, Short.MAX_VALUE))
+        );
+        NPS29Layout.setVerticalGroup(
+            NPS29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS29Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear29)
+                    .addComponent(QT29)
+                    .addComponent(FQT29)
+                    .addComponent(cantidadrequerida29)
+                    .addComponent(cantidadfinal29))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP29)
+                    .addComponent(idsp29)
+                    .addComponent(descripcion29))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado29)
+                    .addComponent(serial29))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS32.setBackground(new java.awt.Color(255, 255, 255));
+        NPS32.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS32.setFocusable(false);
+        NPS32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS32MouseClicked(evt);
+            }
+        });
+
+        npaescanear32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear32.setText("01KU112");
+
+        QT32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT32.setText("QT:");
+
+        FQT32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT32.setText("FQT:");
+
+        DISP32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP32.setText("IDSP:");
+
+        idsp32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp32.setText("A");
+
+        descripcion32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion32.setText("HINGE Hinge short pn");
+
+        npecaneado32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado32.setText("PF  2L01-");
+
+        serial32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial32.setText("-             -            -");
+
+        cantidadrequerida32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida32.setText("00001");
+
+        cantidadfinal32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal32.setText("00000");
+
+        javax.swing.GroupLayout NPS32Layout = new javax.swing.GroupLayout(NPS32);
+        NPS32.setLayout(NPS32Layout);
+        NPS32Layout.setHorizontalGroup(
+            NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS32Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS32Layout.createSequentialGroup()
+                        .addComponent(npecaneado32, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial32, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 20, Short.MAX_VALUE))
+                    .addGroup(NPS32Layout.createSequentialGroup()
+                        .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS32Layout.createSequentialGroup()
+                                .addComponent(DISP32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion32, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS32Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida32)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal32)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(30, Short.MAX_VALUE))
+        );
+        NPS32Layout.setVerticalGroup(
+            NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS32Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear32)
+                    .addComponent(QT32)
+                    .addComponent(FQT32)
+                    .addComponent(cantidadrequerida32)
+                    .addComponent(cantidadfinal32))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP32)
+                    .addComponent(idsp32)
+                    .addComponent(descripcion32))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado32)
+                    .addComponent(serial32))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS33.setBackground(new java.awt.Color(255, 255, 255));
+        NPS33.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS33.setFocusable(false);
+        NPS33.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS33MouseClicked(evt);
+            }
+        });
+
+        npaescanear33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear33.setText("01KU137");
+
+        QT33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT33.setText("QT:");
+
+        FQT33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT33.setText("FQT:");
+
+        DISP33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP33.setText("IDSP:");
+
+        idsp33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp33.setText("A");
+
+        descripcion33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion33.setText("BRACKET Latch Bracket");
+
+        npecaneado33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado33.setText("PF  2L01-");
+
+        serial33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial33.setText("-             -            -");
+
+        cantidadrequerida33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida33.setText("00001");
+
+        cantidadfinal33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal33.setText("00000");
+
+        javax.swing.GroupLayout NPS33Layout = new javax.swing.GroupLayout(NPS33);
+        NPS33.setLayout(NPS33Layout);
+        NPS33Layout.setHorizontalGroup(
+            NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS33Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS33Layout.createSequentialGroup()
+                        .addComponent(npecaneado33, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial33, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 20, Short.MAX_VALUE))
+                    .addGroup(NPS33Layout.createSequentialGroup()
+                        .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS33Layout.createSequentialGroup()
+                                .addComponent(DISP33)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp33)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion33, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS33Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear33)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT33)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida33)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT33)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal33)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(30, Short.MAX_VALUE))
+        );
+        NPS33Layout.setVerticalGroup(
+            NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS33Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear33)
+                    .addComponent(QT33)
+                    .addComponent(FQT33)
+                    .addComponent(cantidadrequerida33)
+                    .addComponent(cantidadfinal33))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP33)
+                    .addComponent(idsp33)
+                    .addComponent(descripcion33))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado33)
+                    .addComponent(serial33))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS35.setBackground(new java.awt.Color(255, 255, 255));
+        NPS35.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS35.setFocusable(false);
+        NPS35.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS35MouseClicked(evt);
+            }
+        });
+
+        npaescanear35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear35.setText("46C6380");
+
+        QT35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT35.setText("QT:");
+
+        FQT35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT35.setText("FQT:");
+
+        DISP35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP35.setText("IDSP:");
+
+        idsp35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp35.setText("A");
+
+        descripcion35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion35.setText("SCREW M5x16 BLACK");
+
+        npecaneado35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado35.setText("PF  2L01-");
+
+        serial35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial35.setText("-             -            -");
+
+        cantidadrequerida35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida35.setText("00006");
+
+        cantidadfinal35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal35.setText("00000");
+
+        javax.swing.GroupLayout NPS35Layout = new javax.swing.GroupLayout(NPS35);
+        NPS35.setLayout(NPS35Layout);
+        NPS35Layout.setHorizontalGroup(
+            NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS35Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS35Layout.createSequentialGroup()
+                        .addComponent(npecaneado35, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial35, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 20, Short.MAX_VALUE))
+                    .addGroup(NPS35Layout.createSequentialGroup()
+                        .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS35Layout.createSequentialGroup()
+                                .addComponent(DISP35)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp35)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion35, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS35Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear35)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT35)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida35)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT35)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal35)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(30, Short.MAX_VALUE))
+        );
+        NPS35Layout.setVerticalGroup(
+            NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS35Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear35)
+                    .addComponent(QT35)
+                    .addComponent(FQT35)
+                    .addComponent(cantidadrequerida35)
+                    .addComponent(cantidadfinal35))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP35)
+                    .addComponent(idsp35)
+                    .addComponent(descripcion35))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado35)
+                    .addComponent(serial35))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout bisagraslatch1Layout = new javax.swing.GroupLayout(bisagraslatch1);
+        bisagraslatch1.setLayout(bisagraslatch1Layout);
+        bisagraslatch1Layout.setHorizontalGroup(
+            bisagraslatch1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bisagraslatch1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(bisagraslatch1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(NPS29, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NPS32, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NPS33, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NPS35, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+        bisagraslatch1Layout.setVerticalGroup(
+            bisagraslatch1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(bisagraslatch1Layout.createSequentialGroup()
+                .addComponent(NPS29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        Bisagrastraseras.setBackground(new java.awt.Color(255, 255, 255));
+        Bisagrastraseras.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        bisagratraserair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/BIZATRAS.jpg"))); // NOI18N
+
+        change6.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change6.setText("Incompleto");
+        change6.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change6StateChanged(evt);
+            }
+        });
+        change6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change6ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout BisagrastraserasLayout = new javax.swing.GroupLayout(Bisagrastraseras);
+        Bisagrastraseras.setLayout(BisagrastraserasLayout);
+        BisagrastraserasLayout.setHorizontalGroup(
+            BisagrastraserasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BisagrastraserasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(BisagrastraserasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(bisagratraserair)
+                    .addComponent(change6))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        BisagrastraserasLayout.setVerticalGroup(
+            BisagrastraserasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(BisagrastraserasLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(bisagratraserair)
+                .addGap(18, 18, 18)
+                .addComponent(change6)
+                .addContainerGap(20, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout bloque1Layout = new javax.swing.GroupLayout(bloque1);
         bloque1.setLayout(bloque1Layout);
         bloque1Layout.setHorizontalGroup(
@@ -3809,13 +3943,13 @@ public class Empty extends javax.swing.JFrame {
             .addGroup(bloque1Layout.createSequentialGroup()
                 .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addComponent(bisagraslatch, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bloque7, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(bloque6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(bloque5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(bloque4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(bloque3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(bloque2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bloque1_1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(bloque1_1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(bisagraslatch1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(imagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -3824,8 +3958,8 @@ public class Empty extends javax.swing.JFrame {
                     .addComponent(bloqueimagen1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(bloqueimagen2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(bloqueimagen3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bloqueimagen4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bloquebisagras, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(bloquebisagras, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Bisagrastraseras, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(313, 313, 313))
         );
         bloque1Layout.setVerticalGroup(
@@ -3861,9 +3995,9 @@ public class Empty extends javax.swing.JFrame {
                     .addComponent(bloqueimagen3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(bloqueimagen4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bloque7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(181, Short.MAX_VALUE))
+                    .addComponent(bisagraslatch1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Bisagrastraseras, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(635, Short.MAX_VALUE))
         );
 
         cuerpo.setViewportView(bloque1);
@@ -3924,9 +4058,7 @@ public class Empty extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())))
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addComponent(cuerpo, javax.swing.GroupLayout.PREFERRED_SIZE, 1270, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 8, Short.MAX_VALUE))
+            .addComponent(cuerpo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3964,7 +4096,7 @@ public class Empty extends javax.swing.JFrame {
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cuerpo, javax.swing.GroupLayout.DEFAULT_SIZE, 5550, Short.MAX_VALUE)
+                .addComponent(cuerpo, javax.swing.GroupLayout.DEFAULT_SIZE, 6154, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -3972,11 +4104,11 @@ public class Empty extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, 1280, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1272, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 5792, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 6407, Short.MAX_VALUE)
         );
 
         pack();
@@ -3986,13 +4118,16 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp1.getText().equals("A")){
                 pn = this.npaescanear1.getText().toUpperCase();
+                pn2 = this.npaescanear1.getText().substring(3).toUpperCase(); //falta agregarlo a todos los demas NP.
                 nm = 1;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        } /*else if (evt.getClickCount()==1){
+            NPSFocusGained(null);
             pn = this.npaescanear1.getText().toUpperCase();
+            pn2 = this.npaescanear1.getText().substring(3).toUpperCase();
             nm = 1;
             this.NPS1.setBackground(Color.black);
             this.DISP1.setForeground(Color.white);
@@ -4005,20 +4140,22 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear1.setForeground(Color.white);
             this.npecaneado1.setForeground(Color.white);
             this.serial1.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS1MouseClicked
 
     private void NPS3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS3MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp3.getText().equals("A")){
                 pn = this.npaescanear3.getText().toUpperCase();
+                pn2 = this.npaescanear3.getText().substring(3).toUpperCase();
                 nm = 3;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        } /*else {
             pn = this.npaescanear3.getText().toUpperCase();
+            pn2 = this.npaescanear3.getText().substring(3).toUpperCase();
             nm = 3;
             this.NPS3.setBackground(Color.black);
             this.DISP3.setForeground(Color.white);
@@ -4031,20 +4168,22 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear3.setForeground(Color.white);
             this.npecaneado3.setForeground(Color.white);
             this.serial3.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS3MouseClicked
 
     private void NPS2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS2MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp2.getText().equals("A")){
                 pn = this.npaescanear2.getText().toUpperCase();
+                pn2 = this.npaescanear2.getText().substring(3).toUpperCase();
                 nm = 2;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        } /*else {
             pn = this.npaescanear2.getText().toUpperCase();
+            pn2 = this.npaescanear2.getText().substring(3).toUpperCase();
             nm = 2;
             this.NPS2.setBackground(Color.black);
             this.DISP2.setForeground(Color.white);
@@ -4057,7 +4196,7 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear2.setForeground(Color.white);
             this.npecaneado2.setForeground(Color.white);
             this.serial2.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS2MouseClicked
 
     private void ReworkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReworkActionPerformed
@@ -4210,33 +4349,33 @@ public class Empty extends javax.swing.JFrame {
                 }
                 break;
             case 24:
-                if (idsp24.getText().equals("I")){
-                   all.rework.setVisible(true); 
-                } else {
-                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
-                }
-                break;
-            case 25:
-                if (idsp25.getText().equals("I")){
-                   all.rework.setVisible(true); 
-                } else {
-                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
-                }
-                break;
-            case 26:
-                if (idsp26.getText().equals("I")){
-                   all.rework.setVisible(true); 
-                } else {
-                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
-                }
-                break;
-            case 27:
-                if (idsp27.getText().equals("I")){
-                   all.rework.setVisible(true); 
-                } else {
-                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
-                }
-                break;
+//                if (idsp24.getText().equals("I")){
+  //                 all.rework.setVisible(true); 
+    //            } else {
+      //              JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+        //        }
+          //      break;
+            //case 25:
+              //  if (idsp25.getText().equals("I")){
+                //   all.rework.setVisible(true); 
+//                } else {
+  //                  JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+    //            }
+      //          break;
+        //    case 26:
+          //      if (idsp26.getText().equals("I")){
+            //       all.rework.setVisible(true); 
+              //  } else {
+                //    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+//                }
+  //              break;
+    //        case 27:
+      //          if (idsp27.getText().equals("I")){
+        //           all.rework.setVisible(true); 
+          //      } else {
+            //        JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+              //  }
+                //break;
             case 28:
                 if (idsp28.getText().equals("I")){
                    all.rework.setVisible(true); 
@@ -4258,9 +4397,6 @@ public class Empty extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
                 }
                 break;
-            default:
-                JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
-                break;
         }
     }//GEN-LAST:event_ReworkActionPerformed
 
@@ -4273,49 +4409,44 @@ public class Empty extends javax.swing.JFrame {
         map.put("01KL396", label5);
         map.put("39J1952", label4);
         map.put("03JG485", label8);
+        map.put("03JG489", label8);
         map.put("03FP231", label8);
         map.put("46C6380", label5);
         map.put("74F1823", label7);
         map.put("69Y2042", label5);
         map.put("01KL425", label4);
         map.put("01KL421", label4);
+        map.put("01KU111", label4);
+        map.put("01KU112", label4);
+        map.put("01KU137", label4);
         nps = map.get(pn);
         if (nps == label1){
             all.barcode.setVisible(true);
-            JOptionPane.showMessageDialog(null, pn);
         }
-        if (nps == label2){
+        else if (nps == label2){
             all.barcode_1.setVisible(true);
-            JOptionPane.showMessageDialog(null, pn);
         }
-        if (nps == label3){
+        else if (nps == label3){
             all.barcode_2.setVisible(true);
-            JOptionPane.showMessageDialog(null, pn);
         }
-        if (nps == label4){
+        else if (nps == label4){
             all.barcode_3.setVisible(true);
-            JOptionPane.showMessageDialog(null, pn);
         }
-        if (nps == label5){
+        else if (nps == label5){
             all.barcode_4.setVisible(true);
-            JOptionPane.showMessageDialog(null, pn);
         }
-        if (nps == label6){
+        else if (nps == label6){
             all.barcode_6.setVisible(true);
-            JOptionPane.showMessageDialog(null, pn);
         }
-        if (nps == label7){
+        else if (nps == label7){
             all.barcode_7.setVisible(true);
-            JOptionPane.showMessageDialog(null, pn);
         }
-        if (nps == label8){
+        else if (nps == label8){
             all.barcode_8.setVisible(true);
-            JOptionPane.showMessageDialog(null, pn);
         }
-        //for (int i = 0; i < nps.length; i++){
-          //  if (nps[i].Arraysequals(label1)){
-            //}
-        //}
+        else {
+            JOptionPane.showMessageDialog(null, "Invalid Add Part");
+        }
     }//GEN-LAST:event_f2ActionPerformed
 
     private void formMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMousePressed
@@ -4340,13 +4471,16 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp.getText().equals("A")){
                 pn = this.npaescanear.getText().toUpperCase();
+                pn2 = this.npaescanear.getText().substring(3).toUpperCase();
                 nm = 0;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }  else if (evt.getClickCount() == 1){
-            pn = this.npaescanear.getText().toUpperCase();
+        }  else if (evt.getClickCount()== 1) {
+            NPSFocusGained(null);
+            /* pn = this.npaescanear.getText().toUpperCase();
+            pn2 = this.npaescanear.getText().substring(3).toUpperCase();
             nm = 0;
             this.NPS.setBackground(Color.black);
             this.DISP.setForeground(Color.white);
@@ -4358,9 +4492,7 @@ public class Empty extends javax.swing.JFrame {
             this.idsp.setForeground(Color.white);
             this.npaescanear.setForeground(Color.white);
             this.npecaneado.setForeground(Color.white);
-            this.serial.setForeground(Color.white);
-        } else {
-            sele = false;
+            this.serial.setForeground(Color.white); */
         }
     }//GEN-LAST:event_NPSMouseClicked
 
@@ -4368,13 +4500,15 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp5.getText().equals("A")){
                 pn = this.npaescanear5.getText().toUpperCase();
+                pn2 = this.npaescanear5.getText().substring(3).toUpperCase();
                 nm = 5;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else if (evt.getClickCount() == 1){
+        } /*else {
             pn = this.npaescanear5.getText().toUpperCase();
+            pn2 = this.npaescanear5.getText().substring(3).toUpperCase();
             nm = 5;
             this.NPS5.setBackground(Color.black);
             this.DISP5.setForeground(Color.white);
@@ -4387,7 +4521,7 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear5.setForeground(Color.white);
             this.npecaneado5.setForeground(Color.white);
             this.serial5.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS5MouseClicked
 
     private void change1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change1StateChanged
@@ -4397,21 +4531,23 @@ public class Empty extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_change1StateChanged
 
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+    private void ExtFuncActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ExtFuncActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
+    }//GEN-LAST:event_ExtFuncActionPerformed
 
     private void NPS4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS4MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp4.getText().equals("A")){
                 pn = this.npaescanear4.getText().toUpperCase();
+                pn2 = this.npaescanear4.getText().substring(3).toUpperCase();
                 nm = 4;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        } /*else {
             pn = this.npaescanear4.getText().toUpperCase();
+            pn2 = this.npaescanear4.getText().substring(3).toUpperCase();
             nm = 4;
             this.NPS4.setBackground(Color.black);
             this.DISP4.setForeground(Color.white);
@@ -4424,20 +4560,22 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear4.setForeground(Color.white);
             this.npecaneado4.setForeground(Color.white);
             this.serial4.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS4MouseClicked
 
     private void NPS6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS6MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp6.getText().equals("A")){
                 pn = this.npaescanear6.getText().toUpperCase();
+                pn2 = this.npaescanear6.getText().substring(3).toUpperCase();
                 nm = 6;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        } /*else {
             pn = this.npaescanear6.getText().toUpperCase();
+            pn2 = this.npaescanear6.getText().substring(3).toUpperCase();
             nm = 6;
             this.NPS6.setBackground(Color.black);
             this.DISP6.setForeground(Color.white);
@@ -4450,7 +4588,7 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear6.setForeground(Color.white);
             this.npecaneado6.setForeground(Color.white);
             this.serial6.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS6MouseClicked
 
     private void change2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change2StateChanged
@@ -4464,13 +4602,15 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp7.getText().equals("A")){
                 pn = this.npaescanear7.getText().toUpperCase();
+                pn2 = this.npaescanear7.getText().substring(3).toUpperCase();
                 nm = 7;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        } /*else {
             pn = this.npaescanear7.getText().toUpperCase();
+            pn2 = this.npaescanear7.getText().substring(3).toUpperCase();
             nm = 7;
             this.NPS7.setBackground(Color.black);
             this.DISP7.setForeground(Color.white);
@@ -4483,7 +4623,7 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear7.setForeground(Color.white);
             this.npecaneado7.setForeground(Color.white);
             this.serial7.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS7MouseClicked
 
     private void change3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change3StateChanged
@@ -4497,13 +4637,15 @@ public class Empty extends javax.swing.JFrame {
         if (evt.getClickCount()>1){
             if (this.idsp9.getText().equals("A")){
                 pn = this.npaescanear9.getText().toUpperCase();
+                pn2 = this.npaescanear9.getText().substring(3).toUpperCase();
                 nm = 9;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        } /*else {
             pn = this.npaescanear9.getText().toUpperCase();
+            pn2 = this.npaescanear9.getText().substring(3).toUpperCase();
             nm = 9;
             this.NPS9.setBackground(Color.black);
             this.DISP9.setForeground(Color.white);
@@ -4516,7 +4658,7 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear9.setForeground(Color.white);
             this.npecaneado9.setForeground(Color.white);
             this.serial9.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS9MouseClicked
 
     private void change4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change4StateChanged
@@ -4529,14 +4671,16 @@ public class Empty extends javax.swing.JFrame {
     private void NPS10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS10MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp10.getText().equals("A")){
+                pn2 = this.npaescanear10.getText().substring(3).toUpperCase();
                 pn = this.npaescanear10.getText().toUpperCase();
                 nm = 10;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        } /*else {
             pn = this.npaescanear10.getText().toUpperCase();
+            pn2 = this.npaescanear10.getText().substring(3).toUpperCase();
             nm = 10;
             this.NPS10.setBackground(Color.black);
             this.DISP10.setForeground(Color.white);
@@ -4549,21 +4693,23 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear10.setForeground(Color.white);
             this.npecaneado10.setForeground(Color.white);
             this.serial10.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS10MouseClicked
 
     private void NPS13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS13MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp13.getText().equals("A")){
+                pn2 = this.npaescanear13.getText().substring(3).toUpperCase();
                 pn = this.npaescanear13.getText().toUpperCase();
                 nm = 13;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        } /*else {
             pn = this.npaescanear13.getText().toUpperCase();
             nm = 13;
+            pn2 = this.npaescanear13.getText().substring(3).toUpperCase();
             this.NPS13.setBackground(Color.black);
             this.DISP13.setForeground(Color.white);
             this.FQT13.setForeground(Color.white);
@@ -4575,20 +4721,22 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear13.setForeground(Color.white);
             this.npecaneado13.setForeground(Color.white);
             this.serial13.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS13MouseClicked
 
     private void NPS14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS14MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp14.getText().equals("A")){
                 pn = this.npaescanear14.getText().toUpperCase();
+                pn2 = this.npaescanear14.getText().substring(3).toUpperCase();
                 nm = 14;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        } /*else {
             pn = this.npaescanear14.getText().toUpperCase();
+            pn2 = this.npaescanear14.getText().substring(3).toUpperCase();
             nm = 14;
             this.NPS14.setBackground(Color.black);
             this.DISP14.setForeground(Color.white);
@@ -4601,21 +4749,23 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear14.setForeground(Color.white);
             this.npecaneado14.setForeground(Color.white);
             this.serial14.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS14MouseClicked
 
     private void NPS15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS15MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp15.getText().equals("A")){
                 pn = this.npaescanear15.getText().toUpperCase();
+                pn2 = this.npaescanear15.getText().substring(3).toUpperCase();
                 nm = 15;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        }/* else {
             pn = this.npaescanear15.getText().toUpperCase();
             nm = 15;
+            pn2 = this.npaescanear15.getText().substring(3).toUpperCase();
             this.NPS15.setBackground(Color.black);
             this.DISP15.setForeground(Color.white);
             this.FQT15.setForeground(Color.white);
@@ -4627,20 +4777,22 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear15.setForeground(Color.white);
             this.npecaneado15.setForeground(Color.white);
             this.serial15.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS15MouseClicked
 
     private void NPS16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS16MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp16.getText().equals("A")){
                 pn = this.npaescanear16.getText().toUpperCase();
+                pn2 = this.npaescanear16.getText().substring(3).toUpperCase();
                 nm = 16;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        }/* else {
             pn = this.npaescanear16.getText().toUpperCase();
+            pn2 = this.npaescanear16.getText().substring(3).toUpperCase();
             nm = 16;
             this.NPS16.setBackground(Color.black);
             this.DISP16.setForeground(Color.white);
@@ -4653,20 +4805,22 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear16.setForeground(Color.white);
             this.npecaneado16.setForeground(Color.white);
             this.serial16.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS16MouseClicked
 
     private void NPS17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS17MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp17.getText().equals("A")){
                 pn = this.npaescanear17.getText().toUpperCase();
+                pn2 = this.npaescanear17.getText().substring(3).toUpperCase();
                 nm = 17;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        }/* else {
             pn = this.npaescanear17.getText().toUpperCase();
+            pn2 = this.npaescanear17.getText().substring(3).toUpperCase();
             nm = 17;
             this.NPS17.setBackground(Color.black);
             this.DISP17.setForeground(Color.white);
@@ -4679,20 +4833,22 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear17.setForeground(Color.white);
             this.npecaneado17.setForeground(Color.white);
             this.serial17.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS17MouseClicked
 
     private void NPS18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS18MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp18.getText().equals("A")){
                 pn = this.npaescanear18.getText().toUpperCase();
+                pn2 = this.npaescanear18.getText().substring(3).toUpperCase();
                 nm = 18;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        }/* else {
             pn = this.npaescanear18.getText().toUpperCase();
+            pn2 = this.npaescanear18.getText().substring(3).toUpperCase();
             nm = 18;
             this.NPS18.setBackground(Color.black);
             this.DISP18.setForeground(Color.white);
@@ -4705,20 +4861,22 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear18.setForeground(Color.white);
             this.npecaneado18.setForeground(Color.white);
             this.serial18.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS18MouseClicked
 
     private void NPS19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS19MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp19.getText().equals("A")){
                 pn = this.npaescanear19.getText().toUpperCase();
+                pn2 = this.npaescanear19.getText().substring(3).toUpperCase();
                 nm = 19;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        }/* else {
             pn = this.npaescanear19.getText().toUpperCase();
+            pn2 = this.npaescanear19.getText().substring(3).toUpperCase();
             nm = 19;
             this.NPS19.setBackground(Color.black);
             this.DISP19.setForeground(Color.white);
@@ -4731,20 +4889,22 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear19.setForeground(Color.white);
             this.npecaneado19.setForeground(Color.white);
             this.serial19.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS19MouseClicked
 
     private void NPS20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS20MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp20.getText().equals("A")){
                 pn = this.npaescanear20.getText().toUpperCase();
+                pn2 = this.npaescanear20.getText().substring(3).toUpperCase();
                 nm = 20;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        }/* else {
             pn = this.npaescanear20.getText().toUpperCase();
+            pn2 = this.npaescanear20.getText().substring(3).toUpperCase();
             nm = 20;
             this.NPS20.setBackground(Color.black);
             this.DISP20.setForeground(Color.white);
@@ -4757,20 +4917,22 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear20.setForeground(Color.white);
             this.npecaneado20.setForeground(Color.white);
             this.serial20.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS20MouseClicked
 
     private void NPS21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS21MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp21.getText().equals("A")){
                 pn = this.npaescanear21.getText().toUpperCase();
+                pn2 = this.npaescanear21.getText().substring(3).toUpperCase();
                 nm = 21;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        }/* else {
             pn = this.npaescanear21.getText().toUpperCase();
+            pn2 = this.npaescanear21.getText().substring(3).toUpperCase();
             nm = 21;
             this.NPS21.setBackground(Color.black);
             this.DISP21.setForeground(Color.white);
@@ -4783,20 +4945,22 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear21.setForeground(Color.white);
             this.npecaneado21.setForeground(Color.white);
             this.serial21.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS21MouseClicked
 
     private void NPS22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS22MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp22.getText().equals("A")){
                 pn = this.npaescanear22.getText().toUpperCase();
+                pn2 = this.npaescanear22.getText().substring(3).toUpperCase();
                 nm = 22;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        }/* else {
             pn = this.npaescanear22.getText().toUpperCase();
+            pn2 = this.npaescanear22.getText().substring(3).toUpperCase();
             nm = 22;
             this.NPS22.setBackground(Color.black);
             this.DISP22.setForeground(Color.white);
@@ -4809,20 +4973,22 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear22.setForeground(Color.white);
             this.npecaneado22.setForeground(Color.white);
             this.serial22.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS22MouseClicked
 
     private void NPS23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS23MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp23.getText().equals("A")){
                 pn = this.npaescanear23.getText().toUpperCase();
+                pn2 = this.npaescanear23.getText().substring(3).toUpperCase();
                 nm = 23;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        }/* else {
             pn = this.npaescanear23.getText().toUpperCase();
+            pn2 = this.npaescanear23.getText().substring(3).toUpperCase();
             nm = 23;
             this.NPS23.setBackground(Color.black);
             this.DISP23.setForeground(Color.white);
@@ -4835,7 +5001,7 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear23.setForeground(Color.white);
             this.npecaneado23.setForeground(Color.white);
             this.serial23.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS23MouseClicked
 
     private void change5StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change5StateChanged
@@ -4845,127 +5011,19 @@ public class Empty extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_change5StateChanged
 
-    private void NPS24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS24MouseClicked
-        if (evt.getClickCount()>1){
-            if (this.idsp24.getText().equals("A")){
-                pn = this.npaescanear24.getText().toUpperCase();
-                nm = 24;
-                f2ActionPerformed(null);
-            } else {
-                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
-            }
-        } else {
-            pn = this.npaescanear24.getText().toUpperCase();
-            nm = 24;
-            this.NPS24.setBackground(Color.black);
-            this.DISP24.setForeground(Color.white);
-            this.FQT24.setForeground(Color.white);
-            this.QT24.setForeground(Color.white);
-            this.cantidadfinal24.setForeground(Color.white);
-            this.cantidadrequerida24.setForeground(Color.white);
-            this.descripcion24.setForeground(Color.white);
-            this.idsp24.setForeground(Color.white);
-            this.npaescanear24.setForeground(Color.white);
-            this.npecaneado24.setForeground(Color.white);
-            this.serial24.setForeground(Color.white);
-        }    }//GEN-LAST:event_NPS24MouseClicked
-
-    private void NPS25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS25MouseClicked
-        if (evt.getClickCount()>1){
-            if (this.idsp25.getText().equals("A")){
-                pn = this.npaescanear25.getText().toUpperCase();
-                nm = 25;
-                f2ActionPerformed(null);
-            } else {
-                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
-            }
-        } else {
-            pn = this.npaescanear25.getText().toUpperCase();
-            nm = 25;
-            this.NPS25.setBackground(Color.black);
-            this.DISP25.setForeground(Color.white);
-            this.FQT25.setForeground(Color.white);
-            this.QT25.setForeground(Color.white);
-            this.cantidadfinal25.setForeground(Color.white);
-            this.cantidadrequerida25.setForeground(Color.white);
-            this.descripcion25.setForeground(Color.white);
-            this.idsp25.setForeground(Color.white);
-            this.npaescanear25.setForeground(Color.white);
-            this.npecaneado25.setForeground(Color.white);
-            this.serial25.setForeground(Color.white);
-        }
-    }//GEN-LAST:event_NPS25MouseClicked
-
-    private void NPS26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS26MouseClicked
-        if (evt.getClickCount()>1){
-            if (this.idsp26.getText().equals("A")){
-                pn = this.npaescanear26.getText().toUpperCase();
-                nm = 26;
-                f2ActionPerformed(null);
-            } else {
-                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
-            }
-        } else {
-            pn = this.npaescanear26.getText().toUpperCase();
-            nm = 26;
-            this.NPS26.setBackground(Color.black);
-            this.DISP26.setForeground(Color.white);
-            this.FQT26.setForeground(Color.white);
-            this.QT26.setForeground(Color.white);
-            this.cantidadfinal26.setForeground(Color.white);
-            this.cantidadrequerida26.setForeground(Color.white);
-            this.descripcion26.setForeground(Color.white);
-            this.idsp26.setForeground(Color.white);
-            this.npaescanear26.setForeground(Color.white);
-            this.npecaneado26.setForeground(Color.white);
-            this.serial26.setForeground(Color.white);
-        }
-    }//GEN-LAST:event_NPS26MouseClicked
-
-    private void NPS27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS27MouseClicked
-        if (evt.getClickCount()>1){
-            if (this.idsp27.getText().equals("A")){
-                pn = this.npaescanear27.getText().toUpperCase();
-                nm = 27;
-                f2ActionPerformed(null);
-            } else {
-                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
-            }
-        } else {
-            pn = this.npaescanear27.getText().toUpperCase();
-            nm = 27;
-            this.NPS27.setBackground(Color.black);
-            this.DISP27.setForeground(Color.white);
-            this.FQT27.setForeground(Color.white);
-            this.QT27.setForeground(Color.white);
-            this.cantidadfinal27.setForeground(Color.white);
-            this.cantidadrequerida27.setForeground(Color.white);
-            this.descripcion27.setForeground(Color.white);
-            this.idsp27.setForeground(Color.white);
-            this.npaescanear27.setForeground(Color.white);
-            this.npecaneado27.setForeground(Color.white);
-            this.serial27.setForeground(Color.white);
-        }
-    }//GEN-LAST:event_NPS27MouseClicked
-
-    private void change6StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change6StateChanged
-         if (idsp24.getText().equals("I") && idsp25.getText().equals("I") && idsp26.getText().equals("I") && idsp27.getText().equals("I")){
-            change6.setSelected(true);
-            change6ActionPerformed(null);
-        }
-    }//GEN-LAST:event_change6StateChanged
-
     private void NPS28MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS28MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp28.getText().equals("A")){
                 pn = this.npaescanear28.getText().toUpperCase();
+                pn2 = this.npaescanear28.getText().substring(3).toUpperCase();
                 nm = 28;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        }/* else {
             pn = this.npaescanear28.getText().toUpperCase();
+            pn2 = this.npaescanear28.getText().substring(3).toUpperCase();
             nm = 28;
             this.NPS28.setBackground(Color.black);
             this.DISP28.setForeground(Color.white);
@@ -4978,20 +5036,22 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear28.setForeground(Color.white);
             this.npecaneado28.setForeground(Color.white);
             this.serial28.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS28MouseClicked
 
     private void NPS30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS30MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp30.getText().equals("A")){
                 pn = this.npaescanear30.getText().toUpperCase();
+                pn2 = this.npaescanear30.getText().substring(3).toUpperCase();
                 nm = 30;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        } /*else {
             pn = this.npaescanear30.getText().toUpperCase();
+            pn2 = this.npaescanear30.getText().substring(3).toUpperCase();
             nm = 30;
             this.NPS30.setBackground(Color.black);
             this.DISP30.setForeground(Color.white);
@@ -5004,20 +5064,22 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear30.setForeground(Color.white);
             this.npecaneado30.setForeground(Color.white);
             this.serial30.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS30MouseClicked
 
     private void NPS31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS31MouseClicked
         if (evt.getClickCount()>1){
             if (this.idsp31.getText().equals("A")){
                 pn = this.npaescanear31.getText().toUpperCase();
+                pn2 = this.npaescanear31.getText().substring(3).toUpperCase();
                 nm = 31;
                 f2ActionPerformed(null);
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } else {
+        }/* else {
             pn = this.npaescanear31.getText().toUpperCase();
+            pn2 = this.npaescanear31.getText().substring(3).toUpperCase();
             nm = 31;
             this.NPS31.setBackground(Color.black);
             this.DISP31.setForeground(Color.white);
@@ -5030,7 +5092,7 @@ public class Empty extends javax.swing.JFrame {
             this.npaescanear31.setForeground(Color.white);
             this.npecaneado31.setForeground(Color.white);
             this.serial31.setForeground(Color.white);
-        }
+        }*/
     }//GEN-LAST:event_NPS31MouseClicked
 
     private void change7StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change7StateChanged
@@ -5049,9 +5111,64 @@ public class Empty extends javax.swing.JFrame {
     }//GEN-LAST:event_changeActionPerformed
 
     private void EndJobActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EndJobActionPerformed
-        if (idsp.getText().equals("I") && idsp1.getText().equals("I") && idsp2.getText().equals("I") && idsp3.getText().equals("I") && idsp4.getText().equals("I") && idsp5.getText().equals("I") && idsp6.getText().equals("I") && idsp7.getText().equals("I") && idsp9.getText().equals("I") && idsp10.getText().equals("I") && idsp13.getText().equals("I") && idsp14.getText().equals("I") && idsp15.getText().equals("I") && idsp16.getText().equals("I") && idsp17.getText().equals("I") && idsp18.getText().equals("I") && idsp19.getText().equals("I") && idsp20.getText().equals("I") && idsp21.getText().equals("I") && idsp22.getText().equals("I") && idsp23.getText().equals("I") && idsp24.getText().equals("I") && idsp25.getText().equals("I") && idsp26.getText().equals("I") && idsp27.getText().equals("I") && idsp28.getText().equals("I") && idsp30.getText().equals("I") && idsp31.getText().equals("I") && change.getText().equals("Completo") && change1.getText().equals("Completo") && change2.getText().equals("Completo") && change3.getText().equals("Completo") && change4.getText().equals("Completo") && change5.getText().equals("Completo") && change6.getText().equals("Completo") && change7.getText().equals("Completo")){
+        if (idsp.getText().equals("I") && idsp1.getText().equals("I") && idsp2.getText().equals("I") && idsp3.getText().equals("I") && idsp4.getText().equals("I") && idsp5.getText().equals("I") && idsp6.getText().equals("I") && idsp7.getText().equals("I") && idsp9.getText().equals("I") && idsp10.getText().equals("I") && idsp13.getText().equals("I") && idsp14.getText().equals("I") && idsp15.getText().equals("I") && idsp16.getText().equals("I") && idsp17.getText().equals("I") && idsp18.getText().equals("I") && idsp19.getText().equals("I") && idsp20.getText().equals("I") && idsp21.getText().equals("I") && idsp22.getText().equals("I") && idsp23.getText().equals("I")  && idsp28.getText().equals("I") && idsp30.getText().equals("I") && idsp31.getText().equals("I") && idsp29.getText().equals("I") && idsp32.getText().equals("I") && idsp33.getText().equals("I") && idsp35.getText().equals("I") && change.getText().equals("Completo") && change1.getText().equals("Completo") && change2.getText().equals("Completo") && change3.getText().equals("Completo") && change4.getText().equals("Completo") && change5.getText().equals("Completo") && change6.getText().equals("Completo") && change7.getText().equals("Completo")){
             if (change.isSelected() && change1.isSelected() && change2.isSelected() && change3.isSelected() && change4.isSelected() && change5.isSelected() && change6.isSelected() && change7.isSelected()){
             JOptionPane.showMessageDialog(null, "Operación finalizada....");
+            this.setVisible(false);
+            TotalWU ++;
+            all.crono.mTimer.stop();
+            all.entrenador.totalwuentto.setText("" + TotalWU);
+            if (all.entrenador.jLabel13.getText().equals(" ")){
+                all.entrenador.jLabel13.setText("Easy");
+                all.entrenador.jLabel23.setText(Cronometro.getText());
+                all.entrenador.jLabel33.setText(all.login.usuario);
+                all.abrir.setVisible(true);
+            } else if (all.entrenador.jLabel14.getText().equals(" ")){
+                all.entrenador.jLabel14.setText("Easy");
+                all.entrenador.jLabel24.setText(Cronometro.getText());
+                all.entrenador.jLabel34.setText(all.login.usuario);
+                all.abrir.setVisible(true);
+                } else if (all.entrenador.jLabel15.getText().equals(" ")){
+                    all.entrenador.jLabel15.setText("Easy");
+                    all.entrenador.jLabel25.setText(Cronometro.getText());
+                    all.entrenador.jLabel35.setText(all.login.usuario);
+                    all.abrir.setVisible(true);
+                    } else if (all.entrenador.jLabel16.getText().equals(" ")){
+                        all.entrenador.jLabel16.setText("Easy");
+                        all.entrenador.jLabel26.setText(Cronometro.getText());
+                        all.entrenador.jLabel36.setText(all.login.usuario);
+                        all.abrir.setVisible(true);
+                        } else if (all.entrenador.jLabel18.getText().equals(" ")){
+                            all.entrenador.jLabel18.setText("Easy");
+                            all.entrenador.jLabel28.setText(Cronometro.getText());
+                            all.entrenador.jLabel38.setText(all.login.usuario);
+                            all.abrir.setVisible(true);
+                            } else if (all.entrenador.jLabel17.getText().equals(" ")){
+                                all.entrenador.jLabel17.setText("Easy");
+                                all.entrenador.jLabel27.setText(Cronometro.getText());
+                                all.entrenador.jLabel37.setText(all.login.usuario);
+                                all.abrir.setVisible(true);
+                                } else if (all.entrenador.jLabel19.getText().equals(" ")){
+                                       all.entrenador.jLabel19.setText("Easy");
+                                       all.entrenador.jLabel29.setText(Cronometro.getText());
+                                       all.entrenador.jLabel39.setText(all.login.usuario);
+                                       all.abrir.setVisible(true);
+                                       } else if (all.entrenador.jLabel20.getText().equals(" ")){
+                                           all.entrenador.jLabel20.setText("Easy");
+                                           all.entrenador.jLabel30.setText(Cronometro.getText());
+                                           all.entrenador.jLabel40.setText(all.login.usuario);
+                                           all.abrir.setVisible(true);
+                                             } else if (all.entrenador.jLabel21.getText().equals(" ")){
+                                                 all.entrenador.jLabel21.setText("Easy");
+                                                 all.entrenador.jLabel31.setText(Cronometro.getText());
+                                                 all.entrenador.jLabel41.setText(all.login.usuario);
+                                                 all.abrir.setVisible(true);
+                                                   } else if (all.entrenador.jLabel12.getText().equals(" ")){
+                                                        all.entrenador.jLabel12.setText("Easy");
+                                                        all.entrenador.jLabel22.setText(Cronometro.getText());
+                                                        all.entrenador.jLabel32.setText(all.login.usuario);
+                                                        all.abrir.setVisible(true);
+                                                        }
             }
         } else {
             JOptionPane.showMessageDialog(null, "Faltan pn por ingresar.");
@@ -5107,6 +5224,712 @@ public class Empty extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_change5ActionPerformed
 
+    private void AutoLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AutoLogActionPerformed
+        if (idsp.getText().equals("A")){            
+            f2ActionPerformed(null);
+        } else if (idsp1.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp2.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp3.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp4.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp5.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp6.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp7.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp9.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp10.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp13.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp14.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp15.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp16.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp17.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp18.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp19.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp20.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp21.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp22.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp23.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp28.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp29.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp30.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp31.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp32.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp33.getText().equals("A")){
+            f2ActionPerformed(null);
+        }else if (idsp35.getText().equals("A")){
+            f2ActionPerformed(null);
+        }
+    }//GEN-LAST:event_AutoLogActionPerformed
+
+    private void SuspenderActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SuspenderActionPerformed
+        all.suspender.setVisible(true);
+        all.crono.mTimer.stop();
+    }//GEN-LAST:event_SuspenderActionPerformed
+
+    private void RemoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RemoverActionPerformed
+        switch (nm){
+            case 0:
+                if (idsp.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Removed");
+                }
+                break;
+            case 1:
+                if (idsp1.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 2:
+                if (idsp2.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 3:
+                if (idsp3.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 4:
+                if (idsp4.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 5:
+                if (idsp5.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 6:
+                if (idsp6.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 7:
+                if (idsp7.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 9:
+                if (idsp9.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 10:
+                if (idsp10.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 13:
+                if (idsp13.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 14:
+                if (idsp14.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 15:
+                if (idsp15.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 16:
+                if (idsp16.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 17:
+                if (idsp17.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 18:
+                if (idsp18.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 19:
+                if (idsp19.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 20:
+                if (idsp20.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 21:
+                if (idsp21.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 22:
+                if (idsp22.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 23:
+                if (idsp23.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+//            case 24:
+//                if (idsp24.getText().equals("R")){
+  //                 all.rework.remplacedActionPerformed(null); 
+    //            } else {
+      //              JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+        //        }
+          //      break;
+            //case 25:
+              //  if (idsp25.getText().equals("R")){
+                //   all.rework.remplacedActionPerformed(null); 
+//                } else {
+  //                  JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+    //            }
+      //          break;
+        //    case 26:
+          //      if (idsp26.getText().equals("R")){
+            //       all.rework.remplacedActionPerformed(null); 
+              //  } else {
+                //    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+//                }
+  //              break;
+    //        case 27:
+      //          if (idsp27.getText().equals("R")){
+        //           all.rework.remplacedActionPerformed(null); 
+          //      } else {
+            //        JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+              //  }
+                //break;
+            case 28:
+                if (idsp28.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 30:
+                if (idsp30.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 31:
+                if (idsp31.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            default:
+                JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                break;
+        }
+    }//GEN-LAST:event_RemoverActionPerformed
+
+    private void f2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_f2KeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                f2ActionPerformed(null);
+                break;
+            case KeyEvent.VK_3:
+                EndJobActionPerformed(null);
+                break;
+            case KeyEvent.VK_4:
+                AutoLogActionPerformed(null);
+                break;
+            case KeyEvent.VK_5:
+                ExtFuncActionPerformed(null);
+                break;
+            case KeyEvent.VK_6:
+                ReworkActionPerformed(null);
+                break;
+            case KeyEvent.VK_7:
+                SuspenderActionPerformed(null);
+                break;
+            case KeyEvent.VK_8:
+                ViewInsActionPerformed(null);
+                break;
+            case KeyEvent.VK_0:
+                RemoverActionPerformed(null);
+                break;
+        }
+    }//GEN-LAST:event_f2KeyTyped
+
+    private void ViewInsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ViewInsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_ViewInsActionPerformed
+
+    private void EndJobKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_EndJobKeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                f2ActionPerformed(null);
+                break;
+            case KeyEvent.VK_3:
+                EndJobActionPerformed(null);
+                break;
+            case KeyEvent.VK_4:
+                AutoLogActionPerformed(null);
+                break;
+            case KeyEvent.VK_5:
+                ExtFuncActionPerformed(null);
+                break;
+            case KeyEvent.VK_6:
+                ReworkActionPerformed(null);
+                break;
+            case KeyEvent.VK_7:
+                SuspenderActionPerformed(null);
+                break;
+            case KeyEvent.VK_8:
+                ViewInsActionPerformed(null);
+                break;
+            case KeyEvent.VK_0:
+                RemoverActionPerformed(null);
+                break;
+        }
+    }//GEN-LAST:event_EndJobKeyTyped
+
+    private void AutoLogKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_AutoLogKeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                f2ActionPerformed(null);
+                break;
+            case KeyEvent.VK_3:
+                EndJobActionPerformed(null);
+                break;
+            case KeyEvent.VK_4:
+                AutoLogActionPerformed(null);
+                break;
+            case KeyEvent.VK_5:
+                ExtFuncActionPerformed(null);
+                break;
+            case KeyEvent.VK_6:
+                ReworkActionPerformed(null);
+                break;
+            case KeyEvent.VK_7:
+                SuspenderActionPerformed(null);
+                break;
+            case KeyEvent.VK_8:
+                ViewInsActionPerformed(null);
+                break;
+            case KeyEvent.VK_0:
+                RemoverActionPerformed(null);
+                break;
+        }
+    }//GEN-LAST:event_AutoLogKeyTyped
+
+    private void ExtFuncKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ExtFuncKeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                f2ActionPerformed(null);
+                break;
+            case KeyEvent.VK_3:
+                EndJobActionPerformed(null);
+                break;
+            case KeyEvent.VK_4:
+                AutoLogActionPerformed(null);
+                break;
+            case KeyEvent.VK_5:
+                ExtFuncActionPerformed(null);
+                break;
+            case KeyEvent.VK_6:
+                ReworkActionPerformed(null);
+                break;
+            case KeyEvent.VK_7:
+                SuspenderActionPerformed(null);
+                break;
+            case KeyEvent.VK_8:
+                ViewInsActionPerformed(null);
+                break;
+            case KeyEvent.VK_0:
+                RemoverActionPerformed(null);
+                break;
+        }
+    }//GEN-LAST:event_ExtFuncKeyTyped
+
+    private void ReworkKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ReworkKeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                f2ActionPerformed(null);
+                break;
+            case KeyEvent.VK_3:
+                EndJobActionPerformed(null);
+                break;
+            case KeyEvent.VK_4:
+                AutoLogActionPerformed(null);
+                break;
+            case KeyEvent.VK_5:
+                ExtFuncActionPerformed(null);
+                break;
+            case KeyEvent.VK_6:
+                ReworkActionPerformed(null);
+                break;
+            case KeyEvent.VK_7:
+                SuspenderActionPerformed(null);
+                break;
+            case KeyEvent.VK_8:
+                ViewInsActionPerformed(null);
+                break;
+            case KeyEvent.VK_0:
+                RemoverActionPerformed(null);
+                break;
+        }
+    }//GEN-LAST:event_ReworkKeyTyped
+
+    private void SuspenderKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SuspenderKeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                f2ActionPerformed(null);
+                break;
+            case KeyEvent.VK_3:
+                EndJobActionPerformed(null);
+                break;
+            case KeyEvent.VK_4:
+                AutoLogActionPerformed(null);
+                break;
+            case KeyEvent.VK_5:
+                ExtFuncActionPerformed(null);
+                break;
+            case KeyEvent.VK_6:
+                ReworkActionPerformed(null);
+                break;
+            case KeyEvent.VK_7:
+                SuspenderActionPerformed(null);
+                break;
+            case KeyEvent.VK_8:
+                ViewInsActionPerformed(null);
+                break;
+            case KeyEvent.VK_0:
+                RemoverActionPerformed(null);
+                break;
+        }
+    }//GEN-LAST:event_SuspenderKeyTyped
+
+    private void ViewInsKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_ViewInsKeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                f2ActionPerformed(null);
+                break;
+            case KeyEvent.VK_3:
+                EndJobActionPerformed(null);
+                break;
+            case KeyEvent.VK_4:
+                AutoLogActionPerformed(null);
+                break;
+            case KeyEvent.VK_5:
+                ExtFuncActionPerformed(null);
+                break;
+            case KeyEvent.VK_6:
+                ReworkActionPerformed(null);
+                break;
+            case KeyEvent.VK_7:
+                SuspenderActionPerformed(null);
+                break;
+            case KeyEvent.VK_8:
+                ViewInsActionPerformed(null);
+                break;
+            case KeyEvent.VK_0:
+                RemoverActionPerformed(null);
+                break;
+        }
+    }//GEN-LAST:event_ViewInsKeyTyped
+
+    private void RemoverKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_RemoverKeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                f2ActionPerformed(null);
+                break;
+            case KeyEvent.VK_3:
+                EndJobActionPerformed(null);
+                break;
+            case KeyEvent.VK_4:
+                AutoLogActionPerformed(null);
+                break;
+            case KeyEvent.VK_5:
+                ExtFuncActionPerformed(null);
+                break;
+            case KeyEvent.VK_6:
+                ReworkActionPerformed(null);
+                break;
+            case KeyEvent.VK_7:
+                SuspenderActionPerformed(null);
+                break;
+            case KeyEvent.VK_8:
+                ViewInsActionPerformed(null);
+                break;
+            case KeyEvent.VK_0:
+                RemoverActionPerformed(null);
+                break;
+        }
+    }//GEN-LAST:event_RemoverKeyTyped
+
+    private void jButton9KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton9KeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                f2ActionPerformed(null);
+                break;
+            case KeyEvent.VK_3:
+                EndJobActionPerformed(null);
+                break;
+            case KeyEvent.VK_4:
+                AutoLogActionPerformed(null);
+                break;
+            case KeyEvent.VK_5:
+                ExtFuncActionPerformed(null);
+                break;
+            case KeyEvent.VK_6:
+                ReworkActionPerformed(null);
+                break;
+            case KeyEvent.VK_7:
+                SuspenderActionPerformed(null);
+                break;
+            case KeyEvent.VK_8:
+                ViewInsActionPerformed(null);
+                break;
+            case KeyEvent.VK_0:
+                RemoverActionPerformed(null);
+                break;
+        }
+    }//GEN-LAST:event_jButton9KeyTyped
+
+    private void jButton10KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton10KeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                f2ActionPerformed(null);
+                break;
+            case KeyEvent.VK_3:
+                EndJobActionPerformed(null);
+                break;
+            case KeyEvent.VK_4:
+                AutoLogActionPerformed(null);
+                break;
+            case KeyEvent.VK_5:
+                ExtFuncActionPerformed(null);
+                break;
+            case KeyEvent.VK_6:
+                ReworkActionPerformed(null);
+                break;
+            case KeyEvent.VK_7:
+                SuspenderActionPerformed(null);
+                break;
+            case KeyEvent.VK_8:
+                ViewInsActionPerformed(null);
+                break;
+            case KeyEvent.VK_0:
+                RemoverActionPerformed(null);
+                break;
+        }
+    }//GEN-LAST:event_jButton10KeyTyped
+
+    private void NPSMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPSMousePressed
+        
+    }//GEN-LAST:event_NPSMousePressed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        Cronometro.setVisible(false);
+        milisegundos.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        Cronometro.setVisible(true);
+        milisegundos.setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void NPS29MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS29MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp29.getText().equals("A")){
+                pn = this.npaescanear29.getText().toUpperCase();
+                pn2 = this.npaescanear29.getText().substring(3).toUpperCase();
+                nm = 29;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        }/* else {
+            pn = this.npaescanear29.getText().toUpperCase();
+            pn2 = this.npaescanear29.getText().substring(3).toUpperCase();
+            nm = 29;
+            this.NPS29.setBackground(Color.black);
+            this.DISP29.setForeground(Color.white);
+            this.FQT29.setForeground(Color.white);
+            this.QT29.setForeground(Color.white);
+            this.cantidadfinal29.setForeground(Color.white);
+            this.cantidadrequerida29.setForeground(Color.white);
+            this.descripcion29.setForeground(Color.white);
+            this.idsp29.setForeground(Color.white);
+            this.npaescanear29.setForeground(Color.white);
+            this.npecaneado29.setForeground(Color.white);
+            this.serial29.setForeground(Color.white);
+        }*/
+    }//GEN-LAST:event_NPS29MouseClicked
+
+    private void NPS32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS32MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp32.getText().equals("A")){
+                pn = this.npaescanear32.getText().toUpperCase();
+                pn2 = this.npaescanear32.getText().substring(3).toUpperCase();
+                nm = 32;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        }/* else {
+            pn = this.npaescanear32.getText().toUpperCase();
+            pn2 = this.npaescanear32.getText().substring(3).toUpperCase();
+            nm = 32;
+            this.NPS32.setBackground(Color.black);
+            this.DISP32.setForeground(Color.white);
+            this.FQT32.setForeground(Color.white);
+            this.QT32.setForeground(Color.white);
+            this.cantidadfinal32.setForeground(Color.white);
+            this.cantidadrequerida32.setForeground(Color.white);
+            this.descripcion32.setForeground(Color.white);
+            this.idsp32.setForeground(Color.white);
+            this.npaescanear32.setForeground(Color.white);
+            this.npecaneado32.setForeground(Color.white);
+            this.serial32.setForeground(Color.white);
+        }*/
+    }//GEN-LAST:event_NPS32MouseClicked
+
+    private void NPS33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS33MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp33.getText().equals("A")){
+                pn = this.npaescanear33.getText().toUpperCase();
+                pn2 = this.npaescanear33.getText().substring(3).toUpperCase();
+                nm = 33;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        }/* else {
+            pn = this.npaescanear33.getText().toUpperCase();
+            pn2 = this.npaescanear33.getText().substring(3).toUpperCase();
+            nm = 33;
+            this.NPS33.setBackground(Color.black);
+            this.DISP33.setForeground(Color.white);
+            this.FQT33.setForeground(Color.white);
+            this.QT33.setForeground(Color.white);
+            this.cantidadfinal33.setForeground(Color.white);
+            this.cantidadrequerida33.setForeground(Color.white);
+            this.descripcion33.setForeground(Color.white);
+            this.idsp33.setForeground(Color.white);
+            this.npaescanear33.setForeground(Color.white);
+            this.npecaneado33.setForeground(Color.white);
+            this.serial33.setForeground(Color.white);
+        }*/
+    }//GEN-LAST:event_NPS33MouseClicked
+
+    private void NPS35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS35MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp35.getText().equals("A")){
+                pn = this.npaescanear35.getText().toUpperCase();
+                pn2 = this.npaescanear35.getText().substring(3).toUpperCase();
+                nm = 35;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        }/* else {
+            pn = this.npaescanear35.getText().toUpperCase();
+            pn2 = this.npaescanear35.getText().substring(3).toUpperCase();
+            nm = 35;
+            this.NPS35.setBackground(Color.black);
+            this.DISP35.setForeground(Color.white);
+            this.FQT35.setForeground(Color.white);
+            this.QT35.setForeground(Color.white);
+            this.cantidadfinal35.setForeground(Color.white);
+            this.cantidadrequerida35.setForeground(Color.white);
+            this.descripcion35.setForeground(Color.white);
+            this.idsp35.setForeground(Color.white);
+            this.npaescanear35.setForeground(Color.white);
+            this.npecaneado35.setForeground(Color.white);
+            this.serial35.setForeground(Color.white);
+        }*/
+    }//GEN-LAST:event_NPS35MouseClicked
+
+    private void change6StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change6StateChanged
+        if (idsp29.getText().equals("I") && idsp32.getText().equals("I") && idsp33.getText().equals("I") && idsp35.getText().equals("I")){
+            change6.setSelected(true);
+            change6ActionPerformed(null);
+        }
+    }//GEN-LAST:event_change6StateChanged
+
     private void change6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change6ActionPerformed
         if (change6.isSelected()){
         change6.setText("Completo");
@@ -5115,10 +5938,56 @@ public class Empty extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_change6ActionPerformed
 
-    private void AutoLogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AutoLogActionPerformed
-        //if ()
-    }//GEN-LAST:event_AutoLogActionPerformed
+    private void NPSKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NPSKeyTyped
+        char flechas = evt.getKeyChar();
+        if (flechas == KeyEvent.VK_DOWN){
+            NPSFocusLost (null);
+        }
+    }//GEN-LAST:event_NPSKeyTyped
 
+    private void NPSFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_NPSFocusGained
+            this.NPS.setBackground(Color.black);
+            this.DISP.setForeground(Color.white);
+            this.FQT.setForeground(Color.white);
+            this.QT.setForeground(Color.white);
+            this.cantidadfinal.setForeground(Color.white);
+            this.cantidadrequerida.setForeground(Color.white);
+            this.descripcion.setForeground(Color.white);
+            this.idsp.setForeground(Color.white);
+            this.npaescanear.setForeground(Color.white);
+            this.npecaneado.setForeground(Color.white);
+            this.serial.setForeground(Color.white);
+    }//GEN-LAST:event_NPSFocusGained
+
+    private void NPSFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_NPSFocusLost
+            this.NPS.setBackground(Color.WHITE);
+            this.DISP.setForeground(Color.BLACK);
+            this.FQT.setForeground(Color.BLACK);
+            this.QT.setForeground(Color.BLACK);
+            this.cantidadfinal.setForeground(Color.BLACK);
+            this.cantidadrequerida.setForeground(Color.BLACK);
+            this.descripcion.setForeground(Color.BLACK);
+            this.idsp.setForeground(Color.BLACK);
+            this.npaescanear.setForeground(Color.BLACK);
+            this.npecaneado.setForeground(Color.BLACK);
+            this.serial.setForeground(Color.BLACK);
+    }//GEN-LAST:event_NPSFocusLost
+
+    private void NPS3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NPS3KeyTyped
+        char flechas = evt.getKeyChar();
+        if (flechas == KeyEvent.VK_UP){
+            NPSFocusGained (null);
+        }
+    }//GEN-LAST:event_NPS3KeyTyped
+
+    private void Cambios() {
+    switch (nm){
+        
+        case 0: 
+            
+        
+    }
+    }
     /**
      * @param args the command line arguments
      */
@@ -5131,7 +6000,9 @@ public class Empty extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AutoLog;
+    private javax.swing.JPanel Bisagrastraseras;
     private javax.swing.JLabel Cntr;
+    public javax.swing.JLabel Cronometro;
     public javax.swing.JLabel DISP;
     public javax.swing.JLabel DISP1;
     public javax.swing.JLabel DISP10;
@@ -5147,20 +6018,21 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel DISP21;
     public javax.swing.JLabel DISP22;
     public javax.swing.JLabel DISP23;
-    public javax.swing.JLabel DISP24;
-    public javax.swing.JLabel DISP25;
-    public javax.swing.JLabel DISP26;
-    public javax.swing.JLabel DISP27;
     public javax.swing.JLabel DISP28;
+    public javax.swing.JLabel DISP29;
     public javax.swing.JLabel DISP3;
     public javax.swing.JLabel DISP30;
     public javax.swing.JLabel DISP31;
+    public javax.swing.JLabel DISP32;
+    public javax.swing.JLabel DISP33;
+    public javax.swing.JLabel DISP35;
     public javax.swing.JLabel DISP4;
     public javax.swing.JLabel DISP5;
     public javax.swing.JLabel DISP6;
     public javax.swing.JLabel DISP7;
     public javax.swing.JLabel DISP9;
     private javax.swing.JButton EndJob;
+    private javax.swing.JButton ExtFunc;
     public javax.swing.JLabel FQT;
     public javax.swing.JLabel FQT1;
     public javax.swing.JLabel FQT10;
@@ -5176,14 +6048,14 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel FQT21;
     public javax.swing.JLabel FQT22;
     public javax.swing.JLabel FQT23;
-    public javax.swing.JLabel FQT24;
-    public javax.swing.JLabel FQT25;
-    public javax.swing.JLabel FQT26;
-    public javax.swing.JLabel FQT27;
     public javax.swing.JLabel FQT28;
+    public javax.swing.JLabel FQT29;
     public javax.swing.JLabel FQT3;
     public javax.swing.JLabel FQT30;
     public javax.swing.JLabel FQT31;
+    public javax.swing.JLabel FQT32;
+    public javax.swing.JLabel FQT33;
+    public javax.swing.JLabel FQT35;
     public javax.swing.JLabel FQT4;
     public javax.swing.JLabel FQT5;
     public javax.swing.JLabel FQT6;
@@ -5204,14 +6076,14 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JPanel NPS21;
     public javax.swing.JPanel NPS22;
     public javax.swing.JPanel NPS23;
-    public javax.swing.JPanel NPS24;
-    public javax.swing.JPanel NPS25;
-    public javax.swing.JPanel NPS26;
-    public javax.swing.JPanel NPS27;
     public javax.swing.JPanel NPS28;
+    public javax.swing.JPanel NPS29;
     public javax.swing.JPanel NPS3;
     public javax.swing.JPanel NPS30;
     public javax.swing.JPanel NPS31;
+    public javax.swing.JPanel NPS32;
+    public javax.swing.JPanel NPS33;
+    public javax.swing.JPanel NPS35;
     public javax.swing.JPanel NPS4;
     public javax.swing.JPanel NPS5;
     public javax.swing.JPanel NPS6;
@@ -5232,22 +6104,27 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel QT21;
     public javax.swing.JLabel QT22;
     public javax.swing.JLabel QT23;
-    public javax.swing.JLabel QT24;
-    public javax.swing.JLabel QT25;
-    public javax.swing.JLabel QT26;
-    public javax.swing.JLabel QT27;
     public javax.swing.JLabel QT28;
+    public javax.swing.JLabel QT29;
     public javax.swing.JLabel QT3;
     public javax.swing.JLabel QT30;
     public javax.swing.JLabel QT31;
+    public javax.swing.JLabel QT32;
+    public javax.swing.JLabel QT33;
+    public javax.swing.JLabel QT35;
     public javax.swing.JLabel QT4;
     public javax.swing.JLabel QT5;
     public javax.swing.JLabel QT6;
     public javax.swing.JLabel QT7;
     public javax.swing.JLabel QT9;
+    private javax.swing.JButton Remover;
     private javax.swing.JButton Rework;
+    private javax.swing.JButton Suspender;
     public javax.swing.JLabel User500;
+    private javax.swing.JButton ViewIns;
     public javax.swing.JPanel bisagraslatch;
+    public javax.swing.JPanel bisagraslatch1;
+    public javax.swing.JLabel bisagratraserair;
     public javax.swing.JPanel bloque1;
     public javax.swing.JPanel bloque1_1;
     public javax.swing.JPanel bloque2;
@@ -5255,13 +6132,11 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JPanel bloque4;
     public javax.swing.JPanel bloque5;
     public javax.swing.JPanel bloque6;
-    public javax.swing.JPanel bloque7;
     public javax.swing.JPanel bloquebisagras;
     public javax.swing.JPanel bloqueimagen;
     public javax.swing.JPanel bloqueimagen1;
     public javax.swing.JPanel bloqueimagen2;
     public javax.swing.JPanel bloqueimagen3;
-    public javax.swing.JPanel bloqueimagen4;
     public javax.swing.JLabel cantidadfinal;
     public javax.swing.JLabel cantidadfinal1;
     public javax.swing.JLabel cantidadfinal10;
@@ -5277,14 +6152,14 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel cantidadfinal21;
     public javax.swing.JLabel cantidadfinal22;
     public javax.swing.JLabel cantidadfinal23;
-    public javax.swing.JLabel cantidadfinal24;
-    public javax.swing.JLabel cantidadfinal25;
-    public javax.swing.JLabel cantidadfinal26;
-    public javax.swing.JLabel cantidadfinal27;
     public javax.swing.JLabel cantidadfinal28;
+    public javax.swing.JLabel cantidadfinal29;
     public javax.swing.JLabel cantidadfinal3;
     public javax.swing.JLabel cantidadfinal30;
     public javax.swing.JLabel cantidadfinal31;
+    public javax.swing.JLabel cantidadfinal32;
+    public javax.swing.JLabel cantidadfinal33;
+    public javax.swing.JLabel cantidadfinal35;
     public javax.swing.JLabel cantidadfinal4;
     public javax.swing.JLabel cantidadfinal5;
     public javax.swing.JLabel cantidadfinal6;
@@ -5305,14 +6180,14 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel cantidadrequerida21;
     public javax.swing.JLabel cantidadrequerida22;
     public javax.swing.JLabel cantidadrequerida23;
-    public javax.swing.JLabel cantidadrequerida24;
-    public javax.swing.JLabel cantidadrequerida25;
-    public javax.swing.JLabel cantidadrequerida26;
-    public javax.swing.JLabel cantidadrequerida27;
     public javax.swing.JLabel cantidadrequerida28;
+    public javax.swing.JLabel cantidadrequerida29;
     public javax.swing.JLabel cantidadrequerida3;
     public javax.swing.JLabel cantidadrequerida30;
     public javax.swing.JLabel cantidadrequerida31;
+    public javax.swing.JLabel cantidadrequerida32;
+    public javax.swing.JLabel cantidadrequerida33;
+    public javax.swing.JLabel cantidadrequerida35;
     public javax.swing.JLabel cantidadrequerida4;
     public javax.swing.JLabel cantidadrequerida5;
     public javax.swing.JLabel cantidadrequerida6;
@@ -5342,14 +6217,14 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel descripcion21;
     public javax.swing.JLabel descripcion22;
     public javax.swing.JLabel descripcion23;
-    public javax.swing.JLabel descripcion24;
-    public javax.swing.JLabel descripcion25;
-    public javax.swing.JLabel descripcion26;
-    public javax.swing.JLabel descripcion27;
     public javax.swing.JLabel descripcion28;
+    public javax.swing.JLabel descripcion29;
     public javax.swing.JLabel descripcion3;
     public javax.swing.JLabel descripcion30;
     public javax.swing.JLabel descripcion31;
+    public javax.swing.JLabel descripcion32;
+    public javax.swing.JLabel descripcion33;
+    public javax.swing.JLabel descripcion35;
     public javax.swing.JLabel descripcion4;
     public javax.swing.JLabel descripcion5;
     public javax.swing.JLabel descripcion6;
@@ -5371,25 +6246,23 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel idsp21;
     public javax.swing.JLabel idsp22;
     public javax.swing.JLabel idsp23;
-    public javax.swing.JLabel idsp24;
-    public javax.swing.JLabel idsp25;
-    public javax.swing.JLabel idsp26;
-    public javax.swing.JLabel idsp27;
     public javax.swing.JLabel idsp28;
+    public javax.swing.JLabel idsp29;
     public javax.swing.JLabel idsp3;
     public javax.swing.JLabel idsp30;
     public javax.swing.JLabel idsp31;
+    public javax.swing.JLabel idsp32;
+    public javax.swing.JLabel idsp33;
+    public javax.swing.JLabel idsp35;
     public javax.swing.JLabel idsp4;
     public javax.swing.JLabel idsp5;
     public javax.swing.JLabel idsp6;
     public javax.swing.JLabel idsp7;
     public javax.swing.JLabel idsp9;
     public javax.swing.JPanel imagen;
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton6;
-    private javax.swing.JButton jButton7;
-    private javax.swing.JButton jButton8;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
@@ -5401,7 +6274,6 @@ public class Empty extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;
@@ -5415,6 +6287,7 @@ public class Empty extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
+    public javax.swing.JLabel milisegundos;
     public javax.swing.JLabel npaescanear;
     public javax.swing.JLabel npaescanear1;
     public javax.swing.JLabel npaescanear10;
@@ -5430,14 +6303,14 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel npaescanear21;
     public javax.swing.JLabel npaescanear22;
     public javax.swing.JLabel npaescanear23;
-    public javax.swing.JLabel npaescanear24;
-    public javax.swing.JLabel npaescanear25;
-    public javax.swing.JLabel npaescanear26;
-    public javax.swing.JLabel npaescanear27;
     public javax.swing.JLabel npaescanear28;
+    public javax.swing.JLabel npaescanear29;
     public javax.swing.JLabel npaescanear3;
     public javax.swing.JLabel npaescanear30;
     public javax.swing.JLabel npaescanear31;
+    public javax.swing.JLabel npaescanear32;
+    public javax.swing.JLabel npaescanear33;
+    public javax.swing.JLabel npaescanear35;
     public javax.swing.JLabel npaescanear4;
     public javax.swing.JLabel npaescanear5;
     public javax.swing.JLabel npaescanear6;
@@ -5458,14 +6331,14 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel npecaneado21;
     public javax.swing.JLabel npecaneado22;
     public javax.swing.JLabel npecaneado23;
-    public javax.swing.JLabel npecaneado24;
-    public javax.swing.JLabel npecaneado25;
-    public javax.swing.JLabel npecaneado26;
-    public javax.swing.JLabel npecaneado27;
     public javax.swing.JLabel npecaneado28;
+    public javax.swing.JLabel npecaneado29;
     public javax.swing.JLabel npecaneado3;
     public javax.swing.JLabel npecaneado30;
     public javax.swing.JLabel npecaneado31;
+    public javax.swing.JLabel npecaneado32;
+    public javax.swing.JLabel npecaneado33;
+    public javax.swing.JLabel npecaneado35;
     public javax.swing.JLabel npecaneado4;
     public javax.swing.JLabel npecaneado5;
     public javax.swing.JLabel npecaneado6;
@@ -5487,14 +6360,14 @@ public class Empty extends javax.swing.JFrame {
     public javax.swing.JLabel serial21;
     public javax.swing.JLabel serial22;
     public javax.swing.JLabel serial23;
-    public javax.swing.JLabel serial24;
-    public javax.swing.JLabel serial25;
-    public javax.swing.JLabel serial26;
-    public javax.swing.JLabel serial27;
     public javax.swing.JLabel serial28;
+    public javax.swing.JLabel serial29;
     public javax.swing.JLabel serial3;
     public javax.swing.JLabel serial30;
     public javax.swing.JLabel serial31;
+    public javax.swing.JLabel serial32;
+    public javax.swing.JLabel serial33;
+    public javax.swing.JLabel serial35;
     public javax.swing.JLabel serial4;
     public javax.swing.JLabel serial5;
     public javax.swing.JLabel serial6;

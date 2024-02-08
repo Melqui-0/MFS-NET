@@ -1,5 +1,13 @@
 package mfs;
 
+import java.awt.event.KeyEvent;
+import javax.swing.InputMap;
+
+import javax.swing.KeyStroke;
+import java.awt.event.KeyAdapter;
+import javax.swing.JOptionPane;
+
+
 
 public class Inicio extends javax.swing.JFrame {
 
@@ -10,86 +18,139 @@ public class Inicio extends javax.swing.JFrame {
         initComponents();
         this.setLayout(null);
     }
+    
+    InputMap map = new InputMap();
+
+       //map.put(KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0, false), "pressed");
+       //map.put(KeyStroke.getKeyStroke(KeyEvent.VK_ENTER, 0, true), "released");
+
+       //btnAceptar.setInputMap(0, map);
 
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        CHGPWD = new javax.swing.JButton();
+        SINGOFF = new javax.swing.JButton();
+        EXTWK = new javax.swing.JButton();
+        NEWWK = new javax.swing.JButton();
+        EXTFUN = new javax.swing.JButton();
+        APPLY = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Inicio");
         setBackground(new java.awt.Color(255, 255, 255));
+        addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                formKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                formKeyReleased(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                formKeyTyped(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(218, 218, 218));
         jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        jButton1.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/F2.jpg"))); // NOI18N
-        jButton1.setText("Chg Pwd");
-        jButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        CHGPWD.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        CHGPWD.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/F2.jpg"))); // NOI18N
+        CHGPWD.setText("Chg Pwd");
+        CHGPWD.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        CHGPWD.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        CHGPWD.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        CHGPWD.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                CHGPWDActionPerformed(evt);
+            }
+        });
+        CHGPWD.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                CHGPWDKeyTyped(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f3.jpg"))); // NOI18N
-        jButton2.setText("Sing Off");
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        SINGOFF.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        SINGOFF.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f3.jpg"))); // NOI18N
+        SINGOFF.setText("Sing Off");
+        SINGOFF.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        SINGOFF.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        SINGOFF.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        SINGOFF.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                SINGOFFActionPerformed(evt);
+            }
+        });
+        SINGOFF.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                SINGOFFKeyTyped(evt);
             }
         });
 
-        jButton3.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f4.jpg"))); // NOI18N
-        jButton3.setText("Exist Work");
-        jButton3.setToolTipText("");
-        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton3.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
+        EXTWK.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        EXTWK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f4.jpg"))); // NOI18N
+        EXTWK.setText("Exist Work");
+        EXTWK.setToolTipText("");
+        EXTWK.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        EXTWK.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        EXTWK.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        EXTWK.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        EXTWK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton3ActionPerformed(evt);
+                EXTWKActionPerformed(evt);
+            }
+        });
+        EXTWK.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                EXTWKKeyTyped(evt);
             }
         });
 
-        jButton4.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f5.jpg"))); // NOI18N
-        jButton4.setText("New Work");
-        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton4.setVerticalAlignment(javax.swing.SwingConstants.TOP);
-        jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        NEWWK.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        NEWWK.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f5.jpg"))); // NOI18N
+        NEWWK.setText("New Work");
+        NEWWK.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        NEWWK.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        NEWWK.setVerticalAlignment(javax.swing.SwingConstants.TOP);
+        NEWWK.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        NEWWK.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                NEWWKKeyTyped(evt);
+            }
+        });
 
-        jButton5.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f6.jpg"))); // NOI18N
-        jButton5.setText("Ext Func");
-        jButton5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton5.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        EXTFUN.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        EXTFUN.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f6.jpg"))); // NOI18N
+        EXTFUN.setText("Ext Func");
+        EXTFUN.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        EXTFUN.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        EXTFUN.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        EXTFUN.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                EXTFUNActionPerformed(evt);
+            }
+        });
+        EXTFUN.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                EXTFUNKeyTyped(evt);
+            }
+        });
 
-        jButton6.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f7.jpg"))); // NOI18N
-        jButton6.setText("Re-Apply");
-        jButton6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        jButton6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton6.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        APPLY.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        APPLY.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/f7.jpg"))); // NOI18N
+        APPLY.setText("Re-Apply");
+        APPLY.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        APPLY.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        APPLY.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        APPLY.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                APPLYKeyTyped(evt);
+            }
+        });
 
         jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 28)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 204));
@@ -101,20 +162,20 @@ public class Inicio extends javax.swing.JFrame {
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(185, Short.MAX_VALUE)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(CHGPWD, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(EXTFUN, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(APPLY, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(SINGOFF, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(EXTWK, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(185, 185, 185))
+                        .addComponent(NEWWK)))
+                .addGap(187, 187, 187))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 473, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
@@ -125,16 +186,16 @@ public class Inicio extends javax.swing.JFrame {
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(97, 97, 97)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NEWWK, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel1Layout.createSequentialGroup()
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(CHGPWD, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(SINGOFF, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(EXTWK, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(32, 32, 32)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(APPLY, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(EXTFUN, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(450, Short.MAX_VALUE))
         );
 
@@ -158,19 +219,195 @@ public class Inicio extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void CHGPWDActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CHGPWDActionPerformed
        all.cambio.ID.setText(Login.us);
        all.cambio.setVisible(true);
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_CHGPWDActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void SINGOFFActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SINGOFFActionPerformed
         this.setVisible(false);
         all.login.setVisible(true);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_SINGOFFActionPerformed
 
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+    private void EXTWKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EXTWKActionPerformed
         all.work.setVisible(true);
-    }//GEN-LAST:event_jButton3ActionPerformed
+        all.work.orden = 0;
+    }//GEN-LAST:event_EXTWKActionPerformed
+
+    private void formKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyPressed
+        int F4 = evt.getKeyChar();
+        if (F4 == KeyEvent.VK_F4){
+            all.work.setVisible(true);
+        }
+    }//GEN-LAST:event_formKeyPressed
+
+    private void formKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyTyped
+        int F4 = evt.getKeyChar();
+        if (F4 == KeyEvent.VK_F4){
+            all.work.setVisible(true);
+        }
+    }//GEN-LAST:event_formKeyTyped
+
+    private void formKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_formKeyReleased
+        int F4 = evt.getKeyChar();
+        if (F4 == KeyEvent.VK_F4){
+            all.work.setVisible(true);
+        }
+    }//GEN-LAST:event_formKeyReleased
+
+    private void EXTFUNActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EXTFUNActionPerformed
+        all.fun2.setVisible(true);
+    }//GEN-LAST:event_EXTFUNActionPerformed
+
+    private void CHGPWDKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_CHGPWDKeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                all.cambio.setVisible(true);
+                break;
+            case KeyEvent.VK_3:
+                this.setVisible(false);
+                all.login.setVisible(true);
+                break;
+            case KeyEvent.VK_4:
+                all.work.setVisible(true);
+                break;
+            case KeyEvent.VK_5:
+                all.work.setVisible(true);
+                break;
+            case KeyEvent.VK_6:
+                all.fun2.setVisible(true);
+                break;
+            case KeyEvent.VK_7:
+                all.work.setVisible(true);
+                break;
+        }
+    }//GEN-LAST:event_CHGPWDKeyTyped
+
+    private void SINGOFFKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_SINGOFFKeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                all.cambio.setVisible(true);
+                break;
+            case KeyEvent.VK_3:
+                this.setVisible(false);
+                all.login.setVisible(true);
+                break;
+            case KeyEvent.VK_4:
+                all.work.setVisible(true);
+                break;
+            case KeyEvent.VK_5:
+                all.work.setVisible(true);
+                break;
+            case KeyEvent.VK_6:
+                all.fun2.setVisible(true);
+                break;
+            case KeyEvent.VK_7:
+                all.work.setVisible(true);
+                break;
+        }
+    }//GEN-LAST:event_SINGOFFKeyTyped
+
+    private void EXTWKKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_EXTWKKeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                all.cambio.setVisible(true);
+                break;
+            case KeyEvent.VK_3:
+                this.setVisible(false);
+                all.login.setVisible(true);
+                break;
+            case KeyEvent.VK_4:
+                all.work.setVisible(true);
+                break;
+            case KeyEvent.VK_5:
+                all.work.setVisible(true);
+                break;
+            case KeyEvent.VK_6:
+                all.fun2.setVisible(true);
+                break;
+            case KeyEvent.VK_7:
+                all.work.setVisible(true);
+                break;
+        }
+    }//GEN-LAST:event_EXTWKKeyTyped
+
+    private void NEWWKKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_NEWWKKeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                all.cambio.setVisible(true);
+                break;
+            case KeyEvent.VK_3:
+                this.setVisible(false);
+                all.login.setVisible(true);
+                break;
+            case KeyEvent.VK_4:
+                all.work.setVisible(true);
+                break;
+            case KeyEvent.VK_5:
+                all.work.setVisible(true);
+                break;
+            case KeyEvent.VK_6:
+                all.fun2.setVisible(true);
+                break;
+            case KeyEvent.VK_7:
+                all.work.setVisible(true);
+                break;
+        }
+    }//GEN-LAST:event_NEWWKKeyTyped
+
+    private void EXTFUNKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_EXTFUNKeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                all.cambio.setVisible(true);
+                break;
+            case KeyEvent.VK_3:
+                this.setVisible(false);
+                all.login.setVisible(true);
+                break;
+            case KeyEvent.VK_4:
+                all.work.setVisible(true);
+                break;
+            case KeyEvent.VK_5:
+                all.work.setVisible(true);
+                break;
+            case KeyEvent.VK_6:
+                all.fun2.setVisible(true);
+                break;
+            case KeyEvent.VK_7:
+                all.work.setVisible(true);
+                break;
+        }
+    }//GEN-LAST:event_EXTFUNKeyTyped
+
+    private void APPLYKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_APPLYKeyTyped
+        int btn = evt.getKeyChar();
+        switch (btn) {
+            case KeyEvent.VK_2:
+                all.cambio.setVisible(true);
+                break;
+            case KeyEvent.VK_3:
+                this.setVisible(false);
+                all.login.setVisible(true);
+                break;
+            case KeyEvent.VK_4:
+                all.work.setVisible(true);
+                break;
+            case KeyEvent.VK_5:
+                all.work.setVisible(true);
+                break;
+            case KeyEvent.VK_6:
+                all.fun2.setVisible(true);
+                break;
+            case KeyEvent.VK_7:
+                all.work.setVisible(true);
+                break;
+        }
+    }//GEN-LAST:event_APPLYKeyTyped
 
 
     public static void main(String args[]) {
@@ -183,12 +420,12 @@ public class Inicio extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
-    private javax.swing.JButton jButton4;
-    private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
+    private javax.swing.JButton APPLY;
+    private javax.swing.JButton CHGPWD;
+    private javax.swing.JButton EXTFUN;
+    private javax.swing.JButton EXTWK;
+    private javax.swing.JButton NEWWK;
+    private javax.swing.JButton SINGOFF;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables

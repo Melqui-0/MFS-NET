@@ -50,7 +50,7 @@ public class Barcode extends javax.swing.JFrame {
         npscan = new javax.swing.JTextField();
         partnumber = new javax.swing.JLabel();
         Logpart = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        Cancel = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -83,25 +83,29 @@ public class Barcode extends javax.swing.JFrame {
 
         Logpart.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         Logpart.setText("F2 = Log Part");
+        Logpart.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Logpart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LogpartActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jButton2.setText("Esc = Cancel");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        Cancel.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        Cancel.setText("Esc = Cancel");
+        Cancel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Cancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                CancelActionPerformed(evt);
             }
         });
 
         jButton3.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jButton3.setText("F4 = Sustitute");
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jButton4.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jButton4.setText("F6 = Country");
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jLabel1.setText("Scan in Barcode...");
@@ -147,7 +151,7 @@ public class Barcode extends javax.swing.JFrame {
                             .addComponent(jButton3))
                         .addGap(36, 36, 36)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Cancel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -196,7 +200,7 @@ public class Barcode extends javax.swing.JFrame {
                         .addGap(23, 23, 23)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(Logpart)
-                            .addComponent(jButton2)))
+                            .addComponent(Cancel)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(7, 7, 7)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -254,6 +258,8 @@ public class Barcode extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
             npscan.setText("");
             }
+        } else if (enter == KeyEvent.VK_ESCAPE){
+            CancelActionPerformed(null);
         }
     }//GEN-LAST:event_npscanKeyTyped
 
@@ -304,9 +310,9 @@ public class Barcode extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_LogpartActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed
         this.setVisible(false);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_CancelActionPerformed
 
     /**
      * @param args the command line arguments
@@ -353,21 +359,21 @@ public class Barcode extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Cancel;
     private javax.swing.JButton Logpart;
-    private javax.swing.JLabel country;
-    private javax.swing.JLabel countryfinal;
+    public javax.swing.JLabel country;
+    public javax.swing.JLabel countryfinal;
     public javax.swing.JLabel ecfinal;
     public javax.swing.JLabel ecnumber;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel machine;
-    private javax.swing.JLabel machinefinal;
+    public javax.swing.JLabel machine;
+    public javax.swing.JLabel machinefinal;
     public javax.swing.JLabel npfinal;
     public javax.swing.JTextField npscan;
     public javax.swing.JLabel partnumber;
-    private javax.swing.JLabel secfinal;
-    private javax.swing.JLabel sequence;
+    public javax.swing.JLabel secfinal;
+    public javax.swing.JLabel sequence;
     // End of variables declaration//GEN-END:variables
 }

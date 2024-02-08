@@ -69,6 +69,7 @@ public class Barcode_2 extends javax.swing.JFrame {
 
         LogPart.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         LogPart.setText("F2 = Log Part");
+        LogPart.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         LogPart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LogPartActionPerformed(evt);
@@ -77,6 +78,7 @@ public class Barcode_2 extends javax.swing.JFrame {
 
         Cancel.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         Cancel.setText("Esc = Cancel");
+        Cancel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Cancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CancelActionPerformed(evt);
@@ -85,9 +87,11 @@ public class Barcode_2 extends javax.swing.JFrame {
 
         Sustituto.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         Sustituto.setText("F4 = Sustitute");
+        Sustituto.setEnabled(false);
 
         Country.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         Country.setText("F6 = Country");
+        Country.setEnabled(false);
 
         jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jLabel1.setText("Scan in Barcode...");
@@ -214,6 +218,8 @@ public class Barcode_2 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
             npscan.setText("");
             }
+        } else if (enter == KeyEvent.VK_ESCAPE){
+            CancelActionPerformed(null);
         }
     }//GEN-LAST:event_npscanKeyTyped
 
@@ -223,7 +229,7 @@ public class Barcode_2 extends javax.swing.JFrame {
             all.empty.idsp.setText("I");
             all.empty.npecaneado.setText("000" + npingresado.toUpperCase());
             all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
-            all.empty.serial.setText(npescaneado.substring(10));
+            all.empty.serial.setText(npescaneado.substring(10).toUpperCase());
             all.empty.NPS.setBackground(Color.BLUE);
             all.empty.npaescanear.setForeground(Color.WHITE);
             all.empty.QT.setForeground(Color.WHITE);
@@ -238,6 +244,7 @@ public class Barcode_2 extends javax.swing.JFrame {
             npfinal.setText("");
             ecfinal.setText("");
             secfinal.setText("");
+            npscan.requestFocus();
             this.setVisible(false);
         } else if(this.npingresado.toUpperCase().equals(all.empty.npaescanear.getText().substring(3))){
             all.empty.npaescanear.setText("000" + npingresado.toUpperCase());
@@ -259,8 +266,30 @@ public class Barcode_2 extends javax.swing.JFrame {
             npfinal.setText("");
             ecfinal.setText("");
             secfinal.setText("");
+            npscan.requestFocus();
             this.setVisible(false);
-        }else {   
+        }else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear.getText().substring(3)) && this.secfinal.getText().equals(all.empty.serial.getText()) && all.empty.idsp.getText().equals("R")){
+            all.empty.npaescanear.setText(npingresado.toUpperCase());
+            all.empty.idsp.setText("D");
+            all.empty.npecaneado.setText("000" + npingresado.toUpperCase());
+            all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
+            all.empty.serial.setText(npescaneado.substring(10));
+            all.empty.NPS.setBackground(Color.YELLOW);
+            all.empty.npaescanear.setForeground(Color.BLACK);
+            all.empty.QT.setForeground(Color.BLACK);
+            all.empty.cantidadrequerida.setForeground(Color.BLACK);
+            all.empty.FQT.setForeground(Color.BLACK);
+            all.empty.cantidadfinal.setForeground(Color.BLACK);
+            all.empty.DISP.setForeground(Color.BLACK);
+            all.empty.idsp.setForeground(Color.BLACK);
+            all.empty.descripcion.setForeground(Color.BLACK);
+            all.empty.npecaneado.setForeground(Color.BLACK);
+            all.empty.serial.setForeground(Color.BLACK);
+            npfinal.setText("");
+            ecfinal.setText("");
+            secfinal.setText("");
+            npscan.requestFocus();
+            this.setVisible(false);
             JOptionPane.showMessageDialog(null, "FC15 ");
         }
     }//GEN-LAST:event_LogPartActionPerformed

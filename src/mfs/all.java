@@ -17,7 +17,7 @@ public class all {
     public static Opciones opcempty = new Opciones ();
     public static Dificult dificultad = new Dificult();
     public static Empty empty = new Empty();
-    public static Empty_231 empty_231 = new Empty_231();
+    //public static Empty_231 empty_231 = new Empty_231();
     public static Barcode barcode =  new Barcode();
     public static Diccionario dic = new Diccionario();
     public static Barcode_1 barcode_1 = new Barcode_1();
@@ -28,5 +28,11 @@ public class all {
     public static Barcode_7 barcode_7 = new Barcode_7();
     public static Barcode_8 barcode_8 = new Barcode_8();
     public static Rework rework = new Rework();
+    public static Suspender suspender = new Suspender();
+    public static Funciones_extras fun = new Funciones_extras();
+    public static Funciones_extra_fuera fun2 = new Funciones_extra_fuera ();
+    public static View view = new View();
+    public static Cronometro crono = new Cronometro();
+    public static Pagina_Entrenador entrenador = new Pagina_Entrenador();
     public static int bar = 3;
 }

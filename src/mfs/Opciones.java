@@ -4,6 +4,8 @@
  */
 package mfs;
 
+import java.awt.event.KeyEvent;
+
 /**
  *
  * @author 102976781
@@ -43,6 +45,11 @@ public class Opciones extends javax.swing.JFrame {
                 PDU231ActionPerformed(evt);
             }
         });
+        PDU231.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                PDU231KeyTyped(evt);
+            }
+        });
 
         PDU485.setFont(new java.awt.Font("Century Gothic", 1, 28)); // NOI18N
         PDU485.setText("03JG485");
@@ -50,6 +57,11 @@ public class Opciones extends javax.swing.JFrame {
         PDU485.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 PDU485ActionPerformed(evt);
+            }
+        });
+        PDU485.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                PDU485KeyTyped(evt);
             }
         });
 
@@ -81,15 +93,35 @@ public class Opciones extends javax.swing.JFrame {
         );
 
         pack();
+        setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
     private void PDU231ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PDU231ActionPerformed
-        all.empty_231.setVisible(true);
+        //all.empty_231.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_PDU231ActionPerformed
 
     private void PDU485ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PDU485ActionPerformed
         all.empty.setVisible(true);
+        this.setVisible(false);
+        all.abrir.setVisible(false);
+        all.empty.NPS.requestFocus();
+        all.crono.mTimer.start();
     }//GEN-LAST:event_PDU485ActionPerformed
+
+    private void PDU231KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PDU231KeyTyped
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_ESCAPE){
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_PDU231KeyTyped
+
+    private void PDU485KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PDU485KeyTyped
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_ESCAPE){
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_PDU485KeyTyped
 
     /**
      * @param args the command line arguments

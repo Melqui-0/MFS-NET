@@ -44,7 +44,7 @@ public class Barcode_8 extends javax.swing.JFrame {
         npscan = new javax.swing.JTextField();
         partnumber = new javax.swing.JLabel();
         Logpart = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        Cancel = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -71,25 +71,30 @@ public class Barcode_8 extends javax.swing.JFrame {
 
         Logpart.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         Logpart.setText("F2 = Log Part");
+        Logpart.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Logpart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LogpartActionPerformed(evt);
             }
         });
 
-        jButton2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        jButton2.setText("Esc = Cancel");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        Cancel.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        Cancel.setText("Esc = Cancel");
+        Cancel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Cancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                CancelActionPerformed(evt);
             }
         });
 
         jButton3.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jButton3.setText("F4 = Sustitute");
+        jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jButton4.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jButton4.setText("F6 = Country");
+        jButton4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton4.setEnabled(false);
 
         jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jLabel1.setText("Scan in Barcode...");
@@ -120,7 +125,7 @@ public class Barcode_8 extends javax.swing.JFrame {
                             .addComponent(jButton3))
                         .addGap(36, 36, 36)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Cancel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -144,7 +149,7 @@ public class Barcode_8 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(Logpart)
-                    .addComponent(jButton2))
+                    .addComponent(Cancel))
                 .addGap(27, 27, 27)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton4)
@@ -187,7 +192,7 @@ public class Barcode_8 extends javax.swing.JFrame {
                     npfinal.setText("00000" + npescaneado.substring(3, 10).toUpperCase());
                     npingresado = npescaneado.substring(3, 10);
                     npscan.setText("");
-                    secfinal.setText(npescaneado.substring(10));
+                    secfinal.setText(npescaneado.substring(10).toUpperCase());
                 } else{
                     JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
                     npscan.setText("");
@@ -196,6 +201,8 @@ public class Barcode_8 extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   
                 npscan.setText("");
             }
+        } else if (enter == KeyEvent.VK_ESCAPE){
+            CancelActionPerformed(null);
         }
     }//GEN-LAST:event_npscanKeyTyped
 
@@ -203,12 +210,12 @@ public class Barcode_8 extends javax.swing.JFrame {
     if (pn.equals("03JG485")){
         switch (nm) {
             case 10:
-                if (this.npingresado.toUpperCase().equals(all.empty.npaescanear10.getText())){
+                if (this.npingresado.toUpperCase().equals(all.empty.npaescanear10.getText()) || this.npingresado.toUpperCase().equals("03JG489")){
                     all.empty.npaescanear10.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp10.setText("I");
                     all.empty.npecaneado10.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal10.setText(all.empty.cantidadrequerida10.getText());
-                    all.empty.serial10.setText(npescaneado.substring(10));
+                    all.empty.serial10.setText(npescaneado.substring(10).toUpperCase());
                     all.empty.NPS10.setBackground(Color.BLUE);
                     all.empty.npaescanear10.setForeground(Color.WHITE);
                     all.empty.QT10.setForeground(Color.WHITE);
@@ -222,13 +229,14 @@ public class Barcode_8 extends javax.swing.JFrame {
                     all.empty.serial10.setForeground(Color.WHITE);
                     npfinal.setText("");
                     secfinal.setText("");
+                    npscan.requestFocus();
                     this.setVisible(false);
                 } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear10.getText().substring(3))){
                     all.empty.npaescanear10.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp10.setText("I");
                     all.empty.npecaneado10.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal10.setText(all.empty.cantidadrequerida10.getText());
-                    all.empty.serial10.setText(npescaneado.substring(10));
+                    all.empty.serial10.setText(npescaneado.substring(10).toUpperCase());
                     all.empty.NPS10.setBackground(Color.BLUE);
                     all.empty.npaescanear10.setForeground(Color.WHITE);
                     all.empty.QT10.setForeground(Color.WHITE);
@@ -242,16 +250,17 @@ public class Barcode_8 extends javax.swing.JFrame {
                     all.empty.serial10.setForeground(Color.WHITE);
                     npfinal.setText("");
                     secfinal.setText("");
+                    npscan.requestFocus();
                     this.setVisible(false);
                 }
                 break;
             case 15:
-                if (this.npingresado.toUpperCase().equals(all.empty.npaescanear15.getText())){
+                if (this.npingresado.toUpperCase().equals(all.empty.npaescanear15.getText()) || this.npingresado.toUpperCase().equals("03JG489")){
                     all.empty.npaescanear10.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp15.setText("I");
                     all.empty.npecaneado15.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal15.setText(all.empty.cantidadrequerida15.getText());
-                    all.empty.serial15.setText(npescaneado.substring(10));
+                    all.empty.serial15.setText(npescaneado.substring(10).toUpperCase());
                     all.empty.NPS15.setBackground(Color.BLUE);
                     all.empty.npaescanear15.setForeground(Color.WHITE);
                     all.empty.QT15.setForeground(Color.WHITE);
@@ -265,13 +274,14 @@ public class Barcode_8 extends javax.swing.JFrame {
                     all.empty.serial15.setForeground(Color.WHITE);
                     npfinal.setText("");
                     secfinal.setText("");
+                    npscan.requestFocus();
                     this.setVisible(false);
                 } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear15.getText().substring(3))){
                     all.empty.npaescanear10.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp15.setText("I");
                     all.empty.npecaneado15.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal15.setText(all.empty.cantidadrequerida15.getText());
-                    all.empty.serial15.setText(npescaneado.substring(10));
+                    all.empty.serial15.setText(npescaneado.substring(10).toUpperCase());
                     all.empty.NPS15.setBackground(Color.BLUE);
                     all.empty.npaescanear15.setForeground(Color.WHITE);
                     all.empty.QT15.setForeground(Color.WHITE);
@@ -285,16 +295,17 @@ public class Barcode_8 extends javax.swing.JFrame {
                     all.empty.serial15.setForeground(Color.WHITE);
                     npfinal.setText("");
                     secfinal.setText("");
+                    npscan.requestFocus();
                     this.setVisible(false);
                 }
                 break;
             case 18:
-                if (this.npingresado.toUpperCase().equals(all.empty.npaescanear18.getText())){
+                if (this.npingresado.toUpperCase().equals(all.empty.npaescanear18.getText()) || this.npingresado.toUpperCase().equals("03JG489")){
                     all.empty.npaescanear18.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp18.setText("I");
                     all.empty.npecaneado18.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal18.setText(all.empty.cantidadrequerida18.getText());
-                    all.empty.serial18.setText(npescaneado.substring(10));
+                    all.empty.serial18.setText(npescaneado.substring(10).toUpperCase());
                     all.empty.NPS18.setBackground(Color.BLUE);
                     all.empty.npaescanear18.setForeground(Color.WHITE);
                     all.empty.QT18.setForeground(Color.WHITE);
@@ -308,13 +319,14 @@ public class Barcode_8 extends javax.swing.JFrame {
                     all.empty.serial18.setForeground(Color.WHITE);
                     npfinal.setText("");
                     secfinal.setText("");
+                    npscan.requestFocus();
                     this.setVisible(false);
                 } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear18.getText().substring(3))){
                     all.empty.npaescanear18.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp18.setText("I");
                     all.empty.npecaneado18.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal18.setText(all.empty.cantidadrequerida18.getText());
-                    all.empty.serial18.setText(npescaneado.substring(10));
+                    all.empty.serial18.setText(npescaneado.substring(10).toUpperCase());
                     all.empty.NPS18.setBackground(Color.BLUE);
                     all.empty.npaescanear18.setForeground(Color.WHITE);
                     all.empty.QT18.setForeground(Color.WHITE);
@@ -328,16 +340,17 @@ public class Barcode_8 extends javax.swing.JFrame {
                     all.empty.serial18.setForeground(Color.WHITE);
                     npfinal.setText("");
                     secfinal.setText("");
+                    npscan.requestFocus();
                     this.setVisible(false);
                 } 
                 break;
             case 21:
-                if (this.npingresado.toUpperCase().equals(all.empty.npaescanear21.getText())){
+                if (this.npingresado.toUpperCase().equals(all.empty.npaescanear21.getText()) || this.npingresado.toUpperCase().equals("03JG489")){
                     all.empty.npaescanear21.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp21.setText("I");
                     all.empty.npecaneado21.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal21.setText(all.empty.cantidadrequerida21.getText());
-                    all.empty.serial21.setText(npescaneado.substring(10));
+                    all.empty.serial21.setText(npescaneado.substring(10).toUpperCase());
                     all.empty.NPS21.setBackground(Color.BLUE);
                     all.empty.npaescanear21.setForeground(Color.WHITE);
                     all.empty.QT21.setForeground(Color.WHITE);
@@ -351,13 +364,14 @@ public class Barcode_8 extends javax.swing.JFrame {
                     all.empty.serial21.setForeground(Color.WHITE);
                     npfinal.setText("");
                     secfinal.setText("");
+                    npscan.requestFocus();
                     this.setVisible(false);
                 } else if (this.npingresado.toUpperCase().equals(all.empty.npaescanear21.getText().substring(3))){
                     all.empty.npaescanear21.setText("000" + npingresado.toUpperCase());
                     all.empty.idsp21.setText("I");
                     all.empty.npecaneado21.setText("000" + npingresado.toUpperCase());
                     all.empty.cantidadfinal21.setText(all.empty.cantidadrequerida21.getText());
-                    all.empty.serial21.setText(npescaneado.substring(10));
+                    all.empty.serial21.setText(npescaneado.substring(10).toUpperCase());
                     all.empty.NPS21.setBackground(Color.BLUE);
                     all.empty.npaescanear21.setForeground(Color.WHITE);
                     all.empty.QT21.setForeground(Color.WHITE);
@@ -371,6 +385,7 @@ public class Barcode_8 extends javax.swing.JFrame {
                     all.empty.serial21.setForeground(Color.WHITE);
                     npfinal.setText("");
                     secfinal.setText("");
+                    npscan.requestFocus();
                     this.setVisible(false);
                 }       break;
             default:
@@ -380,9 +395,9 @@ public class Barcode_8 extends javax.swing.JFrame {
     } // Queda pendiente colocar las opciones para el sutituto (03JG489)
     }//GEN-LAST:event_LogpartActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed
         this.setVisible(false);
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_CancelActionPerformed
 
     /**
      * @param args the command line arguments
@@ -437,8 +452,8 @@ public class Barcode_8 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Cancel;
     private javax.swing.JButton Logpart;
-    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;

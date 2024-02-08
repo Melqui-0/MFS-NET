@@ -4,6 +4,7 @@
  */
 package mfs;
 import java.awt.Color;
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 import static mfs.Empty.nm;
 
@@ -61,6 +62,7 @@ public class Barcode_7 extends javax.swing.JFrame {
 
         Logpart.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         Logpart.setText("F2 = Log Part");
+        Logpart.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Logpart.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 LogpartActionPerformed(evt);
@@ -69,6 +71,7 @@ public class Barcode_7 extends javax.swing.JFrame {
 
         Cancel.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         Cancel.setText("Esc = Cancel");
+        Cancel.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         Cancel.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 CancelActionPerformed(evt);
@@ -77,9 +80,13 @@ public class Barcode_7 extends javax.swing.JFrame {
 
         Sustituto.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         Sustituto.setText("F4 = Sustitute");
+        Sustituto.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Sustituto.setEnabled(false);
 
         Country.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         Country.setText("F6 = Country");
+        Country.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Country.setEnabled(false);
 
         jLabel1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jLabel1.setText("Scan in Barcode...");
@@ -133,7 +140,10 @@ public class Barcode_7 extends javax.swing.JFrame {
     }//GEN-LAST:event_npscanActionPerformed
 
     private void npscanKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_npscanKeyTyped
-
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_ESCAPE){
+        CancelActionPerformed(null);
+        }
     }//GEN-LAST:event_npscanKeyTyped
 
     private void LogpartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogpartActionPerformed

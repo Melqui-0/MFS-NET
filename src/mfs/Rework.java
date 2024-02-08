@@ -5,11 +5,11 @@
 package mfs;
 
 import java.awt.Color;
+import java.awt.event.KeyEvent;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.JOptionPane;
 import static mfs.Empty.nm;
-import static mfs.Empty.nps;
 import static mfs.Empty.pn;
 
 /**
@@ -66,25 +66,30 @@ public class Rework extends javax.swing.JFrame {
     private void initComponents() {
 
         jButton5 = new javax.swing.JButton();
-        jButton6 = new javax.swing.JButton();
+        Cancel = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
         remplace = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        part = new javax.swing.JButton();
         Remover = new javax.swing.JButton();
-        jButton4 = new javax.swing.JButton();
+        Ircode = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Rework");
 
         jButton5.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         jButton5.setText("Enter");
-
-        jButton6.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jButton6.setText("Cancel");
-        jButton6.addActionListener(new java.awt.event.ActionListener() {
+        jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton6ActionPerformed(evt);
+                jButton5ActionPerformed(evt);
+            }
+        });
+
+        Cancel.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        Cancel.setText("Cancel");
+        Cancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                CancelActionPerformed(evt);
             }
         });
 
@@ -95,9 +100,19 @@ public class Rework extends javax.swing.JFrame {
                 remplaceActionPerformed(evt);
             }
         });
+        remplace.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                remplaceKeyTyped(evt);
+            }
+        });
 
-        jButton2.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jButton2.setText("Remove Part & UnFkit");
+        part.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        part.setText("Remove Part & UnFkit");
+        part.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                partKeyTyped(evt);
+            }
+        });
 
         Remover.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         Remover.setText("Remove Current Part");
@@ -106,9 +121,19 @@ public class Rework extends javax.swing.JFrame {
                 RemoverActionPerformed(evt);
             }
         });
+        Remover.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                RemoverKeyTyped(evt);
+            }
+        });
 
-        jButton4.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jButton4.setText("Enter IR Code");
+        Ircode.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        Ircode.setText("Enter IR Code");
+        Ircode.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                IrcodeKeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -117,9 +142,9 @@ public class Rework extends javax.swing.JFrame {
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton2)
+                    .addComponent(part)
                     .addComponent(Remover)
-                    .addComponent(jButton4)
+                    .addComponent(Ircode)
                     .addComponent(remplace))
                 .addGap(66, 66, 66))
         );
@@ -129,11 +154,11 @@ public class Rework extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(remplace)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2)
+                .addComponent(part)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(Remover)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton4)
+                .addComponent(Ircode)
                 .addContainerGap(73, Short.MAX_VALUE))
         );
 
@@ -147,7 +172,7 @@ public class Rework extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton5)
                 .addGap(66, 66, 66)
-                .addComponent(jButton6)
+                .addComponent(Cancel)
                 .addGap(47, 47, 47))
             .addGroup(layout.createSequentialGroup()
                 .addGap(35, 35, 35)
@@ -162,13 +187,18 @@ public class Rework extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton5)
-                    .addComponent(jButton6))
+                    .addComponent(Cancel))
                 .addContainerGap(35, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    
+    public void remplacedActionPerformed (java.awt.event.ActionEvent evt){
+          
+    }
+    
+    
     private void remplaceActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_remplaceActionPerformed
         Map<String, String[]> map = new HashMap <>();
         map.put("00001KL468", label3);
@@ -223,7 +253,7 @@ public class Rework extends javax.swing.JFrame {
         switch (nm) {
             case 0:
                 if (all.empty.idsp.getText().equals("I")){
-                all.empty.npaescanear.setText(Empty.pn);
+                all.empty.npaescanear.setText(all.empty.npaescanear.getText().substring(3));
                 all.empty.idsp.setText("A");
                 all.empty.npecaneado.setText("PF  2L01-");
                 all.empty.cantidadfinal.setText("00000");
@@ -246,7 +276,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 1:
                 if (all.empty.idsp1.getText().equals("I")){
-                all.empty.npaescanear1.setText(Empty.pn);
+                all.empty.npaescanear1.setText(Empty.pn2);
                 all.empty.idsp1.setText("A");
                 all.empty.npecaneado1.setText("PF  2L01-");
                 all.empty.cantidadfinal1.setText("00000");
@@ -269,7 +299,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 2:
                 if (all.empty.idsp2.getText().equals("I")){
-                all.empty.npaescanear2.setText(Empty.pn);
+                all.empty.npaescanear2.setText(Empty.pn2);
                 all.empty.idsp2.setText("A");
                 all.empty.npecaneado2.setText("PF  2L01-");
                 all.empty.cantidadfinal2.setText("00000");
@@ -292,7 +322,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 3:
                 if (all.empty.idsp3.getText().equals("I")){
-                all.empty.npaescanear3.setText(Empty.pn);
+                all.empty.npaescanear3.setText(Empty.pn2);
                 all.empty.idsp3.setText("A");
                 all.empty.npecaneado3.setText("PF  2L01-");
                 all.empty.cantidadfinal3.setText("00000");
@@ -315,7 +345,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 4:
                 if (all.empty.idsp4.getText().equals("I")){
-                all.empty.npaescanear4.setText(Empty.pn);
+                all.empty.npaescanear4.setText(Empty.pn2);
                 all.empty.idsp4.setText("A");
                 all.empty.npecaneado4.setText("PF  2L01-");
                 all.empty.cantidadfinal4.setText("00000");
@@ -338,7 +368,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 5:
                 if (all.empty.idsp5.getText().equals("I")){
-                all.empty.npaescanear5.setText(Empty.pn);
+                all.empty.npaescanear5.setText(Empty.pn2);
                 all.empty.idsp5.setText("A");
                 all.empty.npecaneado5.setText("PF  2L01-");
                 all.empty.cantidadfinal5.setText("00000");
@@ -361,7 +391,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 6:
                 if (all.empty.idsp6.getText().equals("I")){
-                all.empty.npaescanear6.setText(Empty.pn);
+                all.empty.npaescanear6.setText(Empty.pn2);
                 all.empty.idsp6.setText("A");
                 all.empty.npecaneado6.setText("PF  2L01-");
                 all.empty.cantidadfinal6.setText("00000");
@@ -384,7 +414,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 7:
                 if (all.empty.idsp7.getText().equals("I")){
-                all.empty.npaescanear7.setText(Empty.pn);
+                all.empty.npaescanear7.setText(Empty.pn2);
                 all.empty.idsp7.setText("A");
                 all.empty.npecaneado7.setText("PF  2L01-");
                 all.empty.cantidadfinal7.setText("00000");
@@ -407,7 +437,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 9:
                 if (all.empty.idsp9.getText().equals("I")){
-                all.empty.npaescanear9.setText(Empty.pn);
+                all.empty.npaescanear9.setText(Empty.pn2);
                 all.empty.idsp9.setText("A");
                 all.empty.npecaneado9.setText("PF  2L01-");
                 all.empty.cantidadfinal9.setText("00000");
@@ -430,7 +460,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 10:
                 if (all.empty.idsp10.getText().equals("I")){
-                all.empty.npaescanear10.setText(Empty.pn);
+                all.empty.npaescanear10.setText(Empty.pn2);
                 all.empty.idsp10.setText("A");
                 all.empty.npecaneado10.setText("PF  2L01-");
                 all.empty.cantidadfinal10.setText("00000");
@@ -453,7 +483,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 13:
                 if (all.empty.idsp13.getText().equals("I")){
-                all.empty.npaescanear13.setText(Empty.pn);
+                all.empty.npaescanear13.setText(Empty.pn2);
                 all.empty.idsp13.setText("A");
                 all.empty.npecaneado13.setText("PF  2L01-");
                 all.empty.cantidadfinal13.setText("00000");
@@ -476,7 +506,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 14:
                 if (all.empty.idsp14.getText().equals("I")){
-                all.empty.npaescanear14.setText(Empty.pn);
+                all.empty.npaescanear14.setText(Empty.pn2);
                 all.empty.idsp14.setText("A");
                 all.empty.npecaneado14.setText("PF  2L01-");
                 all.empty.cantidadfinal14.setText("00000");
@@ -499,7 +529,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 15:
                 if (all.empty.idsp15.getText().equals("I")){
-                all.empty.npaescanear15.setText(Empty.pn);
+                all.empty.npaescanear15.setText(Empty.pn2);
                 all.empty.idsp15.setText("A");
                 all.empty.npecaneado15.setText("PF  2L01-");
                 all.empty.cantidadfinal15.setText("00000");
@@ -522,7 +552,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 16:
                 if (all.empty.idsp16.getText().equals("I")){
-                all.empty.npaescanear16.setText(Empty.pn);
+                all.empty.npaescanear16.setText(Empty.pn2);
                 all.empty.idsp16.setText("A");
                 all.empty.npecaneado16.setText("PF  2L01-");
                 all.empty.cantidadfinal16.setText("00000");
@@ -545,7 +575,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 17:
                 if (all.empty.idsp17.getText().equals("I")){
-                all.empty.npaescanear17.setText(Empty.pn);
+                all.empty.npaescanear17.setText(Empty.pn2);
                 all.empty.idsp17.setText("A");
                 all.empty.npecaneado17.setText("PF  2L01-");
                 all.empty.cantidadfinal17.setText("00000");
@@ -568,7 +598,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 18:
                 if (all.empty.idsp18.getText().equals("I")){
-                all.empty.npaescanear18.setText(Empty.pn);
+                all.empty.npaescanear18.setText(Empty.pn2);
                 all.empty.idsp18.setText("A");
                 all.empty.npecaneado18.setText("PF  2L01-");
                 all.empty.cantidadfinal18.setText("00000");
@@ -591,7 +621,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 19:
                 if (all.empty.idsp19.getText().equals("I")){
-                all.empty.npaescanear19.setText(Empty.pn);
+                all.empty.npaescanear19.setText(Empty.pn2);
                 all.empty.idsp19.setText("A");
                 all.empty.npecaneado19.setText("PF  2L01-");
                 all.empty.cantidadfinal19.setText("00000");
@@ -614,7 +644,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 20:
                 if (all.empty.idsp20.getText().equals("I")){
-                all.empty.npaescanear20.setText(Empty.pn);
+                all.empty.npaescanear20.setText(Empty.pn2);
                 all.empty.idsp20.setText("A");
                 all.empty.npecaneado20.setText("PF  2L01-");
                 all.empty.cantidadfinal20.setText("00000");
@@ -637,7 +667,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 21:
                 if (all.empty.idsp21.getText().equals("I")){
-                all.empty.npaescanear21.setText(Empty.pn);
+                all.empty.npaescanear21.setText(Empty.pn2);
                 all.empty.idsp21.setText("A");
                 all.empty.npecaneado21.setText("PF  2L01-");
                 all.empty.cantidadfinal21.setText("00000");
@@ -660,7 +690,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 22:
                 if (all.empty.idsp22.getText().equals("I")){
-                all.empty.npaescanear22.setText(Empty.pn);
+                all.empty.npaescanear22.setText(Empty.pn2);
                 all.empty.idsp22.setText("A");
                 all.empty.npecaneado22.setText("PF  2L01-");
                 all.empty.cantidadfinal22.setText("00000");
@@ -683,7 +713,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 23:
                 if (all.empty.idsp23.getText().equals("I")){
-                all.empty.npaescanear23.setText(Empty.pn);
+                all.empty.npaescanear23.setText(Empty.pn2);
                 all.empty.idsp23.setText("A");
                 all.empty.npecaneado23.setText("PF  2L01-");
                 all.empty.cantidadfinal23.setText("00000");
@@ -705,7 +735,7 @@ public class Rework extends javax.swing.JFrame {
                 }
                 break;
             case 24:
-                if (all.empty.idsp24.getText().equals("I")){
+/*                if (all.empty.idsp24.getText().equals("I")){
                 all.empty.npaescanear24.setText(Empty.pn);
                 all.empty.idsp24.setText("A");
                 all.empty.npecaneado24.setText("PF  2L01-");
@@ -795,10 +825,10 @@ public class Rework extends javax.swing.JFrame {
                 } else {
                     JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
                 }
-                break;
+                break;*/
             case 28:
                 if (all.empty.idsp28.getText().equals("I")){
-                all.empty.npaescanear28.setText(Empty.pn);
+                all.empty.npaescanear28.setText(Empty.pn2);
                 all.empty.idsp28.setText("A");
                 all.empty.npecaneado28.setText("PF  2L01-");
                 all.empty.cantidadfinal28.setText("00000");
@@ -821,7 +851,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 30:
                 if (all.empty.idsp30.getText().equals("I")){
-                all.empty.npaescanear30.setText(Empty.pn);
+                all.empty.npaescanear30.setText(Empty.pn2);
                 all.empty.idsp30.setText("A");
                 all.empty.npecaneado30.setText("PF  2L01-");
                 all.empty.cantidadfinal30.setText("00000");
@@ -844,7 +874,7 @@ public class Rework extends javax.swing.JFrame {
                 break;
             case 31:
                 if (all.empty.idsp31.getText().equals("I")){
-                all.empty.npaescanear31.setText(Empty.pn);
+                all.empty.npaescanear31.setText(Empty.pn2);
                 all.empty.idsp31.setText("A");
                 all.empty.npecaneado31.setText("PF  2L01-");
                 all.empty.cantidadfinal31.setText("00000");
@@ -865,12 +895,136 @@ public class Rework extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
                 }
                 break;
+            case 29:
+                if (all.empty.idsp29.getText().equals("I")){
+                all.empty.npaescanear29.setText(Empty.pn2);
+                all.empty.idsp29.setText("A");
+                all.empty.npecaneado29.setText("PF  2L01-");
+                all.empty.cantidadfinal29.setText("00000");
+                all.empty.serial29.setText("-             -            -");
+                all.empty.NPS29.setBackground(Color.white);
+                all.empty.npaescanear29.setForeground(Color.black);
+                all.empty.QT29.setForeground(Color.black);
+                all.empty.cantidadrequerida29.setForeground(Color.black);
+                all.empty.FQT29.setForeground(Color.black);
+                all.empty.cantidadfinal29.setForeground(Color.black);
+                all.empty.DISP29.setForeground(Color.black);
+                all.empty.idsp29.setForeground(Color.black);
+                all.empty.descripcion29.setForeground(Color.black);
+                all.empty.npecaneado29.setForeground(Color.black);
+                all.empty.serial29.setForeground(Color.black);
+                this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;  
+            case 32:
+                if (all.empty.idsp32.getText().equals("I")){
+                all.empty.npaescanear32.setText(Empty.pn2);
+                all.empty.idsp32.setText("A");
+                all.empty.npecaneado32.setText("PF  2L01-");
+                all.empty.cantidadfinal32.setText("00000");
+                all.empty.serial32.setText("-             -            -");
+                all.empty.NPS32.setBackground(Color.white);
+                all.empty.npaescanear32.setForeground(Color.black);
+                all.empty.QT32.setForeground(Color.black);
+                all.empty.cantidadrequerida32.setForeground(Color.black);
+                all.empty.FQT32.setForeground(Color.black);
+                all.empty.cantidadfinal32.setForeground(Color.black);
+                all.empty.DISP32.setForeground(Color.black);
+                all.empty.idsp32.setForeground(Color.black);
+                all.empty.descripcion32.setForeground(Color.black);
+                all.empty.npecaneado32.setForeground(Color.black);
+                all.empty.serial32.setForeground(Color.black);
+                this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 33:
+                if (all.empty.idsp33.getText().equals("I")){
+                all.empty.npaescanear33.setText(Empty.pn2);
+                all.empty.idsp33.setText("A");
+                all.empty.npecaneado33.setText("PF  2L01-");
+                all.empty.cantidadfinal33.setText("00000");
+                all.empty.serial33.setText("-             -            -");
+                all.empty.NPS33.setBackground(Color.white);
+                all.empty.npaescanear33.setForeground(Color.black);
+                all.empty.QT33.setForeground(Color.black);
+                all.empty.cantidadrequerida33.setForeground(Color.black);
+                all.empty.FQT33.setForeground(Color.black);
+                all.empty.cantidadfinal33.setForeground(Color.black);
+                all.empty.DISP33.setForeground(Color.black);
+                all.empty.idsp33.setForeground(Color.black);
+                all.empty.descripcion33.setForeground(Color.black);
+                all.empty.npecaneado33.setForeground(Color.black);
+                all.empty.serial33.setForeground(Color.black);
+                this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 35:
+                if (all.empty.idsp35.getText().equals("I")){
+                all.empty.npaescanear35.setText(Empty.pn2);
+                all.empty.idsp35.setText("A");
+                all.empty.npecaneado35.setText("PF  2L01-");
+                all.empty.cantidadfinal35.setText("00000");
+                all.empty.serial35.setText("-             -            -");
+                all.empty.NPS35.setBackground(Color.white);
+                all.empty.npaescanear35.setForeground(Color.black);
+                all.empty.QT35.setForeground(Color.black);
+                all.empty.cantidadrequerida35.setForeground(Color.black);
+                all.empty.FQT35.setForeground(Color.black);
+                all.empty.cantidadfinal35.setForeground(Color.black);
+                all.empty.DISP35.setForeground(Color.black);
+                all.empty.idsp35.setForeground(Color.black);
+                all.empty.descripcion35.setForeground(Color.black);
+                all.empty.npecaneado35.setForeground(Color.black);
+                all.empty.serial35.setForeground(Color.black);
+                this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
     }
     }//GEN-LAST:event_RemoverActionPerformed
 
-    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
-        this.setVisible(false);        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton6ActionPerformed
+    private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed
+        this.setVisible(false);
+    }//GEN-LAST:event_CancelActionPerformed
+
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
+        
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void remplaceKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_remplaceKeyTyped
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_ESCAPE){
+        CancelActionPerformed(null);
+        }
+    }//GEN-LAST:event_remplaceKeyTyped
+
+    private void partKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_partKeyTyped
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_ESCAPE){
+        CancelActionPerformed(null);
+        }
+    }//GEN-LAST:event_partKeyTyped
+
+    private void RemoverKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_RemoverKeyTyped
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_ESCAPE){
+        CancelActionPerformed(null);
+        }
+    }//GEN-LAST:event_RemoverKeyTyped
+
+    private void IrcodeKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_IrcodeKeyTyped
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_ESCAPE){
+        CancelActionPerformed(null);
+        }
+    }//GEN-LAST:event_IrcodeKeyTyped
 
     /**
      * @param args the command line arguments
@@ -908,13 +1062,13 @@ public class Rework extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton Cancel;
+    private javax.swing.JButton Ircode;
     private javax.swing.JButton Remover;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
-    private javax.swing.JButton jButton6;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JButton remplace;
+    private javax.swing.JButton part;
+    public javax.swing.JButton remplace;
     // End of variables declaration//GEN-END:variables
 }

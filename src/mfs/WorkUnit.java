@@ -4,6 +4,8 @@
  */
 package mfs;
 
+import java.awt.event.KeyEvent;
+
 /**
  *
  * @author 102976781
@@ -11,13 +13,13 @@ package mfs;
 public class WorkUnit extends javax.swing.JFrame {
 
     public static String work = "3BDTB6H1";
-    public static String works = "3bdtb6h1";
 
     
     public WorkUnit() {
         initComponents();
     }
 
+            public int orden ;
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -35,6 +37,19 @@ public class WorkUnit extends javax.swing.JFrame {
         setTitle("Work Unit Control Number");
 
         Work.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        Work.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                WorkActionPerformed(evt);
+            }
+        });
+        Work.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                WorkKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                WorkKeyTyped(evt);
+            }
+        });
 
         Enter.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         Enter.setText("Enter");
@@ -87,17 +102,40 @@ public class WorkUnit extends javax.swing.JFrame {
 
     private void EnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterActionPerformed
         String scan = Work.getText();
-        
-        if (scan.equals(work) | scan.equals(works)){
+        if (scan.toUpperCase().equals(work) && orden == 0){
             Work.setText("");
             this.setVisible(false);
             all.dificultad.setVisible(true);
+        } else if (scan.toUpperCase().equals(work) && orden == 1){
+            all.view.setVisible(true);
+        } else if (scan.toUpperCase().equals(work) && orden == 2){
+            all.view.setVisible(true); //2
         }
     }//GEN-LAST:event_EnterActionPerformed
 
     private void CancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelarActionPerformed
         this.setVisible(false);
     }//GEN-LAST:event_CancelarActionPerformed
+
+    private void WorkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_WorkActionPerformed
+
+    }//GEN-LAST:event_WorkActionPerformed
+
+    private void WorkKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_WorkKeyPressed
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_ENTER){
+            EnterActionPerformed(null);
+        }
+    }//GEN-LAST:event_WorkKeyPressed
+
+    private void WorkKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_WorkKeyTyped
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_ENTER){
+            EnterActionPerformed(null);
+        } else if (enter == KeyEvent.VK_ESCAPE){
+            CancelarActionPerformed(null);
+        }
+    }//GEN-LAST:event_WorkKeyTyped
 
     /**
      * @param args the command line arguments

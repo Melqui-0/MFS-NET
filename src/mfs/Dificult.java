@@ -4,6 +4,8 @@
  */
 package mfs;
 
+import java.awt.event.KeyEvent;
+
 /**
  *
  * @author 102976781
@@ -43,14 +45,29 @@ public class Dificult extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        jButton1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jButton1KeyTyped(evt);
+            }
+        });
 
         jButton2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jButton2.setText("Medium");
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jButton2KeyTyped(evt);
+            }
+        });
 
         jButton3.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jButton3.setText("Hard");
         jButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton3.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                jButton3KeyTyped(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -91,6 +108,27 @@ public class Dificult extends javax.swing.JFrame {
         all.opcempty.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton1KeyTyped
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_ESCAPE){
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_jButton1KeyTyped
+
+    private void jButton2KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton2KeyTyped
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_ESCAPE){
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_jButton2KeyTyped
+
+    private void jButton3KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jButton3KeyTyped
+        char enter = evt.getKeyChar();
+        if (enter == KeyEvent.VK_ESCAPE){
+            this.setVisible(false);
+        }
+    }//GEN-LAST:event_jButton3KeyTyped
 
     /**
      * @param args the command line arguments

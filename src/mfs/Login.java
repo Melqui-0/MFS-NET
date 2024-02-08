@@ -11,6 +11,9 @@ public class Login extends javax.swing.JFrame {
     
     public static String us = "1";
     public static String pass = "1";
+    public static String usentto = "2";
+    public static String passentto = "2";
+    public String usuario;
     
     int xx;
     int yy;
@@ -93,6 +96,11 @@ public class Login extends javax.swing.JFrame {
         });
 
         Password.setName("Password"); // NOI18N
+        Password.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                PasswordActionPerformed(evt);
+            }
+        });
         Password.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 PasswordKeyTyped(evt);
@@ -249,9 +257,13 @@ public class Login extends javax.swing.JFrame {
        String user = User.getText();
        String password = new String (Password.getPassword());
        if (user.equals(us) && password.equals(pass)){
+           usuario = user;
             all.abrir.setVisible(true);
             this.setVisible(false);
-       } else {
+       } else if(user.equals(usentto) && password.equals(passentto)){
+            all.entrenador.setVisible(true);
+            this.setVisible(false);
+       }else {
             User.setText("");
             Password.setText("");
             JOptionPane.showMessageDialog(null, "Contraseña y/o Usuario incorrectos ");
@@ -295,6 +307,10 @@ public class Login extends javax.swing.JFrame {
         int y=evt.getYOnScreen();
         this.setLocation(x-xx, y-yy);
     }//GEN-LAST:event_formMouseDragged
+
+    private void PasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_PasswordActionPerformed
 
 
     /**
