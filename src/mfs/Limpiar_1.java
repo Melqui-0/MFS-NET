@@ -3,11 +3,11 @@ package mfs;
 import java.awt.Color;
 
 
-public class Limpiar_1 {
+public final class Limpiar_1 {
     
     public Limpiar_1 (){
         
-        Limpiar_empty_easy();
+        
         
     }
     
@@ -29,7 +29,7 @@ public class Limpiar_1 {
                 all.empty.descripcion.setForeground(Color.black);
                 all.empty.npecaneado.setForeground(Color.black);
                 all.empty.serial.setForeground(Color.black);
-                all.empty.npaescanear1.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear1.setText(all.empty.npaescanear1.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp1.setText("A");
                 all.empty.npecaneado1.setText("PF  2L01-");
                 all.empty.cantidadfinal1.setText("00000");
@@ -45,7 +45,7 @@ public class Limpiar_1 {
                 all.empty.descripcion1.setForeground(Color.black);
                 all.empty.npecaneado1.setForeground(Color.black);
                 all.empty.serial1.setForeground(Color.black);
-                all.empty.npaescanear2.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear2.setText(all.empty.npaescanear2.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp2.setText("A");
                 all.empty.npecaneado2.setText("PF  2L01-");
                 all.empty.cantidadfinal2.setText("00000");
@@ -61,7 +61,7 @@ public class Limpiar_1 {
                 all.empty.descripcion2.setForeground(Color.black);
                 all.empty.npecaneado2.setForeground(Color.black);
                 all.empty.serial2.setForeground(Color.black);
-                all.empty.npaescanear3.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear3.setText(all.empty.npaescanear3.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp3.setText("A");
                 all.empty.npecaneado3.setText("PF  2L01-");
                 all.empty.cantidadfinal3.setText("00000");
@@ -77,7 +77,7 @@ public class Limpiar_1 {
                 all.empty.descripcion3.setForeground(Color.black);
                 all.empty.npecaneado3.setForeground(Color.black);
                 all.empty.serial3.setForeground(Color.black);
-                all.empty.npaescanear4.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear4.setText(all.empty.npaescanear4.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp4.setText("A");
                 all.empty.npecaneado4.setText("PF  2L01-");
                 all.empty.cantidadfinal4.setText("00000");
@@ -93,7 +93,7 @@ public class Limpiar_1 {
                 all.empty.descripcion4.setForeground(Color.black);
                 all.empty.npecaneado4.setForeground(Color.black);
                 all.empty.serial4.setForeground(Color.black);
-                all.empty.npaescanear5.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear5.setText(all.empty.npaescanear5.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp5.setText("A");
                 all.empty.npecaneado5.setText("PF  2L01-");
                 all.empty.cantidadfinal5.setText("00000");
@@ -109,7 +109,7 @@ public class Limpiar_1 {
                 all.empty.descripcion5.setForeground(Color.black);
                 all.empty.npecaneado5.setForeground(Color.black);
                 all.empty.serial5.setForeground(Color.black);
-                all.empty.npaescanear6.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear6.setText(all.empty.npaescanear6.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp6.setText("A");
                 all.empty.npecaneado6.setText("PF  2L01-");
                 all.empty.cantidadfinal6.setText("00000");
@@ -125,7 +125,7 @@ public class Limpiar_1 {
                 all.empty.descripcion6.setForeground(Color.black);
                 all.empty.npecaneado6.setForeground(Color.black);
                 all.empty.serial6.setForeground(Color.black);
-                all.empty.npaescanear7.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear7.setText(all.empty.npaescanear7.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp7.setText("A");
                 all.empty.npecaneado7.setText("PF  2L01-");
                 all.empty.cantidadfinal7.setText("00000");
@@ -141,7 +141,7 @@ public class Limpiar_1 {
                 all.empty.descripcion7.setForeground(Color.black);
                 all.empty.npecaneado7.setForeground(Color.black);
                 all.empty.serial7.setForeground(Color.black);
-                all.empty.npaescanear9.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear9.setText(all.empty.npaescanear9.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp9.setText("A");
                 all.empty.npecaneado9.setText("PF  2L01-");
                 all.empty.cantidadfinal9.setText("00000");
@@ -157,7 +157,7 @@ public class Limpiar_1 {
                 all.empty.descripcion9.setForeground(Color.black);
                 all.empty.npecaneado9.setForeground(Color.black);
                 all.empty.serial9.setForeground(Color.black);
-                all.empty.npaescanear10.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear10.setText(all.empty.npaescanear10.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp10.setText("A");
                 all.empty.npecaneado10.setText("PF  2L01-");
                 all.empty.cantidadfinal10.setText("00000");
@@ -173,7 +173,7 @@ public class Limpiar_1 {
                 all.empty.descripcion10.setForeground(Color.black);
                 all.empty.npecaneado10.setForeground(Color.black);
                 all.empty.serial10.setForeground(Color.black);
-                all.empty.npaescanear13.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear13.setText(all.empty.npaescanear13.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp13.setText("A");
                 all.empty.npecaneado13.setText("PF  2L01-");
                 all.empty.cantidadfinal13.setText("00000");
@@ -189,7 +189,7 @@ public class Limpiar_1 {
                 all.empty.descripcion13.setForeground(Color.black);
                 all.empty.npecaneado13.setForeground(Color.black);
                 all.empty.serial13.setForeground(Color.black);
-                all.empty.npaescanear14.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear14.setText(all.empty.npaescanear14.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp14.setText("A");
                 all.empty.npecaneado14.setText("PF  2L01-");
                 all.empty.cantidadfinal14.setText("00000");
@@ -205,7 +205,7 @@ public class Limpiar_1 {
                 all.empty.descripcion14.setForeground(Color.black);
                 all.empty.npecaneado14.setForeground(Color.black);
                 all.empty.serial14.setForeground(Color.black);
-                all.empty.npaescanear15.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear15.setText(all.empty.npaescanear15.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp15.setText("A");
                 all.empty.npecaneado15.setText("PF  2L01-");
                 all.empty.cantidadfinal15.setText("00000");
@@ -221,7 +221,7 @@ public class Limpiar_1 {
                 all.empty.descripcion15.setForeground(Color.black);
                 all.empty.npecaneado15.setForeground(Color.black);
                 all.empty.serial15.setForeground(Color.black);
-                all.empty.npaescanear16.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear16.setText(all.empty.npaescanear16.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp16.setText("A");
                 all.empty.npecaneado16.setText("PF  2L01-");
                 all.empty.cantidadfinal16.setText("00000");
@@ -237,7 +237,7 @@ public class Limpiar_1 {
                 all.empty.descripcion16.setForeground(Color.black);
                 all.empty.npecaneado16.setForeground(Color.black);
                 all.empty.serial16.setForeground(Color.black);
-                all.empty.npaescanear17.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear17.setText(all.empty.npaescanear17.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp17.setText("A");
                 all.empty.npecaneado17.setText("PF  2L01-");
                 all.empty.cantidadfinal17.setText("00000");
@@ -253,7 +253,7 @@ public class Limpiar_1 {
                 all.empty.descripcion17.setForeground(Color.black);
                 all.empty.npecaneado17.setForeground(Color.black);
                 all.empty.serial17.setForeground(Color.black);
-                all.empty.npaescanear18.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear18.setText(all.empty.npaescanear18.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp18.setText("A");
                 all.empty.npecaneado18.setText("PF  2L01-");
                 all.empty.cantidadfinal18.setText("00000");
@@ -269,7 +269,7 @@ public class Limpiar_1 {
                 all.empty.descripcion18.setForeground(Color.black);
                 all.empty.npecaneado18.setForeground(Color.black);
                 all.empty.serial18.setForeground(Color.black);
-                all.empty.npaescanear19.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear19.setText(all.empty.npaescanear19.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp19.setText("A");
                 all.empty.npecaneado19.setText("PF  2L01-");
                 all.empty.cantidadfinal19.setText("00000");
@@ -285,7 +285,7 @@ public class Limpiar_1 {
                 all.empty.descripcion19.setForeground(Color.black);
                 all.empty.npecaneado19.setForeground(Color.black);
                 all.empty.serial19.setForeground(Color.black);
-                all.empty.npaescanear20.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear20.setText(all.empty.npaescanear20.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp20.setText("A");
                 all.empty.npecaneado20.setText("PF  2L01-");
                 all.empty.cantidadfinal20.setText("00000");
@@ -301,7 +301,7 @@ public class Limpiar_1 {
                 all.empty.descripcion20.setForeground(Color.black);
                 all.empty.npecaneado20.setForeground(Color.black);
                 all.empty.serial20.setForeground(Color.black);
-                all.empty.npaescanear21.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear21.setText(all.empty.npaescanear21.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp21.setText("A");
                 all.empty.npecaneado21.setText("PF  2L01-");
                 all.empty.cantidadfinal21.setText("00000");
@@ -317,7 +317,7 @@ public class Limpiar_1 {
                 all.empty.descripcion21.setForeground(Color.black);
                 all.empty.npecaneado21.setForeground(Color.black);
                 all.empty.serial21.setForeground(Color.black);
-                all.empty.npaescanear22.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear22.setText(all.empty.npaescanear22.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp22.setText("A");
                 all.empty.npecaneado22.setText("PF  2L01-");
                 all.empty.cantidadfinal22.setText("00000");
@@ -333,7 +333,7 @@ public class Limpiar_1 {
                 all.empty.descripcion22.setForeground(Color.black);
                 all.empty.npecaneado22.setForeground(Color.black);
                 all.empty.serial22.setForeground(Color.black);
-                all.empty.npaescanear23.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear23.setText(all.empty.npaescanear23.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp23.setText("A");
                 all.empty.npecaneado23.setText("PF  2L01-");
                 all.empty.cantidadfinal23.setText("00000");
@@ -349,7 +349,7 @@ public class Limpiar_1 {
                 all.empty.descripcion23.setForeground(Color.black);
                 all.empty.npecaneado23.setForeground(Color.black);
                 all.empty.serial23.setForeground(Color.black);
-                all.empty.npaescanear28.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear28.setText(all.empty.npaescanear28.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp28.setText("A");
                 all.empty.npecaneado28.setText("PF  2L01-");
                 all.empty.cantidadfinal28.setText("00000");
@@ -365,7 +365,7 @@ public class Limpiar_1 {
                 all.empty.descripcion28.setForeground(Color.black);
                 all.empty.npecaneado28.setForeground(Color.black);
                 all.empty.serial28.setForeground(Color.black);
-                all.empty.npaescanear30.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear30.setText(all.empty.npaescanear30.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp30.setText("A");
                 all.empty.npecaneado30.setText("PF  2L01-");
                 all.empty.cantidadfinal30.setText("00000");
@@ -381,7 +381,7 @@ public class Limpiar_1 {
                 all.empty.descripcion30.setForeground(Color.black);
                 all.empty.npecaneado30.setForeground(Color.black);
                 all.empty.serial30.setForeground(Color.black);
-                all.empty.npaescanear31.setText(all.empty.npaescanear.getText().substring(3));//modifcar para cada uno
+                all.empty.npaescanear31.setText(all.empty.npaescanear31.getText().substring(3));//modifcar para cada uno
                 all.empty.idsp31.setText("A");
                 all.empty.npecaneado31.setText("PF  2L01-");
                 all.empty.cantidadfinal31.setText("00000");
@@ -397,7 +397,88 @@ public class Limpiar_1 {
                 all.empty.descripcion31.setForeground(Color.black);
                 all.empty.npecaneado31.setForeground(Color.black);
                 all.empty.serial31.setForeground(Color.black);
-        
+                all.empty.npaescanear29.setText(all.empty.npaescanear29.getText().substring(3));
+                all.empty.idsp29.setText("A");
+                all.empty.npecaneado29.setText("PF  2L01-");
+                all.empty.cantidadfinal29.setText("00000");
+                all.empty.serial29.setText("-             -            -");
+                all.empty.NPS29.setBackground(Color.white);
+                all.empty.npaescanear29.setForeground(Color.black);
+                all.empty.QT29.setForeground(Color.black);
+                all.empty.cantidadrequerida29.setForeground(Color.black);
+                all.empty.FQT29.setForeground(Color.black);
+                all.empty.cantidadfinal29.setForeground(Color.black);
+                all.empty.DISP29.setForeground(Color.black);
+                all.empty.idsp29.setForeground(Color.black);
+                all.empty.descripcion29.setForeground(Color.black);
+                all.empty.npecaneado29.setForeground(Color.black);
+                all.empty.serial29.setForeground(Color.black);
+                all.empty.npaescanear32.setText(all.empty.npaescanear32.getText().substring(3));
+                all.empty.idsp32.setText("A");
+                all.empty.npecaneado32.setText("PF  2L01-");
+                all.empty.cantidadfinal32.setText("00000");
+                all.empty.serial32.setText("-             -            -");
+                all.empty.NPS32.setBackground(Color.white);
+                all.empty.npaescanear32.setForeground(Color.black);
+                all.empty.QT32.setForeground(Color.black);
+                all.empty.cantidadrequerida32.setForeground(Color.black);
+                all.empty.FQT32.setForeground(Color.black);
+                all.empty.cantidadfinal32.setForeground(Color.black);
+                all.empty.DISP32.setForeground(Color.black);
+                all.empty.idsp32.setForeground(Color.black);
+                all.empty.descripcion32.setForeground(Color.black);
+                all.empty.npecaneado32.setForeground(Color.black);
+                all.empty.serial32.setForeground(Color.black);
+                all.empty.npaescanear33.setText(all.empty.npaescanear33.getText().substring(3));
+                all.empty.idsp33.setText("A");
+                all.empty.npecaneado33.setText("PF  2L01-");
+                all.empty.cantidadfinal33.setText("00000");
+                all.empty.serial33.setText("-             -            -");
+                all.empty.NPS33.setBackground(Color.white);
+                all.empty.npaescanear33.setForeground(Color.black);
+                all.empty.QT33.setForeground(Color.black);
+                all.empty.cantidadrequerida33.setForeground(Color.black);
+                all.empty.FQT33.setForeground(Color.black);
+                all.empty.cantidadfinal33.setForeground(Color.black);
+                all.empty.DISP33.setForeground(Color.black);
+                all.empty.idsp33.setForeground(Color.black);
+                all.empty.descripcion33.setForeground(Color.black);
+                all.empty.npecaneado33.setForeground(Color.black);
+                all.empty.serial33.setForeground(Color.black);
+                all.empty.npaescanear35.setText(all.empty.npaescanear35.getText().substring(3));
+                all.empty.idsp35.setText("A");
+                all.empty.npecaneado35.setText("PF  2L01-");
+                all.empty.cantidadfinal35.setText("00000");
+                all.empty.serial35.setText("-             -            -");
+                all.empty.NPS35.setBackground(Color.white);
+                all.empty.npaescanear35.setForeground(Color.black);
+                all.empty.QT35.setForeground(Color.black);
+                all.empty.cantidadrequerida35.setForeground(Color.black);
+                all.empty.FQT35.setForeground(Color.black);
+                all.empty.cantidadfinal35.setForeground(Color.black);
+                all.empty.DISP35.setForeground(Color.black);
+                all.empty.idsp35.setForeground(Color.black);
+                all.empty.descripcion35.setForeground(Color.black);
+                all.empty.npecaneado35.setForeground(Color.black);
+                all.empty.serial35.setForeground(Color.black); 
+                all.empty.change.setText("Incompleto");
+                all.empty.change1.setText("Incompleto");  
+                all.empty.change2.setText("Incompleto");
+                all.empty.change3.setText("Incompleto"); 
+                all.empty.change4.setText("Incompleto");
+                all.empty.change5.setText("Incompleto"); 
+                all.empty.change6.setText("Incompleto"); 
+                all.empty.change7.setText("Incompleto");
+                all.empty.change.setSelected(false);
+                all.empty.change1.setSelected(false);
+                all.empty.change2.setSelected(false);
+                all.empty.change3.setSelected(false);
+                all.empty.change4.setSelected(false);
+                all.empty.change5.setSelected(false);
+                all.empty.change6.setSelected(false);
+                all.empty.change7.setSelected(false);
+                
+                
     }
     
 }

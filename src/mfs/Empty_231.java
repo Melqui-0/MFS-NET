@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
  *
  * @author 102976781
  */
-public class Empty extends javax.swing.JFrame {
+public class Empty_231 extends javax.swing.JFrame {
 
 
     
@@ -64,7 +64,7 @@ public class Empty extends javax.swing.JFrame {
             "PN","SEC"
         };
     
-    public Empty() {    
+    public Empty_231 () {    
         initComponents();
         extender();
         this.setLayout(null);
@@ -370,6 +370,7 @@ public class Empty extends javax.swing.JFrame {
         bloqueimagen3 = new javax.swing.JPanel();
         prueba = new javax.swing.JLabel();
         change5 = new javax.swing.JCheckBox();
+        jLabel19 = new javax.swing.JLabel();
         bisagraslatch = new javax.swing.JPanel();
         NPS28 = new javax.swing.JPanel();
         npaescanear28 = new javax.swing.JLabel();
@@ -1922,7 +1923,7 @@ public class Empty extends javax.swing.JFrame {
         });
 
         npaescanear10.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear10.setText("03JG485");
+        npaescanear10.setText("03FP231");
 
         QT10.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT10.setText("QT:");
@@ -1937,7 +1938,7 @@ public class Empty extends javax.swing.JFrame {
         idsp10.setText("A");
 
         descripcion10.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion10.setText("PWR DISTRS  PDU C19 C13");
+        descripcion10.setText("ENCLOSURE   PDU UTG 12-C13");
 
         npecaneado10.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado10.setText("PF  2L01- PDU1");
@@ -1962,28 +1963,26 @@ public class Empty extends javax.swing.JFrame {
                         .addComponent(npecaneado10, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(serial10, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
+                        .addGap(0, 33, Short.MAX_VALUE))
                     .addGroup(NPS10Layout.createSequentialGroup()
-                        .addGroup(NPS10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(NPS10Layout.createSequentialGroup()
-                                .addComponent(DISP10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(idsp10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(descripcion10, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(NPS10Layout.createSequentialGroup()
-                                .addGap(13, 13, 13)
-                                .addComponent(npaescanear10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(QT10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadrequerida10)
-                                .addGap(28, 28, 28)
-                                .addComponent(FQT10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadfinal10)))
-                        .addGap(12, 12, 12)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                        .addGap(13, 13, 13)
+                        .addComponent(npaescanear10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(QT10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cantidadrequerida10)
+                        .addGap(28, 28, 28)
+                        .addComponent(FQT10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cantidadfinal10)
+                        .addGap(25, 25, 25))
+                    .addGroup(NPS10Layout.createSequentialGroup()
+                        .addComponent(DISP10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(idsp10)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(descripcion10)))
+                .addGap(17, 17, 17))
         );
         NPS10Layout.setVerticalGroup(
             NPS10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2017,7 +2016,7 @@ public class Empty extends javax.swing.JFrame {
         });
 
         npaescanear13.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear13.setText("46C6380");
+        npaescanear13.setText("12J5289");
 
         QT13.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT13.setText("QT:");
@@ -2032,7 +2031,7 @@ public class Empty extends javax.swing.JFrame {
         idsp13.setText("A");
 
         descripcion13.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion13.setText("SCREW   M5x16 BLACK");
+        descripcion13.setText("SCREW   M6 HEX HEAD");
 
         npecaneado13.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado13.setText("PF  2L01- PDU1");
@@ -2112,7 +2111,7 @@ public class Empty extends javax.swing.JFrame {
         });
 
         npaescanear14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear14.setText("74F1823");
+        npaescanear14.setText("00N8709");
 
         QT14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT14.setText("QT:");
@@ -2127,7 +2126,7 @@ public class Empty extends javax.swing.JFrame {
         idsp14.setText("A");
 
         descripcion14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion14.setText("NUT   CLIP,    M5");
+        descripcion14.setText("CLIP      \"C\"    CLIP");
 
         npecaneado14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado14.setText("PF  2L01- PDU1");
@@ -2207,7 +2206,7 @@ public class Empty extends javax.swing.JFrame {
         });
 
         npaescanear15.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear15.setText("03JG485");
+        npaescanear15.setText("03FP231");
 
         QT15.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT15.setText("QT:");
@@ -2222,7 +2221,7 @@ public class Empty extends javax.swing.JFrame {
         idsp15.setText("A");
 
         descripcion15.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion15.setText("PWR DISTRS  PDU C19 C13");
+        descripcion15.setText("ENCLOSURE   PDU UTG 12-C13");
 
         npecaneado15.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado15.setText("PF  2L01- PDU2");
@@ -2247,28 +2246,26 @@ public class Empty extends javax.swing.JFrame {
                         .addComponent(npecaneado15, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(serial15, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
+                        .addGap(0, 33, Short.MAX_VALUE))
                     .addGroup(NPS15Layout.createSequentialGroup()
-                        .addGroup(NPS15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(NPS15Layout.createSequentialGroup()
-                                .addComponent(DISP15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(idsp15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(descripcion15, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(NPS15Layout.createSequentialGroup()
-                                .addGap(13, 13, 13)
-                                .addComponent(npaescanear15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(QT15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadrequerida15)
-                                .addGap(28, 28, 28)
-                                .addComponent(FQT15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadfinal15)))
-                        .addGap(12, 12, 12)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                        .addGap(13, 13, 13)
+                        .addComponent(npaescanear15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(QT15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cantidadrequerida15)
+                        .addGap(28, 28, 28)
+                        .addComponent(FQT15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cantidadfinal15)
+                        .addGap(25, 25, 25))
+                    .addGroup(NPS15Layout.createSequentialGroup()
+                        .addComponent(DISP15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(idsp15)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(descripcion15)))
+                .addGap(17, 17, 17))
         );
         NPS15Layout.setVerticalGroup(
             NPS15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2302,7 +2299,7 @@ public class Empty extends javax.swing.JFrame {
         });
 
         npaescanear16.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear16.setText("46C6380");
+        npaescanear16.setText("12J5289");
 
         QT16.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT16.setText("QT:");
@@ -2317,7 +2314,7 @@ public class Empty extends javax.swing.JFrame {
         idsp16.setText("A");
 
         descripcion16.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion16.setText("SCREW   M5x16 BLACK");
+        descripcion16.setText("SCREW   M6 HEX HEAD");
 
         npecaneado16.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado16.setText("PF  2L01- PDU2");
@@ -2397,7 +2394,7 @@ public class Empty extends javax.swing.JFrame {
         });
 
         npaescanear17.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear17.setText("74F1823");
+        npaescanear17.setText("00N8709");
 
         QT17.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT17.setText("QT:");
@@ -2412,7 +2409,7 @@ public class Empty extends javax.swing.JFrame {
         idsp17.setText("A");
 
         descripcion17.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion17.setText("NUT   CLIP,    M5");
+        descripcion17.setText("CLIP      \"C\"    CLIP");
 
         npecaneado17.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado17.setText("PF  2L01- PDU2");
@@ -2492,7 +2489,7 @@ public class Empty extends javax.swing.JFrame {
         });
 
         npaescanear18.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear18.setText("03JG485");
+        npaescanear18.setText("03FP231");
 
         QT18.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT18.setText("QT:");
@@ -2507,7 +2504,7 @@ public class Empty extends javax.swing.JFrame {
         idsp18.setText("A");
 
         descripcion18.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion18.setText("PWR DISTRS  PDU C19 C13");
+        descripcion18.setText("ENCLOSURE   PDU UTG 12-C13");
 
         npecaneado18.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado18.setText("PF  2L01- PDU3");
@@ -2532,28 +2529,26 @@ public class Empty extends javax.swing.JFrame {
                         .addComponent(npecaneado18, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(serial18, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
+                        .addGap(0, 33, Short.MAX_VALUE))
                     .addGroup(NPS18Layout.createSequentialGroup()
-                        .addGroup(NPS18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(NPS18Layout.createSequentialGroup()
-                                .addComponent(DISP18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(idsp18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(descripcion18, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(NPS18Layout.createSequentialGroup()
-                                .addGap(13, 13, 13)
-                                .addComponent(npaescanear18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(QT18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadrequerida18)
-                                .addGap(28, 28, 28)
-                                .addComponent(FQT18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadfinal18)))
-                        .addGap(12, 12, 12)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                        .addGap(13, 13, 13)
+                        .addComponent(npaescanear18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(QT18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cantidadrequerida18)
+                        .addGap(28, 28, 28)
+                        .addComponent(FQT18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cantidadfinal18)
+                        .addGap(25, 25, 25))
+                    .addGroup(NPS18Layout.createSequentialGroup()
+                        .addComponent(DISP18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(idsp18)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(descripcion18)))
+                .addGap(17, 17, 17))
         );
         NPS18Layout.setVerticalGroup(
             NPS18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2587,7 +2582,7 @@ public class Empty extends javax.swing.JFrame {
         });
 
         npaescanear19.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear19.setText("46C6380");
+        npaescanear19.setText("12J5289");
 
         QT19.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT19.setText("QT:");
@@ -2602,7 +2597,7 @@ public class Empty extends javax.swing.JFrame {
         idsp19.setText("A");
 
         descripcion19.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion19.setText("SCREW   M5x16 BLACK");
+        descripcion19.setText("SCREW   M6 HEX HEAD");
 
         npecaneado19.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado19.setText("PF  2L01- PDU3");
@@ -2682,7 +2677,7 @@ public class Empty extends javax.swing.JFrame {
         });
 
         npaescanear20.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear20.setText("74F1823");
+        npaescanear20.setText("00N8709");
 
         QT20.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT20.setText("QT:");
@@ -2697,7 +2692,7 @@ public class Empty extends javax.swing.JFrame {
         idsp20.setText("A");
 
         descripcion20.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion20.setText("NUT   CLIP,    M5");
+        descripcion20.setText("CLIP      \"C\"    CLIP");
 
         npecaneado20.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado20.setText("PF  2L01- PDU3");
@@ -2777,7 +2772,7 @@ public class Empty extends javax.swing.JFrame {
         });
 
         npaescanear21.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear21.setText("03JG485");
+        npaescanear21.setText("03FP231");
 
         QT21.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT21.setText("QT:");
@@ -2792,7 +2787,7 @@ public class Empty extends javax.swing.JFrame {
         idsp21.setText("A");
 
         descripcion21.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion21.setText("PWR DISTRS  PDU C19 C13");
+        descripcion21.setText("ENCLOSURE   PDU UTG 12-C13");
 
         npecaneado21.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado21.setText("PF  2L01- PDU4");
@@ -2817,28 +2812,26 @@ public class Empty extends javax.swing.JFrame {
                         .addComponent(npecaneado21, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(serial21, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
+                        .addGap(0, 33, Short.MAX_VALUE))
                     .addGroup(NPS21Layout.createSequentialGroup()
-                        .addGroup(NPS21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(NPS21Layout.createSequentialGroup()
-                                .addComponent(DISP21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(idsp21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(descripcion21, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(NPS21Layout.createSequentialGroup()
-                                .addGap(13, 13, 13)
-                                .addComponent(npaescanear21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(QT21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadrequerida21)
-                                .addGap(28, 28, 28)
-                                .addComponent(FQT21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadfinal21)))
-                        .addGap(12, 12, 12)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                        .addGap(13, 13, 13)
+                        .addComponent(npaescanear21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(QT21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cantidadrequerida21)
+                        .addGap(28, 28, 28)
+                        .addComponent(FQT21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cantidadfinal21)
+                        .addGap(25, 25, 25))
+                    .addGroup(NPS21Layout.createSequentialGroup()
+                        .addComponent(DISP21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(idsp21)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(descripcion21)))
+                .addGap(17, 17, 17))
         );
         NPS21Layout.setVerticalGroup(
             NPS21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2872,7 +2865,7 @@ public class Empty extends javax.swing.JFrame {
         });
 
         npaescanear22.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear22.setText("46C6380");
+        npaescanear22.setText("12J5289");
 
         QT22.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT22.setText("QT:");
@@ -2887,7 +2880,7 @@ public class Empty extends javax.swing.JFrame {
         idsp22.setText("A");
 
         descripcion22.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion22.setText("SCREW   M5x16 BLACK");
+        descripcion22.setText("SCREW   M6 HEX HEAD");
 
         npecaneado22.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado22.setText("PF  2L01- PDU4");
@@ -2967,7 +2960,7 @@ public class Empty extends javax.swing.JFrame {
         });
 
         npaescanear23.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear23.setText("74F1823");
+        npaescanear23.setText("00N8709");
 
         QT23.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT23.setText("QT:");
@@ -2982,7 +2975,7 @@ public class Empty extends javax.swing.JFrame {
         idsp23.setText("A");
 
         descripcion23.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion23.setText("NUT   CLIP,    M5");
+        descripcion23.setText("CLIP      \"C\"    CLIP");
 
         npecaneado23.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         npecaneado23.setText("PF  2L01- PDU4");
@@ -3103,7 +3096,7 @@ public class Empty extends javax.swing.JFrame {
         bloqueimagen3.setBackground(new java.awt.Color(255, 255, 255));
         bloqueimagen3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        prueba.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/PDUVERT.jpg"))); // NOI18N
+        prueba.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/RACK_PDU_PLACEMENT.jpg"))); // NOI18N
 
         change5.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         change5.setText("Incompleto");
@@ -3118,6 +3111,8 @@ public class Empty extends javax.swing.JFrame {
             }
         });
 
+        jLabel19.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/42R8743_PDU.jpg"))); // NOI18N
+
         javax.swing.GroupLayout bloqueimagen3Layout = new javax.swing.GroupLayout(bloqueimagen3);
         bloqueimagen3.setLayout(bloqueimagen3Layout);
         bloqueimagen3Layout.setHorizontalGroup(
@@ -3125,18 +3120,21 @@ public class Empty extends javax.swing.JFrame {
             .addGroup(bloqueimagen3Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(bloqueimagen3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(prueba)
                     .addComponent(change5)
-                    .addComponent(prueba))
+                    .addComponent(jLabel19))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         bloqueimagen3Layout.setVerticalGroup(
             bloqueimagen3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(bloqueimagen3Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
+                .addContainerGap()
                 .addComponent(prueba)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel19)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(change5)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         bisagraslatch.setBackground(new java.awt.Color(255, 255, 255));
@@ -4095,7 +4093,7 @@ public class Empty extends javax.swing.JFrame {
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cuerpo, javax.swing.GroupLayout.DEFAULT_SIZE, 6154, Short.MAX_VALUE)
+                .addComponent(cuerpo, javax.swing.GroupLayout.DEFAULT_SIZE, 5642, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -4107,7 +4105,7 @@ public class Empty extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 6407, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 5895, Short.MAX_VALUE)
         );
 
         pack();
@@ -4418,6 +4416,8 @@ public class Empty extends javax.swing.JFrame {
         map.put("01KU111", label4);
         map.put("01KU112", label4);
         map.put("01KU137", label4);
+        map.put("12J5289", label5);
+        map.put("00N8709", label5);
         nps = map.get(pn);
         if (nps == label1){
             all.barcode.setVisible(true);
@@ -6321,6 +6321,7 @@ public class Empty extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel3;

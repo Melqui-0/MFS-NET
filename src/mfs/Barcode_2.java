@@ -251,7 +251,7 @@ public class Barcode_2 extends javax.swing.JFrame {
             all.empty.idsp.setText("I");
             all.empty.npecaneado.setText("000" + npingresado.toUpperCase());
             all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
-            all.empty.serial.setText(npescaneado.substring(10));
+            all.empty.serial.setText(npescaneado.substring(10).toUpperCase());
             all.empty.NPS.setBackground(Color.BLUE);
             all.empty.npaescanear.setForeground(Color.WHITE);
             all.empty.QT.setForeground(Color.WHITE);
@@ -273,7 +273,7 @@ public class Barcode_2 extends javax.swing.JFrame {
             all.empty.idsp.setText("D");
             all.empty.npecaneado.setText("000" + npingresado.toUpperCase());
             all.empty.cantidadfinal.setText(all.empty.cantidadrequerida.getText());
-            all.empty.serial.setText(npescaneado.substring(10));
+            all.empty.serial.setText(npescaneado.substring(10).toUpperCase());
             all.empty.NPS.setBackground(Color.YELLOW);
             all.empty.npaescanear.setForeground(Color.BLACK);
             all.empty.QT.setForeground(Color.BLACK);

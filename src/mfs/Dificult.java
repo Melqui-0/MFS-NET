@@ -54,6 +54,11 @@ public class Dificult extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         jButton2.setText("Medium");
         jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
         jButton2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 jButton2KeyTyped(evt);
@@ -129,6 +134,11 @@ public class Dificult extends javax.swing.JFrame {
             this.setVisible(false);
         }
     }//GEN-LAST:event_jButton3KeyTyped
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        all.opcmedium.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

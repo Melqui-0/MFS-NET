@@ -10,12 +10,12 @@ import java.awt.event.KeyEvent;
  *
  * @author 102976781
  */
-public class Opciones extends javax.swing.JFrame {
+public class Opcioneseasy extends javax.swing.JFrame {
 
     
     public Dificult dificultad = new Dificult();
     
-    public Opciones() {
+    public Opcioneseasy() {
         initComponents();
     }
 
@@ -97,8 +97,11 @@ public class Opciones extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void PDU231ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PDU231ActionPerformed
-        //all.empty_231.setVisible(true);
+        all.empty_231.setVisible(true);
         this.setVisible(false);
+        all.abrir.setVisible(false);
+        all.empty.NPS.requestFocus();
+        all.crono.mTimer.start();
     }//GEN-LAST:event_PDU231ActionPerformed
 
     private void PDU485ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PDU485ActionPerformed
@@ -140,21 +143,23 @@ public class Opciones extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Opciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Opcioneseasy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Opciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Opcioneseasy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Opciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Opcioneseasy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Opciones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Opcioneseasy.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
+        //</editor-fold>
         //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Opciones().setVisible(true);
+                new Opcioneseasy().setVisible(true);
             }
         });
     }

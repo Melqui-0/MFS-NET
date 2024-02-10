@@ -209,7 +209,7 @@ switch (nm) {
                     all.empty.cantidadfinal3.setText(all.empty.cantidadrequerida3.getText());
                     all.empty.NPS3.setBackground(Color.BLUE);
                     all.empty.npaescanear3.setForeground(Color.WHITE);
-                    all.empty.QT13.setForeground(Color.WHITE);
+                    all.empty.QT3.setForeground(Color.WHITE);
                     all.empty.cantidadrequerida3.setForeground(Color.WHITE);
                     all.empty.FQT3.setForeground(Color.WHITE);
                     all.empty.cantidadfinal3.setForeground(Color.WHITE);
@@ -228,7 +228,7 @@ switch (nm) {
                     all.empty.cantidadfinal3.setText(all.empty.cantidadrequerida3.getText());
                     all.empty.NPS3.setBackground(Color.BLUE);
                     all.empty.npaescanear3.setForeground(Color.WHITE);
-                    all.empty.QT13.setForeground(Color.WHITE);
+                    all.empty.QT3.setForeground(Color.WHITE);
                     all.empty.cantidadrequerida3.setForeground(Color.WHITE);
                     all.empty.FQT3.setForeground(Color.WHITE);
                     all.empty.cantidadfinal3.setForeground(Color.WHITE);

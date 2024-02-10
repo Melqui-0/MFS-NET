@@ -48,5 +48,18 @@ public class Cronometro {
         all.empty.milisegundos.setText("." + milisegundos);
     }
     
+    public void reboot() {
+        if (mTimer.isRunning()){
+            mTimer.stop();
+        }
+        
+        horas = 0;
+        minutos = 0;
+        segundos = 0;
+        milisegundos = 0;
+        ActualizarLabel();
+         
+    }
+    
 }
 

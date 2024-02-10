@@ -106,9 +106,9 @@ public class WorkUnit extends javax.swing.JFrame {
             Work.setText("");
             this.setVisible(false);
             all.dificultad.setVisible(true);
-        } else if (scan.toUpperCase().equals(work) && orden == 1){
+        } else if (scan.toUpperCase().equals(work) && orden == 1){//Creo que era para ver la orden en View
             all.view.setVisible(true);
-        } else if (scan.toUpperCase().equals(work) && orden == 2){
+        } else if (scan.toUpperCase().equals(work) && orden == 2){//Creo que era para ver la orden en View
             all.view.setVisible(true); //2
         }
     }//GEN-LAST:event_EnterActionPerformed

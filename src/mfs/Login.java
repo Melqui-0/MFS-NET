@@ -258,11 +258,15 @@ public class Login extends javax.swing.JFrame {
        String password = new String (Password.getPassword());
        if (user.equals(us) && password.equals(pass)){
            usuario = user;
+            User.setText("");
+            Password.setText("");
             all.abrir.setVisible(true);
             this.setVisible(false);
        } else if(user.equals(usentto) && password.equals(passentto)){
-            all.entrenador.setVisible(true);
-            this.setVisible(false);
+           User.setText("");
+           Password.setText(""); 
+           all.entrenador.setVisible(true);
+           this.setVisible(false);
        }else {
             User.setText("");
             Password.setText("");

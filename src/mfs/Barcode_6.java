@@ -240,7 +240,7 @@ public class Barcode_6 extends javax.swing.JFrame {
             } else if (npescaneado.startsWith("1s") | npescaneado.startsWith("1S")){
                 if (npescaneado.length() == 16){   
                     machinefinal.setText("00" + npescaneado.substring(11).toUpperCase());
-                    msingresado = npescaneado.substring(11);
+                    msingresado = npescaneado.substring(11).toUpperCase();
                     npscan.setText("");
                 } else{
                     JOptionPane.showMessageDialog(null, "INVALID BARCODE - no matching rule");   

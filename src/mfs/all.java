@@ -14,10 +14,11 @@ public class all {
     public static Inicio abrir = new Inicio();
     public static WorkUnit work = new WorkUnit();
     public static Chgpwd cambio = new Chgpwd ();
-    public static Opciones opcempty = new Opciones ();
+    public static Opcioneseasy opcempty = new Opcioneseasy ();
+    public static Opcionesmedium opcmedium = new Opcionesmedium();
     public static Dificult dificultad = new Dificult();
     public static Empty empty = new Empty();
-    //public static Empty_231 empty_231 = new Empty_231();
+    public static Empty_231 empty_231 = new Empty_231();
     public static Barcode barcode =  new Barcode();
     public static Diccionario dic = new Diccionario();
     public static Barcode_1 barcode_1 = new Barcode_1();
@@ -34,5 +35,6 @@ public class all {
     public static View view = new View();
     public static Cronometro crono = new Cronometro();
     public static Pagina_Entrenador entrenador = new Pagina_Entrenador();
+    public static Limpiar_1 limpiar = new Limpiar_1();
     public static int bar = 3;
 }
