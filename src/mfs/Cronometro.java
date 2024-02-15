@@ -43,9 +43,15 @@ public class Cronometro {
         
     }
     public void ActualizarLabel() {
-        String crono = horas + "hrs:" + minutos + "m:" + segundos + "s";
-        all.empty.Cronometro.setText(crono);
-        all.empty.milisegundos.setText("." + milisegundos);
+        if (all.opcempty.empty == true){
+            String crono = horas + "hrs:" + minutos + "m:" + segundos + "s";
+            all.empty.Cronometro.setText(crono);
+            all.empty.milisegundos.setText("." + milisegundos);
+        } else if (all.opcempty.empty231 == true){
+            String crono = horas + "hrs:" + minutos + "m:" + segundos + "s";
+            all.empty_231.Cronometro.setText(crono);
+            all.empty_231.milisegundos.setText("." + milisegundos);
+        }
     }
     
     public void reboot() {

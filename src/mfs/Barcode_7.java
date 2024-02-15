@@ -147,7 +147,8 @@ public class Barcode_7 extends javax.swing.JFrame {
     }//GEN-LAST:event_npscanKeyTyped
 
     private void LogpartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogpartActionPerformed
-        switch (nm){
+        if (all.opcempty.empty == true){
+            switch (nm){
             case 6:
                 all.empty.npaescanear6.setText("00044V4664");
                 all.empty.idsp6.setText("I");
@@ -241,6 +242,103 @@ public class Barcode_7 extends javax.swing.JFrame {
             default:
                 JOptionPane.showMessageDialog(null, "FC15 ");
                 break;        
+        }
+        } else if (all.opcempty.empty231 == true){
+            switch (Empty_231.nm){
+            case 6:
+                all.empty_231.npaescanear6.setText("00044V4664");
+                all.empty_231.idsp6.setText("I");
+                all.empty_231.npecaneado6.setText("00044V4664");
+                all.empty_231.cantidadfinal6.setText(all.empty_231.cantidadrequerida6.getText());
+                all.empty_231.NPS6.setBackground(Color.BLUE);
+                all.empty_231.npaescanear6.setForeground(Color.WHITE);
+                all.empty_231.QT6.setForeground(Color.WHITE);
+                all.empty_231.cantidadrequerida6.setForeground(Color.WHITE);
+                all.empty_231.FQT6.setForeground(Color.WHITE);
+                all.empty_231.cantidadfinal6.setForeground(Color.WHITE);
+                all.empty_231.DISP6.setForeground(Color.WHITE);
+                all.empty_231.idsp6.setForeground(Color.WHITE);
+                all.empty_231.descripcion6.setForeground(Color.WHITE);
+                all.empty_231.npecaneado6.setForeground(Color.WHITE);
+                all.empty_231.serial6.setForeground(Color.WHITE);
+                this.setVisible(false);
+                break;
+            case 14:
+                all.empty_231.npaescanear14.setText("00000N8709");
+                all.empty_231.idsp14.setText("I");
+                all.empty_231.npecaneado14.setText("00000N8709");
+                all.empty_231.cantidadfinal14.setText(all.empty_231.cantidadrequerida14.getText());
+                all.empty_231.NPS14.setBackground(Color.BLUE);
+                all.empty_231.npaescanear14.setForeground(Color.WHITE);
+                all.empty_231.QT14.setForeground(Color.WHITE);
+                all.empty_231.cantidadrequerida14.setForeground(Color.WHITE);
+                all.empty_231.FQT14.setForeground(Color.WHITE);
+                all.empty_231.cantidadfinal14.setForeground(Color.WHITE);
+                all.empty_231.DISP14.setForeground(Color.WHITE);
+                all.empty_231.idsp14.setForeground(Color.WHITE);
+                all.empty_231.descripcion14.setForeground(Color.WHITE);
+                all.empty_231.npecaneado14.setForeground(Color.WHITE);
+                all.empty_231.serial14.setForeground(Color.WHITE);
+                this.setVisible(false);
+                break;
+            case 17:
+                all.empty_231.npaescanear17.setText("00000N8709");
+                all.empty_231.idsp17.setText("I");
+                all.empty_231.npecaneado17.setText("00000N8709");
+                all.empty_231.cantidadfinal17.setText(all.empty_231.cantidadrequerida17.getText());
+                all.empty_231.NPS17.setBackground(Color.BLUE);
+                all.empty_231.npaescanear17.setForeground(Color.WHITE);
+                all.empty_231.QT17.setForeground(Color.WHITE);
+                all.empty_231.cantidadrequerida17.setForeground(Color.WHITE);
+                all.empty_231.FQT17.setForeground(Color.WHITE);
+                all.empty_231.cantidadfinal17.setForeground(Color.WHITE);
+                all.empty_231.DISP17.setForeground(Color.WHITE);
+                all.empty_231.idsp17.setForeground(Color.WHITE);
+                all.empty_231.descripcion17.setForeground(Color.WHITE);
+                all.empty_231.npecaneado17.setForeground(Color.WHITE);
+                all.empty_231.serial17.setForeground(Color.WHITE);
+                this.setVisible(false);
+                break;
+            case 20:
+                all.empty_231.npaescanear20.setText("00000N8709");
+                all.empty_231.idsp20.setText("I");
+                all.empty_231.npecaneado20.setText("00000N8709");
+                all.empty_231.cantidadfinal20.setText(all.empty_231.cantidadrequerida20.getText());
+                all.empty_231.NPS20.setBackground(Color.BLUE);
+                all.empty_231.npaescanear20.setForeground(Color.WHITE);
+                all.empty_231.QT20.setForeground(Color.WHITE);
+                all.empty_231.cantidadrequerida20.setForeground(Color.WHITE);
+                all.empty_231.FQT20.setForeground(Color.WHITE);
+                all.empty_231.cantidadfinal20.setForeground(Color.WHITE);
+                all.empty_231.DISP20.setForeground(Color.WHITE);
+                all.empty_231.idsp20.setForeground(Color.WHITE);
+                all.empty_231.descripcion20.setForeground(Color.WHITE);
+                all.empty_231.npecaneado20.setForeground(Color.WHITE);
+                all.empty_231.serial20.setForeground(Color.WHITE);
+                this.setVisible(false);
+                break;
+            case 23:
+                all.empty_231.npaescanear23.setText("00000N8709");
+                all.empty_231.idsp23.setText("I");
+                all.empty_231.npecaneado23.setText("00000N8709");
+                all.empty_231.cantidadfinal23.setText(all.empty_231.cantidadrequerida23.getText());
+                all.empty_231.NPS23.setBackground(Color.BLUE);
+                all.empty_231.npaescanear23.setForeground(Color.WHITE);
+                all.empty_231.QT23.setForeground(Color.WHITE);
+                all.empty_231.cantidadrequerida23.setForeground(Color.WHITE);
+                all.empty_231.FQT23.setForeground(Color.WHITE);
+                all.empty_231.cantidadfinal23.setForeground(Color.WHITE);
+                all.empty_231.DISP23.setForeground(Color.WHITE);
+                all.empty_231.idsp23.setForeground(Color.WHITE);
+                all.empty_231.descripcion23.setForeground(Color.WHITE);
+                all.empty_231.npecaneado23.setForeground(Color.WHITE);
+                all.empty_231.serial23.setForeground(Color.WHITE);
+                this.setVisible(false);
+                break;
+            default:
+                JOptionPane.showMessageDialog(null, "FC15 ");
+                break;        
+        }
         }
     }//GEN-LAST:event_LogpartActionPerformed
 

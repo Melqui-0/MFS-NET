@@ -253,6 +253,7 @@ public class Barcode_6 extends javax.swing.JFrame {
     }//GEN-LAST:event_npscanKeyTyped
 
     private void LogpartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogpartActionPerformed
+        if (all.opcempty.empty == true){
         Map<String, String[]> agency = new HashMap <>();
         agency.put("03FP534", FP534);
         nps = agency.get(pn);
@@ -307,6 +308,64 @@ public class Barcode_6 extends javax.swing.JFrame {
             }
         } else {   
             JOptionPane.showMessageDialog(null, "FC15 ");
+        }
+        }
+        } else if (all.opcempty.empty231 == true){
+            Map<String, String[]> agency = new HashMap <>();
+        agency.put("03FP534", FP534);
+        Empty_231.nps = agency.get(Empty_231.pn);
+        if (Empty_231.nps == FP534){
+        if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear4.getText())){
+            if (Arrays.equals(qwe, FP534)){
+                all.empty_231.npaescanear4.setText("000" + npingresado.toUpperCase());
+                all.empty_231.idsp4.setText("I");
+                all.empty_231.npecaneado4.setText("000" + npingresado.toUpperCase());
+                all.empty_231.cantidadfinal4.setText(all.empty_231.cantidadrequerida4.getText());
+                all.empty_231.serial4.setText(msingresado);
+                all.empty_231.NPS4.setBackground(Color.BLUE);
+                all.empty_231.npaescanear4.setForeground(Color.WHITE);
+                all.empty_231.QT4.setForeground(Color.WHITE);
+                all.empty_231.cantidadrequerida4.setForeground(Color.WHITE);
+                all.empty_231.FQT4.setForeground(Color.WHITE);
+                all.empty_231.cantidadfinal4.setForeground(Color.WHITE);
+                all.empty_231.DISP4.setForeground(Color.WHITE);
+                all.empty_231.idsp4.setForeground(Color.WHITE);
+                all.empty_231.descripcion4.setForeground(Color.WHITE);
+                all.empty_231.npecaneado4.setForeground(Color.WHITE);
+                all.empty_231.serial4.setForeground(Color.WHITE);
+                npfinal.setText("");
+                ecfinal.setText("");
+                machinefinal.setText("");
+                npscan.requestFocus();
+                this.setVisible(false);
+            }
+        }   else if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear4.getText().substring(3))){
+            if (Arrays.equals(qwe, FP534)){
+                all.empty_231.npaescanear4.setText("000" + npingresado.toUpperCase());
+                all.empty_231.idsp4.setText("I");
+                all.empty_231.npecaneado4.setText("000" + npingresado.toUpperCase());
+                all.empty_231.cantidadfinal4.setText(all.empty_231.cantidadrequerida4.getText());
+                all.empty_231.serial4.setText(msingresado);
+                all.empty_231.NPS4.setBackground(Color.BLUE);
+                all.empty_231.npaescanear4.setForeground(Color.WHITE);
+                all.empty_231.QT4.setForeground(Color.WHITE);
+                all.empty_231.cantidadrequerida4.setForeground(Color.WHITE);
+                all.empty_231.FQT4.setForeground(Color.WHITE);
+                all.empty_231.cantidadfinal4.setForeground(Color.WHITE);
+                all.empty_231.DISP4.setForeground(Color.WHITE);
+                all.empty_231.idsp4.setForeground(Color.WHITE);
+                all.empty_231.descripcion4.setForeground(Color.WHITE);
+                all.empty_231.npecaneado4.setForeground(Color.WHITE);
+                all.empty_231.serial4.setForeground(Color.WHITE);
+                npfinal.setText("");
+                ecfinal.setText("");
+                machinefinal.setText("");
+                npscan.requestFocus();
+            this.setVisible(false);
+            }
+        } else {   
+            JOptionPane.showMessageDialog(null, "FC15 ");
+        }
         }
         }
     }//GEN-LAST:event_LogpartActionPerformed

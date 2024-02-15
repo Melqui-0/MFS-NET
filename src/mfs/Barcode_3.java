@@ -24,6 +24,7 @@ public class Barcode_3 extends javax.swing.JFrame {
      */
     String npescaneado, npingresado;
     public static String jkl;
+    public static String pl [];
     public static String qwe [] = new String [1];
         final String KL421 [] = {
             "10000P17711"
@@ -245,6 +246,7 @@ public class Barcode_3 extends javax.swing.JFrame {
     }//GEN-LAST:event_npscanKeyTyped
 
     private void LogpartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogpartActionPerformed
+        if (all.opcempty.empty == true){
         Map<String, String[]> mapnp = new HashMap <>();
         mapnp.put("01KL421", KL421);
         mapnp.put("01KL425", KL425);
@@ -606,6 +608,370 @@ public class Barcode_3 extends javax.swing.JFrame {
             }
         }else {   
             JOptionPane.showMessageDialog(null, "FC15 ");
+        }
+        } else if (all.opcempty.empty231 == true){
+            Map<String, String[]> mapnp = new HashMap <>();
+            mapnp.put("01KL421", KL421);
+            mapnp.put("01KL425", KL425);
+            mapnp.put("01KU137", KU137);
+            mapnp.put("01KU111", KU111);
+            mapnp.put("01KU112", KU112);
+            mapnp.put("39J1952", J1952);
+            mapnp.put("03FP534", FP534);
+            pl = mapnp.get(Empty_231.pn);
+            if (pl == KL421){
+            if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear28.getText())){
+                if (Arrays.equals(qwe, KL421)){
+                    all.empty_231.npaescanear28.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.idsp28.setText("I");
+                    all.empty_231.npecaneado28.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.cantidadfinal28.setText(all.empty_231.cantidadrequerida28.getText());
+                    all.empty_231.NPS28.setBackground(Color.BLUE);
+                    all.empty_231.npaescanear28.setForeground(Color.WHITE);
+                    all.empty_231.QT28.setForeground(Color.WHITE);
+                    all.empty_231.cantidadrequerida28.setForeground(Color.WHITE);
+                    all.empty_231.FQT28.setForeground(Color.WHITE);
+                    all.empty_231.cantidadfinal28.setForeground(Color.WHITE);
+                    all.empty_231.DISP28.setForeground(Color.WHITE);
+                    all.empty_231.idsp28.setForeground(Color.WHITE);
+                    all.empty_231.descripcion28.setForeground(Color.WHITE);
+                    all.empty_231.npecaneado28.setForeground(Color.WHITE);
+                    all.empty_231.serial28.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    npscan.requestFocus();
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            } else if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear28.getText().substring(3))){
+                if (Arrays.equals(qwe, KL421)){
+                    all.empty_231.npaescanear28.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.idsp28.setText("I");
+                    all.empty_231.npecaneado28.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.cantidadfinal28.setText(all.empty_231.cantidadrequerida28.getText());
+                    all.empty_231.NPS28.setBackground(Color.BLUE);
+                    all.empty_231.npaescanear28.setForeground(Color.WHITE);
+                    all.empty_231.QT28.setForeground(Color.WHITE);
+                    all.empty_231.cantidadrequerida28.setForeground(Color.WHITE);
+                    all.empty_231.FQT28.setForeground(Color.WHITE);
+                    all.empty_231.cantidadfinal28.setForeground(Color.WHITE);
+                    all.empty_231.DISP28.setForeground(Color.WHITE);
+                    all.empty_231.idsp28.setForeground(Color.WHITE);
+                    all.empty_231.descripcion28.setForeground(Color.WHITE);
+                    all.empty_231.npecaneado28.setForeground(Color.WHITE);
+                    all.empty_231.serial28.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    npscan.requestFocus();
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            }
+        } else if (pl == KL425){
+            if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear30.getText())){
+                if (Arrays.equals(qwe, KL425)){
+                    all.empty_231.npaescanear30.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.idsp30.setText("I");
+                    all.empty_231.npecaneado30.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.cantidadfinal30.setText(all.empty_231.cantidadrequerida30.getText());
+                    all.empty_231.NPS30.setBackground(Color.BLUE);
+                    all.empty_231.npaescanear30.setForeground(Color.WHITE);
+                    all.empty_231.QT30.setForeground(Color.WHITE);
+                    all.empty_231.cantidadrequerida30.setForeground(Color.WHITE);
+                    all.empty_231.FQT30.setForeground(Color.WHITE);
+                    all.empty_231.cantidadfinal30.setForeground(Color.WHITE);
+                    all.empty_231.DISP30.setForeground(Color.WHITE);
+                    all.empty_231.idsp30.setForeground(Color.WHITE);
+                    all.empty_231.descripcion30.setForeground(Color.WHITE);
+                    all.empty_231.npecaneado30.setForeground(Color.WHITE);
+                    all.empty_231.serial30.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    npscan.requestFocus();
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            } else if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear30.getText().substring(3))){
+                if (Arrays.equals(qwe, KL425)){
+                    all.empty_231.npaescanear30.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.idsp30.setText("I");
+                    all.empty_231.npecaneado30.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.cantidadfinal30.setText(all.empty_231.cantidadrequerida30.getText());
+                    all.empty_231.NPS30.setBackground(Color.BLUE);
+                    all.empty_231.npaescanear30.setForeground(Color.WHITE);
+                    all.empty_231.QT30.setForeground(Color.WHITE);
+                    all.empty_231.cantidadrequerida30.setForeground(Color.WHITE);
+                    all.empty_231.FQT30.setForeground(Color.WHITE);
+                    all.empty_231.cantidadfinal30.setForeground(Color.WHITE);
+                    all.empty_231.DISP30.setForeground(Color.WHITE);
+                    all.empty_231.idsp30.setForeground(Color.WHITE);
+                    all.empty_231.descripcion30.setForeground(Color.WHITE);
+                    all.empty_231.npecaneado30.setForeground(Color.WHITE);
+                    all.empty_231.serial30.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    npscan.requestFocus();
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            }
+        }else if (pl == KU137){
+            if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear33.getText())){
+                if (Arrays.equals(qwe, KU137)){
+                    all.empty_231.npaescanear33.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.idsp33.setText("I");
+                    all.empty_231.npecaneado33.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.cantidadfinal33.setText(all.empty_231.cantidadrequerida33.getText());
+                    all.empty_231.NPS33.setBackground(Color.BLUE);
+                    all.empty_231.npaescanear33.setForeground(Color.WHITE);
+                    all.empty_231.QT33.setForeground(Color.WHITE);
+                    all.empty_231.cantidadrequerida33.setForeground(Color.WHITE);
+                    all.empty_231.FQT33.setForeground(Color.WHITE);
+                    all.empty_231.cantidadfinal33.setForeground(Color.WHITE);
+                    all.empty_231.DISP33.setForeground(Color.WHITE);
+                    all.empty_231.idsp33.setForeground(Color.WHITE);
+                    all.empty_231.descripcion33.setForeground(Color.WHITE);
+                    all.empty_231.npecaneado33.setForeground(Color.WHITE);
+                    all.empty_231.serial33.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    npscan.requestFocus();
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            } else if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear33.getText().substring(3))){
+                if (Arrays.equals(qwe, KU137)){
+                    all.empty_231.npaescanear33.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.idsp33.setText("I");
+                    all.empty_231.npecaneado33.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.cantidadfinal33.setText(all.empty_231.cantidadrequerida33.getText());
+                    all.empty_231.NPS33.setBackground(Color.BLUE);
+                    all.empty_231.npaescanear33.setForeground(Color.WHITE);
+                    all.empty_231.QT33.setForeground(Color.WHITE);
+                    all.empty_231.cantidadrequerida33.setForeground(Color.WHITE);
+                    all.empty_231.FQT33.setForeground(Color.WHITE);
+                    all.empty_231.cantidadfinal33.setForeground(Color.WHITE);
+                    all.empty_231.DISP33.setForeground(Color.WHITE);
+                    all.empty_231.idsp33.setForeground(Color.WHITE);
+                    all.empty_231.descripcion33.setForeground(Color.WHITE);
+                    all.empty_231.npecaneado33.setForeground(Color.WHITE);
+                    all.empty_231.serial33.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    npscan.requestFocus();
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            }
+        } else if (pl == KU111){
+            if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear29.getText())){
+                if (Arrays.equals(qwe, KU111)){
+                    all.empty_231.npaescanear29.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.idsp29.setText("I");
+                    all.empty_231.npecaneado29.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.cantidadfinal29.setText(all.empty_231.cantidadrequerida29.getText());
+                    all.empty_231.NPS29.setBackground(Color.BLUE);
+                    all.empty_231.npaescanear29.setForeground(Color.WHITE);
+                    all.empty_231.QT29.setForeground(Color.WHITE);
+                    all.empty_231.cantidadrequerida29.setForeground(Color.WHITE);
+                    all.empty_231.FQT29.setForeground(Color.WHITE);
+                    all.empty_231.cantidadfinal29.setForeground(Color.WHITE);
+                    all.empty_231.DISP29.setForeground(Color.WHITE);
+                    all.empty_231.idsp29.setForeground(Color.WHITE);
+                    all.empty_231.descripcion29.setForeground(Color.WHITE);
+                    all.empty_231.npecaneado29.setForeground(Color.WHITE);
+                    all.empty_231.serial29.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    npscan.requestFocus();
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            } else if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear29.getText().substring(3))){
+                if (Arrays.equals(qwe, KU111)){
+                    all.empty_231.npaescanear29.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.idsp29.setText("I");
+                    all.empty_231.npecaneado29.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.cantidadfinal29.setText(all.empty_231.cantidadrequerida29.getText());
+                    all.empty_231.NPS29.setBackground(Color.BLUE);
+                    all.empty_231.npaescanear29.setForeground(Color.WHITE);
+                    all.empty_231.QT29.setForeground(Color.WHITE);
+                    all.empty_231.cantidadrequerida29.setForeground(Color.WHITE);
+                    all.empty_231.FQT29.setForeground(Color.WHITE);
+                    all.empty_231.cantidadfinal29.setForeground(Color.WHITE);
+                    all.empty_231.DISP29.setForeground(Color.WHITE);
+                    all.empty_231.idsp29.setForeground(Color.WHITE);
+                    all.empty_231.descripcion29.setForeground(Color.WHITE);
+                    all.empty_231.npecaneado29.setForeground(Color.WHITE);
+                    all.empty_231.serial29.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    npscan.requestFocus();
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            }
+        } else if (pl == KU112){
+            if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear32.getText())){
+                if (Arrays.equals(qwe, KU112)){
+                    all.empty_231.npaescanear32.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.idsp32.setText("I");
+                    all.empty_231.npecaneado32.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.cantidadfinal32.setText(all.empty_231.cantidadrequerida32.getText());
+                    all.empty_231.NPS32.setBackground(Color.BLUE);
+                    all.empty_231.npaescanear32.setForeground(Color.WHITE);
+                    all.empty_231.QT32.setForeground(Color.WHITE);
+                    all.empty_231.cantidadrequerida32.setForeground(Color.WHITE);
+                    all.empty_231.FQT32.setForeground(Color.WHITE);
+                    all.empty_231.cantidadfinal32.setForeground(Color.WHITE);
+                    all.empty_231.DISP32.setForeground(Color.WHITE);
+                    all.empty_231.idsp32.setForeground(Color.WHITE);
+                    all.empty_231.descripcion32.setForeground(Color.WHITE);
+                    all.empty_231.npecaneado32.setForeground(Color.WHITE);
+                    all.empty_231.serial32.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    npscan.requestFocus();
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            } else if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear32.getText().substring(3))){
+                if (Arrays.equals(qwe, KU112)){
+                    all.empty_231.npaescanear32.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.idsp32.setText("I");
+                    all.empty_231.npecaneado32.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.cantidadfinal32.setText(all.empty_231.cantidadrequerida32.getText());
+                    all.empty_231.NPS32.setBackground(Color.BLUE);
+                    all.empty_231.npaescanear32.setForeground(Color.WHITE);
+                    all.empty_231.QT32.setForeground(Color.WHITE);
+                    all.empty_231.cantidadrequerida32.setForeground(Color.WHITE);
+                    all.empty_231.FQT32.setForeground(Color.WHITE);
+                    all.empty_231.cantidadfinal32.setForeground(Color.WHITE);
+                    all.empty_231.DISP32.setForeground(Color.WHITE);
+                    all.empty_231.idsp32.setForeground(Color.WHITE);
+                    all.empty_231.descripcion32.setForeground(Color.WHITE);
+                    all.empty_231.npecaneado32.setForeground(Color.WHITE);
+                    all.empty_231.serial32.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    npscan.requestFocus();
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            }
+        } else if (pl == FP534){
+            if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear4.getText())){
+                if (Arrays.equals(qwe, FP534)){
+                    all.empty_231.npaescanear4.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.idsp4.setText("I");
+                    all.empty_231.npecaneado4.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.cantidadfinal4.setText(all.empty_231.cantidadrequerida4.getText());
+                    all.empty_231.NPS4.setBackground(Color.BLUE);
+                    all.empty_231.npaescanear4.setForeground(Color.WHITE);
+                    all.empty_231.QT4.setForeground(Color.WHITE);
+                    all.empty_231.cantidadrequerida4.setForeground(Color.WHITE);
+                    all.empty_231.FQT4.setForeground(Color.WHITE);
+                    all.empty_231.cantidadfinal4.setForeground(Color.WHITE);
+                    all.empty_231.DISP4.setForeground(Color.WHITE);
+                    all.empty_231.idsp4.setForeground(Color.WHITE);
+                    all.empty_231.descripcion4.setForeground(Color.WHITE);
+                    all.empty_231.npecaneado4.setForeground(Color.WHITE);
+                    all.empty_231.serial4.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    npscan.requestFocus();
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            } else if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear4.getText().substring(3))){
+                if (Arrays.equals(qwe, FP534)){
+                    all.empty_231.npaescanear4.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.idsp4.setText("I");
+                    all.empty_231.npecaneado4.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.cantidadfinal4.setText(all.empty_231.cantidadrequerida4.getText());
+                    all.empty_231.NPS4.setBackground(Color.BLUE);
+                    all.empty_231.npaescanear4.setForeground(Color.WHITE);
+                    all.empty_231.QT4.setForeground(Color.WHITE);
+                    all.empty_231.cantidadrequerida4.setForeground(Color.WHITE);
+                    all.empty_231.FQT4.setForeground(Color.WHITE);
+                    all.empty_231.cantidadfinal4.setForeground(Color.WHITE);
+                    all.empty_231.DISP4.setForeground(Color.WHITE);
+                    all.empty_231.idsp4.setForeground(Color.WHITE);
+                    all.empty_231.descripcion4.setForeground(Color.WHITE);
+                    all.empty_231.npecaneado4.setForeground(Color.WHITE);
+                    all.empty_231.serial4.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    npscan.requestFocus();
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            }
+        } else if (pl == J1952){
+            if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear9.getText())){
+                if (Arrays.equals(qwe, J1952)){
+                    all.empty_231.npaescanear9.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.idsp9.setText("I");
+                    all.empty_231.npecaneado9.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.cantidadfinal9.setText(all.empty_231.cantidadrequerida9.getText());
+                    all.empty_231.NPS9.setBackground(Color.BLUE);
+                    all.empty_231.npaescanear9.setForeground(Color.WHITE);
+                    all.empty_231.QT9.setForeground(Color.WHITE);
+                    all.empty_231.cantidadrequerida9.setForeground(Color.WHITE);
+                    all.empty_231.FQT9.setForeground(Color.WHITE);
+                    all.empty_231.cantidadfinal9.setForeground(Color.WHITE);
+                    all.empty_231.DISP9.setForeground(Color.WHITE);
+                    all.empty_231.idsp9.setForeground(Color.WHITE);
+                    all.empty_231.descripcion9.setForeground(Color.WHITE);
+                    all.empty_231.npecaneado9.setForeground(Color.WHITE);
+                    all.empty_231.serial9.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    npscan.requestFocus();
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            } else if (this.npingresado.toUpperCase().equals(all.empty_231.npaescanear9.getText().substring(3))){
+                if (Arrays.equals(qwe, J1952)){
+                    all.empty_231.npaescanear9.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.idsp9.setText("I");
+                    all.empty_231.npecaneado9.setText("000" + npingresado.toUpperCase());
+                    all.empty_231.cantidadfinal9.setText(all.empty_231.cantidadrequerida9.getText());
+                    all.empty_231.NPS9.setBackground(Color.BLUE);
+                    all.empty_231.npaescanear9.setForeground(Color.WHITE);
+                    all.empty_231.QT9.setForeground(Color.WHITE);
+                    all.empty_231.cantidadrequerida9.setForeground(Color.WHITE);
+                    all.empty_231.FQT9.setForeground(Color.WHITE);
+                    all.empty_231.cantidadfinal9.setForeground(Color.WHITE);
+                    all.empty_231.DISP9.setForeground(Color.WHITE);
+                    all.empty_231.idsp9.setForeground(Color.WHITE);
+                    all.empty_231.descripcion9.setForeground(Color.WHITE);
+                    all.empty_231.npecaneado9.setForeground(Color.WHITE);
+                    all.empty_231.serial9.setForeground(Color.WHITE);
+                    ecfinal.setText("");
+                    npfinal.setText("");
+                    npscan.requestFocus();
+                    this.setVisible(false);
+                } else {
+                    JOptionPane.showMessageDialog(null, "FC15 ");
+                }
+            }
+        }else {   
+            JOptionPane.showMessageDialog(null, "FC15 ");
+        }
         }
     }//GEN-LAST:event_LogpartActionPerformed
 

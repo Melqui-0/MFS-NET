@@ -14,6 +14,7 @@ public class Opcioneseasy extends javax.swing.JFrame {
 
     
     public Dificult dificultad = new Dificult();
+    public boolean empty, empty231;
     
     public Opcioneseasy() {
         initComponents();
@@ -100,7 +101,8 @@ public class Opcioneseasy extends javax.swing.JFrame {
         all.empty_231.setVisible(true);
         this.setVisible(false);
         all.abrir.setVisible(false);
-        all.empty.NPS.requestFocus();
+        empty231 = true;
+        empty = false;
         all.crono.mTimer.start();
     }//GEN-LAST:event_PDU231ActionPerformed
 
@@ -108,7 +110,8 @@ public class Opcioneseasy extends javax.swing.JFrame {
         all.empty.setVisible(true);
         this.setVisible(false);
         all.abrir.setVisible(false);
-        all.empty.NPS.requestFocus();
+        empty231 = false;
+        empty = true;
         all.crono.mTimer.start();
     }//GEN-LAST:event_PDU485ActionPerformed
 

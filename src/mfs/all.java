@@ -19,6 +19,7 @@ public class all {
     public static Dificult dificultad = new Dificult();
     public static Empty empty = new Empty();
     public static Empty_231 empty_231 = new Empty_231();
+    public static Empty_med empty_medium = new Empty_med ();
     public static Barcode barcode =  new Barcode();
     public static Diccionario dic = new Diccionario();
     public static Barcode_1 barcode_1 = new Barcode_1();
@@ -36,5 +37,7 @@ public class all {
     public static Cronometro crono = new Cronometro();
     public static Pagina_Entrenador entrenador = new Pagina_Entrenador();
     public static Limpiar_1 limpiar = new Limpiar_1();
+    public static Customization custom = new Customization ();
+    public static Pagina_Custom pagcustom = new Pagina_Custom ();
     public static int bar = 3;
 }

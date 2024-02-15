@@ -100,15 +100,15 @@ public class Opcionesmedium extends javax.swing.JFrame {
         //all.empty_231_medium.setVisible(true);
         this.setVisible(false);
         all.abrir.setVisible(false);
-        all.empty.NPS.requestFocus();
         all.crono.mTimer.start();
     }//GEN-LAST:event_PDU231ActionPerformed
 
     private void PDU485ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PDU485ActionPerformed
-        //all.empty_medium.setVisible(true);
+        all.empty_medium.setVisible(true);
         this.setVisible(false);
         all.abrir.setVisible(false);
-        all.empty.NPS.requestFocus();
+        all.empty_medium.bloque1_1.setVisible(false);
+        all.empty_medium.imagen.setVisible(false);
         all.crono.mTimer.start();
     }//GEN-LAST:event_PDU485ActionPerformed
 
