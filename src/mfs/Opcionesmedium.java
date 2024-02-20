@@ -104,12 +104,8 @@ public class Opcionesmedium extends javax.swing.JFrame {
     }//GEN-LAST:event_PDU231ActionPerformed
 
     private void PDU485ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PDU485ActionPerformed
-        all.empty_medium.setVisible(true);
         this.setVisible(false);
-        all.abrir.setVisible(false);
-        all.empty_medium.bloque1_1.setVisible(false);
-        all.empty_medium.imagen.setVisible(false);
-        all.crono.mTimer.start();
+        all.custom.setVisible(true);
     }//GEN-LAST:event_PDU485ActionPerformed
 
     private void PDU231KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_PDU231KeyTyped

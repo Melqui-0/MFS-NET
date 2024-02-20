@@ -38,6 +38,26 @@ public class all {
     public static Pagina_Entrenador entrenador = new Pagina_Entrenador();
     public static Limpiar_1 limpiar = new Limpiar_1();
     public static Customization custom = new Customization ();
-    public static Pagina_Custom pagcustom = new Pagina_Custom ();
+    public static Rework_funcion funcion_rework = new Rework_funcion ();
+    public static Funcion_f2 f2_funcion = new Funcion_f2 ();
+    public static Funcion_f4 F4_funcion = new Funcion_f4 ();
+    public static Funcion_remover remover_funcion = new Funcion_remover();
+    public static Qwerty pru = new Qwerty();
+    public static Material_Rack material_rack = new Material_Rack ();
+    public static Imagen_Rack imagen_rack = new Imagen_Rack ();
+    public static Material_extmangueras material_extmangueras = new Material_extmangueras();
+    public static Imagen_extmangueras imagen_extmangueras = new Imagen_extmangueras();
+    public static Material_etiqueta_534 material_etiqueta_534 = new Material_etiqueta_534();
+    public static Imagen_etiqueta_534 imagen_etiqueta_534 = new Imagen_etiqueta_534();
+    public static Material_etiqueta_396 material_etiqueta_396 = new Material_etiqueta_396 ();
+    public static Imagen_etiqueta_396 imagen_etiqueta_396 = new Imagen_etiqueta_396 ();
+    public static Material_pdu_485 material_pdu_485 = new Material_pdu_485();
+    public static Imagen_pdu_485 imagen_pdu_485 = new Imagen_pdu_485();
+    public static Material_etiqueta_1952 material_etiqueta_1952 = new Material_etiqueta_1952();
+    public static Imagen_etiqueta_1952 imagen_etiqueta_1952 = new Imagen_etiqueta_1952();
+    public static Material_kit_bisagras_del_421 material_bisagras_del_421 = new Material_kit_bisagras_del_421();
+    public static Imagen_material_bisagras_del_421 imagen_bisagras_del_421 = new Imagen_material_bisagras_del_421();
+    public static Material_pdu_485_vert material_pdu_485_vert = new Material_pdu_485_vert();
+    public static Imagen_pdu_485_vert imagen_pdu_485_vert = new Imagen_pdu_485_vert();
     public static int bar = 3;
 }

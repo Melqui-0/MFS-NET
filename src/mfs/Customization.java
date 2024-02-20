@@ -4,6 +4,7 @@
  */
 package mfs;
 
+import java.awt.BorderLayout;
 import javax.swing.JOptionPane;
 
 /**
@@ -60,7 +61,7 @@ public class Customization extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         extmangsi = new javax.swing.JRadioButton();
         extmangno = new javax.swing.JRadioButton();
-        jLabel14 = new javax.swing.JLabel();
+        Titulovt = new javax.swing.JLabel();
         ambospdu = new javax.swing.JRadioButton();
         cantidadpduver = new javax.swing.JComboBox<>();
         jLabel1 = new javax.swing.JLabel();
@@ -69,55 +70,21 @@ public class Customization extends javax.swing.JFrame {
         p231 = new javax.swing.JRadioButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel17 = new javax.swing.JLabel();
-        LM47 = new javax.swing.JCheckBox();
-        LM48 = new javax.swing.JCheckBox();
-        LM49 = new javax.swing.JCheckBox();
-        LM50 = new javax.swing.JCheckBox();
-        LM76 = new javax.swing.JCheckBox();
-        LM3 = new javax.swing.JCheckBox();
-        jLabel16 = new javax.swing.JLabel();
         ambospos = new javax.swing.JRadioButton();
-        LM4 = new javax.swing.JCheckBox();
         pdu = new javax.swing.JRadioButton();
-        LM5 = new javax.swing.JCheckBox();
         limite = new javax.swing.JRadioButton();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         monitorsi = new javax.swing.JRadioButton();
         monitorno = new javax.swing.JRadioButton();
-        LM43 = new javax.swing.JCheckBox();
-        LM44 = new javax.swing.JCheckBox();
-        LM72 = new javax.swing.JCheckBox();
-        LM45 = new javax.swing.JCheckBox();
-        LM73 = new javax.swing.JCheckBox();
-        LM46 = new javax.swing.JCheckBox();
-        LM74 = new javax.swing.JCheckBox();
-        LM75 = new javax.swing.JCheckBox();
-        LM57 = new javax.swing.JCheckBox();
-        LM58 = new javax.swing.JCheckBox();
-        LM2 = new javax.swing.JCheckBox();
-        LM59 = new javax.swing.JCheckBox();
-        LM60 = new javax.swing.JCheckBox();
         jLabel13 = new javax.swing.JLabel();
         patassi = new javax.swing.JRadioButton();
         patasno = new javax.swing.JRadioButton();
-        LM51 = new javax.swing.JCheckBox();
-        LM52 = new javax.swing.JCheckBox();
-        LM53 = new javax.swing.JCheckBox();
-        LM54 = new javax.swing.JCheckBox();
         switchsi = new javax.swing.JRadioButton();
-        LM55 = new javax.swing.JCheckBox();
         switchno = new javax.swing.JRadioButton();
-        LM56 = new javax.swing.JCheckBox();
         jLabel12 = new javax.swing.JLabel();
         llantassi = new javax.swing.JRadioButton();
         llantasno = new javax.swing.JRadioButton();
-        LM8 = new javax.swing.JCheckBox();
-        LM9 = new javax.swing.JCheckBox();
-        LM64 = new javax.swing.JCheckBox();
-        LM65 = new javax.swing.JCheckBox();
-        LM66 = new javax.swing.JCheckBox();
-        LM67 = new javax.swing.JCheckBox();
         etiquetasna = new javax.swing.JRadioButton();
         pdu48506 = new javax.swing.JRadioButton();
         wee = new javax.swing.JCheckBox();
@@ -127,13 +94,8 @@ public class Customization extends javax.swing.JFrame {
         Agency = new javax.swing.JCheckBox();
         pdu48509 = new javax.swing.JRadioButton();
         jLabel6 = new javax.swing.JLabel();
-        LM61 = new javax.swing.JCheckBox();
-        LM62 = new javax.swing.JCheckBox();
-        LM63 = new javax.swing.JCheckBox();
         sismicsi = new javax.swing.JRadioButton();
-        LM6 = new javax.swing.JCheckBox();
         jLabel8 = new javax.swing.JLabel();
-        LM7 = new javax.swing.JCheckBox();
         pdu48501 = new javax.swing.JRadioButton();
         extno = new javax.swing.JRadioButton();
         pdu48502 = new javax.swing.JRadioButton();
@@ -145,12 +107,8 @@ public class Customization extends javax.swing.JFrame {
         pdu48908 = new javax.swing.JRadioButton();
         pdu48910 = new javax.swing.JRadioButton();
         sismicno = new javax.swing.JRadioButton();
-        LM68 = new javax.swing.JCheckBox();
-        LM69 = new javax.swing.JCheckBox();
         pdu48508 = new javax.swing.JRadioButton();
-        LM70 = new javax.swing.JCheckBox();
         pdu48510 = new javax.swing.JRadioButton();
-        LM71 = new javax.swing.JCheckBox();
         pdu48512 = new javax.swing.JRadioButton();
         pdu48511 = new javax.swing.JRadioButton();
         pdu48906 = new javax.swing.JRadioButton();
@@ -219,6 +177,50 @@ public class Customization extends javax.swing.JFrame {
         LM20 = new javax.swing.JCheckBox();
         LM32 = new javax.swing.JCheckBox();
         LM21 = new javax.swing.JCheckBox();
+        Panel_monitor_LM = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        LM4 = new javax.swing.JCheckBox();
+        LM5 = new javax.swing.JCheckBox();
+        LM51 = new javax.swing.JCheckBox();
+        LM52 = new javax.swing.JCheckBox();
+        LM3 = new javax.swing.JCheckBox();
+        LM76 = new javax.swing.JCheckBox();
+        LM43 = new javax.swing.JCheckBox();
+        LM44 = new javax.swing.JCheckBox();
+        LM72 = new javax.swing.JCheckBox();
+        LM45 = new javax.swing.JCheckBox();
+        LM73 = new javax.swing.JCheckBox();
+        LM46 = new javax.swing.JCheckBox();
+        LM8 = new javax.swing.JCheckBox();
+        LM9 = new javax.swing.JCheckBox();
+        LM53 = new javax.swing.JCheckBox();
+        LM54 = new javax.swing.JCheckBox();
+        LM55 = new javax.swing.JCheckBox();
+        LM56 = new javax.swing.JCheckBox();
+        LM2 = new javax.swing.JCheckBox();
+        LM59 = new javax.swing.JCheckBox();
+        LM60 = new javax.swing.JCheckBox();
+        LM74 = new javax.swing.JCheckBox();
+        LM75 = new javax.swing.JCheckBox();
+        LM57 = new javax.swing.JCheckBox();
+        LM58 = new javax.swing.JCheckBox();
+        LM64 = new javax.swing.JCheckBox();
+        LM65 = new javax.swing.JCheckBox();
+        LM66 = new javax.swing.JCheckBox();
+        LM67 = new javax.swing.JCheckBox();
+        LM63 = new javax.swing.JCheckBox();
+        LM6 = new javax.swing.JCheckBox();
+        LM7 = new javax.swing.JCheckBox();
+        LM61 = new javax.swing.JCheckBox();
+        LM62 = new javax.swing.JCheckBox();
+        LM68 = new javax.swing.JCheckBox();
+        LM69 = new javax.swing.JCheckBox();
+        LM47 = new javax.swing.JCheckBox();
+        LM71 = new javax.swing.JCheckBox();
+        LM48 = new javax.swing.JCheckBox();
+        LM49 = new javax.swing.JCheckBox();
+        LM50 = new javax.swing.JCheckBox();
+        LM70 = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(1280, 1024));
@@ -290,14 +292,19 @@ public class Customization extends javax.swing.JFrame {
         extmangno.setText("No");
         extmangno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        jLabel14.setFont(new java.awt.Font("Century Gothic", 1, 30)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel14.setText("Cantidad PDU VT");
+        Titulovt.setFont(new java.awt.Font("Century Gothic", 1, 30)); // NOI18N
+        Titulovt.setForeground(new java.awt.Color(0, 0, 255));
+        Titulovt.setText("Cantidad PDU VT");
 
         Tipos_de_PDU.add(ambospdu);
         ambospdu.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         ambospdu.setText("Todos");
         ambospdu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ambospdu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ambospduMouseClicked(evt);
+            }
+        });
         ambospdu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 ambospduActionPerformed(evt);
@@ -321,6 +328,11 @@ public class Customization extends javax.swing.JFrame {
                 p485StateChanged(evt);
             }
         });
+        p485.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                p485MouseClicked(evt);
+            }
+        });
         p485.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 p485ActionPerformed(evt);
@@ -331,11 +343,21 @@ public class Customization extends javax.swing.JFrame {
         p489.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         p489.setText("03JG489");
         p489.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        p489.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                p489MouseClicked(evt);
+            }
+        });
 
         Tipos_de_PDU.add(p231);
         p231.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         p231.setText("03FP231");
         p231.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        p231.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                p231MouseClicked(evt);
+            }
+        });
         p231.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 p231ActionPerformed(evt);
@@ -350,64 +372,25 @@ public class Customization extends javax.swing.JFrame {
         jLabel17.setForeground(new java.awt.Color(0, 0, 255));
         jLabel17.setText("Posición");
 
-        Posicion_monitor.add(LM47);
-        LM47.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM47.setText("LM 33");
-        LM47.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM48);
-        LM48.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM48.setText("LM 34");
-        LM48.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM49);
-        LM49.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM49.setText("LM 13");
-        LM49.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM50);
-        LM50.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM50.setText("LM 14");
-        LM50.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM76);
-        LM76.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM76.setText("LM 23");
-        LM76.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM3);
-        LM3.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM3.setText("LM 02");
-        LM3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        LM3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LM3ActionPerformed(evt);
-            }
-        });
-
-        jLabel16.setFont(new java.awt.Font("Century Gothic", 1, 30)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(0, 0, 255));
-        jLabel16.setText("Limite");
-
         Posicion_PDU.add(ambospos);
         ambospos.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         ambospos.setText("Ambos");
         ambospos.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM4);
-        LM4.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM4.setText("LM 03");
-        LM4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        ambospos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                ambosposMouseClicked(evt);
+            }
+        });
 
         Posicion_PDU.add(pdu);
         pdu.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         pdu.setText("PDU");
         pdu.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM5);
-        LM5.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM5.setText("LM 04");
-        LM5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        pdu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                pduMouseClicked(evt);
+            }
+        });
 
         Posicion_PDU.add(limite);
         limite.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
@@ -436,71 +419,11 @@ public class Customization extends javax.swing.JFrame {
         monitorno.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         monitorno.setText("No");
         monitorno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM43);
-        LM43.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM43.setText("LM 29");
-        LM43.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM44);
-        LM44.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM44.setText("LM 30");
-        LM44.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM72);
-        LM72.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM72.setText("LM 19");
-        LM72.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM45);
-        LM45.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM45.setText("LM 31");
-        LM45.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM73);
-        LM73.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM73.setText("LM 20");
-        LM73.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM46);
-        LM46.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM46.setText("LM 32");
-        LM46.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM74);
-        LM74.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM74.setText("LM 21");
-        LM74.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM75);
-        LM75.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM75.setText("LM 22");
-        LM75.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM57);
-        LM57.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM57.setText("LM 41");
-        LM57.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM58);
-        LM58.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM58.setText("LM 42");
-        LM58.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM2);
-        LM2.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM2.setText("LM 01");
-        LM2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM59);
-        LM59.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM59.setText("LM 24");
-        LM59.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM60);
-        LM60.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM60.setText("LM 25");
-        LM60.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        monitorno.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                monitornoMouseClicked(evt);
+            }
+        });
 
         jLabel13.setFont(new java.awt.Font("Century Gothic", 1, 30)); // NOI18N
         jLabel13.setForeground(new java.awt.Color(0, 0, 255));
@@ -516,45 +439,15 @@ public class Customization extends javax.swing.JFrame {
         patasno.setText("No");
         patasno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        Posicion_monitor.add(LM51);
-        LM51.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM51.setText("LM 15");
-        LM51.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM52);
-        LM52.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM52.setText("LM 16");
-        LM52.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM53);
-        LM53.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM53.setText("LM 17");
-        LM53.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM54);
-        LM54.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM54.setText("LM 38");
-        LM54.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
         Switch.add(switchsi);
         switchsi.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         switchsi.setText("Si");
         switchsi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        Posicion_monitor.add(LM55);
-        LM55.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM55.setText("LM 39");
-        LM55.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
         Switch.add(switchno);
         switchno.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         switchno.setText("No");
         switchno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM56);
-        LM56.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM56.setText("LM 40");
-        LM56.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         jLabel12.setFont(new java.awt.Font("Century Gothic", 1, 30)); // NOI18N
         jLabel12.setForeground(new java.awt.Color(0, 0, 255));
@@ -574,36 +467,6 @@ public class Customization extends javax.swing.JFrame {
         llantasno.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         llantasno.setText("No");
         llantasno.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM8);
-        LM8.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM8.setText("LM 07");
-        LM8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM9);
-        LM9.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM9.setText("LM 08");
-        LM9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM64);
-        LM64.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM64.setText("LM 09");
-        LM64.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM65);
-        LM65.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM65.setText("LM 10");
-        LM65.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM66);
-        LM66.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM66.setText("LM 11");
-        LM66.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM67);
-        LM67.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM67.setText("LM 12");
-        LM67.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         etiquetasna.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         etiquetasna.setText("Sin Etiquetas");
@@ -645,39 +508,14 @@ public class Customization extends javax.swing.JFrame {
         jLabel6.setForeground(new java.awt.Color(0, 0, 255));
         jLabel6.setText("Etiquetas");
 
-        Posicion_monitor.add(LM61);
-        LM61.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM61.setText("LM 26");
-        LM61.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM62);
-        LM62.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM62.setText("LM 27");
-        LM62.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM63);
-        LM63.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM63.setText("LM 28");
-        LM63.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
         Bisagra_sismic.add(sismicsi);
         sismicsi.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
         sismicsi.setText("Si");
         sismicsi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        Posicion_monitor.add(LM6);
-        LM6.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM6.setText("LM 05");
-        LM6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
         jLabel8.setFont(new java.awt.Font("Century Gothic", 1, 30)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 0, 255));
         jLabel8.setText("Bisagras Sismic");
-
-        Posicion_monitor.add(LM7);
-        LM7.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM7.setText("LM 06");
-        LM7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         Cantidad_PDU_485.add(pdu48501);
         pdu48501.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
@@ -753,16 +591,6 @@ public class Customization extends javax.swing.JFrame {
             }
         });
 
-        Posicion_monitor.add(LM68);
-        LM68.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM68.setText("LM 35");
-        LM68.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM69);
-        LM69.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM69.setText("LM 36");
-        LM69.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
         Cantidad_PDU_485.add(pdu48508);
         pdu48508.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
         pdu48508.setText("08");
@@ -773,25 +601,10 @@ public class Customization extends javax.swing.JFrame {
             }
         });
 
-        Posicion_monitor.add(LM70);
-        LM70.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM70.setText("LM 37");
-        LM70.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        LM70.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                LM70ActionPerformed(evt);
-            }
-        });
-
         Cantidad_PDU_485.add(pdu48510);
         pdu48510.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
         pdu48510.setText("10");
         pdu48510.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-
-        Posicion_monitor.add(LM71);
-        LM71.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
-        LM71.setText("LM 18");
-        LM71.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
         Cantidad_PDU_485.add(pdu48512);
         pdu48512.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
@@ -924,6 +737,11 @@ public class Customization extends javax.swing.JFrame {
         Iniciar.setFont(new java.awt.Font("Century Gothic", 3, 36)); // NOI18N
         Iniciar.setText("Iniciar");
         Iniciar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        Iniciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                IniciarActionPerformed(evt);
+            }
+        });
 
         LM23.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
         LM23.setText("LM 23");
@@ -1259,6 +1077,382 @@ public class Customization extends javax.swing.JFrame {
                 .addContainerGap(64, Short.MAX_VALUE))
         );
 
+        jLabel16.setFont(new java.awt.Font("Century Gothic", 1, 30)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel16.setText("Limite");
+
+        Posicion_monitor.add(LM4);
+        LM4.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM4.setText("LM 03");
+        LM4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM5);
+        LM5.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM5.setText("LM 04");
+        LM5.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM51);
+        LM51.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM51.setText("LM 15");
+        LM51.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM52);
+        LM52.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM52.setText("LM 16");
+        LM52.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM3);
+        LM3.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM3.setText("LM 02");
+        LM3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        LM3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LM3ActionPerformed(evt);
+            }
+        });
+
+        Posicion_monitor.add(LM76);
+        LM76.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM76.setText("LM 23");
+        LM76.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM43);
+        LM43.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM43.setText("LM 29");
+        LM43.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM44);
+        LM44.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM44.setText("LM 30");
+        LM44.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM72);
+        LM72.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM72.setText("LM 19");
+        LM72.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM45);
+        LM45.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM45.setText("LM 31");
+        LM45.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM73);
+        LM73.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM73.setText("LM 20");
+        LM73.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM46);
+        LM46.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM46.setText("LM 32");
+        LM46.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM8);
+        LM8.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM8.setText("LM 07");
+        LM8.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM9);
+        LM9.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM9.setText("LM 08");
+        LM9.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM53);
+        LM53.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM53.setText("LM 17");
+        LM53.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM54);
+        LM54.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM54.setText("LM 38");
+        LM54.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM55);
+        LM55.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM55.setText("LM 39");
+        LM55.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM56);
+        LM56.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM56.setText("LM 40");
+        LM56.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM2);
+        LM2.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM2.setText("LM 01");
+        LM2.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM59);
+        LM59.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM59.setText("LM 24");
+        LM59.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM60);
+        LM60.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM60.setText("LM 25");
+        LM60.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM74);
+        LM74.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM74.setText("LM 21");
+        LM74.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM75);
+        LM75.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM75.setText("LM 22");
+        LM75.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM57);
+        LM57.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM57.setText("LM 41");
+        LM57.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM58);
+        LM58.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM58.setText("LM 42");
+        LM58.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM64);
+        LM64.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM64.setText("LM 09");
+        LM64.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM65);
+        LM65.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM65.setText("LM 10");
+        LM65.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM66);
+        LM66.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM66.setText("LM 11");
+        LM66.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM67);
+        LM67.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM67.setText("LM 12");
+        LM67.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM63);
+        LM63.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM63.setText("LM 28");
+        LM63.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM6);
+        LM6.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM6.setText("LM 05");
+        LM6.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM7);
+        LM7.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM7.setText("LM 06");
+        LM7.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM61);
+        LM61.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM61.setText("LM 26");
+        LM61.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM62);
+        LM62.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM62.setText("LM 27");
+        LM62.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM68);
+        LM68.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM68.setText("LM 35");
+        LM68.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM69);
+        LM69.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM69.setText("LM 36");
+        LM69.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM47);
+        LM47.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM47.setText("LM 33");
+        LM47.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM71);
+        LM71.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM71.setText("LM 18");
+        LM71.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM48);
+        LM48.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM48.setText("LM 34");
+        LM48.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM49);
+        LM49.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM49.setText("LM 13");
+        LM49.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM50);
+        LM50.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM50.setText("LM 14");
+        LM50.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
+        Posicion_monitor.add(LM70);
+        LM70.setFont(new java.awt.Font("Century Gothic", 2, 12)); // NOI18N
+        LM70.setText("LM 37");
+        LM70.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        LM70.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                LM70ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Panel_monitor_LMLayout = new javax.swing.GroupLayout(Panel_monitor_LM);
+        Panel_monitor_LM.setLayout(Panel_monitor_LMLayout);
+        Panel_monitor_LMLayout.setHorizontalGroup(
+            Panel_monitor_LMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_monitor_LMLayout.createSequentialGroup()
+                .addGap(32, 32, 32)
+                .addGroup(Panel_monitor_LMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Panel_monitor_LMLayout.createSequentialGroup()
+                        .addComponent(LM53)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM71)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM72)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM73)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM74)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM75)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM76)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM59)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM60)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM61)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM62)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM63)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM43)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM44)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM45)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM46))
+                    .addGroup(Panel_monitor_LMLayout.createSequentialGroup()
+                        .addComponent(LM2)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM3)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM4)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM5)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM6)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM7)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM8)
+                        .addGap(18, 18, 18)
+                        .addGroup(Panel_monitor_LMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel16)
+                            .addGroup(Panel_monitor_LMLayout.createSequentialGroup()
+                                .addComponent(LM9)
+                                .addGap(18, 18, 18)
+                                .addComponent(LM64)
+                                .addGap(18, 18, 18)
+                                .addComponent(LM65)
+                                .addGap(18, 18, 18)
+                                .addComponent(LM66)
+                                .addGap(18, 18, 18)
+                                .addComponent(LM67)
+                                .addGap(18, 18, 18)
+                                .addComponent(LM49)))
+                        .addGap(18, 18, 18)
+                        .addComponent(LM50)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM51)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM52))
+                    .addGroup(Panel_monitor_LMLayout.createSequentialGroup()
+                        .addComponent(LM47)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM48)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM68)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM69)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM70)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM54)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM55)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM56)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM57)
+                        .addGap(18, 18, 18)
+                        .addComponent(LM58)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Panel_monitor_LMLayout.setVerticalGroup(
+            Panel_monitor_LMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Panel_monitor_LMLayout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(jLabel16)
+                .addGap(18, 18, 18)
+                .addGroup(Panel_monitor_LMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LM3)
+                    .addComponent(LM2)
+                    .addComponent(LM4)
+                    .addComponent(LM5)
+                    .addComponent(LM6)
+                    .addComponent(LM7)
+                    .addComponent(LM8)
+                    .addComponent(LM9)
+                    .addComponent(LM64)
+                    .addComponent(LM65)
+                    .addComponent(LM66)
+                    .addComponent(LM67)
+                    .addComponent(LM49)
+                    .addComponent(LM50)
+                    .addComponent(LM51)
+                    .addComponent(LM52))
+                .addGap(18, 18, 18)
+                .addGroup(Panel_monitor_LMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LM53)
+                    .addComponent(LM71)
+                    .addComponent(LM72)
+                    .addComponent(LM73)
+                    .addComponent(LM74)
+                    .addComponent(LM75)
+                    .addComponent(LM76)
+                    .addComponent(LM59)
+                    .addComponent(LM60)
+                    .addComponent(LM61)
+                    .addComponent(LM62)
+                    .addComponent(LM63)
+                    .addComponent(LM43)
+                    .addComponent(LM44)
+                    .addComponent(LM45)
+                    .addComponent(LM46))
+                .addGap(18, 18, 18)
+                .addGroup(Panel_monitor_LMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(LM47)
+                    .addComponent(LM48)
+                    .addComponent(LM68)
+                    .addComponent(LM69)
+                    .addComponent(LM70)
+                    .addComponent(LM54)
+                    .addComponent(LM55)
+                    .addComponent(LM56)
+                    .addComponent(LM57)
+                    .addComponent(LM58))
+                .addContainerGap(32, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout ContenidoLayout = new javax.swing.GroupLayout(Contenido);
         Contenido.setLayout(ContenidoLayout);
         ContenidoLayout.setHorizontalGroup(
@@ -1268,7 +1462,7 @@ public class Customization extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(397, 397, 397))
             .addGroup(ContenidoLayout.createSequentialGroup()
-                .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(ContenidoLayout.createSequentialGroup()
                         .addGap(45, 45, 45)
                         .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1287,73 +1481,6 @@ public class Customization extends javax.swing.JFrame {
                                 .addGap(50, 50, 50)
                                 .addComponent(switchno))
                             .addComponent(jLabel9)
-                            .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addComponent(LM53)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM71)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM72)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM73)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM74)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM75)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM76)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM59)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM60)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM61)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM62)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM63)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM43)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM44)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM45)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM46))
-                            .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addComponent(LM2)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM3)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM4)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM5)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM6)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM7)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM8)
-                                .addGap(18, 18, 18)
-                                .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel16)
-                                    .addGroup(ContenidoLayout.createSequentialGroup()
-                                        .addComponent(LM9)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(LM64)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(LM65)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(LM66)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(LM67)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(LM49)))
-                                .addGap(18, 18, 18)
-                                .addComponent(LM50)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM51)
-                                .addGap(18, 18, 18)
-                                .addComponent(LM52))
                             .addGroup(ContenidoLayout.createSequentialGroup()
                                 .addComponent(monitorsi)
                                 .addGap(50, 50, 50)
@@ -1401,7 +1528,7 @@ public class Customization extends javax.swing.JFrame {
                                 .addComponent(bisdelna))
                             .addComponent(jLabel3)
                             .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(jLabel14)
+                                .addComponent(Titulovt)
                                 .addGroup(ContenidoLayout.createSequentialGroup()
                                     .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addGroup(ContenidoLayout.createSequentialGroup()
@@ -1501,29 +1628,10 @@ public class Customization extends javax.swing.JFrame {
                                     .addComponent(cantidadpduver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(60, 60, 60)))
                             .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(Iniciar)
-                                    .addGroup(ContenidoLayout.createSequentialGroup()
-                                        .addComponent(LM47)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(LM48)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(LM68)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(LM69)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(LM70)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(LM54)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(LM55)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(LM56)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(LM57)))
-                                .addGap(18, 18, 18)
-                                .addComponent(LM58))))
-                    .addComponent(Panel_LM_PDU, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(518, 518, 518)
+                                .addComponent(Iniciar))))
+                    .addComponent(Panel_LM_PDU, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Panel_monitor_LM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
         ContenidoLayout.setVerticalGroup(
@@ -1536,7 +1644,7 @@ public class Customization extends javax.swing.JFrame {
                         .addGap(96, 96, 96)
                         .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel17)
-                            .addComponent(jLabel14)
+                            .addComponent(Titulovt)
                             .addComponent(jLabel2))
                         .addGap(38, 38, 38)
                         .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1593,7 +1701,7 @@ public class Customization extends javax.swing.JFrame {
                 .addComponent(ambospdu)
                 .addGap(41, 41, 41)
                 .addComponent(Panel_LM_PDU, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(223, 223, 223)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3)
                 .addGap(38, 38, 38)
                 .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1644,57 +1752,9 @@ public class Customization extends javax.swing.JFrame {
                 .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(monitorno)
                     .addComponent(monitorsi))
+                .addGap(18, 18, 18)
+                .addComponent(Panel_monitor_LM, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel16)
-                .addGap(18, 18, 18)
-                .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LM3)
-                    .addComponent(LM2)
-                    .addComponent(LM4)
-                    .addComponent(LM5)
-                    .addComponent(LM6)
-                    .addComponent(LM7)
-                    .addComponent(LM8)
-                    .addComponent(LM9)
-                    .addComponent(LM64)
-                    .addComponent(LM65)
-                    .addComponent(LM66)
-                    .addComponent(LM67)
-                    .addComponent(LM49)
-                    .addComponent(LM50)
-                    .addComponent(LM51)
-                    .addComponent(LM52))
-                .addGap(18, 18, 18)
-                .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LM53)
-                    .addComponent(LM71)
-                    .addComponent(LM72)
-                    .addComponent(LM73)
-                    .addComponent(LM74)
-                    .addComponent(LM75)
-                    .addComponent(LM76)
-                    .addComponent(LM59)
-                    .addComponent(LM60)
-                    .addComponent(LM61)
-                    .addComponent(LM62)
-                    .addComponent(LM63)
-                    .addComponent(LM43)
-                    .addComponent(LM44)
-                    .addComponent(LM45)
-                    .addComponent(LM46))
-                .addGap(18, 18, 18)
-                .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(LM47)
-                    .addComponent(LM48)
-                    .addComponent(LM68)
-                    .addComponent(LM69)
-                    .addComponent(LM70)
-                    .addComponent(LM54)
-                    .addComponent(LM55)
-                    .addComponent(LM56)
-                    .addComponent(LM57)
-                    .addComponent(LM58))
-                .addGap(40, 40, 40)
                 .addComponent(jLabel9)
                 .addGap(38, 38, 38)
                 .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -1712,7 +1772,7 @@ public class Customization extends javax.swing.JFrame {
                 .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(llantasno)
                     .addComponent(llantassi))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
                 .addComponent(Iniciar)
                 .addGap(302, 302, 302))
         );
@@ -1723,22 +1783,22 @@ public class Customization extends javax.swing.JFrame {
         Cuerpo.setLayout(CuerpoLayout);
         CuerpoLayout.setHorizontalGroup(
             CuerpoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Cuerpo_desliz, javax.swing.GroupLayout.DEFAULT_SIZE, 1272, Short.MAX_VALUE)
+            .addComponent(Cuerpo_desliz, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         CuerpoLayout.setVerticalGroup(
             CuerpoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Cuerpo_desliz, javax.swing.GroupLayout.DEFAULT_SIZE, 2809, Short.MAX_VALUE)
+            .addComponent(Cuerpo_desliz, javax.swing.GroupLayout.DEFAULT_SIZE, 2758, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Cuerpo, javax.swing.GroupLayout.DEFAULT_SIZE, 1272, Short.MAX_VALUE)
+            .addComponent(Cuerpo, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Cuerpo, javax.swing.GroupLayout.DEFAULT_SIZE, 2809, Short.MAX_VALUE)
+            .addComponent(Cuerpo, javax.swing.GroupLayout.DEFAULT_SIZE, 2758, Short.MAX_VALUE)
         );
 
         pack();
@@ -1867,8 +1927,592 @@ public class Customization extends javax.swing.JFrame {
     }//GEN-LAST:event_pdu48501ActionPerformed
 
     private void limiteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_limiteMouseClicked
-        all.pagcustom.PDU_LIMITE(evt);// no funciono, hacerlo aqui.
+        if(this.pdu.isSelected()){
+            this.Panel_LM_PDU.setVisible(false);
+            this.cantidadpduver.setVisible(true);
+            this.Titulovt.setVisible(true);
+        } else if (this.limite.isSelected()){
+            this.Panel_LM_PDU.setVisible(true);
+            this.cantidadpduver.setVisible(false);
+            this.Titulovt.setVisible(false);
+        } else if (this.ambospos.isSelected()){
+            this.Panel_LM_PDU.setVisible(true);
+            this.cantidadpduver.setVisible(true);
+            this.Titulovt.setVisible(true);
+        }
     }//GEN-LAST:event_limiteMouseClicked
+
+    private void pduMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_pduMouseClicked
+        if(this.pdu.isSelected()){
+            this.Panel_LM_PDU.setVisible(false);
+            this.cantidadpduver.setVisible(true);
+            this.Titulovt.setVisible(true);
+        } else if (this.limite.isSelected()){
+            this.Panel_LM_PDU.setVisible(true);
+            this.cantidadpduver.setVisible(false);
+            this.Titulovt.setVisible(false);
+        } else if (this.ambospos.isSelected()){
+            this.Panel_LM_PDU.setVisible(true);
+            this.cantidadpduver.setVisible(true);
+            this.Titulovt.setVisible(true);
+        }
+    }//GEN-LAST:event_pduMouseClicked
+
+    private void ambosposMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ambosposMouseClicked
+        if(this.pdu.isSelected()){
+            this.Panel_LM_PDU.setVisible(false);
+            this.cantidadpduver.setVisible(true);
+            this.Titulovt.setVisible(true);
+        } else if (this.limite.isSelected()){
+            this.Panel_LM_PDU.setVisible(true);
+            this.cantidadpduver.setVisible(false);
+            this.Titulovt.setVisible(false);
+        } else if (this.ambospos.isSelected()){
+            this.Panel_LM_PDU.setVisible(true);
+            this.cantidadpduver.setVisible(true);
+            this.Titulovt.setVisible(true);
+        }
+    }//GEN-LAST:event_ambosposMouseClicked
+
+    private void p485MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_p485MouseClicked
+        if(this.p485.isSelected()){
+            this.pdu48501.setVisible(true);
+            this.pdu48502.setVisible(true);
+            this.pdu48503.setVisible(true);
+            this.pdu48504.setVisible(true);
+            this.pdu48505.setVisible(true);
+            this.pdu48506.setVisible(true);
+            this.pdu48507.setVisible(true);
+            this.pdu48508.setVisible(true);
+            this.pdu48509.setVisible(true);
+            this.pdu48510.setVisible(true);
+            this.pdu48511.setVisible(true);
+            this.pdu48512.setVisible(true);
+            this.pdu48901.setVisible(false);
+            this.pdu48902.setVisible(false);
+            this.pdu48903.setVisible(false);
+            this.pdu48904.setVisible(false);
+            this.pdu48905.setVisible(false);
+            this.pdu48906.setVisible(false);
+            this.pdu48907.setVisible(false);
+            this.pdu48908.setVisible(false);
+            this.pdu48909.setVisible(false);
+            this.pdu48910.setVisible(false);
+            this.pdu48911.setVisible(false);
+            this.pdu48912.setVisible(false);
+            this.pdu23101.setVisible(false);
+            this.pdu23102.setVisible(false);
+            this.pdu23103.setVisible(false);
+            this.pdu23104.setVisible(false);
+            this.pdu23105.setVisible(false);
+            this.pdu23106.setVisible(false);
+            this.pdu23107.setVisible(false);
+            this.pdu23108.setVisible(false);
+            this.pdu23109.setVisible(false);
+            this.pdu23110.setVisible(false);
+            this.pdu23111.setVisible(false);
+            this.pdu23112.setVisible(false);
+        } else if (this.p489.isSelected()) {
+            this.pdu48901.setVisible(true);
+            this.pdu48902.setVisible(true);
+            this.pdu48903.setVisible(true);
+            this.pdu48904.setVisible(true);
+            this.pdu48905.setVisible(true);
+            this.pdu48906.setVisible(true);
+            this.pdu48907.setVisible(true);
+            this.pdu48908.setVisible(true);
+            this.pdu48909.setVisible(true);
+            this.pdu48910.setVisible(true);
+            this.pdu48911.setVisible(true);
+            this.pdu48912.setVisible(true);
+            this.pdu48501.setVisible(false);
+            this.pdu48502.setVisible(false);
+            this.pdu48503.setVisible(false);
+            this.pdu48504.setVisible(false);
+            this.pdu48505.setVisible(false);
+            this.pdu48506.setVisible(false);
+            this.pdu48507.setVisible(false);
+            this.pdu48508.setVisible(false);
+            this.pdu48509.setVisible(false);
+            this.pdu48510.setVisible(false);
+            this.pdu48511.setVisible(false);
+            this.pdu48512.setVisible(false);
+            this.pdu23101.setVisible(false);
+            this.pdu23102.setVisible(false);
+            this.pdu23103.setVisible(false);
+            this.pdu23104.setVisible(false);
+            this.pdu23105.setVisible(false);
+            this.pdu23106.setVisible(false);
+            this.pdu23107.setVisible(false);
+            this.pdu23108.setVisible(false);
+            this.pdu23109.setVisible(false);
+            this.pdu23110.setVisible(false);
+            this.pdu23111.setVisible(false);
+            this.pdu23112.setVisible(false);
+        } else if (this.p231.isSelected()){
+            this.pdu23101.setVisible(true);
+            this.pdu23102.setVisible(true);
+            this.pdu23103.setVisible(true);
+            this.pdu23104.setVisible(true);
+            this.pdu23105.setVisible(true);
+            this.pdu23106.setVisible(true);
+            this.pdu23107.setVisible(true);
+            this.pdu23108.setVisible(true);
+            this.pdu23109.setVisible(true);
+            this.pdu23110.setVisible(true);
+            this.pdu23111.setVisible(true);
+            this.pdu23112.setVisible(true);
+            this.pdu48901.setVisible(false);
+            this.pdu48902.setVisible(false);
+            this.pdu48903.setVisible(false);
+            this.pdu48904.setVisible(false);
+            this.pdu48905.setVisible(false);
+            this.pdu48906.setVisible(false);
+            this.pdu48907.setVisible(false);
+            this.pdu48908.setVisible(false);
+            this.pdu48909.setVisible(false);
+            this.pdu48910.setVisible(false);
+            this.pdu48911.setVisible(false);
+            this.pdu48912.setVisible(false);
+            this.pdu48501.setVisible(false);
+            this.pdu48502.setVisible(false);
+            this.pdu48503.setVisible(false);
+            this.pdu48504.setVisible(false);
+            this.pdu48505.setVisible(false);
+            this.pdu48506.setVisible(false);
+            this.pdu48507.setVisible(false);
+            this.pdu48508.setVisible(false);
+            this.pdu48509.setVisible(false);
+            this.pdu48510.setVisible(false);
+            this.pdu48511.setVisible(false);
+            this.pdu48512.setVisible(false);
+        } else if (this.ambospdu.isSelected()){
+            this.pdu48501.setVisible(true);
+            this.pdu48502.setVisible(true);
+            this.pdu48503.setVisible(true);
+            this.pdu48504.setVisible(true);
+            this.pdu48505.setVisible(true);
+            this.pdu48506.setVisible(true);
+            this.pdu48507.setVisible(true);
+            this.pdu48508.setVisible(true);
+            this.pdu48509.setVisible(true);
+            this.pdu48510.setVisible(true);
+            this.pdu48511.setVisible(true);
+            this.pdu48512.setVisible(true);
+            this.pdu48901.setVisible(true);
+            this.pdu48902.setVisible(true);
+            this.pdu48903.setVisible(true);
+            this.pdu48904.setVisible(true);
+            this.pdu48905.setVisible(true);
+            this.pdu48906.setVisible(true);
+            this.pdu48907.setVisible(true);
+            this.pdu48908.setVisible(true);
+            this.pdu48909.setVisible(true);
+            this.pdu48910.setVisible(true);
+            this.pdu48911.setVisible(true);
+            this.pdu48912.setVisible(true);
+            this.pdu23101.setVisible(true);
+            this.pdu23102.setVisible(true);
+            this.pdu23103.setVisible(true);
+            this.pdu23104.setVisible(true);
+            this.pdu23105.setVisible(true);
+            this.pdu23106.setVisible(true);
+            this.pdu23107.setVisible(true);
+            this.pdu23108.setVisible(true);
+            this.pdu23109.setVisible(true);
+            this.pdu23110.setVisible(true);
+            this.pdu23111.setVisible(true);
+            this.pdu23112.setVisible(true);
+        }
+    }//GEN-LAST:event_p485MouseClicked
+
+    private void p489MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_p489MouseClicked
+        if(this.p485.isSelected()){
+            this.pdu48501.setVisible(true);
+            this.pdu48502.setVisible(true);
+            this.pdu48503.setVisible(true);
+            this.pdu48504.setVisible(true);
+            this.pdu48505.setVisible(true);
+            this.pdu48506.setVisible(true);
+            this.pdu48507.setVisible(true);
+            this.pdu48508.setVisible(true);
+            this.pdu48509.setVisible(true);
+            this.pdu48510.setVisible(true);
+            this.pdu48511.setVisible(true);
+            this.pdu48512.setVisible(true);
+            this.pdu48901.setVisible(false);
+            this.pdu48902.setVisible(false);
+            this.pdu48903.setVisible(false);
+            this.pdu48904.setVisible(false);
+            this.pdu48905.setVisible(false);
+            this.pdu48906.setVisible(false);
+            this.pdu48907.setVisible(false);
+            this.pdu48908.setVisible(false);
+            this.pdu48909.setVisible(false);
+            this.pdu48910.setVisible(false);
+            this.pdu48911.setVisible(false);
+            this.pdu48912.setVisible(false);
+            this.pdu23101.setVisible(false);
+            this.pdu23102.setVisible(false);
+            this.pdu23103.setVisible(false);
+            this.pdu23104.setVisible(false);
+            this.pdu23105.setVisible(false);
+            this.pdu23106.setVisible(false);
+            this.pdu23107.setVisible(false);
+            this.pdu23108.setVisible(false);
+            this.pdu23109.setVisible(false);
+            this.pdu23110.setVisible(false);
+            this.pdu23111.setVisible(false);
+            this.pdu23112.setVisible(false);
+        } else if (this.p489.isSelected()) {
+            this.pdu48901.setVisible(true);
+            this.pdu48902.setVisible(true);
+            this.pdu48903.setVisible(true);
+            this.pdu48904.setVisible(true);
+            this.pdu48905.setVisible(true);
+            this.pdu48906.setVisible(true);
+            this.pdu48907.setVisible(true);
+            this.pdu48908.setVisible(true);
+            this.pdu48909.setVisible(true);
+            this.pdu48910.setVisible(true);
+            this.pdu48911.setVisible(true);
+            this.pdu48912.setVisible(true);
+            this.pdu48501.setVisible(false);
+            this.pdu48502.setVisible(false);
+            this.pdu48503.setVisible(false);
+            this.pdu48504.setVisible(false);
+            this.pdu48505.setVisible(false);
+            this.pdu48506.setVisible(false);
+            this.pdu48507.setVisible(false);
+            this.pdu48508.setVisible(false);
+            this.pdu48509.setVisible(false);
+            this.pdu48510.setVisible(false);
+            this.pdu48511.setVisible(false);
+            this.pdu48512.setVisible(false);
+            this.pdu23101.setVisible(false);
+            this.pdu23102.setVisible(false);
+            this.pdu23103.setVisible(false);
+            this.pdu23104.setVisible(false);
+            this.pdu23105.setVisible(false);
+            this.pdu23106.setVisible(false);
+            this.pdu23107.setVisible(false);
+            this.pdu23108.setVisible(false);
+            this.pdu23109.setVisible(false);
+            this.pdu23110.setVisible(false);
+            this.pdu23111.setVisible(false);
+            this.pdu23112.setVisible(false);
+        } else if (this.p231.isSelected()){
+            this.pdu23101.setVisible(true);
+            this.pdu23102.setVisible(true);
+            this.pdu23103.setVisible(true);
+            this.pdu23104.setVisible(true);
+            this.pdu23105.setVisible(true);
+            this.pdu23106.setVisible(true);
+            this.pdu23107.setVisible(true);
+            this.pdu23108.setVisible(true);
+            this.pdu23109.setVisible(true);
+            this.pdu23110.setVisible(true);
+            this.pdu23111.setVisible(true);
+            this.pdu23112.setVisible(true);
+            this.pdu48901.setVisible(false);
+            this.pdu48902.setVisible(false);
+            this.pdu48903.setVisible(false);
+            this.pdu48904.setVisible(false);
+            this.pdu48905.setVisible(false);
+            this.pdu48906.setVisible(false);
+            this.pdu48907.setVisible(false);
+            this.pdu48908.setVisible(false);
+            this.pdu48909.setVisible(false);
+            this.pdu48910.setVisible(false);
+            this.pdu48911.setVisible(false);
+            this.pdu48912.setVisible(false);
+            this.pdu48501.setVisible(false);
+            this.pdu48502.setVisible(false);
+            this.pdu48503.setVisible(false);
+            this.pdu48504.setVisible(false);
+            this.pdu48505.setVisible(false);
+            this.pdu48506.setVisible(false);
+            this.pdu48507.setVisible(false);
+            this.pdu48508.setVisible(false);
+            this.pdu48509.setVisible(false);
+            this.pdu48510.setVisible(false);
+            this.pdu48511.setVisible(false);
+            this.pdu48512.setVisible(false);
+        } else if (this.ambospdu.isSelected()){
+            this.pdu48501.setVisible(true);
+            this.pdu48502.setVisible(true);
+            this.pdu48503.setVisible(true);
+            this.pdu48504.setVisible(true);
+            this.pdu48505.setVisible(true);
+            this.pdu48506.setVisible(true);
+            this.pdu48507.setVisible(true);
+            this.pdu48508.setVisible(true);
+            this.pdu48509.setVisible(true);
+            this.pdu48510.setVisible(true);
+            this.pdu48511.setVisible(true);
+            this.pdu48512.setVisible(true);
+            this.pdu48901.setVisible(true);
+            this.pdu48902.setVisible(true);
+            this.pdu48903.setVisible(true);
+            this.pdu48904.setVisible(true);
+            this.pdu48905.setVisible(true);
+            this.pdu48906.setVisible(true);
+            this.pdu48907.setVisible(true);
+            this.pdu48908.setVisible(true);
+            this.pdu48909.setVisible(true);
+            this.pdu48910.setVisible(true);
+            this.pdu48911.setVisible(true);
+            this.pdu48912.setVisible(true);
+            this.pdu23101.setVisible(true);
+            this.pdu23102.setVisible(true);
+            this.pdu23103.setVisible(true);
+            this.pdu23104.setVisible(true);
+            this.pdu23105.setVisible(true);
+            this.pdu23106.setVisible(true);
+            this.pdu23107.setVisible(true);
+            this.pdu23108.setVisible(true);
+            this.pdu23109.setVisible(true);
+            this.pdu23110.setVisible(true);
+            this.pdu23111.setVisible(true);
+            this.pdu23112.setVisible(true);
+        }
+    }//GEN-LAST:event_p489MouseClicked
+
+    private void p231MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_p231MouseClicked
+        if(this.p485.isSelected()){
+            this.pdu48501.setVisible(true);
+            this.pdu48502.setVisible(true);
+            this.pdu48503.setVisible(true);
+            this.pdu48504.setVisible(true);
+            this.pdu48505.setVisible(true);
+            this.pdu48506.setVisible(true);
+            this.pdu48507.setVisible(true);
+            this.pdu48508.setVisible(true);
+            this.pdu48509.setVisible(true);
+            this.pdu48510.setVisible(true);
+            this.pdu48511.setVisible(true);
+            this.pdu48512.setVisible(true);
+            this.pdu48901.setVisible(false);
+            this.pdu48902.setVisible(false);
+            this.pdu48903.setVisible(false);
+            this.pdu48904.setVisible(false);
+            this.pdu48905.setVisible(false);
+            this.pdu48906.setVisible(false);
+            this.pdu48907.setVisible(false);
+            this.pdu48908.setVisible(false);
+            this.pdu48909.setVisible(false);
+            this.pdu48910.setVisible(false);
+            this.pdu48911.setVisible(false);
+            this.pdu48912.setVisible(false);
+            this.pdu23101.setVisible(false);
+            this.pdu23102.setVisible(false);
+            this.pdu23103.setVisible(false);
+            this.pdu23104.setVisible(false);
+            this.pdu23105.setVisible(false);
+            this.pdu23106.setVisible(false);
+            this.pdu23107.setVisible(false);
+            this.pdu23108.setVisible(false);
+            this.pdu23109.setVisible(false);
+            this.pdu23110.setVisible(false);
+            this.pdu23111.setVisible(false);
+            this.pdu23112.setVisible(false);
+        } else if (this.p489.isSelected()) {
+            this.pdu48901.setVisible(true);
+            this.pdu48902.setVisible(true);
+            this.pdu48903.setVisible(true);
+            this.pdu48904.setVisible(true);
+            this.pdu48905.setVisible(true);
+            this.pdu48906.setVisible(true);
+            this.pdu48907.setVisible(true);
+            this.pdu48908.setVisible(true);
+            this.pdu48909.setVisible(true);
+            this.pdu48910.setVisible(true);
+            this.pdu48911.setVisible(true);
+            this.pdu48912.setVisible(true);
+            this.pdu48501.setVisible(false);
+            this.pdu48502.setVisible(false);
+            this.pdu48503.setVisible(false);
+            this.pdu48504.setVisible(false);
+            this.pdu48505.setVisible(false);
+            this.pdu48506.setVisible(false);
+            this.pdu48507.setVisible(false);
+            this.pdu48508.setVisible(false);
+            this.pdu48509.setVisible(false);
+            this.pdu48510.setVisible(false);
+            this.pdu48511.setVisible(false);
+            this.pdu48512.setVisible(false);
+            this.pdu23101.setVisible(false);
+            this.pdu23102.setVisible(false);
+            this.pdu23103.setVisible(false);
+            this.pdu23104.setVisible(false);
+            this.pdu23105.setVisible(false);
+            this.pdu23106.setVisible(false);
+            this.pdu23107.setVisible(false);
+            this.pdu23108.setVisible(false);
+            this.pdu23109.setVisible(false);
+            this.pdu23110.setVisible(false);
+            this.pdu23111.setVisible(false);
+            this.pdu23112.setVisible(false);
+        } else if (this.p231.isSelected()){
+            this.pdu23101.setVisible(true);
+            this.pdu23102.setVisible(true);
+            this.pdu23103.setVisible(true);
+            this.pdu23104.setVisible(true);
+            this.pdu23105.setVisible(true);
+            this.pdu23106.setVisible(true);
+            this.pdu23107.setVisible(true);
+            this.pdu23108.setVisible(true);
+            this.pdu23109.setVisible(true);
+            this.pdu23110.setVisible(true);
+            this.pdu23111.setVisible(true);
+            this.pdu23112.setVisible(true);
+            this.pdu48901.setVisible(false);
+            this.pdu48902.setVisible(false);
+            this.pdu48903.setVisible(false);
+            this.pdu48904.setVisible(false);
+            this.pdu48905.setVisible(false);
+            this.pdu48906.setVisible(false);
+            this.pdu48907.setVisible(false);
+            this.pdu48908.setVisible(false);
+            this.pdu48909.setVisible(false);
+            this.pdu48910.setVisible(false);
+            this.pdu48911.setVisible(false);
+            this.pdu48912.setVisible(false);
+            this.pdu48501.setVisible(false);
+            this.pdu48502.setVisible(false);
+            this.pdu48503.setVisible(false);
+            this.pdu48504.setVisible(false);
+            this.pdu48505.setVisible(false);
+            this.pdu48506.setVisible(false);
+            this.pdu48507.setVisible(false);
+            this.pdu48508.setVisible(false);
+            this.pdu48509.setVisible(false);
+            this.pdu48510.setVisible(false);
+            this.pdu48511.setVisible(false);
+            this.pdu48512.setVisible(false);
+        } else if (this.ambospdu.isSelected()){
+            this.pdu48501.setVisible(true);
+            this.pdu48502.setVisible(true);
+            this.pdu48503.setVisible(true);
+            this.pdu48504.setVisible(true);
+            this.pdu48505.setVisible(true);
+            this.pdu48506.setVisible(true);
+            this.pdu48507.setVisible(true);
+            this.pdu48508.setVisible(true);
+            this.pdu48509.setVisible(true);
+            this.pdu48510.setVisible(true);
+            this.pdu48511.setVisible(true);
+            this.pdu48512.setVisible(true);
+            this.pdu48901.setVisible(true);
+            this.pdu48902.setVisible(true);
+            this.pdu48903.setVisible(true);
+            this.pdu48904.setVisible(true);
+            this.pdu48905.setVisible(true);
+            this.pdu48906.setVisible(true);
+            this.pdu48907.setVisible(true);
+            this.pdu48908.setVisible(true);
+            this.pdu48909.setVisible(true);
+            this.pdu48910.setVisible(true);
+            this.pdu48911.setVisible(true);
+            this.pdu48912.setVisible(true);
+            this.pdu23101.setVisible(true);
+            this.pdu23102.setVisible(true);
+            this.pdu23103.setVisible(true);
+            this.pdu23104.setVisible(true);
+            this.pdu23105.setVisible(true);
+            this.pdu23106.setVisible(true);
+            this.pdu23107.setVisible(true);
+            this.pdu23108.setVisible(true);
+            this.pdu23109.setVisible(true);
+            this.pdu23110.setVisible(true);
+            this.pdu23111.setVisible(true);
+            this.pdu23112.setVisible(true);
+        }
+    }//GEN-LAST:event_p231MouseClicked
+
+    private void ambospduMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_ambospduMouseClicked
+        if (this.ambospdu.isSelected()){
+            this.pdu48501.setVisible(true);
+            this.pdu48502.setVisible(true);
+            this.pdu48503.setVisible(true);
+            this.pdu48504.setVisible(true);
+            this.pdu48505.setVisible(true);
+            this.pdu48506.setVisible(true);
+            this.pdu48507.setVisible(true);
+            this.pdu48508.setVisible(true);
+            this.pdu48509.setVisible(true);
+            this.pdu48510.setVisible(true);
+            this.pdu48511.setVisible(true);
+            this.pdu48512.setVisible(true);
+            this.pdu48901.setVisible(true);
+            this.pdu48902.setVisible(true);
+            this.pdu48903.setVisible(true);
+            this.pdu48904.setVisible(true);
+            this.pdu48905.setVisible(true);
+            this.pdu48906.setVisible(true);
+            this.pdu48907.setVisible(true);
+            this.pdu48908.setVisible(true);
+            this.pdu48909.setVisible(true);
+            this.pdu48910.setVisible(true);
+            this.pdu48911.setVisible(true);
+            this.pdu48912.setVisible(true);
+            this.pdu23101.setVisible(true);
+            this.pdu23102.setVisible(true);
+            this.pdu23103.setVisible(true);
+            this.pdu23104.setVisible(true);
+            this.pdu23105.setVisible(true);
+            this.pdu23106.setVisible(true);
+            this.pdu23107.setVisible(true);
+            this.pdu23108.setVisible(true);
+            this.pdu23109.setVisible(true);
+            this.pdu23110.setVisible(true);
+            this.pdu23111.setVisible(true);
+            this.pdu23112.setVisible(true);
+        }
+    }//GEN-LAST:event_ambospduMouseClicked
+
+    private void monitornoMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_monitornoMouseClicked
+        if (this.monitorsi.isSelected()){
+            this.Panel_monitor_LM.setVisible(true);
+        } else if (this.monitorno.isSelected()){
+            this.Panel_monitor_LM.setVisible(false);
+        }
+    }//GEN-LAST:event_monitornoMouseClicked
+
+    private void IniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_IniciarActionPerformed
+        this.setVisible(false);
+        
+        all.material_rack.setSize(331,621);
+        all.empty_medium.Material_rack.removeAll();
+        all.empty_medium.Material_rack.add(all.material_rack, BorderLayout.CENTER);
+        all.empty_medium.Material_rack.revalidate();
+        all.empty_medium.Material_rack.repaint();
+        
+        all.imagen_rack.setSize(912,621);
+        all.empty_medium.Imagen_rack.removeAll();
+        all.empty_medium.Imagen_rack.add(all.imagen_rack, BorderLayout.CENTER);
+        all.empty_medium.Imagen_rack.revalidate();
+        all.empty_medium.Imagen_rack.repaint();
+        
+        if (extmangsi.isSelected()){
+            all.material_extmangueras.setSize(331,568);
+            all.empty_medium.Material_ext_magueras.removeAll();
+            all.empty_medium.Material_ext_magueras.add(all.material_extmangueras, BorderLayout.CENTER);
+            all.empty_medium.Material_ext_magueras.revalidate();
+            all.empty_medium.Material_ext_magueras.repaint();
+            
+            all.imagen_extmangueras.setSize(912,568);
+            all.empty_medium.Imagen_ext_mangueras.removeAll();
+            all.empty_medium.Imagen_ext_mangueras.add(all.imagen_extmangueras, BorderLayout.CENTER);
+            all.empty_medium.Imagen_ext_mangueras.revalidate();
+            all.empty_medium.Imagen_ext_mangueras.repaint();
+        } else {
+            all.empty_medium.Material_ext_magueras.setVisible(false);
+            all.empty_medium.Imagen_ext_mangueras.setVisible(false);
+        }
+        
+        all.empty_medium.setVisible(true);
+    }//GEN-LAST:event_IniciarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2010,11 +2654,13 @@ public class Customization extends javax.swing.JFrame {
     private javax.swing.ButtonGroup Llantas_estabilizadoras;
     private javax.swing.ButtonGroup Monitor;
     public javax.swing.JPanel Panel_LM_PDU;
+    private javax.swing.JPanel Panel_monitor_LM;
     private javax.swing.ButtonGroup Patas_estabilizadoras;
     private javax.swing.ButtonGroup Posicion_PDU;
     private javax.swing.ButtonGroup Posicion_monitor;
     private javax.swing.ButtonGroup Switch;
     private javax.swing.ButtonGroup Tipos_de_PDU;
+    private javax.swing.JLabel Titulovt;
     public javax.swing.JRadioButton ambospdu;
     public javax.swing.JRadioButton ambospos;
     public javax.swing.JRadioButton bis111;
@@ -2035,7 +2681,6 @@ public class Customization extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
-    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;

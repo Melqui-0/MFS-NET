@@ -105,7 +105,7 @@ public class WorkUnit extends javax.swing.JFrame {
         if (scan.toUpperCase().equals(work) && orden == 0){
             Work.setText("");
             this.setVisible(false);
-            all.dificultad.setVisible(true);
+            all.custom.setVisible(true);
         } else if (scan.toUpperCase().equals(work) && orden == 1){//Creo que era para ver la orden en View
             all.view.setVisible(true);
         } else if (scan.toUpperCase().equals(work) && orden == 2){//Creo que era para ver la orden en View
