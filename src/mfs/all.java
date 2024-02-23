@@ -20,6 +20,7 @@ public class all {
     public static Empty empty = new Empty();
     public static Empty_231 empty_231 = new Empty_231();
     public static Empty_med empty_medium = new Empty_med ();
+    public static Clean_Claim clean_claim = new Clean_Claim();
     public static Barcode barcode =  new Barcode();
     public static Diccionario dic = new Diccionario();
     public static Barcode_1 barcode_1 = new Barcode_1();

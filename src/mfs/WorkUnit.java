@@ -13,6 +13,7 @@ import java.awt.event.KeyEvent;
 public class WorkUnit extends javax.swing.JFrame {
 
     public static String work = "3BDTB6H1";
+    public static String workcc = "3BDTBCR7";
 
     
     public WorkUnit() {
@@ -102,13 +103,13 @@ public class WorkUnit extends javax.swing.JFrame {
 
     private void EnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterActionPerformed
         String scan = Work.getText();
-        if (scan.toUpperCase().equals(work) && orden == 0){
+        if (scan.toUpperCase().equals(work)){
             Work.setText("");
             this.setVisible(false);
             all.custom.setVisible(true);
-        } else if (scan.toUpperCase().equals(work) && orden == 1){//Creo que era para ver la orden en View
-            all.view.setVisible(true);
-        } else if (scan.toUpperCase().equals(work) && orden == 2){//Creo que era para ver la orden en View
+        } else if (scan.toUpperCase().equals(workcc) ){//Creo que era para ver la orden en View
+            all.clean_claim.setVisible(true);
+        } else if (scan.toUpperCase().equals(work)){//Creo que era para ver la orden en View
             all.view.setVisible(true); //2
         }
     }//GEN-LAST:event_EnterActionPerformed
