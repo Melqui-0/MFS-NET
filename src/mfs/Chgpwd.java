@@ -162,9 +162,9 @@ public class Chgpwd extends javax.swing.JFrame {
         String nuevacontra = new String (Nuevacontra.getPassword());
         String nuevacontra2 = new String (Nuevacontra2.getPassword());
         
-        if (contractual.equals(Login.pass)){
+        if (contractual.equals(Login.contraseña)){
             if (nuevacontra.equals(nuevacontra2)){
-                Login.pass = nuevacontra;
+                Login.contraseña = nuevacontra;
                 Contractual.setText("");
                 Nuevacontra.setText("");
                 Nuevacontra2.setText("");

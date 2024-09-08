@@ -6,15 +6,17 @@ package mfs;
 
 import java.awt.Color;
 import javax.swing.JOptionPane;
-import static mfs.Empty.nm;
-import static mfs.Empty.pn;
-import static mfs.Empty.pn2;
+import static mfs.all.pn;
+import static mfs.all.pn2;
+import static mfs.all.nm;
+//import static mfs.all.nps;
+
 
 public class Material_extmangueras extends javax.swing.JPanel {
 
     /**
      * Creates new form Material_extmangueras
-     */
+     */ 
     public Material_extmangueras() {
         initComponents();
     }

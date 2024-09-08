@@ -250,6 +250,7 @@ public class Rework extends javax.swing.JFrame {
     }//GEN-LAST:event_remplaceActionPerformed
 
     private void RemoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_RemoverActionPerformed
+        if(all.opcempty.empty == true){
         switch (nm) {
             case 0:
                 if (all.empty.idsp.getText().equals("I")){
@@ -987,6 +988,1176 @@ public class Rework extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
                 }
                 break;
+        }
+    } else if (all.work.clean == true){
+        switch(Clean_Claim.nm){
+            case 0:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear.setText(all.clean_claim.npaescanear.getText().substring(3));
+                all.clean_claim.idsp.setText("A");
+                all.clean_claim.npecaneado.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal.setText("00000");
+                all.clean_claim.serial.setText("-             -            -");
+                all.clean_claim.NPS.setBackground(Color.white);
+                all.clean_claim.npaescanear.setForeground(Color.black);
+                all.clean_claim.QT.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida.setForeground(Color.black);
+                all.clean_claim.FQT.setForeground(Color.black);
+                all.clean_claim.cantidadfinal.setForeground(Color.black);
+                all.clean_claim.DISP.setForeground(Color.black);
+                all.clean_claim.idsp.setForeground(Color.black);
+                all.clean_claim.descripcion.setForeground(Color.black);
+                all.clean_claim.npecaneado.setForeground(Color.black);
+                all.clean_claim.serial.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 1:
+                if (all.clean_claim.idsp1.getText().equals("I")){
+                all.clean_claim.npaescanear1.setText(all.clean_claim.npaescanear1.getText().substring(3));
+                all.clean_claim.idsp1.setText("A");
+                all.clean_claim.npecaneado1.setText("PF  2L01-LM01");
+                all.clean_claim.cantidadfinal1.setText("00000");
+                all.clean_claim.serial1.setText("-             -            -");
+                all.clean_claim.NPS1.setBackground(Color.white);
+                all.clean_claim.npaescanear1.setForeground(Color.black);
+                all.clean_claim.QT1.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida1.setForeground(Color.black);
+                all.clean_claim.FQT1.setForeground(Color.black);
+                all.clean_claim.cantidadfinal1.setForeground(Color.black);
+                all.clean_claim.DISP1.setForeground(Color.black);
+                all.clean_claim.idsp1.setForeground(Color.black);
+                all.clean_claim.descripcion1.setForeground(Color.black);
+                all.clean_claim.npecaneado1.setForeground(Color.black);
+                all.clean_claim.serial1.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 2:
+                if (all.clean_claim.idsp2.getText().equals("I")){
+                all.clean_claim.npaescanear2.setText(all.clean_claim.npaescanear2.getText().substring(3));
+                all.clean_claim.idsp2.setText("A");
+                all.clean_claim.npecaneado2.setText("PF  2L01-LM05");
+                all.clean_claim.cantidadfinal2.setText("00000");
+                all.clean_claim.serial2.setText("-             -            -");
+                all.clean_claim.NPS2.setBackground(Color.white);
+                all.clean_claim.npaescanear2.setForeground(Color.black);
+                all.clean_claim.QT2.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida2.setForeground(Color.black);
+                all.clean_claim.FQT2.setForeground(Color.black);
+                all.clean_claim.cantidadfinal2.setForeground(Color.black);
+                all.clean_claim.DISP2.setForeground(Color.black);
+                all.clean_claim.idsp2.setForeground(Color.black);
+                all.clean_claim.descripcion2.setForeground(Color.black);
+                all.clean_claim.npecaneado2.setForeground(Color.black);
+                all.clean_claim.serial2.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 3:
+                if (all.clean_claim.idsp3.getText().equals("I")){
+                all.clean_claim.npaescanear3.setText(all.clean_claim.npaescanear3.getText().substring(3));
+                all.clean_claim.idsp3.setText("A");
+                all.clean_claim.npecaneado3.setText("PF  2L01-LM09");
+                all.clean_claim.cantidadfinal3.setText("00000");
+                all.clean_claim.serial3.setText("-             -            -");
+                all.clean_claim.NPS3.setBackground(Color.white);
+                all.clean_claim.npaescanear3.setForeground(Color.black);
+                all.clean_claim.QT3.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida3.setForeground(Color.black);
+                all.clean_claim.FQT3.setForeground(Color.black);
+                all.clean_claim.cantidadfinal3.setForeground(Color.black);
+                all.clean_claim.DISP3.setForeground(Color.black);
+                all.clean_claim.idsp3.setForeground(Color.black);
+                all.clean_claim.descripcion3.setForeground(Color.black);
+                all.clean_claim.npecaneado3.setForeground(Color.black);
+                all.clean_claim.serial3.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 4:
+                if (all.clean_claim.idsp4.getText().equals("I")){
+                all.clean_claim.npaescanear4.setText(all.clean_claim.npaescanear4.getText().substring(3));
+                all.clean_claim.idsp4.setText("A");
+                all.clean_claim.npecaneado4.setText("PF  2L01-LM13");
+                all.clean_claim.cantidadfinal4.setText("00000");
+                all.clean_claim.serial4.setText("-             -            -");
+                all.clean_claim.NPS4.setBackground(Color.white);
+                all.clean_claim.npaescanear4.setForeground(Color.black);
+                all.clean_claim.QT4.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida4.setForeground(Color.black);
+                all.clean_claim.FQT4.setForeground(Color.black);
+                all.clean_claim.cantidadfinal4.setForeground(Color.black);
+                all.clean_claim.DISP4.setForeground(Color.black);
+                all.clean_claim.idsp4.setForeground(Color.black);
+                all.clean_claim.descripcion4.setForeground(Color.black);
+                all.clean_claim.npecaneado4.setForeground(Color.black);
+                all.clean_claim.serial4.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 5:
+                if (all.clean_claim.idsp5.getText().equals("I")){
+                all.clean_claim.npaescanear5.setText(all.clean_claim.npaescanear5.getText().substring(3));
+                all.clean_claim.idsp5.setText("A");
+                all.clean_claim.npecaneado5.setText("PF  2L01-LM17");
+                all.clean_claim.cantidadfinal5.setText("00000");
+                all.clean_claim.serial5.setText("-             -            -");
+                all.clean_claim.NPS5.setBackground(Color.white);
+                all.clean_claim.npaescanear5.setForeground(Color.black);
+                all.clean_claim.QT5.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida5.setForeground(Color.black);
+                all.clean_claim.FQT5.setForeground(Color.black);
+                all.clean_claim.cantidadfinal5.setForeground(Color.black);
+                all.clean_claim.DISP5.setForeground(Color.black);
+                all.clean_claim.idsp5.setForeground(Color.black);
+                all.clean_claim.descripcion5.setForeground(Color.black);
+                all.clean_claim.npecaneado5.setForeground(Color.black);
+                all.clean_claim.serial5.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 6:
+                if (all.clean_claim.idsp6.getText().equals("I")){
+                all.clean_claim.npaescanear6.setText(all.clean_claim.npaescanear6.getText().substring(3));
+                all.clean_claim.idsp6.setText("A");
+                all.clean_claim.npecaneado6.setText("PF  2L01-LM21");
+                all.clean_claim.cantidadfinal6.setText("00000");
+                all.clean_claim.serial6.setText("-             -            -");
+                all.clean_claim.NPS6.setBackground(Color.white);
+                all.clean_claim.npaescanear6.setForeground(Color.black);
+                all.clean_claim.QT6.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida6.setForeground(Color.black);
+                all.clean_claim.FQT6.setForeground(Color.black);
+                all.clean_claim.cantidadfinal6.setForeground(Color.black);
+                all.clean_claim.DISP6.setForeground(Color.black);
+                all.clean_claim.idsp6.setForeground(Color.black);
+                all.clean_claim.descripcion6.setForeground(Color.black);
+                all.clean_claim.npecaneado6.setForeground(Color.black);
+                all.clean_claim.serial6.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 7:
+                if (all.clean_claim.idsp7.getText().equals("I")){
+                all.clean_claim.npaescanear7.setText(all.clean_claim.npaescanear7.getText().substring(3));
+                all.clean_claim.idsp7.setText("A");
+                all.clean_claim.npecaneado7.setText("PF  2L01-LM25");
+                all.clean_claim.cantidadfinal7.setText("00000");
+                all.clean_claim.serial7.setText("-             -            -");
+                all.clean_claim.NPS7.setBackground(Color.white);
+                all.clean_claim.npaescanear7.setForeground(Color.black);
+                all.clean_claim.QT7.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida7.setForeground(Color.black);
+                all.clean_claim.FQT7.setForeground(Color.black);
+                all.clean_claim.cantidadfinal7.setForeground(Color.black);
+                all.clean_claim.DISP7.setForeground(Color.black);
+                all.clean_claim.idsp7.setForeground(Color.black);
+                all.clean_claim.descripcion7.setForeground(Color.black);
+                all.clean_claim.npecaneado7.setForeground(Color.black);
+                all.clean_claim.serial7.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 8:
+                if (all.clean_claim.idsp8.getText().equals("I")){
+                all.clean_claim.npaescanear8.setText(all.clean_claim.npaescanear8.getText().substring(3));
+                all.clean_claim.idsp8.setText("A");
+                all.clean_claim.npecaneado8.setText("PF  2L01-LM29");
+                all.clean_claim.cantidadfinal8.setText("00000");
+                all.clean_claim.serial8.setText("-             -            -");
+                all.clean_claim.NPS8.setBackground(Color.white);
+                all.clean_claim.npaescanear8.setForeground(Color.black);
+                all.clean_claim.QT8.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida8.setForeground(Color.black);
+                all.clean_claim.FQT8.setForeground(Color.black);
+                all.clean_claim.cantidadfinal8.setForeground(Color.black);
+                all.clean_claim.DISP8.setForeground(Color.black);
+                all.clean_claim.idsp8.setForeground(Color.black);
+                all.clean_claim.descripcion8.setForeground(Color.black);
+                all.clean_claim.npecaneado8.setForeground(Color.black);
+                all.clean_claim.serial8.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 9:
+                if (all.clean_claim.idsp9.getText().equals("I")){
+                all.clean_claim.npaescanear9.setText(all.clean_claim.npaescanear9.getText().substring(3));
+                all.clean_claim.idsp9.setText("A");
+                all.clean_claim.npecaneado9.setText("PF  2L01-LM33");
+                all.clean_claim.cantidadfinal9.setText("00000");
+                all.clean_claim.serial9.setText("-             -            -");
+                all.clean_claim.NPS9.setBackground(Color.white);
+                all.clean_claim.npaescanear9.setForeground(Color.black);
+                all.clean_claim.QT9.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida9.setForeground(Color.black);
+                all.clean_claim.FQT9.setForeground(Color.black);
+                all.clean_claim.cantidadfinal9.setForeground(Color.black);
+                all.clean_claim.DISP9.setForeground(Color.black);
+                all.clean_claim.idsp9.setForeground(Color.black);
+                all.clean_claim.descripcion9.setForeground(Color.black);
+                all.clean_claim.npecaneado9.setForeground(Color.black);
+                all.clean_claim.serial9.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 10:
+                if (all.clean_claim.idsp10.getText().equals("I")){
+                all.clean_claim.npaescanear10.setText(all.clean_claim.npaescanear10.getText().substring(3));
+                all.clean_claim.idsp10.setText("A");
+                all.clean_claim.npecaneado10.setText("PF  2L01-LM37");
+                all.clean_claim.cantidadfinal10.setText("00000");
+                all.clean_claim.serial10.setText("-             -            -");
+                all.clean_claim.NPS10.setBackground(Color.white);
+                all.clean_claim.npaescanear10.setForeground(Color.black);
+                all.clean_claim.QT10.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida10.setForeground(Color.black);
+                all.clean_claim.FQT10.setForeground(Color.black);
+                all.clean_claim.cantidadfinal10.setForeground(Color.black);
+                all.clean_claim.DISP10.setForeground(Color.black);
+                all.clean_claim.idsp10.setForeground(Color.black);
+                all.clean_claim.descripcion10.setForeground(Color.black);
+                all.clean_claim.npecaneado10.setForeground(Color.black);
+                all.clean_claim.serial10.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 11:
+                if (all.clean_claim.idsp11.getText().equals("I")){
+                all.clean_claim.npaescanear11.setText(all.clean_claim.npaescanear11.getText().substring(3));
+                all.clean_claim.idsp11.setText("A");
+                all.clean_claim.npecaneado11.setText("PF  2L01-LM41");
+                all.clean_claim.cantidadfinal11.setText("00000");
+                all.clean_claim.serial11.setText("-             -            -");
+                all.clean_claim.NPS11.setBackground(Color.white);
+                all.clean_claim.npaescanear11.setForeground(Color.black);
+                all.clean_claim.QT11.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida11.setForeground(Color.black);
+                all.clean_claim.FQT11.setForeground(Color.black);
+                all.clean_claim.cantidadfinal11.setForeground(Color.black);
+                all.clean_claim.DISP11.setForeground(Color.black);
+                all.clean_claim.idsp11.setForeground(Color.black);
+                all.clean_claim.descripcion11.setForeground(Color.black);
+                all.clean_claim.npecaneado11.setForeground(Color.black);
+                all.clean_claim.serial11.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 12:
+                if (all.clean_claim.idsp12.getText().equals("I")){
+                all.clean_claim.npaescanear12.setText(all.clean_claim.npaescanear12.getText().substring(3));
+                all.clean_claim.idsp12.setText("A");
+                all.clean_claim.npecaneado12.setText("PF  2L01-LM42");
+                all.clean_claim.cantidadfinal12.setText("00000");
+                all.clean_claim.serial12.setText("-             -            -");
+                all.clean_claim.NPS12.setBackground(Color.white);
+                all.clean_claim.npaescanear12.setForeground(Color.black);
+                all.clean_claim.QT12.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida12.setForeground(Color.black);
+                all.clean_claim.FQT12.setForeground(Color.black);
+                all.clean_claim.cantidadfinal12.setForeground(Color.black);
+                all.clean_claim.DISP12.setForeground(Color.black);
+                all.clean_claim.idsp12.setForeground(Color.black);
+                all.clean_claim.descripcion12.setForeground(Color.black);
+                all.clean_claim.npecaneado12.setForeground(Color.black);
+                all.clean_claim.serial12.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 13:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear13.setText(all.clean_claim.npaescanear13.getText().substring(3));
+                all.clean_claim.idsp13.setText("A");
+                all.clean_claim.npecaneado13.setText("PF  2L01-LM02");
+                all.clean_claim.cantidadfinal13.setText("00000");
+                all.clean_claim.serial13.setText("-             -            -");
+                all.clean_claim.NPS13.setBackground(Color.white);
+                all.clean_claim.npaescanear13.setForeground(Color.black);
+                all.clean_claim.QT13.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida13.setForeground(Color.black);
+                all.clean_claim.FQT13.setForeground(Color.black);
+                all.clean_claim.cantidadfinal13.setForeground(Color.black);
+                all.clean_claim.DISP13.setForeground(Color.black);
+                all.clean_claim.idsp13.setForeground(Color.black);
+                all.clean_claim.descripcion13.setForeground(Color.black);
+                all.clean_claim.npecaneado13.setForeground(Color.black);
+                all.clean_claim.serial13.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 14:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear14.setText(all.clean_claim.npaescanear14.getText().substring(3));
+                all.clean_claim.idsp14.setText("A");
+                all.clean_claim.npecaneado14.setText("PF  2L01-LM06");
+                all.clean_claim.cantidadfinal14.setText("00000");
+                all.clean_claim.serial14.setText("-             -            -");
+                all.clean_claim.NPS14.setBackground(Color.white);
+                all.clean_claim.npaescanear14.setForeground(Color.black);
+                all.clean_claim.QT14.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida14.setForeground(Color.black);
+                all.clean_claim.FQT14.setForeground(Color.black);
+                all.clean_claim.cantidadfinal14.setForeground(Color.black);
+                all.clean_claim.DISP14.setForeground(Color.black);
+                all.clean_claim.idsp14.setForeground(Color.black);
+                all.clean_claim.descripcion14.setForeground(Color.black);
+                all.clean_claim.npecaneado14.setForeground(Color.black);
+                all.clean_claim.serial14.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 15:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear15.setText(all.clean_claim.npaescanear15.getText().substring(3));
+                all.clean_claim.idsp15.setText("A");
+                all.clean_claim.npecaneado15.setText("PF  2L01-LM10");
+                all.clean_claim.cantidadfinal15.setText("00000");
+                all.clean_claim.serial15.setText("-             -            -");
+                all.clean_claim.NPS15.setBackground(Color.white);
+                all.clean_claim.npaescanear15.setForeground(Color.black);
+                all.clean_claim.QT15.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida15.setForeground(Color.black);
+                all.clean_claim.FQT15.setForeground(Color.black);
+                all.clean_claim.cantidadfinal15.setForeground(Color.black);
+                all.clean_claim.DISP15.setForeground(Color.black);
+                all.clean_claim.idsp15.setForeground(Color.black);
+                all.clean_claim.descripcion15.setForeground(Color.black);
+                all.clean_claim.npecaneado15.setForeground(Color.black);
+                all.clean_claim.serial15.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 16:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear16.setText(all.clean_claim.npaescanear16.getText().substring(3));
+                all.clean_claim.idsp16.setText("A");
+                all.clean_claim.npecaneado16.setText("PF  2L01-LM14");
+                all.clean_claim.cantidadfinal16.setText("00000");
+                all.clean_claim.serial16.setText("-             -            -");
+                all.clean_claim.NPS16.setBackground(Color.white);
+                all.clean_claim.npaescanear16.setForeground(Color.black);
+                all.clean_claim.QT16.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida16.setForeground(Color.black);
+                all.clean_claim.FQT16.setForeground(Color.black);
+                all.clean_claim.cantidadfinal16.setForeground(Color.black);
+                all.clean_claim.DISP16.setForeground(Color.black);
+                all.clean_claim.idsp16.setForeground(Color.black);
+                all.clean_claim.descripcion16.setForeground(Color.black);
+                all.clean_claim.npecaneado16.setForeground(Color.black);
+                all.clean_claim.serial16.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 17:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear17.setText(all.clean_claim.npaescanear17.getText().substring(3));
+                all.clean_claim.idsp17.setText("A");
+                all.clean_claim.npecaneado17.setText("PF  2L01-LM18");
+                all.clean_claim.cantidadfinal17.setText("00000");
+                all.clean_claim.serial17.setText("-             -            -");
+                all.clean_claim.NPS17.setBackground(Color.white);
+                all.clean_claim.npaescanear17.setForeground(Color.black);
+                all.clean_claim.QT17.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida17.setForeground(Color.black);
+                all.clean_claim.FQT17.setForeground(Color.black);
+                all.clean_claim.cantidadfinal17.setForeground(Color.black);
+                all.clean_claim.DISP17.setForeground(Color.black);
+                all.clean_claim.idsp17.setForeground(Color.black);
+                all.clean_claim.descripcion17.setForeground(Color.black);
+                all.clean_claim.npecaneado17.setForeground(Color.black);
+                all.clean_claim.serial17.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 18:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear18.setText(all.clean_claim.npaescanear18.getText().substring(3));
+                all.clean_claim.idsp18.setText("A");
+                all.clean_claim.npecaneado18.setText("PF  2L01-LM22");
+                all.clean_claim.cantidadfinal18.setText("00000");
+                all.clean_claim.serial18.setText("-             -            -");
+                all.clean_claim.NPS18.setBackground(Color.white);
+                all.clean_claim.npaescanear18.setForeground(Color.black);
+                all.clean_claim.QT18.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida18.setForeground(Color.black);
+                all.clean_claim.FQT18.setForeground(Color.black);
+                all.clean_claim.cantidadfinal18.setForeground(Color.black);
+                all.clean_claim.DISP18.setForeground(Color.black);
+                all.clean_claim.idsp18.setForeground(Color.black);
+                all.clean_claim.descripcion18.setForeground(Color.black);
+                all.clean_claim.npecaneado18.setForeground(Color.black);
+                all.clean_claim.serial18.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 19:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear19.setText(all.clean_claim.npaescanear19.getText().substring(3));
+                all.clean_claim.idsp19.setText("A");
+                all.clean_claim.npecaneado19.setText("PF  2L01-LM26");
+                all.clean_claim.cantidadfinal19.setText("00000");
+                all.clean_claim.serial19.setText("-             -            -");
+                all.clean_claim.NPS19.setBackground(Color.white);
+                all.clean_claim.npaescanear19.setForeground(Color.black);
+                all.clean_claim.QT19.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida19.setForeground(Color.black);
+                all.clean_claim.FQT19.setForeground(Color.black);
+                all.clean_claim.cantidadfinal19.setForeground(Color.black);
+                all.clean_claim.DISP19.setForeground(Color.black);
+                all.clean_claim.idsp19.setForeground(Color.black);
+                all.clean_claim.descripcion19.setForeground(Color.black);
+                all.clean_claim.npecaneado19.setForeground(Color.black);
+                all.clean_claim.serial19.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 20:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear20.setText(all.clean_claim.npaescanear20.getText().substring(3));
+                all.clean_claim.idsp20.setText("A");
+                all.clean_claim.npecaneado20.setText("PF  2L01-LM30");
+                all.clean_claim.cantidadfinal20.setText("00000");
+                all.clean_claim.serial20.setText("-             -            -");
+                all.clean_claim.NPS20.setBackground(Color.white);
+                all.clean_claim.npaescanear20.setForeground(Color.black);
+                all.clean_claim.QT20.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida20.setForeground(Color.black);
+                all.clean_claim.FQT20.setForeground(Color.black);
+                all.clean_claim.cantidadfinal20.setForeground(Color.black);
+                all.clean_claim.DISP20.setForeground(Color.black);
+                all.clean_claim.idsp20.setForeground(Color.black);
+                all.clean_claim.descripcion20.setForeground(Color.black);
+                all.clean_claim.npecaneado20.setForeground(Color.black);
+                all.clean_claim.serial20.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 21:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear21.setText(all.clean_claim.npaescanear21.getText().substring(3));
+                all.clean_claim.idsp21.setText("A");
+                all.clean_claim.npecaneado21.setText("PF  2L01-LM34");
+                all.clean_claim.cantidadfinal21.setText("00000");
+                all.clean_claim.serial21.setText("-             -            -");
+                all.clean_claim.NPS21.setBackground(Color.white);
+                all.clean_claim.npaescanear21.setForeground(Color.black);
+                all.clean_claim.QT21.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida21.setForeground(Color.black);
+                all.clean_claim.FQT21.setForeground(Color.black);
+                all.clean_claim.cantidadfinal21.setForeground(Color.black);
+                all.clean_claim.DISP21.setForeground(Color.black);
+                all.clean_claim.idsp21.setForeground(Color.black);
+                all.clean_claim.descripcion21.setForeground(Color.black);
+                all.clean_claim.npecaneado21.setForeground(Color.black);
+                all.clean_claim.serial21.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 22:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear22.setText(all.clean_claim.npaescanear22.getText().substring(3));
+                all.clean_claim.idsp22.setText("A");
+                all.clean_claim.npecaneado22.setText("PF  2L01-LM38");
+                all.clean_claim.cantidadfinal22.setText("00000");
+                all.clean_claim.serial22.setText("-             -            -");
+                all.clean_claim.NPS22.setBackground(Color.white);
+                all.clean_claim.npaescanear22.setForeground(Color.black);
+                all.clean_claim.QT22.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida22.setForeground(Color.black);
+                all.clean_claim.FQT22.setForeground(Color.black);
+                all.clean_claim.cantidadfinal22.setForeground(Color.black);
+                all.clean_claim.DISP22.setForeground(Color.black);
+                all.clean_claim.idsp22.setForeground(Color.black);
+                all.clean_claim.descripcion22.setForeground(Color.black);
+                all.clean_claim.npecaneado22.setForeground(Color.black);
+                all.clean_claim.serial22.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 23:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear23.setText(all.clean_claim.npaescanear23.getText().substring(3));
+                all.clean_claim.idsp23.setText("A");
+                all.clean_claim.npecaneado23.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal23.setText("00000");
+                all.clean_claim.serial23.setText("-             -            -");
+                all.clean_claim.NPS23.setBackground(Color.white);
+                all.clean_claim.npaescanear23.setForeground(Color.black);
+                all.clean_claim.QT23.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida23.setForeground(Color.black);
+                all.clean_claim.FQT23.setForeground(Color.black);
+                all.clean_claim.cantidadfinal23.setForeground(Color.black);
+                all.clean_claim.DISP23.setForeground(Color.black);
+                all.clean_claim.idsp23.setForeground(Color.black);
+                all.clean_claim.descripcion23.setForeground(Color.black);
+                all.clean_claim.npecaneado23.setForeground(Color.black);
+                all.clean_claim.serial23.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 24:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear24.setText(all.clean_claim.npaescanear24.getText().substring(3));
+                all.clean_claim.idsp24.setText("A");
+                all.clean_claim.npecaneado24.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal24.setText("00000");
+                all.clean_claim.serial24.setText("-             -            -");
+                all.clean_claim.NPS24.setBackground(Color.white);
+                all.clean_claim.npaescanear24.setForeground(Color.black);
+                all.clean_claim.QT24.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida24.setForeground(Color.black);
+                all.clean_claim.FQT24.setForeground(Color.black);
+                all.clean_claim.cantidadfinal24.setForeground(Color.black);
+                all.clean_claim.DISP24.setForeground(Color.black);
+                all.clean_claim.idsp24.setForeground(Color.black);
+                all.clean_claim.descripcion24.setForeground(Color.black);
+                all.clean_claim.npecaneado24.setForeground(Color.black);
+                all.clean_claim.serial24.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 25:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear25.setText(all.clean_claim.npaescanear25.getText().substring(3));
+                all.clean_claim.idsp25.setText("A");
+                all.clean_claim.npecaneado25.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal25.setText("00000");
+                all.clean_claim.serial25.setText("-             -            -");
+                all.clean_claim.NPS25.setBackground(Color.white);
+                all.clean_claim.npaescanear25.setForeground(Color.black);
+                all.clean_claim.QT25.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida25.setForeground(Color.black);
+                all.clean_claim.FQT25.setForeground(Color.black);
+                all.clean_claim.cantidadfinal25.setForeground(Color.black);
+                all.clean_claim.DISP25.setForeground(Color.black);
+                all.clean_claim.idsp25.setForeground(Color.black);
+                all.clean_claim.descripcion25.setForeground(Color.black);
+                all.clean_claim.npecaneado25.setForeground(Color.black);
+                all.clean_claim.serial25.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 26:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear26.setText(all.clean_claim.npaescanear26.getText().substring(3));
+                all.clean_claim.idsp26.setText("A");
+                all.clean_claim.npecaneado26.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal26.setText("00000");
+                all.clean_claim.serial26.setText("-             -            -");
+                all.clean_claim.NPS26.setBackground(Color.white);
+                all.clean_claim.npaescanear26.setForeground(Color.black);
+                all.clean_claim.QT26.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida26.setForeground(Color.black);
+                all.clean_claim.FQT26.setForeground(Color.black);
+                all.clean_claim.cantidadfinal26.setForeground(Color.black);
+                all.clean_claim.DISP26.setForeground(Color.black);
+                all.clean_claim.idsp26.setForeground(Color.black);
+                all.clean_claim.descripcion26.setForeground(Color.black);
+                all.clean_claim.npecaneado26.setForeground(Color.black);
+                all.clean_claim.serial26.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 27:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear27.setText(all.clean_claim.npaescanear27.getText().substring(3));
+                all.clean_claim.idsp27.setText("A");
+                all.clean_claim.npecaneado27.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal27.setText("00000");
+                all.clean_claim.serial27.setText("-             -            -");
+                all.clean_claim.NPS27.setBackground(Color.white);
+                all.clean_claim.npaescanear27.setForeground(Color.black);
+                all.clean_claim.QT27.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida27.setForeground(Color.black);
+                all.clean_claim.FQT27.setForeground(Color.black);
+                all.clean_claim.cantidadfinal27.setForeground(Color.black);
+                all.clean_claim.DISP27.setForeground(Color.black);
+                all.clean_claim.idsp27.setForeground(Color.black);
+                all.clean_claim.descripcion27.setForeground(Color.black);
+                all.clean_claim.npecaneado27.setForeground(Color.black);
+                all.clean_claim.serial27.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 28:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear28.setText(all.clean_claim.npaescanear28.getText().substring(3));
+                all.clean_claim.idsp28.setText("A");
+                all.clean_claim.npecaneado28.setText("PF  2L01-LM20");
+                all.clean_claim.cantidadfinal28.setText("00000");
+                all.clean_claim.serial28.setText("-             -            -");
+                all.clean_claim.NPS28.setBackground(Color.white);
+                all.clean_claim.npaescanear28.setForeground(Color.black);
+                all.clean_claim.QT28.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida28.setForeground(Color.black);
+                all.clean_claim.FQT28.setForeground(Color.black);
+                all.clean_claim.cantidadfinal28.setForeground(Color.black);
+                all.clean_claim.DISP28.setForeground(Color.black);
+                all.clean_claim.idsp28.setForeground(Color.black);
+                all.clean_claim.descripcion28.setForeground(Color.black);
+                all.clean_claim.npecaneado28.setForeground(Color.black);
+                all.clean_claim.serial28.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 29:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear29.setText(all.clean_claim.npaescanear29.getText().substring(3));
+                all.clean_claim.idsp29.setText("A");
+                all.clean_claim.npecaneado29.setText("PF  2L01-LM20");
+                all.clean_claim.cantidadfinal29.setText("00000");
+                all.clean_claim.serial29.setText("-             -            -");
+                all.clean_claim.NPS29.setBackground(Color.white);
+                all.clean_claim.npaescanear29.setForeground(Color.black);
+                all.clean_claim.QT29.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida29.setForeground(Color.black);
+                all.clean_claim.FQT29.setForeground(Color.black);
+                all.clean_claim.cantidadfinal29.setForeground(Color.black);
+                all.clean_claim.DISP29.setForeground(Color.black);
+                all.clean_claim.idsp29.setForeground(Color.black);
+                all.clean_claim.descripcion29.setForeground(Color.black);
+                all.clean_claim.npecaneado29.setForeground(Color.black);
+                all.clean_claim.serial29.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 30:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear30.setText(all.clean_claim.npaescanear30.getText().substring(3));
+                all.clean_claim.idsp30.setText("A");
+                all.clean_claim.npecaneado30.setText("PF  2L01-LM28");
+                all.clean_claim.cantidadfinal30.setText("00000");
+                all.clean_claim.serial30.setText("-             -            -");
+                all.clean_claim.NPS30.setBackground(Color.white);
+                all.clean_claim.npaescanear30.setForeground(Color.black);
+                all.clean_claim.QT30.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida30.setForeground(Color.black);
+                all.clean_claim.FQT30.setForeground(Color.black);
+                all.clean_claim.cantidadfinal30.setForeground(Color.black);
+                all.clean_claim.DISP30.setForeground(Color.black);
+                all.clean_claim.idsp30.setForeground(Color.black);
+                all.clean_claim.descripcion30.setForeground(Color.black);
+                all.clean_claim.npecaneado30.setForeground(Color.black);
+                all.clean_claim.serial30.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 31:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear31.setText(all.clean_claim.npaescanear31.getText().substring(3));
+                all.clean_claim.idsp31.setText("A");
+                all.clean_claim.npecaneado31.setText("PF  2L01-LM28");
+                all.clean_claim.cantidadfinal31.setText("00000");
+                all.clean_claim.serial31.setText("-             -            -");
+                all.clean_claim.NPS31.setBackground(Color.white);
+                all.clean_claim.npaescanear31.setForeground(Color.black);
+                all.clean_claim.QT31.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida31.setForeground(Color.black);
+                all.clean_claim.FQT31.setForeground(Color.black);
+                all.clean_claim.cantidadfinal31.setForeground(Color.black);
+                all.clean_claim.DISP31.setForeground(Color.black);
+                all.clean_claim.idsp31.setForeground(Color.black);
+                all.clean_claim.descripcion31.setForeground(Color.black);
+                all.clean_claim.npecaneado31.setForeground(Color.black);
+                all.clean_claim.serial31.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 32:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear32.setText(all.clean_claim.npaescanear32.getText().substring(3));
+                all.clean_claim.idsp32.setText("A");
+                all.clean_claim.npecaneado32.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal32.setText("00000");
+                all.clean_claim.serial32.setText("-             -            -");
+                all.clean_claim.NPS32.setBackground(Color.white);
+                all.clean_claim.npaescanear32.setForeground(Color.black);
+                all.clean_claim.QT32.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida32.setForeground(Color.black);
+                all.clean_claim.FQT32.setForeground(Color.black);
+                all.clean_claim.cantidadfinal32.setForeground(Color.black);
+                all.clean_claim.DISP32.setForeground(Color.black);
+                all.clean_claim.idsp32.setForeground(Color.black);
+                all.clean_claim.descripcion32.setForeground(Color.black);
+                all.clean_claim.npecaneado32.setForeground(Color.black);
+                all.clean_claim.serial32.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 33:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear33.setText(all.clean_claim.npaescanear33.getText().substring(3));
+                all.clean_claim.idsp33.setText("A");
+                all.clean_claim.npecaneado33.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal33.setText("00000");
+                all.clean_claim.serial33.setText("-             -            -");
+                all.clean_claim.NPS33.setBackground(Color.white);
+                all.clean_claim.npaescanear33.setForeground(Color.black);
+                all.clean_claim.QT33.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida33.setForeground(Color.black);
+                all.clean_claim.FQT33.setForeground(Color.black);
+                all.clean_claim.cantidadfinal33.setForeground(Color.black);
+                all.clean_claim.DISP33.setForeground(Color.black);
+                all.clean_claim.idsp33.setForeground(Color.black);
+                all.clean_claim.descripcion33.setForeground(Color.black);
+                all.clean_claim.npecaneado33.setForeground(Color.black);
+                all.clean_claim.serial33.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 34:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear34.setText(all.clean_claim.npaescanear34.getText().substring(3));
+                all.clean_claim.idsp34.setText("A");
+                all.clean_claim.npecaneado34.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal34.setText("00000");
+                all.clean_claim.serial34.setText("-             -            -");
+                all.clean_claim.NPS34.setBackground(Color.white);
+                all.clean_claim.npaescanear34.setForeground(Color.black);
+                all.clean_claim.QT34.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida34.setForeground(Color.black);
+                all.clean_claim.FQT34.setForeground(Color.black);
+                all.clean_claim.cantidadfinal34.setForeground(Color.black);
+                all.clean_claim.DISP34.setForeground(Color.black);
+                all.clean_claim.idsp34.setForeground(Color.black);
+                all.clean_claim.descripcion34.setForeground(Color.black);
+                all.clean_claim.npecaneado34.setForeground(Color.black);
+                all.clean_claim.serial34.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 35:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear35.setText(all.clean_claim.npaescanear35.getText().substring(3));
+                all.clean_claim.idsp35.setText("A");
+                all.clean_claim.npecaneado35.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal35.setText("00000");
+                all.clean_claim.serial35.setText("-             -            -");
+                all.clean_claim.NPS35.setBackground(Color.white);
+                all.clean_claim.npaescanear35.setForeground(Color.black);
+                all.clean_claim.QT35.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida35.setForeground(Color.black);
+                all.clean_claim.FQT35.setForeground(Color.black);
+                all.clean_claim.cantidadfinal35.setForeground(Color.black);
+                all.clean_claim.DISP35.setForeground(Color.black);
+                all.clean_claim.idsp35.setForeground(Color.black);
+                all.clean_claim.descripcion35.setForeground(Color.black);
+                all.clean_claim.npecaneado35.setForeground(Color.black);
+                all.clean_claim.serial35.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 36:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear36.setText(all.clean_claim.npaescanear36.getText().substring(3));
+                all.clean_claim.idsp36.setText("A");
+                all.clean_claim.npecaneado36.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal36.setText("00000");
+                all.clean_claim.serial36.setText("-             -            -");
+                all.clean_claim.NPS36.setBackground(Color.white);
+                all.clean_claim.npaescanear36.setForeground(Color.black);
+                all.clean_claim.QT36.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida36.setForeground(Color.black);
+                all.clean_claim.FQT36.setForeground(Color.black);
+                all.clean_claim.cantidadfinal36.setForeground(Color.black);
+                all.clean_claim.DISP36.setForeground(Color.black);
+                all.clean_claim.idsp36.setForeground(Color.black);
+                all.clean_claim.descripcion36.setForeground(Color.black);
+                all.clean_claim.npecaneado36.setForeground(Color.black);
+                all.clean_claim.serial36.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 37:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear37.setText(all.clean_claim.npaescanear37.getText().substring(3));
+                all.clean_claim.idsp37.setText("A");
+                all.clean_claim.npecaneado37.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal37.setText("00000");
+                all.clean_claim.serial37.setText("-             -            -");
+                all.clean_claim.NPS37.setBackground(Color.white);
+                all.clean_claim.npaescanear37.setForeground(Color.black);
+                all.clean_claim.QT37.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida37.setForeground(Color.black);
+                all.clean_claim.FQT37.setForeground(Color.black);
+                all.clean_claim.cantidadfinal37.setForeground(Color.black);
+                all.clean_claim.DISP37.setForeground(Color.black);
+                all.clean_claim.idsp37.setForeground(Color.black);
+                all.clean_claim.descripcion37.setForeground(Color.black);
+                all.clean_claim.npecaneado37.setForeground(Color.black);
+                all.clean_claim.serial37.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 38:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear38.setText(all.clean_claim.npaescanear38.getText().substring(3));
+                all.clean_claim.idsp38.setText("A");
+                all.clean_claim.npecaneado38.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal38.setText("00000");
+                all.clean_claim.serial38.setText("-             -            -");
+                all.clean_claim.NPS38.setBackground(Color.white);
+                all.clean_claim.npaescanear38.setForeground(Color.black);
+                all.clean_claim.QT38.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida38.setForeground(Color.black);
+                all.clean_claim.FQT38.setForeground(Color.black);
+                all.clean_claim.cantidadfinal38.setForeground(Color.black);
+                all.clean_claim.DISP38.setForeground(Color.black);
+                all.clean_claim.idsp38.setForeground(Color.black);
+                all.clean_claim.descripcion38.setForeground(Color.black);
+                all.clean_claim.npecaneado38.setForeground(Color.black);
+                all.clean_claim.serial38.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 39:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear39.setText(all.clean_claim.npaescanear39.getText().substring(3));
+                all.clean_claim.idsp39.setText("A");
+                all.clean_claim.npecaneado39.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal39.setText("00000");
+                all.clean_claim.serial39.setText("-             -            -");
+                all.clean_claim.NPS39.setBackground(Color.white);
+                all.clean_claim.npaescanear39.setForeground(Color.black);
+                all.clean_claim.QT39.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida39.setForeground(Color.black);
+                all.clean_claim.FQT39.setForeground(Color.black);
+                all.clean_claim.cantidadfinal39.setForeground(Color.black);
+                all.clean_claim.DISP39.setForeground(Color.black);
+                all.clean_claim.idsp39.setForeground(Color.black);
+                all.clean_claim.descripcion39.setForeground(Color.black);
+                all.clean_claim.npecaneado39.setForeground(Color.black);
+                all.clean_claim.serial39.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 40:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear40.setText(all.clean_claim.npaescanear40.getText().substring(3));
+                all.clean_claim.idsp40.setText("A");
+                all.clean_claim.npecaneado40.setText("PF  2L01-LM08");
+                all.clean_claim.cantidadfinal40.setText("00000");
+                all.clean_claim.serial40.setText("-             -            -");
+                all.clean_claim.NPS40.setBackground(Color.white);
+                all.clean_claim.npaescanear40.setForeground(Color.black);
+                all.clean_claim.QT40.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida40.setForeground(Color.black);
+                all.clean_claim.FQT40.setForeground(Color.black);
+                all.clean_claim.cantidadfinal40.setForeground(Color.black);
+                all.clean_claim.DISP40.setForeground(Color.black);
+                all.clean_claim.idsp40.setForeground(Color.black);
+                all.clean_claim.descripcion40.setForeground(Color.black);
+                all.clean_claim.npecaneado40.setForeground(Color.black);
+                all.clean_claim.serial40.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 41:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear41.setText(all.clean_claim.npaescanear41.getText().substring(3));
+                all.clean_claim.idsp41.setText("A");
+                all.clean_claim.npecaneado41.setText("PF  2L01-LM08");
+                all.clean_claim.cantidadfinal41.setText("00000");
+                all.clean_claim.serial41.setText("-             -            -");
+                all.clean_claim.NPS41.setBackground(Color.white);
+                all.clean_claim.npaescanear41.setForeground(Color.black);
+                all.clean_claim.QT41.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida41.setForeground(Color.black);
+                all.clean_claim.FQT41.setForeground(Color.black);
+                all.clean_claim.cantidadfinal41.setForeground(Color.black);
+                all.clean_claim.DISP41.setForeground(Color.black);
+                all.clean_claim.idsp41.setForeground(Color.black);
+                all.clean_claim.descripcion41.setForeground(Color.black);
+                all.clean_claim.npecaneado41.setForeground(Color.black);
+                all.clean_claim.serial41.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 42:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear42.setText(all.clean_claim.npaescanear42.getText().substring(3));
+                all.clean_claim.idsp42.setText("A");
+                all.clean_claim.npecaneado42.setText("PF  2L01-LM08");
+                all.clean_claim.cantidadfinal42.setText("00000");
+                all.clean_claim.serial42.setText("-             -            -");
+                all.clean_claim.NPS42.setBackground(Color.white);
+                all.clean_claim.npaescanear42.setForeground(Color.black);
+                all.clean_claim.QT42.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida42.setForeground(Color.black);
+                all.clean_claim.FQT42.setForeground(Color.black);
+                all.clean_claim.cantidadfinal42.setForeground(Color.black);
+                all.clean_claim.DISP42.setForeground(Color.black);
+                all.clean_claim.idsp42.setForeground(Color.black);
+                all.clean_claim.descripcion42.setForeground(Color.black);
+                all.clean_claim.npecaneado42.setForeground(Color.black);
+                all.clean_claim.serial42.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 43:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear43.setText(all.clean_claim.npaescanear43.getText().substring(3));
+                all.clean_claim.idsp43.setText("A");
+                all.clean_claim.npecaneado43.setText("PF  2L01-LM13");
+                all.clean_claim.cantidadfinal43.setText("00000");
+                all.clean_claim.serial43.setText("-             -            -");
+                all.clean_claim.NPS43.setBackground(Color.white);
+                all.clean_claim.npaescanear43.setForeground(Color.black);
+                all.clean_claim.QT43.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida43.setForeground(Color.black);
+                all.clean_claim.FQT43.setForeground(Color.black);
+                all.clean_claim.cantidadfinal43.setForeground(Color.black);
+                all.clean_claim.DISP43.setForeground(Color.black);
+                all.clean_claim.idsp43.setForeground(Color.black);
+                all.clean_claim.descripcion43.setForeground(Color.black);
+                all.clean_claim.npecaneado43.setForeground(Color.black);
+                all.clean_claim.serial43.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 44:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear44.setText(all.clean_claim.npaescanear44.getText().substring(3));
+                all.clean_claim.idsp44.setText("A");
+                all.clean_claim.npecaneado44.setText("PF  2L01-LM13");
+                all.clean_claim.cantidadfinal44.setText("00000");
+                all.clean_claim.serial44.setText("-             -            -");
+                all.clean_claim.NPS44.setBackground(Color.white);
+                all.clean_claim.npaescanear44.setForeground(Color.black);
+                all.clean_claim.QT44.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida44.setForeground(Color.black);
+                all.clean_claim.FQT44.setForeground(Color.black);
+                all.clean_claim.cantidadfinal44.setForeground(Color.black);
+                all.clean_claim.DISP44.setForeground(Color.black);
+                all.clean_claim.idsp44.setForeground(Color.black);
+                all.clean_claim.descripcion44.setForeground(Color.black);
+                all.clean_claim.npecaneado44.setForeground(Color.black);
+                all.clean_claim.serial44.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 45:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear45.setText(all.clean_claim.npaescanear45.getText().substring(3));
+                all.clean_claim.idsp45.setText("A");
+                all.clean_claim.npecaneado45.setText("PF  2L01-LM13");
+                all.clean_claim.cantidadfinal45.setText("00000");
+                all.clean_claim.serial45.setText("-             -            -");
+                all.clean_claim.NPS45.setBackground(Color.white);
+                all.clean_claim.npaescanear45.setForeground(Color.black);
+                all.clean_claim.QT45.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida45.setForeground(Color.black);
+                all.clean_claim.FQT45.setForeground(Color.black);
+                all.clean_claim.cantidadfinal45.setForeground(Color.black);
+                all.clean_claim.DISP45.setForeground(Color.black);
+                all.clean_claim.idsp45.setForeground(Color.black);
+                all.clean_claim.descripcion45.setForeground(Color.black);
+                all.clean_claim.npecaneado45.setForeground(Color.black);
+                all.clean_claim.serial45.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 46:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear46.setText(all.clean_claim.npaescanear46.getText().substring(3));
+                all.clean_claim.idsp46.setText("A");
+                all.clean_claim.npecaneado46.setText("PF  2L01-");
+                all.clean_claim.cantidadfinal46.setText("00000");
+                all.clean_claim.serial46.setText("-             -            -");
+                all.clean_claim.NPS46.setBackground(Color.white);
+                all.clean_claim.npaescanear46.setForeground(Color.black);
+                all.clean_claim.QT46.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida46.setForeground(Color.black);
+                all.clean_claim.FQT46.setForeground(Color.black);
+                all.clean_claim.cantidadfinal46.setForeground(Color.black);
+                all.clean_claim.DISP46.setForeground(Color.black);
+                all.clean_claim.idsp46.setForeground(Color.black);
+                all.clean_claim.descripcion46.setForeground(Color.black);
+                all.clean_claim.npecaneado46.setForeground(Color.black);
+                all.clean_claim.serial46.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 47:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear47.setText(all.clean_claim.npaescanear47.getText().substring(3));
+                all.clean_claim.idsp47.setText("A");
+                all.clean_claim.npecaneado47.setText("PF  2L01-LM20");
+                all.clean_claim.cantidadfinal47.setText("00000");
+                all.clean_claim.serial47.setText("-             -            -");
+                all.clean_claim.NPS47.setBackground(Color.white);
+                all.clean_claim.npaescanear47.setForeground(Color.black);
+                all.clean_claim.QT47.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida47.setForeground(Color.black);
+                all.clean_claim.FQT47.setForeground(Color.black);
+                all.clean_claim.cantidadfinal47.setForeground(Color.black);
+                all.clean_claim.DISP47.setForeground(Color.black);
+                all.clean_claim.idsp47.setForeground(Color.black);
+                all.clean_claim.descripcion47.setForeground(Color.black);
+                all.clean_claim.npecaneado47.setForeground(Color.black);
+                all.clean_claim.serial47.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 48:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear48.setText(all.clean_claim.npaescanear48.getText().substring(3));
+                all.clean_claim.idsp48.setText("A");
+                all.clean_claim.npecaneado48.setText("PF  2L01-LM20");
+                all.clean_claim.cantidadfinal48.setText("00000");
+                all.clean_claim.serial48.setText("-             -            -");
+                all.clean_claim.NPS48.setBackground(Color.white);
+                all.clean_claim.npaescanear48.setForeground(Color.black);
+                all.clean_claim.QT48.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida48.setForeground(Color.black);
+                all.clean_claim.FQT48.setForeground(Color.black);
+                all.clean_claim.cantidadfinal48.setForeground(Color.black);
+                all.clean_claim.DISP48.setForeground(Color.black);
+                all.clean_claim.idsp48.setForeground(Color.black);
+                all.clean_claim.descripcion48.setForeground(Color.black);
+                all.clean_claim.npecaneado48.setForeground(Color.black);
+                all.clean_claim.serial48.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 49:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear49.setText(all.clean_claim.npaescanear49.getText().substring(3));
+                all.clean_claim.idsp49.setText("A");
+                all.clean_claim.npecaneado49.setText("PF  2L01-LM28");
+                all.clean_claim.cantidadfinal49.setText("00000");
+                all.clean_claim.serial49.setText("-             -            -");
+                all.clean_claim.NPS49.setBackground(Color.white);
+                all.clean_claim.npaescanear49.setForeground(Color.black);
+                all.clean_claim.QT49.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida49.setForeground(Color.black);
+                all.clean_claim.FQT49.setForeground(Color.black);
+                all.clean_claim.cantidadfinal49.setForeground(Color.black);
+                all.clean_claim.DISP49.setForeground(Color.black);
+                all.clean_claim.idsp49.setForeground(Color.black);
+                all.clean_claim.descripcion49.setForeground(Color.black);
+                all.clean_claim.npecaneado49.setForeground(Color.black);
+                all.clean_claim.serial49.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 50:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear50.setText(all.clean_claim.npaescanear50.getText().substring(3));
+                all.clean_claim.idsp50.setText("A");
+                all.clean_claim.npecaneado50.setText("PF  2L01-LM28");
+                all.clean_claim.cantidadfinal50.setText("00000");
+                all.clean_claim.serial50.setText("-             -            -");
+                all.clean_claim.NPS50.setBackground(Color.white);
+                all.clean_claim.npaescanear50.setForeground(Color.black);
+                all.clean_claim.QT50.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida50.setForeground(Color.black);
+                all.clean_claim.FQT50.setForeground(Color.black);
+                all.clean_claim.cantidadfinal50.setForeground(Color.black);
+                all.clean_claim.DISP50.setForeground(Color.black);
+                all.clean_claim.idsp50.setForeground(Color.black);
+                all.clean_claim.descripcion50.setForeground(Color.black);
+                all.clean_claim.npecaneado50.setForeground(Color.black);
+                all.clean_claim.serial50.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 51:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear51.setText(all.clean_claim.npaescanear51.getText().substring(3));
+                all.clean_claim.idsp51.setText("A");
+                all.clean_claim.npecaneado51.setText("PF  2L01-LM08");
+                all.clean_claim.cantidadfinal51.setText("00000");
+                all.clean_claim.serial51.setText("-             -            -");
+                all.clean_claim.NPS51.setBackground(Color.white);
+                all.clean_claim.npaescanear51.setForeground(Color.black);
+                all.clean_claim.QT51.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida51.setForeground(Color.black);
+                all.clean_claim.FQT51.setForeground(Color.black);
+                all.clean_claim.cantidadfinal51.setForeground(Color.black);
+                all.clean_claim.DISP51.setForeground(Color.black);
+                all.clean_claim.idsp51.setForeground(Color.black);
+                all.clean_claim.descripcion51.setForeground(Color.black);
+                all.clean_claim.npecaneado51.setForeground(Color.black);
+                all.clean_claim.serial51.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+                case 53:
+                if (all.clean_claim.idsp.getText().equals("I")){
+                all.clean_claim.npaescanear53.setText(all.clean_claim.npaescanear53.getText().substring(3));
+                all.clean_claim.idsp53.setText("A");
+                all.clean_claim.npecaneado53.setText("PF  2L01-LM13");
+                all.clean_claim.cantidadfinal53.setText("00000");
+                all.clean_claim.serial53.setText("-             -            -");
+                all.clean_claim.NPS53.setBackground(Color.white);
+                all.clean_claim.npaescanear53.setForeground(Color.black);
+                all.clean_claim.QT53.setForeground(Color.black);
+                all.clean_claim.cantidadrequerida53.setForeground(Color.black);
+                all.clean_claim.FQT53.setForeground(Color.black);
+                all.clean_claim.cantidadfinal53.setForeground(Color.black);
+                all.clean_claim.DISP53.setForeground(Color.black);
+                all.clean_claim.idsp53.setForeground(Color.black);
+                all.clean_claim.descripcion53.setForeground(Color.black);
+                all.clean_claim.npecaneado53.setForeground(Color.black);
+                all.clean_claim.serial53.setForeground(Color.black);
+                }else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+        }
     }
     }//GEN-LAST:event_RemoverActionPerformed
 

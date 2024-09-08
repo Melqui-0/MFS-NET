@@ -15,7 +15,7 @@ public class Cronometro {
     
     public Cronometro (){
         
-        mTimer = new Timer(10, (ActionEvent e) -> {
+        mTimer = new Timer(1, (ActionEvent e) -> {
             IniciarCronometro();
     });
     
@@ -28,7 +28,7 @@ public class Cronometro {
     public void ActualizarTime() {
         milisegundos++;
         
-        if (milisegundos == 100){
+        if (milisegundos == 60){
             milisegundos = 0;
             segundos++;
         }
@@ -51,7 +51,15 @@ public class Cronometro {
             String crono = horas + "hrs:" + minutos + "m:" + segundos + "s";
             all.empty_231.Cronometro.setText(crono);
             all.empty_231.milisegundos.setText("." + milisegundos);
-        }
+        } else if (all.work.clean == true){
+            String crono = horas + "hrs:" + minutos + "m:" + segundos + "s";
+            all.clean_claim.Cronometro.setText(crono);
+            all.clean_claim.milisegundos.setText("." + milisegundos);
+        } else if (all.work.clean_empty == true){
+            String crono = horas + "hrs:" + minutos + "m:" + segundos + "s";
+            all.clean_claim_empty.Cronometro.setText(crono);
+            all.clean_claim_empty.milisegundos.setText("." + milisegundos);
+        } 
     }
     
     public void reboot() {

@@ -362,7 +362,77 @@ public class Barcode_2 extends javax.swing.JFrame {
             this.setVisible(false);
             JOptionPane.showMessageDialog(null, "FC15 ");
         }
+        } else if (all.work.Op500 == true){
+            if (this.npingresado.toUpperCase().equals(all.material_rack.npaescanear.getText())){
+            all.material_rack.npaescanear.setText("000" + npingresado.toUpperCase());
+            all.material_rack.idsp.setText("I");
+            all.material_rack.npecaneado.setText("000" + npingresado.toUpperCase());
+            all.material_rack.cantidadfinal.setText(all.material_rack.cantidadrequerida.getText());
+            all.material_rack.serial.setText(npescaneado.substring(10).toUpperCase());
+            all.material_rack.NPS.setBackground(Color.BLUE);
+            all.material_rack.npaescanear.setForeground(Color.WHITE);
+            all.material_rack.QT.setForeground(Color.WHITE);
+            all.material_rack.cantidadrequerida.setForeground(Color.WHITE);
+            all.material_rack.FQT.setForeground(Color.WHITE);
+            all.material_rack.cantidadfinal.setForeground(Color.WHITE);
+            all.material_rack.DISP.setForeground(Color.WHITE);
+            all.material_rack.idsp.setForeground(Color.WHITE);
+            all.material_rack.descripcion.setForeground(Color.WHITE);
+            all.material_rack.npecaneado.setForeground(Color.WHITE);
+            all.material_rack.serial.setForeground(Color.WHITE);
+            npfinal.setText("");
+            ecfinal.setText("");
+            secfinal.setText("");
+            npscan.requestFocus();
+            this.setVisible(false);
+        } else if(this.npingresado.toUpperCase().equals(all.material_rack.npaescanear.getText().substring(3))){
+            all.material_rack.npaescanear.setText("000" + npingresado.toUpperCase());
+            all.material_rack.idsp.setText("I");
+            all.material_rack.npecaneado.setText("000" + npingresado.toUpperCase());
+            all.material_rack.cantidadfinal.setText(all.material_rack.cantidadrequerida.getText());
+            all.material_rack.serial.setText(npescaneado.substring(10).toUpperCase());
+            all.material_rack.NPS.setBackground(Color.BLUE);
+            all.material_rack.npaescanear.setForeground(Color.WHITE);
+            all.material_rack.QT.setForeground(Color.WHITE);
+            all.material_rack.cantidadrequerida.setForeground(Color.WHITE);
+            all.material_rack.FQT.setForeground(Color.WHITE);
+            all.material_rack.cantidadfinal.setForeground(Color.WHITE);
+            all.material_rack.DISP.setForeground(Color.WHITE);
+            all.material_rack.idsp.setForeground(Color.WHITE);
+            all.material_rack.descripcion.setForeground(Color.WHITE);
+            all.material_rack.npecaneado.setForeground(Color.WHITE);
+            all.material_rack.serial.setForeground(Color.WHITE);
+            npfinal.setText("");
+            ecfinal.setText("");
+            secfinal.setText("");
+            npscan.requestFocus();
+            this.setVisible(false);
+        }else if (this.npingresado.toUpperCase().equals(all.material_rack.npaescanear.getText().substring(3)) && this.secfinal.getText().equals(all.material_rack.serial.getText()) && all.material_rack.idsp.getText().equals("R")){
+            all.material_rack.npaescanear.setText(npingresado.toUpperCase());
+            all.material_rack.idsp.setText("D");
+            all.material_rack.npecaneado.setText("000" + npingresado.toUpperCase());
+            all.material_rack.cantidadfinal.setText(all.material_rack.cantidadrequerida.getText());
+            all.material_rack.serial.setText(npescaneado.substring(10).toUpperCase());
+            all.material_rack.NPS.setBackground(Color.YELLOW);
+            all.material_rack.npaescanear.setForeground(Color.BLACK);
+            all.material_rack.QT.setForeground(Color.BLACK);
+            all.material_rack.cantidadrequerida.setForeground(Color.BLACK);
+            all.material_rack.FQT.setForeground(Color.BLACK);
+            all.material_rack.cantidadfinal.setForeground(Color.BLACK);
+            all.material_rack.DISP.setForeground(Color.BLACK);
+            all.material_rack.idsp.setForeground(Color.BLACK);
+            all.material_rack.descripcion.setForeground(Color.BLACK);
+            all.material_rack.npecaneado.setForeground(Color.BLACK);
+            all.material_rack.serial.setForeground(Color.BLACK);
+            npfinal.setText("");
+            ecfinal.setText("");
+            secfinal.setText("");
+            npscan.requestFocus();
+            this.setVisible(false);
+            JOptionPane.showMessageDialog(null, "FC15 ");
         }
+        }
+        
     }//GEN-LAST:event_LogPartActionPerformed
 
     private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed

@@ -367,6 +367,63 @@ public class Barcode_6 extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "FC15 ");
         }
         }
+        } else if (all.work.Op500 == true){
+            Map<String, String[]> agency = new HashMap <>();
+        agency.put("03FP534", FP534);
+        all.nps = agency.get(all.pn);
+        if (all.nps == FP534){
+        if (this.npingresado.toUpperCase().equals(all.material_etiqueta_534.npaescanear4.getText())){
+            if (Arrays.equals(qwe, FP534)){
+                all.material_etiqueta_534.npaescanear4.setText("000" + npingresado.toUpperCase());
+                all.material_etiqueta_534.idsp4.setText("I");
+                all.material_etiqueta_534.npecaneado4.setText("000" + npingresado.toUpperCase());
+                all.material_etiqueta_534.cantidadfinal4.setText(all.material_etiqueta_534.cantidadrequerida4.getText());
+                all.material_etiqueta_534.serial4.setText(msingresado);
+                all.material_etiqueta_534.NPS4.setBackground(Color.BLUE);
+                all.material_etiqueta_534.npaescanear4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.QT4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.cantidadrequerida4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.FQT4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.cantidadfinal4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.DISP4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.idsp4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.descripcion4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.npecaneado4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.serial4.setForeground(Color.WHITE);
+                npfinal.setText("");
+                ecfinal.setText("");
+                machinefinal.setText("");
+                npscan.requestFocus();
+                this.setVisible(false);
+            }
+        }   else if (this.npingresado.toUpperCase().equals(all.material_etiqueta_534.npaescanear4.getText().substring(3))){
+            if (Arrays.equals(qwe, FP534)){
+                all.material_etiqueta_534.npaescanear4.setText("000" + npingresado.toUpperCase());
+                all.material_etiqueta_534.idsp4.setText("I");
+                all.material_etiqueta_534.npecaneado4.setText("000" + npingresado.toUpperCase());
+                all.material_etiqueta_534.cantidadfinal4.setText(all.material_etiqueta_534.cantidadrequerida4.getText());
+                all.material_etiqueta_534.serial4.setText(msingresado);
+                all.material_etiqueta_534.NPS4.setBackground(Color.BLUE);
+                all.material_etiqueta_534.npaescanear4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.QT4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.cantidadrequerida4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.FQT4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.cantidadfinal4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.DISP4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.idsp4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.descripcion4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.npecaneado4.setForeground(Color.WHITE);
+                all.material_etiqueta_534.serial4.setForeground(Color.WHITE);
+                npfinal.setText("");
+                ecfinal.setText("");
+                machinefinal.setText("");
+                npscan.requestFocus();
+            this.setVisible(false);
+            }
+        } else {   
+            JOptionPane.showMessageDialog(null, "FC15 ");
+        }
+        }
         }
     }//GEN-LAST:event_LogpartActionPerformed
 

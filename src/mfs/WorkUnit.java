@@ -5,6 +5,7 @@
 package mfs;
 
 import java.awt.event.KeyEvent;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -14,6 +15,8 @@ public class WorkUnit extends javax.swing.JFrame {
 
     public static String work = "3BDTB6H1";
     public static String workcc = "3BDTBCR7";
+    public static String workcce = "3BDMSS10";
+    public boolean clean, clean_empty, empty, Op500;
 
     
     public WorkUnit() {
@@ -104,13 +107,29 @@ public class WorkUnit extends javax.swing.JFrame {
     private void EnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterActionPerformed
         String scan = Work.getText();
         if (scan.toUpperCase().equals(work)){
+            Op500 = true;
             Work.setText("");
             this.setVisible(false);
             all.custom.setVisible(true);
         } else if (scan.toUpperCase().equals(workcc) ){//Creo que era para ver la orden en View
+            clean = true;
+            Work.setText("");
+            all.clean_claim.User500.setText(Login.usuario);
             all.clean_claim.setVisible(true);
-        } else if (scan.toUpperCase().equals(work)){//Creo que era para ver la orden en View
-            all.view.setVisible(true); //2
+            all.crono.mTimer.start();
+            this.setVisible(false);
+        } else if (scan.toUpperCase().equals(workcce)){
+            clean_empty = true;
+            Work.setText("");
+            all.clean_claim_empty.User500.setText(Login.usuario);
+            all.clean_claim_empty.setVisible(true);
+            all.crono.mTimer.start();
+            this.setVisible(false);
+        }else if (scan.toUpperCase().equals(work)){//Creo que era para ver la orden en View
+        
+        }else {
+            JOptionPane.showMessageDialog(null, "INVALID WORK - no matching rule");
+            Work.setText("");
         }
     }//GEN-LAST:event_EnterActionPerformed
 

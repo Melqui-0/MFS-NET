@@ -6,9 +6,9 @@ package mfs;
 
 import java.awt.Color;
 import javax.swing.JOptionPane;
-import static mfs.Empty.nm;
-import static mfs.Empty.pn;
-import static mfs.Empty.pn2;
+import static mfs.all.pn;
+import static mfs.all.pn2;
+import static mfs.all.nm;
 
 public class Material_etiqueta_534 extends javax.swing.JPanel {
 

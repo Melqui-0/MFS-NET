@@ -91,9 +91,20 @@ public class Suspender extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void EnterActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EnterActionPerformed
-        all.empty.setVisible(false);
-        this.setVisible(false);
-        all.abrir.setVisible(true);
+        if (all.work.empty == true){
+            all.empty.setVisible(false);
+            this.setVisible(false);
+            all.abrir.setVisible(true);
+        } else if (all.work.clean == true){
+            all.clean_claim.setVisible(false);
+            this.setVisible(false);
+            all.abrir.setVisible(true);
+        } else if (all.work.clean_empty == true){
+            all.clean_claim_empty.setVisible(false);
+            this.setVisible(false);
+            all.abrir.setVisible(true);
+        }
+        
     }//GEN-LAST:event_EnterActionPerformed
 
     private void CancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_CancelActionPerformed

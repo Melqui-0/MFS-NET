@@ -6,9 +6,9 @@ package mfs;
 
 import java.awt.Color;
 import javax.swing.JOptionPane;
-import static mfs.Empty.nm;
-import static mfs.Empty.pn;
-import static mfs.Empty.pn2;
+import static mfs.all.pn;
+import static mfs.all.pn2;
+import static mfs.all.nm;
 
 /**
  *
@@ -19,6 +19,8 @@ public class Material_Rack extends javax.swing.JPanel {
     /**
      * Creates new form Material_Rack
      */
+    
+
     public Material_Rack() {
         initComponents();
     }
@@ -185,7 +187,7 @@ public class Material_Rack extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void NPSFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_NPSFocusGained
-        this.NPS.setBackground(Color.black);
+        /*this.NPS.setBackground(Color.black);
         this.DISP.setForeground(Color.white);
         this.FQT.setForeground(Color.white);
         this.QT.setForeground(Color.white);
@@ -195,7 +197,7 @@ public class Material_Rack extends javax.swing.JPanel {
         this.idsp.setForeground(Color.white);
         this.npaescanear.setForeground(Color.white);
         this.npecaneado.setForeground(Color.white);
-        this.serial.setForeground(Color.white);
+        this.serial.setForeground(Color.white);*/
     }//GEN-LAST:event_NPSFocusGained
 
     private void NPSFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_NPSFocusLost

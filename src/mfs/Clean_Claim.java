@@ -67,7 +67,8 @@ public class Clean_Claim extends javax.swing.JFrame {
     public Clean_Claim() {    
         initComponents();
         extender();
-        this.setLayout(null);
+        this.setLayout(null); //este es para que se ajuste a las pantallas.
+        cuerpo.getVerticalScrollBar().setUnitIncrement(16);
 
     }
 
@@ -115,9 +116,9 @@ public class Clean_Claim extends javax.swing.JFrame {
         work500 = new javax.swing.JLabel();
         cuerpo = new javax.swing.JScrollPane();
         bloque1 = new javax.swing.JPanel();
-        imagen = new javax.swing.JPanel();
+        Imagen_flag = new javax.swing.JPanel();
         change = new javax.swing.JCheckBox();
-        bloque1_1 = new javax.swing.JPanel();
+        Material_flag = new javax.swing.JPanel();
         NPS = new javax.swing.JPanel();
         npaescanear = new javax.swing.JLabel();
         QT = new javax.swing.JLabel();
@@ -129,7 +130,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         serial = new javax.swing.JLabel();
         cantidadrequerida = new javax.swing.JLabel();
         cantidadfinal = new javax.swing.JLabel();
-        bloque2 = new javax.swing.JPanel();
+        Material_cover1u = new javax.swing.JPanel();
         NPS3 = new javax.swing.JPanel();
         npaescanear3 = new javax.swing.JLabel();
         QT3 = new javax.swing.JLabel();
@@ -262,21 +263,9 @@ public class Clean_Claim extends javax.swing.JFrame {
         serial12 = new javax.swing.JLabel();
         cantidadrequerida12 = new javax.swing.JLabel();
         cantidadfinal12 = new javax.swing.JLabel();
-        jPanel4 = new javax.swing.JPanel();
+        Imagen_cover1u = new javax.swing.JPanel();
         change1 = new javax.swing.JCheckBox();
-        bloque3 = new javax.swing.JPanel();
-        bloqueimagen = new javax.swing.JPanel();
-        jLabel15 = new javax.swing.JLabel();
-        change2 = new javax.swing.JCheckBox();
-        bloque4 = new javax.swing.JPanel();
-        bloqueimagen1 = new javax.swing.JPanel();
-        jLabel16 = new javax.swing.JLabel();
-        change3 = new javax.swing.JCheckBox();
-        bloque5 = new javax.swing.JPanel();
-        bloqueimagen2 = new javax.swing.JPanel();
-        jLabel17 = new javax.swing.JLabel();
-        change4 = new javax.swing.JCheckBox();
-        bloque6 = new javax.swing.JPanel();
+        Material_cover3u = new javax.swing.JPanel();
         NPS13 = new javax.swing.JPanel();
         npaescanear13 = new javax.swing.JLabel();
         QT13 = new javax.swing.JLabel();
@@ -387,6 +376,9 @@ public class Clean_Claim extends javax.swing.JFrame {
         serial22 = new javax.swing.JLabel();
         cantidadrequerida22 = new javax.swing.JLabel();
         cantidadfinal22 = new javax.swing.JLabel();
+        imagen_cover3u = new javax.swing.JPanel();
+        change2 = new javax.swing.JCheckBox();
+        Material_llave = new javax.swing.JPanel();
         NPS23 = new javax.swing.JPanel();
         npaescanear23 = new javax.swing.JLabel();
         QT23 = new javax.swing.JLabel();
@@ -398,10 +390,97 @@ public class Clean_Claim extends javax.swing.JFrame {
         serial23 = new javax.swing.JLabel();
         cantidadrequerida23 = new javax.swing.JLabel();
         cantidadfinal23 = new javax.swing.JLabel();
-        bloqueimagen3 = new javax.swing.JPanel();
+        NPS24 = new javax.swing.JPanel();
+        npaescanear24 = new javax.swing.JLabel();
+        QT24 = new javax.swing.JLabel();
+        FQT24 = new javax.swing.JLabel();
+        DISP24 = new javax.swing.JLabel();
+        idsp24 = new javax.swing.JLabel();
+        descripcion24 = new javax.swing.JLabel();
+        npecaneado24 = new javax.swing.JLabel();
+        serial24 = new javax.swing.JLabel();
+        cantidadrequerida24 = new javax.swing.JLabel();
+        cantidadfinal24 = new javax.swing.JLabel();
+        NPS25 = new javax.swing.JPanel();
+        npaescanear25 = new javax.swing.JLabel();
+        QT25 = new javax.swing.JLabel();
+        FQT25 = new javax.swing.JLabel();
+        DISP25 = new javax.swing.JLabel();
+        idsp25 = new javax.swing.JLabel();
+        descripcion25 = new javax.swing.JLabel();
+        npecaneado25 = new javax.swing.JLabel();
+        serial25 = new javax.swing.JLabel();
+        cantidadrequerida25 = new javax.swing.JLabel();
+        cantidadfinal25 = new javax.swing.JLabel();
+        Imagen_llave = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        change3 = new javax.swing.JCheckBox();
+        Material_puerta691 = new javax.swing.JPanel();
+        NPS26 = new javax.swing.JPanel();
+        npaescanear26 = new javax.swing.JLabel();
+        QT26 = new javax.swing.JLabel();
+        FQT26 = new javax.swing.JLabel();
+        DISP26 = new javax.swing.JLabel();
+        idsp26 = new javax.swing.JLabel();
+        descripcion26 = new javax.swing.JLabel();
+        npecaneado26 = new javax.swing.JLabel();
+        serial26 = new javax.swing.JLabel();
+        cantidadrequerida26 = new javax.swing.JLabel();
+        cantidadfinal26 = new javax.swing.JLabel();
+        Imagen_puerta691 = new javax.swing.JPanel();
+        jLabel17 = new javax.swing.JLabel();
+        change4 = new javax.swing.JCheckBox();
+        Material_bracket_panel = new javax.swing.JPanel();
+        NPS33 = new javax.swing.JPanel();
+        npaescanear33 = new javax.swing.JLabel();
+        QT33 = new javax.swing.JLabel();
+        FQT33 = new javax.swing.JLabel();
+        DISP33 = new javax.swing.JLabel();
+        idsp33 = new javax.swing.JLabel();
+        descripcion33 = new javax.swing.JLabel();
+        npecaneado33 = new javax.swing.JLabel();
+        serial33 = new javax.swing.JLabel();
+        cantidadrequerida33 = new javax.swing.JLabel();
+        cantidadfinal33 = new javax.swing.JLabel();
+        NPS32 = new javax.swing.JPanel();
+        npaescanear32 = new javax.swing.JLabel();
+        QT32 = new javax.swing.JLabel();
+        FQT32 = new javax.swing.JLabel();
+        DISP32 = new javax.swing.JLabel();
+        idsp32 = new javax.swing.JLabel();
+        descripcion32 = new javax.swing.JLabel();
+        npecaneado32 = new javax.swing.JLabel();
+        serial32 = new javax.swing.JLabel();
+        cantidadrequerida32 = new javax.swing.JLabel();
+        cantidadfinal32 = new javax.swing.JLabel();
+        NPS34 = new javax.swing.JPanel();
+        npaescanear34 = new javax.swing.JLabel();
+        QT34 = new javax.swing.JLabel();
+        FQT34 = new javax.swing.JLabel();
+        DISP34 = new javax.swing.JLabel();
+        idsp34 = new javax.swing.JLabel();
+        descripcion34 = new javax.swing.JLabel();
+        npecaneado34 = new javax.swing.JLabel();
+        serial34 = new javax.swing.JLabel();
+        cantidadrequerida34 = new javax.swing.JLabel();
+        cantidadfinal34 = new javax.swing.JLabel();
+        NPS35 = new javax.swing.JPanel();
+        npaescanear35 = new javax.swing.JLabel();
+        QT35 = new javax.swing.JLabel();
+        FQT35 = new javax.swing.JLabel();
+        DISP35 = new javax.swing.JLabel();
+        idsp35 = new javax.swing.JLabel();
+        descripcion35 = new javax.swing.JLabel();
+        npecaneado35 = new javax.swing.JLabel();
+        serial35 = new javax.swing.JLabel();
+        cantidadrequerida35 = new javax.swing.JLabel();
+        cantidadfinal35 = new javax.swing.JLabel();
+        Imagen_bracket_panel = new javax.swing.JPanel();
         prueba = new javax.swing.JLabel();
         change5 = new javax.swing.JCheckBox();
-        bisagraslatch = new javax.swing.JPanel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        Material_ship841 = new javax.swing.JPanel();
         NPS28 = new javax.swing.JPanel();
         npaescanear28 = new javax.swing.JLabel();
         QT28 = new javax.swing.JLabel();
@@ -435,10 +514,6 @@ public class Clean_Claim extends javax.swing.JFrame {
         serial31 = new javax.swing.JLabel();
         cantidadrequerida31 = new javax.swing.JLabel();
         cantidadfinal31 = new javax.swing.JLabel();
-        bloquebisagras = new javax.swing.JPanel();
-        jLabel20 = new javax.swing.JLabel();
-        change7 = new javax.swing.JCheckBox();
-        bisagraslatch1 = new javax.swing.JPanel();
         NPS29 = new javax.swing.JPanel();
         npaescanear29 = new javax.swing.JLabel();
         QT29 = new javax.swing.JLabel();
@@ -450,44 +525,272 @@ public class Clean_Claim extends javax.swing.JFrame {
         serial29 = new javax.swing.JLabel();
         cantidadrequerida29 = new javax.swing.JLabel();
         cantidadfinal29 = new javax.swing.JLabel();
-        NPS32 = new javax.swing.JPanel();
-        npaescanear32 = new javax.swing.JLabel();
-        QT32 = new javax.swing.JLabel();
-        FQT32 = new javax.swing.JLabel();
-        DISP32 = new javax.swing.JLabel();
-        idsp32 = new javax.swing.JLabel();
-        descripcion32 = new javax.swing.JLabel();
-        npecaneado32 = new javax.swing.JLabel();
-        serial32 = new javax.swing.JLabel();
-        cantidadrequerida32 = new javax.swing.JLabel();
-        cantidadfinal32 = new javax.swing.JLabel();
-        NPS33 = new javax.swing.JPanel();
-        npaescanear33 = new javax.swing.JLabel();
-        QT33 = new javax.swing.JLabel();
-        FQT33 = new javax.swing.JLabel();
-        DISP33 = new javax.swing.JLabel();
-        idsp33 = new javax.swing.JLabel();
-        descripcion33 = new javax.swing.JLabel();
-        npecaneado33 = new javax.swing.JLabel();
-        serial33 = new javax.swing.JLabel();
-        cantidadrequerida33 = new javax.swing.JLabel();
-        cantidadfinal33 = new javax.swing.JLabel();
-        NPS35 = new javax.swing.JPanel();
-        npaescanear35 = new javax.swing.JLabel();
-        QT35 = new javax.swing.JLabel();
-        FQT35 = new javax.swing.JLabel();
-        DISP35 = new javax.swing.JLabel();
-        idsp35 = new javax.swing.JLabel();
-        descripcion35 = new javax.swing.JLabel();
-        npecaneado35 = new javax.swing.JLabel();
-        serial35 = new javax.swing.JLabel();
-        cantidadrequerida35 = new javax.swing.JLabel();
-        cantidadfinal35 = new javax.swing.JLabel();
-        Bisagrastraseras = new javax.swing.JPanel();
+        Imagen_ship841 = new javax.swing.JPanel();
+        jLabel20 = new javax.swing.JLabel();
+        change7 = new javax.swing.JCheckBox();
+        jLabel19 = new javax.swing.JLabel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        Material_sidepanel = new javax.swing.JPanel();
+        NPS36 = new javax.swing.JPanel();
+        npaescanear36 = new javax.swing.JLabel();
+        QT36 = new javax.swing.JLabel();
+        FQT36 = new javax.swing.JLabel();
+        DISP36 = new javax.swing.JLabel();
+        idsp36 = new javax.swing.JLabel();
+        descripcion36 = new javax.swing.JLabel();
+        npecaneado36 = new javax.swing.JLabel();
+        serial36 = new javax.swing.JLabel();
+        cantidadrequerida36 = new javax.swing.JLabel();
+        cantidadfinal36 = new javax.swing.JLabel();
+        NPS37 = new javax.swing.JPanel();
+        npaescanear37 = new javax.swing.JLabel();
+        QT37 = new javax.swing.JLabel();
+        FQT37 = new javax.swing.JLabel();
+        DISP37 = new javax.swing.JLabel();
+        idsp37 = new javax.swing.JLabel();
+        descripcion37 = new javax.swing.JLabel();
+        npecaneado37 = new javax.swing.JLabel();
+        serial37 = new javax.swing.JLabel();
+        cantidadrequerida37 = new javax.swing.JLabel();
+        cantidadfinal37 = new javax.swing.JLabel();
+        Imagen_sidepanel = new javax.swing.JPanel();
         bisagratraserair = new javax.swing.JLabel();
         change6 = new javax.swing.JCheckBox();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        Material_door_flag = new javax.swing.JPanel();
+        jLabel15 = new javax.swing.JLabel();
+        Imagen_door_flag = new javax.swing.JPanel();
+        jLabel10 = new javax.swing.JLabel();
+        change8 = new javax.swing.JCheckBox();
+        Boton_complete1 = new javax.swing.JButton();
+        Material_door105 = new javax.swing.JPanel();
+        NPS27 = new javax.swing.JPanel();
+        npaescanear27 = new javax.swing.JLabel();
+        QT27 = new javax.swing.JLabel();
+        FQT27 = new javax.swing.JLabel();
+        DISP27 = new javax.swing.JLabel();
+        idsp27 = new javax.swing.JLabel();
+        descripcion27 = new javax.swing.JLabel();
+        npecaneado27 = new javax.swing.JLabel();
+        serial27 = new javax.swing.JLabel();
+        cantidadrequerida27 = new javax.swing.JLabel();
+        cantidadfinal27 = new javax.swing.JLabel();
+        Imagen_door_105 = new javax.swing.JPanel();
+        jLabel18 = new javax.swing.JLabel();
+        change9 = new javax.swing.JCheckBox();
+        Material_tornillo618 = new javax.swing.JPanel();
+        NPS38 = new javax.swing.JPanel();
+        npaescanear38 = new javax.swing.JLabel();
+        QT38 = new javax.swing.JLabel();
+        FQT38 = new javax.swing.JLabel();
+        DISP38 = new javax.swing.JLabel();
+        idsp38 = new javax.swing.JLabel();
+        descripcion38 = new javax.swing.JLabel();
+        npecaneado38 = new javax.swing.JLabel();
+        serial38 = new javax.swing.JLabel();
+        cantidadrequerida38 = new javax.swing.JLabel();
+        cantidadfinal38 = new javax.swing.JLabel();
+        NPS39 = new javax.swing.JPanel();
+        npaescanear39 = new javax.swing.JLabel();
+        QT39 = new javax.swing.JLabel();
+        FQT39 = new javax.swing.JLabel();
+        DISP39 = new javax.swing.JLabel();
+        idsp39 = new javax.swing.JLabel();
+        descripcion39 = new javax.swing.JLabel();
+        npecaneado39 = new javax.swing.JLabel();
+        serial39 = new javax.swing.JLabel();
+        cantidadrequerida39 = new javax.swing.JLabel();
+        cantidadfinal39 = new javax.swing.JLabel();
+        Imagen_tornillo618 = new javax.swing.JPanel();
+        jLabel28 = new javax.swing.JLabel();
+        change10 = new javax.swing.JCheckBox();
+        jLabel36 = new javax.swing.JLabel();
+        Material_ship513 = new javax.swing.JPanel();
+        NPS41 = new javax.swing.JPanel();
+        npaescanear41 = new javax.swing.JLabel();
+        QT41 = new javax.swing.JLabel();
+        FQT41 = new javax.swing.JLabel();
+        DISP41 = new javax.swing.JLabel();
+        idsp41 = new javax.swing.JLabel();
+        descripcion41 = new javax.swing.JLabel();
+        npecaneado41 = new javax.swing.JLabel();
+        serial41 = new javax.swing.JLabel();
+        cantidadrequerida41 = new javax.swing.JLabel();
+        cantidadfinal41 = new javax.swing.JLabel();
+        NPS40 = new javax.swing.JPanel();
+        npaescanear40 = new javax.swing.JLabel();
+        QT40 = new javax.swing.JLabel();
+        FQT40 = new javax.swing.JLabel();
+        DISP40 = new javax.swing.JLabel();
+        idsp40 = new javax.swing.JLabel();
+        descripcion40 = new javax.swing.JLabel();
+        npecaneado40 = new javax.swing.JLabel();
+        serial40 = new javax.swing.JLabel();
+        cantidadrequerida40 = new javax.swing.JLabel();
+        cantidadfinal40 = new javax.swing.JLabel();
+        NPS42 = new javax.swing.JPanel();
+        npaescanear42 = new javax.swing.JLabel();
+        QT42 = new javax.swing.JLabel();
+        FQT42 = new javax.swing.JLabel();
+        DISP42 = new javax.swing.JLabel();
+        idsp42 = new javax.swing.JLabel();
+        descripcion42 = new javax.swing.JLabel();
+        npecaneado42 = new javax.swing.JLabel();
+        serial42 = new javax.swing.JLabel();
+        cantidadrequerida42 = new javax.swing.JLabel();
+        cantidadfinal42 = new javax.swing.JLabel();
+        NPS43 = new javax.swing.JPanel();
+        npaescanear43 = new javax.swing.JLabel();
+        QT43 = new javax.swing.JLabel();
+        FQT43 = new javax.swing.JLabel();
+        DISP43 = new javax.swing.JLabel();
+        idsp43 = new javax.swing.JLabel();
+        descripcion43 = new javax.swing.JLabel();
+        npecaneado43 = new javax.swing.JLabel();
+        serial43 = new javax.swing.JLabel();
+        cantidadrequerida43 = new javax.swing.JLabel();
+        cantidadfinal43 = new javax.swing.JLabel();
+        NPS45 = new javax.swing.JPanel();
+        npaescanear45 = new javax.swing.JLabel();
+        QT45 = new javax.swing.JLabel();
+        FQT45 = new javax.swing.JLabel();
+        DISP45 = new javax.swing.JLabel();
+        idsp45 = new javax.swing.JLabel();
+        descripcion45 = new javax.swing.JLabel();
+        npecaneado45 = new javax.swing.JLabel();
+        serial45 = new javax.swing.JLabel();
+        cantidadrequerida45 = new javax.swing.JLabel();
+        cantidadfinal45 = new javax.swing.JLabel();
+        NPS44 = new javax.swing.JPanel();
+        npaescanear44 = new javax.swing.JLabel();
+        QT44 = new javax.swing.JLabel();
+        FQT44 = new javax.swing.JLabel();
+        DISP44 = new javax.swing.JLabel();
+        idsp44 = new javax.swing.JLabel();
+        descripcion44 = new javax.swing.JLabel();
+        npecaneado44 = new javax.swing.JLabel();
+        serial44 = new javax.swing.JLabel();
+        cantidadrequerida44 = new javax.swing.JLabel();
+        cantidadfinal44 = new javax.swing.JLabel();
+        Imagen_ship513 = new javax.swing.JPanel();
+        jLabel29 = new javax.swing.JLabel();
+        change11 = new javax.swing.JCheckBox();
+        Material_rasta = new javax.swing.JPanel();
+        NPS46 = new javax.swing.JPanel();
+        npaescanear46 = new javax.swing.JLabel();
+        QT46 = new javax.swing.JLabel();
+        FQT46 = new javax.swing.JLabel();
+        DISP46 = new javax.swing.JLabel();
+        idsp46 = new javax.swing.JLabel();
+        descripcion46 = new javax.swing.JLabel();
+        npecaneado46 = new javax.swing.JLabel();
+        serial46 = new javax.swing.JLabel();
+        cantidadrequerida46 = new javax.swing.JLabel();
+        cantidadfinal46 = new javax.swing.JLabel();
+        Imagen_rasta = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
+        change12 = new javax.swing.JCheckBox();
+        Material_ir = new javax.swing.JPanel();
+        jLabel31 = new javax.swing.JLabel();
+        Imagen_ir = new javax.swing.JPanel();
+        jLabel32 = new javax.swing.JLabel();
+        change13 = new javax.swing.JCheckBox();
+        Boton_complete = new javax.swing.JButton();
+        Material_ir2 = new javax.swing.JPanel();
+        jLabel37 = new javax.swing.JLabel();
+        Imagen_ir2 = new javax.swing.JPanel();
+        jLabel38 = new javax.swing.JLabel();
+        change14 = new javax.swing.JCheckBox();
+        Boton_complete2 = new javax.swing.JButton();
+        Material_tornillo504 = new javax.swing.JPanel();
+        NPS47 = new javax.swing.JPanel();
+        npaescanear47 = new javax.swing.JLabel();
+        QT47 = new javax.swing.JLabel();
+        FQT47 = new javax.swing.JLabel();
+        DISP47 = new javax.swing.JLabel();
+        idsp47 = new javax.swing.JLabel();
+        descripcion47 = new javax.swing.JLabel();
+        npecaneado47 = new javax.swing.JLabel();
+        serial47 = new javax.swing.JLabel();
+        cantidadrequerida47 = new javax.swing.JLabel();
+        cantidadfinal47 = new javax.swing.JLabel();
+        NPS48 = new javax.swing.JPanel();
+        npaescanear48 = new javax.swing.JLabel();
+        QT48 = new javax.swing.JLabel();
+        FQT48 = new javax.swing.JLabel();
+        DISP48 = new javax.swing.JLabel();
+        idsp48 = new javax.swing.JLabel();
+        descripcion48 = new javax.swing.JLabel();
+        npecaneado48 = new javax.swing.JLabel();
+        serial48 = new javax.swing.JLabel();
+        cantidadrequerida48 = new javax.swing.JLabel();
+        cantidadfinal48 = new javax.swing.JLabel();
+        NPS49 = new javax.swing.JPanel();
+        npaescanear49 = new javax.swing.JLabel();
+        QT49 = new javax.swing.JLabel();
+        FQT49 = new javax.swing.JLabel();
+        DISP49 = new javax.swing.JLabel();
+        idsp49 = new javax.swing.JLabel();
+        descripcion49 = new javax.swing.JLabel();
+        npecaneado49 = new javax.swing.JLabel();
+        serial49 = new javax.swing.JLabel();
+        cantidadrequerida49 = new javax.swing.JLabel();
+        cantidadfinal49 = new javax.swing.JLabel();
+        NPS50 = new javax.swing.JPanel();
+        npaescanear50 = new javax.swing.JLabel();
+        QT50 = new javax.swing.JLabel();
+        FQT50 = new javax.swing.JLabel();
+        DISP50 = new javax.swing.JLabel();
+        idsp50 = new javax.swing.JLabel();
+        descripcion50 = new javax.swing.JLabel();
+        npecaneado50 = new javax.swing.JLabel();
+        serial50 = new javax.swing.JLabel();
+        cantidadrequerida50 = new javax.swing.JLabel();
+        cantidadfinal50 = new javax.swing.JLabel();
+        Imagen_tornillo504 = new javax.swing.JPanel();
+        jLabel39 = new javax.swing.JLabel();
+        change15 = new javax.swing.JCheckBox();
+        Ir_door = new javax.swing.JPanel();
+        jLabel40 = new javax.swing.JLabel();
+        Imagen_ir_door = new javax.swing.JPanel();
+        jLabel41 = new javax.swing.JLabel();
+        change16 = new javax.swing.JCheckBox();
+        Boton_complete3 = new javax.swing.JButton();
+        Material_seguro_ethe = new javax.swing.JPanel();
+        NPS51 = new javax.swing.JPanel();
+        npaescanear51 = new javax.swing.JLabel();
+        QT51 = new javax.swing.JLabel();
+        FQT51 = new javax.swing.JLabel();
+        DISP51 = new javax.swing.JLabel();
+        idsp51 = new javax.swing.JLabel();
+        descripcion51 = new javax.swing.JLabel();
+        npecaneado51 = new javax.swing.JLabel();
+        serial51 = new javax.swing.JLabel();
+        cantidadrequerida51 = new javax.swing.JLabel();
+        cantidadfinal51 = new javax.swing.JLabel();
+        NPS53 = new javax.swing.JPanel();
+        npaescanear53 = new javax.swing.JLabel();
+        QT53 = new javax.swing.JLabel();
+        FQT53 = new javax.swing.JLabel();
+        DISP53 = new javax.swing.JLabel();
+        idsp53 = new javax.swing.JLabel();
+        descripcion53 = new javax.swing.JLabel();
+        npecaneado53 = new javax.swing.JLabel();
+        serial53 = new javax.swing.JLabel();
+        cantidadrequerida53 = new javax.swing.JLabel();
+        cantidadfinal53 = new javax.swing.JLabel();
+        Imagen_seg_ethe = new javax.swing.JPanel();
+        jLabel42 = new javax.swing.JLabel();
+        change17 = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 formMouseDragged(evt);
@@ -677,7 +980,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         jLabel3.setText("Country: USA");
 
         jLabel14.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
-        jLabel14.setText("0001 / 0001");
+        jLabel14.setText("0001 / 0005");
 
         jLabel4.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel4.setText("Mach Num: 7800KE78G");
@@ -701,13 +1004,13 @@ public class Clean_Claim extends javax.swing.JFrame {
         jLabel8.setText("Model: S42");
 
         jLabel9.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel9.setText("Oper: 500");
+        jLabel9.setText("Oper: 850");
 
         jLabel11.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel11.setText("Prod ID: RSRCK");
+        jLabel11.setText("Prod ID: S42");
 
         jLabel12.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
-        jLabel12.setText("Schd: 2023-09-01");
+        jLabel12.setText("Schd: 2024-09-01");
 
         jLabel2.setFont(new java.awt.Font("Century Gothic", 0, 14)); // NOI18N
         jLabel2.setText("Sys Num: 1AVM176");
@@ -782,8 +1085,8 @@ public class Clean_Claim extends javax.swing.JFrame {
         bloque1.setBackground(new java.awt.Color(255, 255, 255));
         bloque1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        imagen.setBackground(new java.awt.Color(255, 255, 255));
-        imagen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Imagen_flag.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_flag.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         change.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         change.setText("Incompleto");
@@ -798,25 +1101,25 @@ public class Clean_Claim extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout imagenLayout = new javax.swing.GroupLayout(imagen);
-        imagen.setLayout(imagenLayout);
-        imagenLayout.setHorizontalGroup(
-            imagenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(imagenLayout.createSequentialGroup()
+        javax.swing.GroupLayout Imagen_flagLayout = new javax.swing.GroupLayout(Imagen_flag);
+        Imagen_flag.setLayout(Imagen_flagLayout);
+        Imagen_flagLayout.setHorizontalGroup(
+            Imagen_flagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_flagLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(change)
                 .addContainerGap(748, Short.MAX_VALUE))
         );
-        imagenLayout.setVerticalGroup(
-            imagenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(imagenLayout.createSequentialGroup()
+        Imagen_flagLayout.setVerticalGroup(
+            Imagen_flagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_flagLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(change)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        bloque1_1.setBackground(new java.awt.Color(255, 255, 255));
-        bloque1_1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Material_flag.setBackground(new java.awt.Color(255, 255, 255));
+        Material_flag.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         NPS.setBackground(new java.awt.Color(255, 255, 255));
         NPS.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -927,19 +1230,19 @@ public class Clean_Claim extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout bloque1_1Layout = new javax.swing.GroupLayout(bloque1_1);
-        bloque1_1.setLayout(bloque1_1Layout);
-        bloque1_1Layout.setHorizontalGroup(
-            bloque1_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout Material_flagLayout = new javax.swing.GroupLayout(Material_flag);
+        Material_flag.setLayout(Material_flagLayout);
+        Material_flagLayout.setHorizontalGroup(
+            Material_flagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(NPS, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        bloque1_1Layout.setVerticalGroup(
-            bloque1_1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        Material_flagLayout.setVerticalGroup(
+            Material_flagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(NPS, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
-        bloque2.setBackground(new java.awt.Color(255, 255, 255));
-        bloque2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Material_cover1u.setBackground(new java.awt.Color(255, 255, 255));
+        Material_cover1u.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         NPS3.setBackground(new java.awt.Color(255, 255, 255));
         NPS3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -956,7 +1259,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear3.setText("69Y1649");
+        npaescanear3.setText("97H9754");
 
         QT3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT3.setText("QT:");
@@ -971,10 +1274,10 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp3.setText("A");
 
         descripcion3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion3.setText("LINE CORD XXA / 250V");
+        descripcion3.setText("COVER 1 UNIT BLACK");
 
         npecaneado3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado3.setText("PF  2L01- PDU1");
+        npecaneado3.setText("PF  2L01- LM09");
 
         serial3.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial3.setText("-             -            -");
@@ -1048,7 +1351,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear1.setText("69Y1649");
+        npaescanear1.setText("97H9754");
 
         QT1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT1.setText("QT:");
@@ -1063,10 +1366,10 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp1.setText("A");
 
         descripcion1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion1.setText("LINE CORD XXA / 250V");
+        descripcion1.setText("COVER 1 UNIT BLACK");
 
         npecaneado1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado1.setText("PF  2L01- PDU3");
+        npecaneado1.setText("PF  2L01- LM01");
 
         serial1.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial1.setText("-             -            -");
@@ -1141,7 +1444,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear5.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear5.setText("69Y1649");
+        npaescanear5.setText("97H9754");
 
         QT5.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT5.setText("QT:");
@@ -1156,10 +1459,10 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp5.setText("A");
 
         descripcion5.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion5.setText("LINE CORD XXA / 250V");
+        descripcion5.setText("COVER 1 UNIT BLACK");
 
         npecaneado5.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado5.setText("PF  2L01- PDU4");
+        npecaneado5.setText("PF  2L01- LM17");
 
         serial5.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial5.setText("-             -            -");
@@ -1235,7 +1538,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear2.setText("69Y1649");
+        npaescanear2.setText("97H9754");
 
         QT2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT2.setText("QT:");
@@ -1250,10 +1553,10 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp2.setText("A");
 
         descripcion2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion2.setText("LINE CORD XXA / 250V");
+        descripcion2.setText("COVER 1 UNIT BLACK");
 
         npecaneado2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado2.setText("PF  2L01- PDU2");
+        npecaneado2.setText("PF  2L01- LM05");
 
         serial2.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial2.setText("-             -            -");
@@ -1286,15 +1589,14 @@ public class Clean_Claim extends javax.swing.JFrame {
                     .addGroup(NPS2Layout.createSequentialGroup()
                         .addComponent(npecaneado2, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(23, 23, 23)
-                        .addComponent(serial2)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(serial2))
                     .addGroup(NPS2Layout.createSequentialGroup()
                         .addComponent(DISP2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(idsp2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(descripcion2)
-                        .addGap(58, 58, 58))))
+                        .addGap(52, 52, 52)
+                        .addComponent(descripcion2)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         NPS2Layout.setVerticalGroup(
             NPS2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1328,7 +1630,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear4.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear4.setText("03FP534");
+        npaescanear4.setText("97H9754");
 
         QT4.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT4.setText("QT:");
@@ -1343,10 +1645,10 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp4.setText("A");
 
         descripcion4.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion4.setText("ARTWORK  S42AGENCY LABEL");
+        descripcion4.setText("COVER 1 UNIT BLACK");
 
         npecaneado4.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado4.setText("PF  2L01-");
+        npecaneado4.setText("PF  2L01- LM13");
 
         serial4.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial4.setText("-             -            -");
@@ -1365,11 +1667,6 @@ public class Clean_Claim extends javax.swing.JFrame {
                 .addGap(17, 17, 17)
                 .addGroup(NPS4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(NPS4Layout.createSequentialGroup()
-                        .addComponent(npecaneado4, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(serial4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(NPS4Layout.createSequentialGroup()
                         .addGap(13, 13, 13)
                         .addComponent(npaescanear4)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1381,12 +1678,19 @@ public class Clean_Claim extends javax.swing.JFrame {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(cantidadfinal4)
                         .addGap(21, 21, 21))
-                    .addGroup(NPS4Layout.createSequentialGroup()
-                        .addComponent(DISP4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(idsp4)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(descripcion4)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, NPS4Layout.createSequentialGroup()
+                        .addGroup(NPS4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, NPS4Layout.createSequentialGroup()
+                                .addComponent(npecaneado4, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(serial4, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, NPS4Layout.createSequentialGroup()
+                                .addComponent(DISP4)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp4)
+                                .addGap(50, 50, 50)
+                                .addComponent(descripcion4)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addGap(21, 21, 21))
         );
         NPS4Layout.setVerticalGroup(
@@ -1421,7 +1725,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear6.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear6.setText("44V4664");
+        npaescanear6.setText("97H9754");
 
         QT6.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT6.setText("QT:");
@@ -1436,10 +1740,10 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp6.setText("A");
 
         descripcion6.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion6.setText("LABEL SYS LBL - RIBBON");
+        descripcion6.setText("COVER 1 UNIT BLACK");
 
         npecaneado6.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado6.setText("PF  2L01-");
+        npecaneado6.setText("PF  2L01- LM21");
 
         serial6.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial6.setText("-             -            -");
@@ -1516,7 +1820,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear7.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear7.setText("01KL396");
+        npaescanear7.setText("97H9754");
 
         QT7.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT7.setText("QT:");
@@ -1531,16 +1835,16 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp7.setText("A");
 
         descripcion7.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion7.setText("LABEL weight 400 - 3700");
+        descripcion7.setText("COVER 1 UNIT BLACK");
 
         npecaneado7.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado7.setText("PF  2L01-");
+        npecaneado7.setText("PF  2L01- LM25");
 
         serial7.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial7.setText("-             -            -");
 
         cantidadrequerida7.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida7.setText("00002");
+        cantidadrequerida7.setText("00001");
 
         cantidadfinal7.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal7.setText("00000");
@@ -1611,7 +1915,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear8.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear8.setText("01KL396");
+        npaescanear8.setText("97H9754");
 
         QT8.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT8.setText("QT:");
@@ -1626,16 +1930,16 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp8.setText("A");
 
         descripcion8.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion8.setText("LABEL weight 400 - 3700");
+        descripcion8.setText("COVER 1 UNIT BLACK");
 
         npecaneado8.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado8.setText("PF  2L01-");
+        npecaneado8.setText("PF  2L01- LM29");
 
         serial8.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial8.setText("-             -            -");
 
         cantidadrequerida8.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida8.setText("00002");
+        cantidadrequerida8.setText("00001");
 
         cantidadfinal8.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal8.setText("00000");
@@ -1706,7 +2010,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear9.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear9.setText("39J1952");
+        npaescanear9.setText("97H9754");
 
         QT9.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT9.setText("QT:");
@@ -1721,10 +2025,10 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp9.setText("A");
 
         descripcion9.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion9.setText("LABEL, WEEE");
+        descripcion9.setText("COVER 1 UNIT BLACK");
 
         npecaneado9.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado9.setText("PF  2L01-");
+        npecaneado9.setText("PF  2L01- LM33");
 
         serial9.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial9.setText("-             -            -");
@@ -1801,7 +2105,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear10.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear10.setText("03JG485");
+        npaescanear10.setText("97H9754");
 
         QT10.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT10.setText("QT:");
@@ -1816,10 +2120,10 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp10.setText("A");
 
         descripcion10.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion10.setText("PWR DISTRS  PDU C19 C13");
+        descripcion10.setText("COVER 1 UNIT BLACK");
 
         npecaneado10.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado10.setText("PF  2L01- PDU1");
+        npecaneado10.setText("PF  2L01- LM37");
 
         serial10.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial10.setText("-             -            -");
@@ -1853,7 +2157,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                             .addGroup(NPS10Layout.createSequentialGroup()
                                 .addGap(13, 13, 13)
                                 .addComponent(npaescanear10)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(QT10)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadrequerida10)
@@ -1862,7 +2166,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadfinal10)))
                         .addGap(12, 12, 12)))
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         NPS10Layout.setVerticalGroup(
             NPS10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1896,7 +2200,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear11.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear11.setText("03JG485");
+        npaescanear11.setText("97H9754");
 
         QT11.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT11.setText("QT:");
@@ -1911,10 +2215,10 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp11.setText("A");
 
         descripcion11.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion11.setText("PWR DISTRS  PDU C19 C13");
+        descripcion11.setText("COVER 1 UNIT BLACK");
 
         npecaneado11.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado11.setText("PF  2L01- PDU1");
+        npecaneado11.setText("PF  2L01- LM41");
 
         serial11.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial11.setText("-             -            -");
@@ -1948,7 +2252,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                             .addGroup(NPS11Layout.createSequentialGroup()
                                 .addGap(13, 13, 13)
                                 .addComponent(npaescanear11)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(QT11)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadrequerida11)
@@ -1957,7 +2261,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadfinal11)))
                         .addGap(12, 12, 12)))
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         NPS11Layout.setVerticalGroup(
             NPS11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1991,7 +2295,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear12.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear12.setText("03JG485");
+        npaescanear12.setText("97H9754");
 
         QT12.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT12.setText("QT:");
@@ -2006,10 +2310,10 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp12.setText("A");
 
         descripcion12.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion12.setText("PWR DISTRS  PDU C19 C13");
+        descripcion12.setText("COVER 1 UNIT BLACK");
 
         npecaneado12.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado12.setText("PF  2L01- PDU1");
+        npecaneado12.setText("PF  2L01- LM42");
 
         serial12.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial12.setText("-             -            -");
@@ -2043,7 +2347,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                             .addGroup(NPS12Layout.createSequentialGroup()
                                 .addGap(13, 13, 13)
                                 .addComponent(npaescanear12)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(QT12)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadrequerida12)
@@ -2052,7 +2356,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadfinal12)))
                         .addGap(12, 12, 12)))
-                .addContainerGap(31, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         NPS12Layout.setVerticalGroup(
             NPS12Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2076,29 +2380,29 @@ public class Clean_Claim extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout bloque2Layout = new javax.swing.GroupLayout(bloque2);
-        bloque2.setLayout(bloque2Layout);
-        bloque2Layout.setHorizontalGroup(
-            bloque2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout Material_cover1uLayout = new javax.swing.GroupLayout(Material_cover1u);
+        Material_cover1u.setLayout(Material_cover1uLayout);
+        Material_cover1uLayout.setHorizontalGroup(
+            Material_cover1uLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(NPS1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(NPS5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(NPS2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(NPS3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(NPS6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(NPS4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(bloque2Layout.createSequentialGroup()
-                .addGroup(bloque2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(NPS7, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(Material_cover1uLayout.createSequentialGroup()
+                .addGroup(Material_cover1uLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(NPS7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NPS8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NPS9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NPS10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NPS11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NPS12, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addGap(0, 0, Short.MAX_VALUE))
         );
-        bloque2Layout.setVerticalGroup(
-            bloque2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloque2Layout.createSequentialGroup()
+        Material_cover1uLayout.setVerticalGroup(
+            Material_cover1uLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_cover1uLayout.createSequentialGroup()
                 .addComponent(NPS1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(NPS2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2124,8 +2428,8 @@ public class Clean_Claim extends javax.swing.JFrame {
                 .addComponent(NPS12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        jPanel4.setBackground(new java.awt.Color(255, 255, 255));
-        jPanel4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Imagen_cover1u.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_cover1u.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         change1.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         change1.setText("Incompleto");
@@ -2140,183 +2444,25 @@ public class Clean_Claim extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
-        jPanel4.setLayout(jPanel4Layout);
-        jPanel4Layout.setHorizontalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(change1)
-                .addContainerGap(748, Short.MAX_VALUE))
-        );
-        jPanel4Layout.setVerticalGroup(
-            jPanel4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel4Layout.createSequentialGroup()
+        javax.swing.GroupLayout Imagen_cover1uLayout = new javax.swing.GroupLayout(Imagen_cover1u);
+        Imagen_cover1u.setLayout(Imagen_cover1uLayout);
+        Imagen_cover1uLayout.setHorizontalGroup(
+            Imagen_cover1uLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_cover1uLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(change1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-
-        bloque3.setBackground(new java.awt.Color(255, 255, 255));
-        bloque3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout bloque3Layout = new javax.swing.GroupLayout(bloque3);
-        bloque3.setLayout(bloque3Layout);
-        bloque3Layout.setHorizontalGroup(
-            bloque3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-        bloque3Layout.setVerticalGroup(
-            bloque3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        bloqueimagen.setBackground(new java.awt.Color(255, 255, 255));
-        bloqueimagen.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel15.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/Agencylbl.jpg"))); // NOI18N
-
-        change2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        change2.setText("Incompleto");
-        change2.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                change2StateChanged(evt);
-            }
-        });
-        change2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                change2ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout bloqueimagenLayout = new javax.swing.GroupLayout(bloqueimagen);
-        bloqueimagen.setLayout(bloqueimagenLayout);
-        bloqueimagenLayout.setHorizontalGroup(
-            bloqueimagenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloqueimagenLayout.createSequentialGroup()
+        Imagen_cover1uLayout.setVerticalGroup(
+            Imagen_cover1uLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_cover1uLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(bloqueimagenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(change2)
-                    .addComponent(jLabel15))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        bloqueimagenLayout.setVerticalGroup(
-            bloqueimagenLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloqueimagenLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel15)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(change2)
+                .addComponent(change1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        bloque4.setBackground(new java.awt.Color(255, 255, 255));
-        bloque4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout bloque4Layout = new javax.swing.GroupLayout(bloque4);
-        bloque4.setLayout(bloque4Layout);
-        bloque4Layout.setHorizontalGroup(
-            bloque4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 337, Short.MAX_VALUE)
-        );
-        bloque4Layout.setVerticalGroup(
-            bloque4Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        bloqueimagen1.setBackground(new java.awt.Color(255, 255, 255));
-        bloqueimagen1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/LBL396.jpg"))); // NOI18N
-
-        change3.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        change3.setText("Incompleto");
-        change3.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                change3StateChanged(evt);
-            }
-        });
-        change3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                change3ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout bloqueimagen1Layout = new javax.swing.GroupLayout(bloqueimagen1);
-        bloqueimagen1.setLayout(bloqueimagen1Layout);
-        bloqueimagen1Layout.setHorizontalGroup(
-            bloqueimagen1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloqueimagen1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(bloqueimagen1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(change3)
-                    .addComponent(jLabel16))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        bloqueimagen1Layout.setVerticalGroup(
-            bloqueimagen1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloqueimagen1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel16)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(change3)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        bloque5.setBackground(new java.awt.Color(255, 255, 255));
-        bloque5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        javax.swing.GroupLayout bloque5Layout = new javax.swing.GroupLayout(bloque5);
-        bloque5.setLayout(bloque5Layout);
-        bloque5Layout.setHorizontalGroup(
-            bloque5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 335, Short.MAX_VALUE)
-        );
-        bloque5Layout.setVerticalGroup(
-            bloque5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
-        );
-
-        bloqueimagen2.setBackground(new java.awt.Color(255, 255, 255));
-        bloqueimagen2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/LBLWEEE.jpg"))); // NOI18N
-
-        change4.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        change4.setText("Incompleto");
-        change4.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                change4StateChanged(evt);
-            }
-        });
-        change4.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                change4ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout bloqueimagen2Layout = new javax.swing.GroupLayout(bloqueimagen2);
-        bloqueimagen2.setLayout(bloqueimagen2Layout);
-        bloqueimagen2Layout.setHorizontalGroup(
-            bloqueimagen2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloqueimagen2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(bloqueimagen2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(change4)
-                    .addComponent(jLabel17))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        bloqueimagen2Layout.setVerticalGroup(
-            bloqueimagen2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloqueimagen2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel17)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(change4)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        bloque6.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Material_cover3u.setBackground(new java.awt.Color(255, 255, 255));
+        Material_cover3u.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         NPS13.setBackground(new java.awt.Color(255, 255, 255));
         NPS13.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -2328,7 +2474,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear13.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear13.setText("46C6380");
+        npaescanear13.setText("97H9755");
 
         QT13.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT13.setText("QT:");
@@ -2343,16 +2489,16 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp13.setText("A");
 
         descripcion13.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion13.setText("SCREW   M5x16 BLACK");
+        descripcion13.setText("COVER 3 UNIT BLACK");
 
         npecaneado13.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado13.setText("PF  2L01- PDU1");
+        npecaneado13.setText("PF  2L01- LM02");
 
         serial13.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial13.setText("-             -            -");
 
         cantidadrequerida13.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida13.setText("00004");
+        cantidadrequerida13.setText("00001");
 
         cantidadfinal13.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal13.setText("00000");
@@ -2380,7 +2526,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                             .addGroup(NPS13Layout.createSequentialGroup()
                                 .addGap(13, 13, 13)
                                 .addComponent(npaescanear13)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(QT13)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadrequerida13)
@@ -2389,7 +2535,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadfinal13)))
                         .addGap(12, 12, 12)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         NPS13Layout.setVerticalGroup(
             NPS13Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2423,7 +2569,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear14.setText("74F1823");
+        npaescanear14.setText("97H9755");
 
         QT14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT14.setText("QT:");
@@ -2438,16 +2584,16 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp14.setText("A");
 
         descripcion14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion14.setText("NUT   CLIP,    M5");
+        descripcion14.setText("COVER 3 UNIT BLACK");
 
         npecaneado14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado14.setText("PF  2L01- PDU1");
+        npecaneado14.setText("PF  2L01- LM06");
 
         serial14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial14.setText("-             -            -");
 
         cantidadrequerida14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida14.setText("00004");
+        cantidadrequerida14.setText("00001");
 
         cantidadfinal14.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal14.setText("00000");
@@ -2518,7 +2664,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear15.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear15.setText("03JG485");
+        npaescanear15.setText("97H9755");
 
         QT15.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT15.setText("QT:");
@@ -2533,10 +2679,10 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp15.setText("A");
 
         descripcion15.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion15.setText("PWR DISTRS  PDU C19 C13");
+        descripcion15.setText("COVER 3 UNIT BLACK");
 
         npecaneado15.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado15.setText("PF  2L01- PDU2");
+        npecaneado15.setText("PF  2L01- LM10");
 
         serial15.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial15.setText("-             -            -");
@@ -2558,7 +2704,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                         .addComponent(npecaneado15, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(serial15, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 19, Short.MAX_VALUE))
                     .addGroup(NPS15Layout.createSequentialGroup()
                         .addGroup(NPS15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(NPS15Layout.createSequentialGroup()
@@ -2570,7 +2716,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                             .addGroup(NPS15Layout.createSequentialGroup()
                                 .addGap(13, 13, 13)
                                 .addComponent(npaescanear15)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(QT15)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadrequerida15)
@@ -2613,7 +2759,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear16.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear16.setText("46C6380");
+        npaescanear16.setText("97H9755");
 
         QT16.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT16.setText("QT:");
@@ -2628,16 +2774,16 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp16.setText("A");
 
         descripcion16.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion16.setText("SCREW   M5x16 BLACK");
+        descripcion16.setText("COVER 3 UNIT BLACK");
 
         npecaneado16.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado16.setText("PF  2L01- PDU2");
+        npecaneado16.setText("PF  2L01- LM14");
 
         serial16.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial16.setText("-             -            -");
 
         cantidadrequerida16.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida16.setText("00004");
+        cantidadrequerida16.setText("00001");
 
         cantidadfinal16.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal16.setText("00000");
@@ -2653,7 +2799,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                         .addComponent(npecaneado16, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(serial16, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 19, Short.MAX_VALUE))
                     .addGroup(NPS16Layout.createSequentialGroup()
                         .addGroup(NPS16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(NPS16Layout.createSequentialGroup()
@@ -2665,7 +2811,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                             .addGroup(NPS16Layout.createSequentialGroup()
                                 .addGap(13, 13, 13)
                                 .addComponent(npaescanear16)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(QT16)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadrequerida16)
@@ -2708,7 +2854,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear17.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear17.setText("74F1823");
+        npaescanear17.setText("97H9755");
 
         QT17.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT17.setText("QT:");
@@ -2723,16 +2869,16 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp17.setText("A");
 
         descripcion17.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion17.setText("NUT   CLIP,    M5");
+        descripcion17.setText("COVER 3 UNIT BLACK");
 
         npecaneado17.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado17.setText("PF  2L01- PDU2");
+        npecaneado17.setText("PF  2L01- LM18");
 
         serial17.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial17.setText("-             -            -");
 
         cantidadrequerida17.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida17.setText("00004");
+        cantidadrequerida17.setText("00001");
 
         cantidadfinal17.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal17.setText("00000");
@@ -2803,7 +2949,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear18.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear18.setText("03JG485");
+        npaescanear18.setText("97H9755");
 
         QT18.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT18.setText("QT:");
@@ -2818,10 +2964,10 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp18.setText("A");
 
         descripcion18.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion18.setText("PWR DISTRS  PDU C19 C13");
+        descripcion18.setText("COVER 3 UNIT BLACK");
 
         npecaneado18.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado18.setText("PF  2L01- PDU3");
+        npecaneado18.setText("PF  2L01- LM22");
 
         serial18.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial18.setText("-             -            -");
@@ -2843,7 +2989,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                         .addComponent(npecaneado18, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(serial18, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 19, Short.MAX_VALUE))
                     .addGroup(NPS18Layout.createSequentialGroup()
                         .addGroup(NPS18Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(NPS18Layout.createSequentialGroup()
@@ -2855,7 +3001,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                             .addGroup(NPS18Layout.createSequentialGroup()
                                 .addGap(13, 13, 13)
                                 .addComponent(npaescanear18)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(QT18)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadrequerida18)
@@ -2898,7 +3044,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear19.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear19.setText("46C6380");
+        npaescanear19.setText("97H9755");
 
         QT19.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT19.setText("QT:");
@@ -2913,16 +3059,16 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp19.setText("A");
 
         descripcion19.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion19.setText("SCREW   M5x16 BLACK");
+        descripcion19.setText("COVER 3 UNIT BLACK");
 
         npecaneado19.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado19.setText("PF  2L01- PDU3");
+        npecaneado19.setText("PF  2L01- LM26");
 
         serial19.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial19.setText("-             -            -");
 
         cantidadrequerida19.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida19.setText("00004");
+        cantidadrequerida19.setText("00001");
 
         cantidadfinal19.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal19.setText("00000");
@@ -2938,7 +3084,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                         .addComponent(npecaneado19, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(serial19, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 19, Short.MAX_VALUE))
                     .addGroup(NPS19Layout.createSequentialGroup()
                         .addGroup(NPS19Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(NPS19Layout.createSequentialGroup()
@@ -2950,7 +3096,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                             .addGroup(NPS19Layout.createSequentialGroup()
                                 .addGap(13, 13, 13)
                                 .addComponent(npaescanear19)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(QT19)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadrequerida19)
@@ -2993,7 +3139,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear20.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear20.setText("74F1823");
+        npaescanear20.setText("97H9755");
 
         QT20.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT20.setText("QT:");
@@ -3008,16 +3154,16 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp20.setText("A");
 
         descripcion20.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion20.setText("NUT   CLIP,    M5");
+        descripcion20.setText("COVER 3 UNIT BLACK");
 
         npecaneado20.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado20.setText("PF  2L01- PDU3");
+        npecaneado20.setText("PF  2L01- LM30");
 
         serial20.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial20.setText("-             -            -");
 
         cantidadrequerida20.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida20.setText("00004");
+        cantidadrequerida20.setText("00001");
 
         cantidadfinal20.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal20.setText("00000");
@@ -3088,7 +3234,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear21.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear21.setText("03JG485");
+        npaescanear21.setText("97H9755");
 
         QT21.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT21.setText("QT:");
@@ -3103,10 +3249,10 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp21.setText("A");
 
         descripcion21.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion21.setText("PWR DISTRS  PDU C19 C13");
+        descripcion21.setText("COVER 3 UNIT BLACK");
 
         npecaneado21.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado21.setText("PF  2L01- PDU4");
+        npecaneado21.setText("PF  2L01- LM34");
 
         serial21.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial21.setText("-             -            -");
@@ -3128,7 +3274,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                         .addComponent(npecaneado21, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(serial21, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 19, Short.MAX_VALUE))
                     .addGroup(NPS21Layout.createSequentialGroup()
                         .addGroup(NPS21Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(NPS21Layout.createSequentialGroup()
@@ -3140,7 +3286,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                             .addGroup(NPS21Layout.createSequentialGroup()
                                 .addGap(13, 13, 13)
                                 .addComponent(npaescanear21)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(QT21)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadrequerida21)
@@ -3183,7 +3329,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear22.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear22.setText("46C6380");
+        npaescanear22.setText("97H9755");
 
         QT22.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT22.setText("QT:");
@@ -3198,16 +3344,16 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp22.setText("A");
 
         descripcion22.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion22.setText("SCREW   M5x16 BLACK");
+        descripcion22.setText("COVER 3 UNIT BLACK");
 
         npecaneado22.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado22.setText("PF  2L01- PDU4");
+        npecaneado22.setText("PF  2L01- LM38");
 
         serial22.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial22.setText("-             -            -");
 
         cantidadrequerida22.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida22.setText("00004");
+        cantidadrequerida22.setText("00001");
 
         cantidadfinal22.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal22.setText("00000");
@@ -3223,7 +3369,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                         .addComponent(npecaneado22, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(serial22, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
+                        .addGap(0, 19, Short.MAX_VALUE))
                     .addGroup(NPS22Layout.createSequentialGroup()
                         .addGroup(NPS22Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(NPS22Layout.createSequentialGroup()
@@ -3235,7 +3381,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                             .addGroup(NPS22Layout.createSequentialGroup()
                                 .addGap(13, 13, 13)
                                 .addComponent(npaescanear22)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 25, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(QT22)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadrequerida22)
@@ -3268,6 +3414,84 @@ public class Clean_Claim extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        javax.swing.GroupLayout Material_cover3uLayout = new javax.swing.GroupLayout(Material_cover3u);
+        Material_cover3u.setLayout(Material_cover3uLayout);
+        Material_cover3uLayout.setHorizontalGroup(
+            Material_cover3uLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(NPS13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Material_cover3uLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(Material_cover3uLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(NPS14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NPS15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NPS16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NPS17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NPS18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NPS19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NPS20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NPS21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NPS22, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        );
+        Material_cover3uLayout.setVerticalGroup(
+            Material_cover3uLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_cover3uLayout.createSequentialGroup()
+                .addComponent(NPS13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        imagen_cover3u.setBackground(new java.awt.Color(255, 255, 255));
+        imagen_cover3u.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        change2.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change2.setText("Incompleto");
+        change2.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change2StateChanged(evt);
+            }
+        });
+        change2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout imagen_cover3uLayout = new javax.swing.GroupLayout(imagen_cover3u);
+        imagen_cover3u.setLayout(imagen_cover3uLayout);
+        imagen_cover3uLayout.setHorizontalGroup(
+            imagen_cover3uLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(imagen_cover3uLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(change2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        imagen_cover3uLayout.setVerticalGroup(
+            imagen_cover3uLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(imagen_cover3uLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(change2)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Material_llave.setBackground(new java.awt.Color(255, 255, 255));
+        Material_llave.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
         NPS23.setBackground(new java.awt.Color(255, 255, 255));
         NPS23.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         NPS23.setFocusable(false);
@@ -3278,7 +3502,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear23.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear23.setText("74F1823");
+        npaescanear23.setText("00RP319");
 
         QT23.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT23.setText("QT:");
@@ -3293,16 +3517,16 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp23.setText("A");
 
         descripcion23.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion23.setText("NUT   CLIP,    M5");
+        descripcion23.setText("INSTRUCT CONST UN PACK");
 
         npecaneado23.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado23.setText("PF  2L01- PDU4");
+        npecaneado23.setText("PF  2L01-");
 
         serial23.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial23.setText("-             -            -");
 
         cantidadrequerida23.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida23.setText("00004");
+        cantidadrequerida23.setText("00001");
 
         cantidadfinal23.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal23.setText("00000");
@@ -3320,25 +3544,24 @@ public class Clean_Claim extends javax.swing.JFrame {
                         .addComponent(serial23, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(0, 20, Short.MAX_VALUE))
                     .addGroup(NPS23Layout.createSequentialGroup()
-                        .addGroup(NPS23Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(NPS23Layout.createSequentialGroup()
-                                .addComponent(DISP23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(idsp23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(descripcion23, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(NPS23Layout.createSequentialGroup()
-                                .addGap(13, 13, 13)
-                                .addComponent(npaescanear23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(QT23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadrequerida23)
-                                .addGap(28, 28, 28)
-                                .addComponent(FQT23)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadfinal23)))
-                        .addGap(12, 12, 12)))
+                        .addGap(13, 13, 13)
+                        .addComponent(npaescanear23)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(QT23)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cantidadrequerida23)
+                        .addGap(28, 28, 28)
+                        .addComponent(FQT23)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(cantidadfinal23)
+                        .addGap(12, 12, 12))
+                    .addGroup(NPS23Layout.createSequentialGroup()
+                        .addComponent(DISP23)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(idsp23)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(descripcion23)
+                        .addGap(11, 11, 11)))
                 .addContainerGap(30, Short.MAX_VALUE))
         );
         NPS23Layout.setVerticalGroup(
@@ -3363,56 +3586,816 @@ public class Clean_Claim extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout bloque6Layout = new javax.swing.GroupLayout(bloque6);
-        bloque6.setLayout(bloque6Layout);
-        bloque6Layout.setHorizontalGroup(
-            bloque6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloque6Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(bloque6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(NPS13, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS14, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS15, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS16, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS17, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS18, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS21, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS22, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS23, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+        NPS24.setBackground(new java.awt.Color(255, 255, 255));
+        NPS24.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS24.setFocusable(false);
+        NPS24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS24MouseClicked(evt);
+            }
+        });
+
+        npaescanear24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear24.setText("01AF376");
+
+        QT24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT24.setText("QT:");
+
+        FQT24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT24.setText("FQT:");
+
+        DISP24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP24.setText("IDSP:");
+
+        idsp24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp24.setText("A");
+
+        descripcion24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion24.setText("TOOL combo wrench");
+
+        npecaneado24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado24.setText("PF  2L01-");
+
+        serial24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial24.setText("-             -            -");
+
+        cantidadrequerida24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida24.setText("00001");
+
+        cantidadfinal24.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal24.setText("00000");
+
+        javax.swing.GroupLayout NPS24Layout = new javax.swing.GroupLayout(NPS24);
+        NPS24.setLayout(NPS24Layout);
+        NPS24Layout.setHorizontalGroup(
+            NPS24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS24Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS24Layout.createSequentialGroup()
+                        .addComponent(npecaneado24, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial24, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 20, Short.MAX_VALUE))
+                    .addGroup(NPS24Layout.createSequentialGroup()
+                        .addGroup(NPS24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS24Layout.createSequentialGroup()
+                                .addComponent(DISP24)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp24)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion24, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS24Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear24)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT24)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida24)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT24)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal24)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(30, Short.MAX_VALUE))
         );
-        bloque6Layout.setVerticalGroup(
-            bloque6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloque6Layout.createSequentialGroup()
-                .addGap(95, 95, 95)
-                .addComponent(NPS13, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        NPS24Layout.setVerticalGroup(
+            NPS24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS24Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear24)
+                    .addComponent(QT24)
+                    .addComponent(FQT24)
+                    .addComponent(cantidadrequerida24)
+                    .addComponent(cantidadfinal24))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS14, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS17, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS18, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS19, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS20, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS21, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS22, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGroup(NPS24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP24)
+                    .addComponent(idsp24)
+                    .addComponent(descripcion24))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS24Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado24)
+                    .addComponent(serial24))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        bloqueimagen3.setBackground(new java.awt.Color(255, 255, 255));
-        bloqueimagen3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS25.setBackground(new java.awt.Color(255, 255, 255));
+        NPS25.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS25.setFocusable(false);
+        NPS25.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS25MouseClicked(evt);
+            }
+        });
 
-        prueba.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/PDUVERT.jpg"))); // NOI18N
+        npaescanear25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear25.setText("02YK752");
+
+        QT25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT25.setText("QT:");
+
+        FQT25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT25.setText("FQT:");
+
+        DISP25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP25.setText("IDSP:");
+
+        idsp25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp25.setText("A");
+
+        descripcion25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion25.setText("SCREW        M5x14 Thumb");
+
+        npecaneado25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado25.setText("PF  2L01-");
+
+        serial25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial25.setText("-             -            -");
+
+        cantidadrequerida25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida25.setText("00001");
+
+        cantidadfinal25.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal25.setText("00000");
+
+        javax.swing.GroupLayout NPS25Layout = new javax.swing.GroupLayout(NPS25);
+        NPS25.setLayout(NPS25Layout);
+        NPS25Layout.setHorizontalGroup(
+            NPS25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS25Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS25Layout.createSequentialGroup()
+                        .addComponent(npecaneado25, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial25, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS25Layout.createSequentialGroup()
+                        .addGroup(NPS25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS25Layout.createSequentialGroup()
+                                .addComponent(DISP25)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp25)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion25, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS25Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear25)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT25)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida25)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT25)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal25)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS25Layout.setVerticalGroup(
+            NPS25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS25Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear25)
+                    .addComponent(QT25)
+                    .addComponent(FQT25)
+                    .addComponent(cantidadrequerida25)
+                    .addComponent(cantidadfinal25))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP25)
+                    .addComponent(idsp25)
+                    .addComponent(descripcion25))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS25Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado25)
+                    .addComponent(serial25))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout Material_llaveLayout = new javax.swing.GroupLayout(Material_llave);
+        Material_llave.setLayout(Material_llaveLayout);
+        Material_llaveLayout.setHorizontalGroup(
+            Material_llaveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(NPS25, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(Material_llaveLayout.createSequentialGroup()
+                .addGroup(Material_llaveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(NPS23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NPS24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        Material_llaveLayout.setVerticalGroup(
+            Material_llaveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_llaveLayout.createSequentialGroup()
+                .addComponent(NPS23, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS24, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS25, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        Imagen_llave.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_llave.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/WRCH.jpg"))); // NOI18N
+
+        change3.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change3.setText("Incompleto");
+        change3.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change3StateChanged(evt);
+            }
+        });
+        change3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Imagen_llaveLayout = new javax.swing.GroupLayout(Imagen_llave);
+        Imagen_llave.setLayout(Imagen_llaveLayout);
+        Imagen_llaveLayout.setHorizontalGroup(
+            Imagen_llaveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_llaveLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Imagen_llaveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(change3)
+                    .addComponent(jLabel16))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Imagen_llaveLayout.setVerticalGroup(
+            Imagen_llaveLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_llaveLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel16)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(change3)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Material_puerta691.setBackground(new java.awt.Color(255, 255, 255));
+        Material_puerta691.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        NPS26.setBackground(new java.awt.Color(255, 255, 255));
+        NPS26.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS26.setFocusable(false);
+        NPS26.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS26MouseClicked(evt);
+            }
+        });
+
+        npaescanear26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear26.setText("01KL691");
+
+        QT26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT26.setText("QT:");
+
+        FQT26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT26.setText("FQT:");
+
+        DISP26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP26.setText("IDSP:");
+
+        idsp26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp26.setText("A");
+
+        descripcion26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion26.setText("COVER bdoor + logo");
+
+        npecaneado26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado26.setText("PF  2L01-");
+
+        serial26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial26.setText("-             -            -");
+
+        cantidadrequerida26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida26.setText("00001");
+
+        cantidadfinal26.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal26.setText("00000");
+
+        javax.swing.GroupLayout NPS26Layout = new javax.swing.GroupLayout(NPS26);
+        NPS26.setLayout(NPS26Layout);
+        NPS26Layout.setHorizontalGroup(
+            NPS26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS26Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS26Layout.createSequentialGroup()
+                        .addComponent(npecaneado26, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial26, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS26Layout.createSequentialGroup()
+                        .addGroup(NPS26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS26Layout.createSequentialGroup()
+                                .addComponent(DISP26)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp26)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion26, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS26Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear26)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT26)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida26)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT26)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal26)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS26Layout.setVerticalGroup(
+            NPS26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS26Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear26)
+                    .addComponent(QT26)
+                    .addComponent(FQT26)
+                    .addComponent(cantidadrequerida26)
+                    .addComponent(cantidadfinal26))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP26)
+                    .addComponent(idsp26)
+                    .addComponent(descripcion26))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS26Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado26)
+                    .addComponent(serial26))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout Material_puerta691Layout = new javax.swing.GroupLayout(Material_puerta691);
+        Material_puerta691.setLayout(Material_puerta691Layout);
+        Material_puerta691Layout.setHorizontalGroup(
+            Material_puerta691Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(NPS26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        Material_puerta691Layout.setVerticalGroup(
+            Material_puerta691Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_puerta691Layout.createSequentialGroup()
+                .addComponent(NPS26, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        Imagen_puerta691.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_puerta691.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel17.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/DOORIBMLOG.jpg"))); // NOI18N
+
+        change4.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change4.setText("Incompleto");
+        change4.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change4StateChanged(evt);
+            }
+        });
+        change4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change4ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Imagen_puerta691Layout = new javax.swing.GroupLayout(Imagen_puerta691);
+        Imagen_puerta691.setLayout(Imagen_puerta691Layout);
+        Imagen_puerta691Layout.setHorizontalGroup(
+            Imagen_puerta691Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_puerta691Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Imagen_puerta691Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(change4)
+                    .addComponent(jLabel17))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Imagen_puerta691Layout.setVerticalGroup(
+            Imagen_puerta691Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_puerta691Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel17)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(change4)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Material_bracket_panel.setBackground(new java.awt.Color(255, 255, 255));
+        Material_bracket_panel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        NPS33.setBackground(new java.awt.Color(255, 255, 255));
+        NPS33.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS33.setFocusable(false);
+        NPS33.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS33MouseClicked(evt);
+            }
+        });
+
+        npaescanear33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear33.setText("46C6380");
+
+        QT33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT33.setText("QT:");
+
+        FQT33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT33.setText("FQT:");
+
+        DISP33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP33.setText("IDSP:");
+
+        idsp33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp33.setText("A");
+
+        descripcion33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion33.setText("SCREW M5x16 BLACK");
+
+        npecaneado33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado33.setText("PF  2L01-");
+
+        serial33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial33.setText("-             -            -");
+
+        cantidadrequerida33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida33.setText("00006");
+
+        cantidadfinal33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal33.setText("00000");
+
+        javax.swing.GroupLayout NPS33Layout = new javax.swing.GroupLayout(NPS33);
+        NPS33.setLayout(NPS33Layout);
+        NPS33Layout.setHorizontalGroup(
+            NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS33Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS33Layout.createSequentialGroup()
+                        .addComponent(npecaneado33, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial33, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS33Layout.createSequentialGroup()
+                        .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS33Layout.createSequentialGroup()
+                                .addComponent(DISP33)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp33)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion33, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS33Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear33)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT33)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida33)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT33)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal33)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS33Layout.setVerticalGroup(
+            NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS33Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear33)
+                    .addComponent(QT33)
+                    .addComponent(FQT33)
+                    .addComponent(cantidadrequerida33)
+                    .addComponent(cantidadfinal33))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP33)
+                    .addComponent(idsp33)
+                    .addComponent(descripcion33))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado33)
+                    .addComponent(serial33))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS32.setBackground(new java.awt.Color(255, 255, 255));
+        NPS32.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS32.setFocusable(false);
+        NPS32.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS32MouseClicked(evt);
+            }
+        });
+
+        npaescanear32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear32.setText("42V2119");
+
+        QT32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT32.setText("QT:");
+
+        FQT32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT32.setText("FQT:");
+
+        DISP32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP32.setText("IDSP:");
+
+        idsp32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp32.setText("A");
+
+        descripcion32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion32.setText("BRACKET, J-BRKT    SID");
+
+        npecaneado32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado32.setText("PF  2L01-");
+
+        serial32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial32.setText("-             -            -");
+
+        cantidadrequerida32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida32.setText("00001");
+
+        cantidadfinal32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal32.setText("00000");
+
+        javax.swing.GroupLayout NPS32Layout = new javax.swing.GroupLayout(NPS32);
+        NPS32.setLayout(NPS32Layout);
+        NPS32Layout.setHorizontalGroup(
+            NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS32Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS32Layout.createSequentialGroup()
+                        .addComponent(npecaneado32, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial32, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS32Layout.createSequentialGroup()
+                        .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS32Layout.createSequentialGroup()
+                                .addComponent(DISP32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion32, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS32Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida32)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT32)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal32)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS32Layout.setVerticalGroup(
+            NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS32Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear32)
+                    .addComponent(QT32)
+                    .addComponent(FQT32)
+                    .addComponent(cantidadrequerida32)
+                    .addComponent(cantidadfinal32))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP32)
+                    .addComponent(idsp32)
+                    .addComponent(descripcion32))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado32)
+                    .addComponent(serial32))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS34.setBackground(new java.awt.Color(255, 255, 255));
+        NPS34.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS34.setFocusable(false);
+        NPS34.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS34MouseClicked(evt);
+            }
+        });
+
+        npaescanear34.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear34.setText("42V2119");
+
+        QT34.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT34.setText("QT:");
+
+        FQT34.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT34.setText("FQT:");
+
+        DISP34.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP34.setText("IDSP:");
+
+        idsp34.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp34.setText("A");
+
+        descripcion34.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion34.setText("BRACKET, J-BRKT    SID");
+
+        npecaneado34.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado34.setText("PF  2L01-");
+
+        serial34.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial34.setText("-             -            -");
+
+        cantidadrequerida34.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida34.setText("00001");
+
+        cantidadfinal34.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal34.setText("00000");
+
+        javax.swing.GroupLayout NPS34Layout = new javax.swing.GroupLayout(NPS34);
+        NPS34.setLayout(NPS34Layout);
+        NPS34Layout.setHorizontalGroup(
+            NPS34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS34Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS34Layout.createSequentialGroup()
+                        .addComponent(npecaneado34, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial34, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS34Layout.createSequentialGroup()
+                        .addGroup(NPS34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS34Layout.createSequentialGroup()
+                                .addComponent(DISP34)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp34)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion34, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS34Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear34)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT34)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida34)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT34)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal34)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS34Layout.setVerticalGroup(
+            NPS34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS34Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear34)
+                    .addComponent(QT34)
+                    .addComponent(FQT34)
+                    .addComponent(cantidadrequerida34)
+                    .addComponent(cantidadfinal34))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP34)
+                    .addComponent(idsp34)
+                    .addComponent(descripcion34))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS34Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado34)
+                    .addComponent(serial34))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS35.setBackground(new java.awt.Color(255, 255, 255));
+        NPS35.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS35.setFocusable(false);
+        NPS35.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS35MouseClicked(evt);
+            }
+        });
+
+        npaescanear35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear35.setText("46C6380");
+
+        QT35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT35.setText("QT:");
+
+        FQT35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT35.setText("FQT:");
+
+        DISP35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP35.setText("IDSP:");
+
+        idsp35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp35.setText("A");
+
+        descripcion35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion35.setText("SCREW M5x16 BLACK");
+
+        npecaneado35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado35.setText("PF  2L01-");
+
+        serial35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial35.setText("-             -            -");
+
+        cantidadrequerida35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida35.setText("00006");
+
+        cantidadfinal35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal35.setText("00000");
+
+        javax.swing.GroupLayout NPS35Layout = new javax.swing.GroupLayout(NPS35);
+        NPS35.setLayout(NPS35Layout);
+        NPS35Layout.setHorizontalGroup(
+            NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS35Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS35Layout.createSequentialGroup()
+                        .addComponent(npecaneado35, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial35, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS35Layout.createSequentialGroup()
+                        .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS35Layout.createSequentialGroup()
+                                .addComponent(DISP35)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp35)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion35, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS35Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear35)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT35)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida35)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT35)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal35)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS35Layout.setVerticalGroup(
+            NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS35Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear35)
+                    .addComponent(QT35)
+                    .addComponent(FQT35)
+                    .addComponent(cantidadrequerida35)
+                    .addComponent(cantidadfinal35))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP35)
+                    .addComponent(idsp35)
+                    .addComponent(descripcion35))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado35)
+                    .addComponent(serial35))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout Material_bracket_panelLayout = new javax.swing.GroupLayout(Material_bracket_panel);
+        Material_bracket_panel.setLayout(Material_bracket_panelLayout);
+        Material_bracket_panelLayout.setHorizontalGroup(
+            Material_bracket_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(NPS32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(NPS33, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(NPS34, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(NPS35, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        Material_bracket_panelLayout.setVerticalGroup(
+            Material_bracket_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_bracket_panelLayout.createSequentialGroup()
+                .addComponent(NPS32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS34, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        Imagen_bracket_panel.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_bracket_panel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        prueba.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/S42SIDECVR1.jpg"))); // NOI18N
 
         change5.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         change5.setText("Incompleto");
@@ -3427,29 +4410,41 @@ public class Clean_Claim extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout bloqueimagen3Layout = new javax.swing.GroupLayout(bloqueimagen3);
-        bloqueimagen3.setLayout(bloqueimagen3Layout);
-        bloqueimagen3Layout.setHorizontalGroup(
-            bloqueimagen3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloqueimagen3Layout.createSequentialGroup()
+        jLabel26.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel26.setText("Torque screws to 2.5 Nm.");
+
+        jLabel27.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel27.setText("Install the J-Bracket on each side and secure with 2 M5x16 screws.");
+
+        javax.swing.GroupLayout Imagen_bracket_panelLayout = new javax.swing.GroupLayout(Imagen_bracket_panel);
+        Imagen_bracket_panel.setLayout(Imagen_bracket_panelLayout);
+        Imagen_bracket_panelLayout.setHorizontalGroup(
+            Imagen_bracket_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_bracket_panelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(bloqueimagen3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Imagen_bracket_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(change5)
-                    .addComponent(prueba))
+                    .addComponent(prueba)
+                    .addComponent(jLabel26)
+                    .addComponent(jLabel27))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        bloqueimagen3Layout.setVerticalGroup(
-            bloqueimagen3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloqueimagen3Layout.createSequentialGroup()
-                .addGap(36, 36, 36)
+        Imagen_bracket_panelLayout.setVerticalGroup(
+            Imagen_bracket_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_bracket_panelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel27)
+                .addGap(17, 17, 17)
+                .addComponent(jLabel26)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(prueba)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(change5)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        bisagraslatch.setBackground(new java.awt.Color(255, 255, 255));
-        bisagraslatch.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Material_ship841.setBackground(new java.awt.Color(255, 255, 255));
+        Material_ship841.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         NPS28.setBackground(new java.awt.Color(255, 255, 255));
         NPS28.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
@@ -3458,10 +4453,13 @@ public class Clean_Claim extends javax.swing.JFrame {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 NPS28MouseClicked(evt);
             }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                NPS28MouseEntered(evt);
+            }
         });
 
         npaescanear28.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear28.setText("01KL421");
+        npaescanear28.setText("00FW841");
 
         QT28.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT28.setText("QT:");
@@ -3476,10 +4474,10 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp28.setText("A");
 
         descripcion28.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion28.setText("BRACKET, CATCH  BRKT");
+        descripcion28.setText("MECH ASM, SHIP BKT ASM");
 
         npecaneado28.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado28.setText("PF  2L01-");
+        npecaneado28.setText("PF  2L01-LM20");
 
         serial28.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial28.setText("-             -            -");
@@ -3501,7 +4499,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                         .addComponent(npecaneado28, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(serial28, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(NPS28Layout.createSequentialGroup()
                         .addGroup(NPS28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(NPS28Layout.createSequentialGroup()
@@ -3522,7 +4520,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadfinal28)))
                         .addGap(12, 12, 12)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         NPS28Layout.setVerticalGroup(
             NPS28Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3556,7 +4554,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear30.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear30.setText("01KL425");
+        npaescanear30.setText("00FW841");
 
         QT30.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT30.setText("QT:");
@@ -3571,16 +4569,16 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp30.setText("A");
 
         descripcion30.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion30.setText("HINGE, HINGE BRKT  A");
+        descripcion30.setText("MECH ASM, SHIP BKT ASM");
 
         npecaneado30.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado30.setText("PF  2L01-");
+        npecaneado30.setText("PF  2L01-LM28");
 
         serial30.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial30.setText("-             -            -");
 
         cantidadrequerida30.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida30.setText("00002");
+        cantidadrequerida30.setText("00001");
 
         cantidadfinal30.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal30.setText("00000");
@@ -3596,7 +4594,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                         .addComponent(npecaneado30, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(serial30, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(NPS30Layout.createSequentialGroup()
                         .addGroup(NPS30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(NPS30Layout.createSequentialGroup()
@@ -3617,7 +4615,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadfinal30)))
                         .addGap(12, 12, 12)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         NPS30Layout.setVerticalGroup(
             NPS30Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3669,13 +4667,13 @@ public class Clean_Claim extends javax.swing.JFrame {
         descripcion31.setText("SCREW M5x16 BLACK");
 
         npecaneado31.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado31.setText("PF  2L01-");
+        npecaneado31.setText("PF  2L01-LM28");
 
         serial31.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial31.setText("-             -            -");
 
         cantidadrequerida31.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida31.setText("00006");
+        cantidadrequerida31.setText("00004");
 
         cantidadfinal31.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal31.setText("00000");
@@ -3736,70 +4734,6 @@ public class Clean_Claim extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        javax.swing.GroupLayout bisagraslatchLayout = new javax.swing.GroupLayout(bisagraslatch);
-        bisagraslatch.setLayout(bisagraslatchLayout);
-        bisagraslatchLayout.setHorizontalGroup(
-            bisagraslatchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bisagraslatchLayout.createSequentialGroup()
-                .addGap(0, 8, Short.MAX_VALUE)
-                .addGroup(bisagraslatchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(NPS28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(NPS30, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(NPS31, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-        );
-        bisagraslatchLayout.setVerticalGroup(
-            bisagraslatchLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bisagraslatchLayout.createSequentialGroup()
-                .addComponent(NPS28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 349, Short.MAX_VALUE))
-        );
-
-        bloquebisagras.setBackground(new java.awt.Color(255, 255, 255));
-        bloquebisagras.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
-        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/BIZAADE2.jpg"))); // NOI18N
-
-        change7.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
-        change7.setText("Incompleto");
-        change7.addChangeListener(new javax.swing.event.ChangeListener() {
-            public void stateChanged(javax.swing.event.ChangeEvent evt) {
-                change7StateChanged(evt);
-            }
-        });
-        change7.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                change7ActionPerformed(evt);
-            }
-        });
-
-        javax.swing.GroupLayout bloquebisagrasLayout = new javax.swing.GroupLayout(bloquebisagras);
-        bloquebisagras.setLayout(bloquebisagrasLayout);
-        bloquebisagrasLayout.setHorizontalGroup(
-            bloquebisagrasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloquebisagrasLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(bloquebisagrasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel20)
-                    .addComponent(change7))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        bloquebisagrasLayout.setVerticalGroup(
-            bloquebisagrasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bloquebisagrasLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel20)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(change7)
-                .addContainerGap(10, Short.MAX_VALUE))
-        );
-
-        bisagraslatch1.setBackground(new java.awt.Color(255, 255, 255));
-        bisagraslatch1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-
         NPS29.setBackground(new java.awt.Color(255, 255, 255));
         NPS29.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         NPS29.setFocusable(false);
@@ -3810,7 +4744,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         });
 
         npaescanear29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear29.setText("01KU111");
+        npaescanear29.setText("46C6380");
 
         QT29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         QT29.setText("QT:");
@@ -3825,16 +4759,16 @@ public class Clean_Claim extends javax.swing.JFrame {
         idsp29.setText("A");
 
         descripcion29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion29.setText("HINGE hinge tall pn");
+        descripcion29.setText("SCREW M5x16 BLACK");
 
         npecaneado29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado29.setText("PF  2L01-");
+        npecaneado29.setText("PF  2L01-LM20");
 
         serial29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         serial29.setText("-             -            -");
 
         cantidadrequerida29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida29.setText("00001");
+        cantidadrequerida29.setText("00004");
 
         cantidadfinal29.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
         cantidadfinal29.setText("00000");
@@ -3850,7 +4784,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                         .addComponent(npecaneado29, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(serial29, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(NPS29Layout.createSequentialGroup()
                         .addGroup(NPS29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(NPS29Layout.createSequentialGroup()
@@ -3871,7 +4805,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadfinal29)))
                         .addGap(12, 12, 12)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         NPS29Layout.setVerticalGroup(
             NPS29Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3895,320 +4829,321 @@ public class Clean_Claim extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        NPS32.setBackground(new java.awt.Color(255, 255, 255));
-        NPS32.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        NPS32.setFocusable(false);
-        NPS32.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                NPS32MouseClicked(evt);
-            }
-        });
-
-        npaescanear32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear32.setText("01KU112");
-
-        QT32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        QT32.setText("QT:");
-
-        FQT32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        FQT32.setText("FQT:");
-
-        DISP32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        DISP32.setText("IDSP:");
-
-        idsp32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        idsp32.setText("A");
-
-        descripcion32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion32.setText("HINGE Hinge short pn");
-
-        npecaneado32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado32.setText("PF  2L01-");
-
-        serial32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        serial32.setText("-             -            -");
-
-        cantidadrequerida32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida32.setText("00001");
-
-        cantidadfinal32.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadfinal32.setText("00000");
-
-        javax.swing.GroupLayout NPS32Layout = new javax.swing.GroupLayout(NPS32);
-        NPS32.setLayout(NPS32Layout);
-        NPS32Layout.setHorizontalGroup(
-            NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS32Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(NPS32Layout.createSequentialGroup()
-                        .addComponent(npecaneado32, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(serial32, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
-                    .addGroup(NPS32Layout.createSequentialGroup()
-                        .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(NPS32Layout.createSequentialGroup()
-                                .addComponent(DISP32)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(idsp32)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(descripcion32, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(NPS32Layout.createSequentialGroup()
-                                .addGap(13, 13, 13)
-                                .addComponent(npaescanear32)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(QT32)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadrequerida32)
-                                .addGap(28, 28, 28)
-                                .addComponent(FQT32)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadfinal32)))
-                        .addGap(12, 12, 12)))
-                .addContainerGap(30, Short.MAX_VALUE))
+        javax.swing.GroupLayout Material_ship841Layout = new javax.swing.GroupLayout(Material_ship841);
+        Material_ship841.setLayout(Material_ship841Layout);
+        Material_ship841Layout.setHorizontalGroup(
+            Material_ship841Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(NPS31, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(NPS30, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(NPS29, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(NPS28, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
-        NPS32Layout.setVerticalGroup(
-            NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS32Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npaescanear32)
-                    .addComponent(QT32)
-                    .addComponent(FQT32)
-                    .addComponent(cantidadrequerida32)
-                    .addComponent(cantidadfinal32))
+        Material_ship841Layout.setVerticalGroup(
+            Material_ship841Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_ship841Layout.createSequentialGroup()
+                .addComponent(NPS28, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DISP32)
-                    .addComponent(idsp32)
-                    .addComponent(descripcion32))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(NPS32Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npecaneado32)
-                    .addComponent(serial32))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        NPS33.setBackground(new java.awt.Color(255, 255, 255));
-        NPS33.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        NPS33.setFocusable(false);
-        NPS33.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                NPS33MouseClicked(evt);
-            }
-        });
-
-        npaescanear33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear33.setText("01KU137");
-
-        QT33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        QT33.setText("QT:");
-
-        FQT33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        FQT33.setText("FQT:");
-
-        DISP33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        DISP33.setText("IDSP:");
-
-        idsp33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        idsp33.setText("A");
-
-        descripcion33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion33.setText("BRACKET Latch Bracket");
-
-        npecaneado33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado33.setText("PF  2L01-");
-
-        serial33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        serial33.setText("-             -            -");
-
-        cantidadrequerida33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida33.setText("00001");
-
-        cantidadfinal33.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadfinal33.setText("00000");
-
-        javax.swing.GroupLayout NPS33Layout = new javax.swing.GroupLayout(NPS33);
-        NPS33.setLayout(NPS33Layout);
-        NPS33Layout.setHorizontalGroup(
-            NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS33Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(NPS33Layout.createSequentialGroup()
-                        .addComponent(npecaneado33, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(serial33, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
-                    .addGroup(NPS33Layout.createSequentialGroup()
-                        .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(NPS33Layout.createSequentialGroup()
-                                .addComponent(DISP33)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(idsp33)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(descripcion33, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(NPS33Layout.createSequentialGroup()
-                                .addGap(13, 13, 13)
-                                .addComponent(npaescanear33)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(QT33)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadrequerida33)
-                                .addGap(28, 28, 28)
-                                .addComponent(FQT33)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadfinal33)))
-                        .addGap(12, 12, 12)))
-                .addContainerGap(30, Short.MAX_VALUE))
-        );
-        NPS33Layout.setVerticalGroup(
-            NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS33Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npaescanear33)
-                    .addComponent(QT33)
-                    .addComponent(FQT33)
-                    .addComponent(cantidadrequerida33)
-                    .addComponent(cantidadfinal33))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DISP33)
-                    .addComponent(idsp33)
-                    .addComponent(descripcion33))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(NPS33Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npecaneado33)
-                    .addComponent(serial33))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        NPS35.setBackground(new java.awt.Color(255, 255, 255));
-        NPS35.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
-        NPS35.setFocusable(false);
-        NPS35.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                NPS35MouseClicked(evt);
-            }
-        });
-
-        npaescanear35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npaescanear35.setText("46C6380");
-
-        QT35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        QT35.setText("QT:");
-
-        FQT35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        FQT35.setText("FQT:");
-
-        DISP35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        DISP35.setText("IDSP:");
-
-        idsp35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        idsp35.setText("A");
-
-        descripcion35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        descripcion35.setText("SCREW M5x16 BLACK");
-
-        npecaneado35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        npecaneado35.setText("PF  2L01-");
-
-        serial35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        serial35.setText("-             -            -");
-
-        cantidadrequerida35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadrequerida35.setText("00006");
-
-        cantidadfinal35.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
-        cantidadfinal35.setText("00000");
-
-        javax.swing.GroupLayout NPS35Layout = new javax.swing.GroupLayout(NPS35);
-        NPS35.setLayout(NPS35Layout);
-        NPS35Layout.setHorizontalGroup(
-            NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS35Layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(NPS35Layout.createSequentialGroup()
-                        .addComponent(npecaneado35, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(serial35, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 20, Short.MAX_VALUE))
-                    .addGroup(NPS35Layout.createSequentialGroup()
-                        .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(NPS35Layout.createSequentialGroup()
-                                .addComponent(DISP35)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(idsp35)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(descripcion35, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(NPS35Layout.createSequentialGroup()
-                                .addGap(13, 13, 13)
-                                .addComponent(npaescanear35)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(QT35)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadrequerida35)
-                                .addGap(28, 28, 28)
-                                .addComponent(FQT35)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(cantidadfinal35)))
-                        .addGap(12, 12, 12)))
-                .addContainerGap(30, Short.MAX_VALUE))
-        );
-        NPS35Layout.setVerticalGroup(
-            NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(NPS35Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npaescanear35)
-                    .addComponent(QT35)
-                    .addComponent(FQT35)
-                    .addComponent(cantidadrequerida35)
-                    .addComponent(cantidadfinal35))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(DISP35)
-                    .addComponent(idsp35)
-                    .addComponent(descripcion35))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(NPS35Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(npecaneado35)
-                    .addComponent(serial35))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        javax.swing.GroupLayout bisagraslatch1Layout = new javax.swing.GroupLayout(bisagraslatch1);
-        bisagraslatch1.setLayout(bisagraslatch1Layout);
-        bisagraslatch1Layout.setHorizontalGroup(
-            bisagraslatch1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bisagraslatch1Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(bisagraslatch1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(NPS29, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS32, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS33, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(NPS35, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-        );
-        bisagraslatch1Layout.setVerticalGroup(
-            bisagraslatch1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(bisagraslatch1Layout.createSequentialGroup()
                 .addComponent(NPS29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS32, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(NPS30, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(NPS31, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Imagen_ship841.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_ship841.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel20.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/MEXSHBRK1MX2.jpg"))); // NOI18N
+
+        change7.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change7.setText("Incompleto");
+        change7.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change7StateChanged(evt);
+            }
+        });
+        change7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change7ActionPerformed(evt);
+            }
+        });
+
+        jLabel19.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel19.setText("MEX");
+
+        jLabel21.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel21.setText("1. Colocar el shipping bracket.");
+
+        jLabel22.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel22.setText("2. Atornillar los extremos del bracket, como se muestra en la imagen, utilizando los tornillos. 46C6380");
+
+        jLabel23.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel23.setText("DADO 7 mm a 2.5 Nm");
+
+        jLabel24.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel24.setText("3. Atornillar el centro del shipping bracket con los tornillos 84X4756.");
+
+        jLabel25.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel25.setText("DADO 5.5 mm a 2.5 Nm");
+
+        javax.swing.GroupLayout Imagen_ship841Layout = new javax.swing.GroupLayout(Imagen_ship841);
+        Imagen_ship841.setLayout(Imagen_ship841Layout);
+        Imagen_ship841Layout.setHorizontalGroup(
+            Imagen_ship841Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_ship841Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Imagen_ship841Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Imagen_ship841Layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel20))
+                    .addGroup(Imagen_ship841Layout.createSequentialGroup()
+                        .addGroup(Imagen_ship841Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(change7)
+                            .addComponent(jLabel19)
+                            .addComponent(jLabel21)
+                            .addComponent(jLabel22)
+                            .addComponent(jLabel23)
+                            .addComponent(jLabel24)
+                            .addComponent(jLabel25))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+        );
+        Imagen_ship841Layout.setVerticalGroup(
+            Imagen_ship841Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_ship841Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel19)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel21)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel22)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel23)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel24)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel25)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel20)
+                .addGap(18, 18, 18)
+                .addComponent(change7)
+                .addGap(18, 18, 18))
+        );
+
+        Material_sidepanel.setBackground(new java.awt.Color(255, 255, 255));
+        Material_sidepanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        NPS36.setBackground(new java.awt.Color(255, 255, 255));
+        NPS36.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS36.setFocusable(false);
+        NPS36.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS36MouseClicked(evt);
+            }
+        });
+
+        npaescanear36.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear36.setText("01EL917");
+
+        QT36.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT36.setText("QT:");
+
+        FQT36.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT36.setText("FQT:");
+
+        DISP36.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP36.setText("IDSP:");
+
+        idsp36.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp36.setText("A");
+
+        descripcion36.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion36.setText("COVER, SIDE COVER O");
+
+        npecaneado36.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado36.setText("PF  2L01-");
+
+        serial36.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial36.setText("-             -            -");
+
+        cantidadrequerida36.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida36.setText("00001");
+
+        cantidadfinal36.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal36.setText("00000");
+
+        javax.swing.GroupLayout NPS36Layout = new javax.swing.GroupLayout(NPS36);
+        NPS36.setLayout(NPS36Layout);
+        NPS36Layout.setHorizontalGroup(
+            NPS36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS36Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS36Layout.createSequentialGroup()
+                        .addComponent(npecaneado36, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial36, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS36Layout.createSequentialGroup()
+                        .addGroup(NPS36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS36Layout.createSequentialGroup()
+                                .addComponent(DISP36)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp36)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion36, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS36Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear36)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT36)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida36)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT36)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal36)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS36Layout.setVerticalGroup(
+            NPS36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS36Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear36)
+                    .addComponent(QT36)
+                    .addComponent(FQT36)
+                    .addComponent(cantidadrequerida36)
+                    .addComponent(cantidadfinal36))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(NPS35, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(NPS36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP36)
+                    .addComponent(idsp36)
+                    .addComponent(descripcion36))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS36Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado36)
+                    .addComponent(serial36))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS37.setBackground(new java.awt.Color(255, 255, 255));
+        NPS37.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS37.setFocusable(false);
+        NPS37.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS37MouseClicked(evt);
+            }
+        });
+
+        npaescanear37.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear37.setText("01EL917");
+
+        QT37.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT37.setText("QT:");
+
+        FQT37.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT37.setText("FQT:");
+
+        DISP37.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP37.setText("IDSP:");
+
+        idsp37.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp37.setText("A");
+
+        descripcion37.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion37.setText("COVER, SIDE COVER O");
+
+        npecaneado37.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado37.setText("PF  2L01-");
+
+        serial37.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial37.setText("-             -            -");
+
+        cantidadrequerida37.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida37.setText("00001");
+
+        cantidadfinal37.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal37.setText("00000");
+
+        javax.swing.GroupLayout NPS37Layout = new javax.swing.GroupLayout(NPS37);
+        NPS37.setLayout(NPS37Layout);
+        NPS37Layout.setHorizontalGroup(
+            NPS37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS37Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS37Layout.createSequentialGroup()
+                        .addComponent(npecaneado37, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial37, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS37Layout.createSequentialGroup()
+                        .addGroup(NPS37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS37Layout.createSequentialGroup()
+                                .addComponent(DISP37)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp37)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion37, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS37Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear37)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT37)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida37)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT37)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal37)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS37Layout.setVerticalGroup(
+            NPS37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS37Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear37)
+                    .addComponent(QT37)
+                    .addComponent(FQT37)
+                    .addComponent(cantidadrequerida37)
+                    .addComponent(cantidadfinal37))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP37)
+                    .addComponent(idsp37)
+                    .addComponent(descripcion37))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS37Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado37)
+                    .addComponent(serial37))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout Material_sidepanelLayout = new javax.swing.GroupLayout(Material_sidepanel);
+        Material_sidepanel.setLayout(Material_sidepanelLayout);
+        Material_sidepanelLayout.setHorizontalGroup(
+            Material_sidepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(NPS37, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(NPS36, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        Material_sidepanelLayout.setVerticalGroup(
+            Material_sidepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_sidepanelLayout.createSequentialGroup()
+                .addComponent(NPS36, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS37, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
-        Bisagrastraseras.setBackground(new java.awt.Color(255, 255, 255));
-        Bisagrastraseras.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Imagen_sidepanel.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_sidepanel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
-        bisagratraserair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/BIZATRAS.jpg"))); // NOI18N
+        bisagratraserair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/S42FRDOOR.jpg"))); // NOI18N
 
         change6.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         change6.setText("Incompleto");
@@ -4223,57 +5158,2315 @@ public class Clean_Claim extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout BisagrastraserasLayout = new javax.swing.GroupLayout(Bisagrastraseras);
-        Bisagrastraseras.setLayout(BisagrastraserasLayout);
-        BisagrastraserasLayout.setHorizontalGroup(
-            BisagrastraserasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BisagrastraserasLayout.createSequentialGroup()
+        jLabel33.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jLabel33.setText("Install Side Cover on each side and secure top with 4 M5x16 screws. Follow by secure front and rear side at EIA 14 and 29 position with 4 M5x13 screws.");
+
+        jLabel34.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jLabel34.setText("(Instale la cubierta lateral en cada lado y asegure la parte superior con 4 tornillos M5x16. A continuación, asegure la parte delantera y trasera en la ");
+
+        jLabel35.setFont(new java.awt.Font("Century Gothic", 1, 12)); // NOI18N
+        jLabel35.setText("posición EIA 14 y 29 con 4 tornillos M5x13.)");
+
+        javax.swing.GroupLayout Imagen_sidepanelLayout = new javax.swing.GroupLayout(Imagen_sidepanel);
+        Imagen_sidepanel.setLayout(Imagen_sidepanelLayout);
+        Imagen_sidepanelLayout.setHorizontalGroup(
+            Imagen_sidepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_sidepanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(BisagrastraserasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(Imagen_sidepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(bisagratraserair)
-                    .addComponent(change6))
+                    .addComponent(change6)
+                    .addComponent(jLabel33)
+                    .addComponent(jLabel34)
+                    .addComponent(jLabel35))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
-        BisagrastraserasLayout.setVerticalGroup(
-            BisagrastraserasLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(BisagrastraserasLayout.createSequentialGroup()
+        Imagen_sidepanelLayout.setVerticalGroup(
+            Imagen_sidepanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_sidepanelLayout.createSequentialGroup()
                 .addContainerGap()
+                .addComponent(jLabel33)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel34)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel35)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(bisagratraserair)
                 .addGap(18, 18, 18)
                 .addComponent(change6)
-                .addContainerGap(20, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Material_door_flag.setBackground(new java.awt.Color(255, 255, 255));
+        Material_door_flag.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel15.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel15.setText("NON - PART INSTRUCTION");
+
+        javax.swing.GroupLayout Material_door_flagLayout = new javax.swing.GroupLayout(Material_door_flag);
+        Material_door_flag.setLayout(Material_door_flagLayout);
+        Material_door_flagLayout.setHorizontalGroup(
+            Material_door_flagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Material_door_flagLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel15)
+                .addGap(54, 54, 54))
+        );
+        Material_door_flagLayout.setVerticalGroup(
+            Material_door_flagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_door_flagLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel15)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Imagen_door_flag.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_door_flag.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/DOORIBMCUAD.jpg"))); // NOI18N
+
+        change8.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change8.setText("Incompleto");
+        change8.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change8StateChanged(evt);
+            }
+        });
+        change8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change8ActionPerformed(evt);
+            }
+        });
+
+        Boton_complete1.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        Boton_complete1.setText("Complete");
+        Boton_complete1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Boton_complete1ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Imagen_door_flagLayout = new javax.swing.GroupLayout(Imagen_door_flag);
+        Imagen_door_flag.setLayout(Imagen_door_flagLayout);
+        Imagen_door_flagLayout.setHorizontalGroup(
+            Imagen_door_flagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_door_flagLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Imagen_door_flagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel10)
+                    .addGroup(Imagen_door_flagLayout.createSequentialGroup()
+                        .addComponent(change8)
+                        .addGap(40, 40, 40)
+                        .addComponent(Boton_complete1)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Imagen_door_flagLayout.setVerticalGroup(
+            Imagen_door_flagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_door_flagLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel10)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(Imagen_door_flagLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(change8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Boton_complete1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Material_door105.setBackground(new java.awt.Color(255, 255, 255));
+        Material_door105.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        NPS27.setBackground(new java.awt.Color(255, 255, 255));
+        NPS27.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS27.setFocusable(false);
+        NPS27.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS27MouseClicked(evt);
+            }
+        });
+
+        npaescanear27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear27.setText("01KU105");
+
+        QT27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT27.setText("QT:");
+
+        FQT27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT27.setText("FQT:");
+
+        DISP27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP27.setText("IDSP:");
+
+        idsp27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp27.setText("A");
+
+        descripcion27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion27.setText("COVER bdoor + logo");
+
+        npecaneado27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado27.setText("PF  2L01-");
+
+        serial27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial27.setText("-             -            -");
+
+        cantidadrequerida27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida27.setText("00001");
+
+        cantidadfinal27.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal27.setText("00000");
+
+        javax.swing.GroupLayout NPS27Layout = new javax.swing.GroupLayout(NPS27);
+        NPS27.setLayout(NPS27Layout);
+        NPS27Layout.setHorizontalGroup(
+            NPS27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS27Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS27Layout.createSequentialGroup()
+                        .addComponent(npecaneado27, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial27, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS27Layout.createSequentialGroup()
+                        .addGroup(NPS27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS27Layout.createSequentialGroup()
+                                .addComponent(DISP27)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp27)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion27, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS27Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear27)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT27)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida27)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT27)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal27)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS27Layout.setVerticalGroup(
+            NPS27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS27Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear27)
+                    .addComponent(QT27)
+                    .addComponent(FQT27)
+                    .addComponent(cantidadrequerida27)
+                    .addComponent(cantidadfinal27))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP27)
+                    .addComponent(idsp27)
+                    .addComponent(descripcion27))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS27Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado27)
+                    .addComponent(serial27))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout Material_door105Layout = new javax.swing.GroupLayout(Material_door105);
+        Material_door105.setLayout(Material_door105Layout);
+        Material_door105Layout.setHorizontalGroup(
+            Material_door105Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(NPS27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        Material_door105Layout.setVerticalGroup(
+            Material_door105Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_door105Layout.createSequentialGroup()
+                .addComponent(NPS27, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        Imagen_door_105.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_door_105.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel18.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/BACKDOOR.jpg"))); // NOI18N
+
+        change9.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change9.setText("Incompleto");
+        change9.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change9StateChanged(evt);
+            }
+        });
+        change9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change9ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Imagen_door_105Layout = new javax.swing.GroupLayout(Imagen_door_105);
+        Imagen_door_105.setLayout(Imagen_door_105Layout);
+        Imagen_door_105Layout.setHorizontalGroup(
+            Imagen_door_105Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_door_105Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Imagen_door_105Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel18)
+                    .addComponent(change9))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Imagen_door_105Layout.setVerticalGroup(
+            Imagen_door_105Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_door_105Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(change9)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Material_tornillo618.setBackground(new java.awt.Color(255, 255, 255));
+        Material_tornillo618.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        NPS38.setBackground(new java.awt.Color(255, 255, 255));
+        NPS38.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS38.setFocusable(false);
+        NPS38.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS38MouseClicked(evt);
+            }
+        });
+
+        npaescanear38.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear38.setText("01KV618");
+
+        QT38.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT38.setText("QT:");
+
+        FQT38.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT38.setText("FQT:");
+
+        DISP38.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP38.setText("IDSP:");
+
+        idsp38.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp38.setText("A");
+
+        descripcion38.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion38.setText("SCREW  SCR  W/WASHER");
+
+        npecaneado38.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado38.setText("PF  2L01-");
+
+        serial38.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial38.setText("-             -            -");
+
+        cantidadrequerida38.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida38.setText("00004");
+
+        cantidadfinal38.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal38.setText("00000");
+
+        javax.swing.GroupLayout NPS38Layout = new javax.swing.GroupLayout(NPS38);
+        NPS38.setLayout(NPS38Layout);
+        NPS38Layout.setHorizontalGroup(
+            NPS38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS38Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS38Layout.createSequentialGroup()
+                        .addComponent(npecaneado38, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial38, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS38Layout.createSequentialGroup()
+                        .addGroup(NPS38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS38Layout.createSequentialGroup()
+                                .addComponent(DISP38)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp38)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion38, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS38Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear38)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT38)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida38)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT38)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal38)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS38Layout.setVerticalGroup(
+            NPS38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS38Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear38)
+                    .addComponent(QT38)
+                    .addComponent(FQT38)
+                    .addComponent(cantidadrequerida38)
+                    .addComponent(cantidadfinal38))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP38)
+                    .addComponent(idsp38)
+                    .addComponent(descripcion38))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS38Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado38)
+                    .addComponent(serial38))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS39.setBackground(new java.awt.Color(255, 255, 255));
+        NPS39.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS39.setFocusable(false);
+        NPS39.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS39MouseClicked(evt);
+            }
+        });
+
+        npaescanear39.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear39.setText("01KV618");
+
+        QT39.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT39.setText("QT:");
+
+        FQT39.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT39.setText("FQT:");
+
+        DISP39.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP39.setText("IDSP:");
+
+        idsp39.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp39.setText("A");
+
+        descripcion39.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion39.setText("SCREW  SCR  W/WASHER");
+
+        npecaneado39.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado39.setText("PF  2L01-");
+
+        serial39.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial39.setText("-             -            -");
+
+        cantidadrequerida39.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida39.setText("00004");
+
+        cantidadfinal39.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal39.setText("00000");
+
+        javax.swing.GroupLayout NPS39Layout = new javax.swing.GroupLayout(NPS39);
+        NPS39.setLayout(NPS39Layout);
+        NPS39Layout.setHorizontalGroup(
+            NPS39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS39Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS39Layout.createSequentialGroup()
+                        .addComponent(npecaneado39, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial39, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS39Layout.createSequentialGroup()
+                        .addGroup(NPS39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS39Layout.createSequentialGroup()
+                                .addComponent(DISP39)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp39)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion39, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS39Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear39)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT39)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida39)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT39)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal39)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS39Layout.setVerticalGroup(
+            NPS39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS39Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear39)
+                    .addComponent(QT39)
+                    .addComponent(FQT39)
+                    .addComponent(cantidadrequerida39)
+                    .addComponent(cantidadfinal39))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP39)
+                    .addComponent(idsp39)
+                    .addComponent(descripcion39))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado39)
+                    .addComponent(serial39))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout Material_tornillo618Layout = new javax.swing.GroupLayout(Material_tornillo618);
+        Material_tornillo618.setLayout(Material_tornillo618Layout);
+        Material_tornillo618Layout.setHorizontalGroup(
+            Material_tornillo618Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(NPS38, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(NPS39, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        Material_tornillo618Layout.setVerticalGroup(
+            Material_tornillo618Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_tornillo618Layout.createSequentialGroup()
+                .addComponent(NPS38, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS39, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        Imagen_tornillo618.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_tornillo618.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel28.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/S42SIDECVR2.jpg"))); // NOI18N
+
+        change10.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change10.setText("Incompleto");
+        change10.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change10StateChanged(evt);
+            }
+        });
+        change10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change10ActionPerformed(evt);
+            }
+        });
+
+        jLabel36.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel36.setText("Torque screw 2.5 Nm");
+
+        javax.swing.GroupLayout Imagen_tornillo618Layout = new javax.swing.GroupLayout(Imagen_tornillo618);
+        Imagen_tornillo618.setLayout(Imagen_tornillo618Layout);
+        Imagen_tornillo618Layout.setHorizontalGroup(
+            Imagen_tornillo618Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_tornillo618Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Imagen_tornillo618Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel28)
+                    .addComponent(change10)
+                    .addComponent(jLabel36))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Imagen_tornillo618Layout.setVerticalGroup(
+            Imagen_tornillo618Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_tornillo618Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel36)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel28)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(change10)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Material_ship513.setBackground(new java.awt.Color(255, 255, 255));
+        Material_ship513.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        NPS41.setBackground(new java.awt.Color(255, 255, 255));
+        NPS41.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS41.setFocusable(false);
+        NPS41.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS41MouseClicked(evt);
+            }
+        });
+
+        npaescanear41.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear41.setText("02YK527");
+
+        QT41.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT41.setText("QT:");
+
+        FQT41.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT41.setText("FQT:");
+
+        DISP41.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP41.setText("IDSP:");
+
+        idsp41.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp41.setText("A");
+
+        descripcion41.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion41.setText("SCREW        M3.5x10 HEX");
+
+        npecaneado41.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado41.setText("PF  2L01-LM08");
+
+        serial41.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial41.setText("-             -            -");
+
+        cantidadrequerida41.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida41.setText("00002");
+
+        cantidadfinal41.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal41.setText("00000");
+
+        javax.swing.GroupLayout NPS41Layout = new javax.swing.GroupLayout(NPS41);
+        NPS41.setLayout(NPS41Layout);
+        NPS41Layout.setHorizontalGroup(
+            NPS41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS41Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS41Layout.createSequentialGroup()
+                        .addComponent(npecaneado41, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial41, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS41Layout.createSequentialGroup()
+                        .addGroup(NPS41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS41Layout.createSequentialGroup()
+                                .addComponent(DISP41)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp41)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion41, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS41Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear41)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT41)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida41)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT41)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal41)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS41Layout.setVerticalGroup(
+            NPS41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS41Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear41)
+                    .addComponent(QT41)
+                    .addComponent(FQT41)
+                    .addComponent(cantidadrequerida41)
+                    .addComponent(cantidadfinal41))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP41)
+                    .addComponent(idsp41)
+                    .addComponent(descripcion41))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS41Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado41)
+                    .addComponent(serial41))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS40.setBackground(new java.awt.Color(255, 255, 255));
+        NPS40.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS40.setFocusable(false);
+        NPS40.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS40MouseClicked(evt);
+            }
+        });
+
+        npaescanear40.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear40.setText("01GY513");
+
+        QT40.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT40.setText("QT:");
+
+        FQT40.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT40.setText("FQT:");
+
+        DISP40.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP40.setText("IDSP:");
+
+        idsp40.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp40.setText("A");
+
+        descripcion40.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion40.setText("BRACKET    4U RACK SHIP");
+
+        npecaneado40.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado40.setText("PF  2L01-LM08");
+
+        serial40.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial40.setText("-             -            -");
+
+        cantidadrequerida40.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida40.setText("00001");
+
+        cantidadfinal40.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal40.setText("00000");
+
+        javax.swing.GroupLayout NPS40Layout = new javax.swing.GroupLayout(NPS40);
+        NPS40.setLayout(NPS40Layout);
+        NPS40Layout.setHorizontalGroup(
+            NPS40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS40Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS40Layout.createSequentialGroup()
+                        .addComponent(npecaneado40, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial40, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS40Layout.createSequentialGroup()
+                        .addGroup(NPS40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS40Layout.createSequentialGroup()
+                                .addComponent(DISP40)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp40)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion40, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS40Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear40)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT40)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida40)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT40)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal40)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS40Layout.setVerticalGroup(
+            NPS40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS40Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear40)
+                    .addComponent(QT40)
+                    .addComponent(FQT40)
+                    .addComponent(cantidadrequerida40)
+                    .addComponent(cantidadfinal40))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP40)
+                    .addComponent(idsp40)
+                    .addComponent(descripcion40))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS40Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado40)
+                    .addComponent(serial40))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS42.setBackground(new java.awt.Color(255, 255, 255));
+        NPS42.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS42.setFocusable(false);
+        NPS42.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS42MouseClicked(evt);
+            }
+        });
+
+        npaescanear42.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear42.setText("46C6380");
+
+        QT42.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT42.setText("QT:");
+
+        FQT42.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT42.setText("FQT:");
+
+        DISP42.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP42.setText("IDSP:");
+
+        idsp42.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp42.setText("A");
+
+        descripcion42.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion42.setText("SCREW M5x16 BLACK");
+
+        npecaneado42.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado42.setText("PF  2L01-LM08");
+
+        serial42.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial42.setText("-             -            -");
+
+        cantidadrequerida42.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida42.setText("00004");
+
+        cantidadfinal42.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal42.setText("00000");
+
+        javax.swing.GroupLayout NPS42Layout = new javax.swing.GroupLayout(NPS42);
+        NPS42.setLayout(NPS42Layout);
+        NPS42Layout.setHorizontalGroup(
+            NPS42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS42Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS42Layout.createSequentialGroup()
+                        .addComponent(npecaneado42, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial42, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS42Layout.createSequentialGroup()
+                        .addGroup(NPS42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS42Layout.createSequentialGroup()
+                                .addComponent(DISP42)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp42)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion42, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS42Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear42)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT42)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida42)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT42)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal42)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS42Layout.setVerticalGroup(
+            NPS42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS42Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear42)
+                    .addComponent(QT42)
+                    .addComponent(FQT42)
+                    .addComponent(cantidadrequerida42)
+                    .addComponent(cantidadfinal42))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP42)
+                    .addComponent(idsp42)
+                    .addComponent(descripcion42))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS42Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado42)
+                    .addComponent(serial42))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS43.setBackground(new java.awt.Color(255, 255, 255));
+        NPS43.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS43.setFocusable(false);
+        NPS43.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS43MouseClicked(evt);
+            }
+        });
+
+        npaescanear43.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear43.setText("01GY513");
+
+        QT43.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT43.setText("QT:");
+
+        FQT43.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT43.setText("FQT:");
+
+        DISP43.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP43.setText("IDSP:");
+
+        idsp43.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp43.setText("A");
+
+        descripcion43.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion43.setText("BRACKET    4U RACK SHIP");
+
+        npecaneado43.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado43.setText("PF  2L01-LM13");
+
+        serial43.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial43.setText("-             -            -");
+
+        cantidadrequerida43.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida43.setText("00001");
+
+        cantidadfinal43.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal43.setText("00000");
+
+        javax.swing.GroupLayout NPS43Layout = new javax.swing.GroupLayout(NPS43);
+        NPS43.setLayout(NPS43Layout);
+        NPS43Layout.setHorizontalGroup(
+            NPS43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS43Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS43Layout.createSequentialGroup()
+                        .addComponent(npecaneado43, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial43, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS43Layout.createSequentialGroup()
+                        .addGroup(NPS43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS43Layout.createSequentialGroup()
+                                .addComponent(DISP43)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp43)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion43, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS43Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear43)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                                .addComponent(QT43)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida43)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT43)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal43)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+        NPS43Layout.setVerticalGroup(
+            NPS43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS43Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear43)
+                    .addComponent(QT43)
+                    .addComponent(FQT43)
+                    .addComponent(cantidadrequerida43)
+                    .addComponent(cantidadfinal43))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP43)
+                    .addComponent(idsp43)
+                    .addComponent(descripcion43))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS43Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado43)
+                    .addComponent(serial43))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS45.setBackground(new java.awt.Color(255, 255, 255));
+        NPS45.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS45.setFocusable(false);
+        NPS45.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS45MouseClicked(evt);
+            }
+        });
+
+        npaescanear45.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear45.setText("46C6380");
+
+        QT45.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT45.setText("QT:");
+
+        FQT45.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT45.setText("FQT:");
+
+        DISP45.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP45.setText("IDSP:");
+
+        idsp45.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp45.setText("A");
+
+        descripcion45.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion45.setText("SCREW M5x16 BLACK");
+
+        npecaneado45.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado45.setText("PF  2L01-LM13");
+
+        serial45.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial45.setText("-             -            -");
+
+        cantidadrequerida45.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida45.setText("00004");
+
+        cantidadfinal45.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal45.setText("00000");
+
+        javax.swing.GroupLayout NPS45Layout = new javax.swing.GroupLayout(NPS45);
+        NPS45.setLayout(NPS45Layout);
+        NPS45Layout.setHorizontalGroup(
+            NPS45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS45Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS45Layout.createSequentialGroup()
+                        .addComponent(npecaneado45, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial45, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS45Layout.createSequentialGroup()
+                        .addGroup(NPS45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS45Layout.createSequentialGroup()
+                                .addComponent(DISP45)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp45)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion45, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS45Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear45)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT45)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida45)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT45)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal45)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS45Layout.setVerticalGroup(
+            NPS45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS45Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear45)
+                    .addComponent(QT45)
+                    .addComponent(FQT45)
+                    .addComponent(cantidadrequerida45)
+                    .addComponent(cantidadfinal45))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP45)
+                    .addComponent(idsp45)
+                    .addComponent(descripcion45))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS45Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado45)
+                    .addComponent(serial45))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS44.setBackground(new java.awt.Color(255, 255, 255));
+        NPS44.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS44.setFocusable(false);
+        NPS44.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS44MouseClicked(evt);
+            }
+        });
+
+        npaescanear44.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear44.setText("02YK527");
+
+        QT44.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT44.setText("QT:");
+
+        FQT44.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT44.setText("FQT:");
+
+        DISP44.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP44.setText("IDSP:");
+
+        idsp44.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp44.setText("A");
+
+        descripcion44.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion44.setText("SCREW        M3.5x10 HEX");
+
+        npecaneado44.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado44.setText("PF  2L01-LM13");
+
+        serial44.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial44.setText("-             -            -");
+
+        cantidadrequerida44.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida44.setText("00002");
+
+        cantidadfinal44.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal44.setText("00000");
+
+        javax.swing.GroupLayout NPS44Layout = new javax.swing.GroupLayout(NPS44);
+        NPS44.setLayout(NPS44Layout);
+        NPS44Layout.setHorizontalGroup(
+            NPS44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS44Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS44Layout.createSequentialGroup()
+                        .addComponent(npecaneado44, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial44, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS44Layout.createSequentialGroup()
+                        .addGroup(NPS44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS44Layout.createSequentialGroup()
+                                .addComponent(DISP44)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp44)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion44, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS44Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear44)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT44)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida44)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT44)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal44)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS44Layout.setVerticalGroup(
+            NPS44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS44Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear44)
+                    .addComponent(QT44)
+                    .addComponent(FQT44)
+                    .addComponent(cantidadrequerida44)
+                    .addComponent(cantidadfinal44))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP44)
+                    .addComponent(idsp44)
+                    .addComponent(descripcion44))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS44Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado44)
+                    .addComponent(serial44))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout Material_ship513Layout = new javax.swing.GroupLayout(Material_ship513);
+        Material_ship513.setLayout(Material_ship513Layout);
+        Material_ship513Layout.setHorizontalGroup(
+            Material_ship513Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Material_ship513Layout.createSequentialGroup()
+                .addGap(0, 1, Short.MAX_VALUE)
+                .addGroup(Material_ship513Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(NPS44, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NPS42, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NPS43, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NPS40, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NPS41, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NPS45, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+        Material_ship513Layout.setVerticalGroup(
+            Material_ship513Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_ship513Layout.createSequentialGroup()
+                .addComponent(NPS40, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS41, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS42, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS43, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS44, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS45, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+
+        Imagen_ship513.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_ship513.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel29.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/RN4SHIPBK.jpg"))); // NOI18N
+
+        change11.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change11.setText("Incompleto");
+        change11.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change11StateChanged(evt);
+            }
+        });
+        change11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change11ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Imagen_ship513Layout = new javax.swing.GroupLayout(Imagen_ship513);
+        Imagen_ship513.setLayout(Imagen_ship513Layout);
+        Imagen_ship513Layout.setHorizontalGroup(
+            Imagen_ship513Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_ship513Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Imagen_ship513Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel29)
+                    .addComponent(change11))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Imagen_ship513Layout.setVerticalGroup(
+            Imagen_ship513Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_ship513Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel29)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(change11)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Material_rasta.setBackground(new java.awt.Color(255, 255, 255));
+        Material_rasta.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        NPS46.setBackground(new java.awt.Color(255, 255, 255));
+        NPS46.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS46.setFocusable(false);
+        NPS46.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS46MouseClicked(evt);
+            }
+        });
+
+        npaescanear46.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear46.setText("00RN838");
+
+        QT46.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT46.setText("QT:");
+
+        FQT46.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT46.setText("FQT:");
+
+        DISP46.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP46.setText("IDSP:");
+
+        idsp46.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp46.setText("A");
+
+        descripcion46.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion46.setText("LABEL           RASTA Label");
+
+        npecaneado46.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado46.setText("PF  2L01-");
+
+        serial46.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial46.setText("-             -            -");
+
+        cantidadrequerida46.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida46.setText("00002");
+
+        cantidadfinal46.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal46.setText("00000");
+
+        javax.swing.GroupLayout NPS46Layout = new javax.swing.GroupLayout(NPS46);
+        NPS46.setLayout(NPS46Layout);
+        NPS46Layout.setHorizontalGroup(
+            NPS46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS46Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS46Layout.createSequentialGroup()
+                        .addComponent(npecaneado46, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial46, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 24, Short.MAX_VALUE))
+                    .addGroup(NPS46Layout.createSequentialGroup()
+                        .addGroup(NPS46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS46Layout.createSequentialGroup()
+                                .addComponent(DISP46)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp46)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion46, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS46Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear46)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT46)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida46)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT46)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal46)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+        NPS46Layout.setVerticalGroup(
+            NPS46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS46Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear46)
+                    .addComponent(QT46)
+                    .addComponent(FQT46)
+                    .addComponent(cantidadrequerida46)
+                    .addComponent(cantidadfinal46))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP46)
+                    .addComponent(idsp46)
+                    .addComponent(descripcion46))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS46Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado46)
+                    .addComponent(serial46))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout Material_rastaLayout = new javax.swing.GroupLayout(Material_rasta);
+        Material_rasta.setLayout(Material_rastaLayout);
+        Material_rastaLayout.setHorizontalGroup(
+            Material_rastaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(NPS46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+        );
+        Material_rastaLayout.setVerticalGroup(
+            Material_rastaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_rastaLayout.createSequentialGroup()
+                .addComponent(NPS46, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        Imagen_rasta.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_rasta.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/RASTALAB.jpg"))); // NOI18N
+
+        change12.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change12.setText("Incompleto");
+        change12.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change12StateChanged(evt);
+            }
+        });
+        change12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change12ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Imagen_rastaLayout = new javax.swing.GroupLayout(Imagen_rasta);
+        Imagen_rasta.setLayout(Imagen_rastaLayout);
+        Imagen_rastaLayout.setHorizontalGroup(
+            Imagen_rastaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_rastaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Imagen_rastaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel30)
+                    .addComponent(change12))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Imagen_rastaLayout.setVerticalGroup(
+            Imagen_rastaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_rastaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel30)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(change12)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Material_ir.setBackground(new java.awt.Color(255, 255, 255));
+        Material_ir.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel31.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel31.setText("NON - PART IN INSTRUCTION");
+
+        javax.swing.GroupLayout Material_irLayout = new javax.swing.GroupLayout(Material_ir);
+        Material_ir.setLayout(Material_irLayout);
+        Material_irLayout.setHorizontalGroup(
+            Material_irLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_irLayout.createSequentialGroup()
+                .addGap(50, 50, 50)
+                .addComponent(jLabel31)
+                .addContainerGap(68, Short.MAX_VALUE))
+        );
+        Material_irLayout.setVerticalGroup(
+            Material_irLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_irLayout.createSequentialGroup()
+                .addComponent(jLabel31)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        Imagen_ir.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_ir.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel32.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        jLabel32.setText("Ate los cables de poder del PDU dentro del rack, con el número de parte para fijado 7331381.");
+
+        change13.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change13.setText("Incompleto");
+        change13.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change13StateChanged(evt);
+            }
+        });
+        change13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change13ActionPerformed(evt);
+            }
+        });
+
+        Boton_complete.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        Boton_complete.setText("Complete");
+        Boton_complete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Boton_completeActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Imagen_irLayout = new javax.swing.GroupLayout(Imagen_ir);
+        Imagen_ir.setLayout(Imagen_irLayout);
+        Imagen_irLayout.setHorizontalGroup(
+            Imagen_irLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_irLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Imagen_irLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Imagen_irLayout.createSequentialGroup()
+                        .addComponent(change13)
+                        .addGap(85, 85, 85)
+                        .addComponent(Boton_complete))
+                    .addComponent(jLabel32))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Imagen_irLayout.setVerticalGroup(
+            Imagen_irLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_irLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel32)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 22, Short.MAX_VALUE)
+                .addGroup(Imagen_irLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(change13)
+                    .addComponent(Boton_complete))
+                .addContainerGap())
+        );
+
+        Material_ir2.setBackground(new java.awt.Color(255, 255, 255));
+        Material_ir2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel37.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel37.setText("NON - PART INSTRUCTION");
+
+        javax.swing.GroupLayout Material_ir2Layout = new javax.swing.GroupLayout(Material_ir2);
+        Material_ir2.setLayout(Material_ir2Layout);
+        Material_ir2Layout.setHorizontalGroup(
+            Material_ir2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Material_ir2Layout.createSequentialGroup()
+                .addContainerGap(58, Short.MAX_VALUE)
+                .addComponent(jLabel37)
+                .addGap(56, 56, 56))
+        );
+        Material_ir2Layout.setVerticalGroup(
+            Material_ir2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_ir2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel37)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Imagen_ir2.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_ir2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel38.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/WRCH.jpg"))); // NOI18N
+
+        change14.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change14.setText("Incompleto");
+        change14.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change14StateChanged(evt);
+            }
+        });
+        change14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change14ActionPerformed(evt);
+            }
+        });
+
+        Boton_complete2.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        Boton_complete2.setText("Complete");
+        Boton_complete2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Boton_complete2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Imagen_ir2Layout = new javax.swing.GroupLayout(Imagen_ir2);
+        Imagen_ir2.setLayout(Imagen_ir2Layout);
+        Imagen_ir2Layout.setHorizontalGroup(
+            Imagen_ir2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_ir2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Imagen_ir2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel38)
+                    .addGroup(Imagen_ir2Layout.createSequentialGroup()
+                        .addComponent(change14)
+                        .addGap(54, 54, 54)
+                        .addComponent(Boton_complete2)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Imagen_ir2Layout.setVerticalGroup(
+            Imagen_ir2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_ir2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel38)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(Imagen_ir2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(change14)
+                    .addComponent(Boton_complete2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Material_tornillo504.setBackground(new java.awt.Color(255, 255, 255));
+        Material_tornillo504.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        NPS47.setBackground(new java.awt.Color(255, 255, 255));
+        NPS47.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS47.setFocusable(false);
+        NPS47.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS47MouseClicked(evt);
+            }
+        });
+
+        npaescanear47.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear47.setText("02DE504");
+
+        QT47.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT47.setText("QT:");
+
+        FQT47.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT47.setText("FQT:");
+
+        DISP47.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP47.setText("IDSP:");
+
+        idsp47.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp47.setText("A");
+
+        descripcion47.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion47.setText("SCREW M4x8mm Hexflng");
+
+        npecaneado47.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado47.setText("PF  2L01-LM20");
+
+        serial47.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial47.setText("-             -            -");
+
+        cantidadrequerida47.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida47.setText("00002");
+
+        cantidadfinal47.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal47.setText("00000");
+
+        javax.swing.GroupLayout NPS47Layout = new javax.swing.GroupLayout(NPS47);
+        NPS47.setLayout(NPS47Layout);
+        NPS47Layout.setHorizontalGroup(
+            NPS47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS47Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS47Layout.createSequentialGroup()
+                        .addComponent(npecaneado47, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial47, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 24, Short.MAX_VALUE))
+                    .addGroup(NPS47Layout.createSequentialGroup()
+                        .addGroup(NPS47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS47Layout.createSequentialGroup()
+                                .addComponent(DISP47)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp47)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion47, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS47Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear47)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT47)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida47)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT47)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal47)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+        NPS47Layout.setVerticalGroup(
+            NPS47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS47Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear47)
+                    .addComponent(QT47)
+                    .addComponent(FQT47)
+                    .addComponent(cantidadrequerida47)
+                    .addComponent(cantidadfinal47))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP47)
+                    .addComponent(idsp47)
+                    .addComponent(descripcion47))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS47Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado47)
+                    .addComponent(serial47))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS48.setBackground(new java.awt.Color(255, 255, 255));
+        NPS48.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS48.setFocusable(false);
+        NPS48.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS48MouseClicked(evt);
+            }
+        });
+
+        npaescanear48.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear48.setText("46C6380");
+
+        QT48.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT48.setText("QT:");
+
+        FQT48.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT48.setText("FQT:");
+
+        DISP48.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP48.setText("IDSP:");
+
+        idsp48.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp48.setText("A");
+
+        descripcion48.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion48.setText("SCREW M5x16 BLACK");
+
+        npecaneado48.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado48.setText("PF  2L01-LM20");
+
+        serial48.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial48.setText("-             -            -");
+
+        cantidadrequerida48.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida48.setText("00004");
+
+        cantidadfinal48.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal48.setText("00000");
+
+        javax.swing.GroupLayout NPS48Layout = new javax.swing.GroupLayout(NPS48);
+        NPS48.setLayout(NPS48Layout);
+        NPS48Layout.setHorizontalGroup(
+            NPS48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS48Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS48Layout.createSequentialGroup()
+                        .addComponent(npecaneado48, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial48, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 24, Short.MAX_VALUE))
+                    .addGroup(NPS48Layout.createSequentialGroup()
+                        .addGroup(NPS48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS48Layout.createSequentialGroup()
+                                .addComponent(DISP48)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp48)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion48, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS48Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear48)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT48)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida48)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT48)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal48)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+        NPS48Layout.setVerticalGroup(
+            NPS48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS48Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear48)
+                    .addComponent(QT48)
+                    .addComponent(FQT48)
+                    .addComponent(cantidadrequerida48)
+                    .addComponent(cantidadfinal48))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP48)
+                    .addComponent(idsp48)
+                    .addComponent(descripcion48))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS48Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado48)
+                    .addComponent(serial48))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS49.setBackground(new java.awt.Color(255, 255, 255));
+        NPS49.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS49.setFocusable(false);
+        NPS49.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS49MouseClicked(evt);
+            }
+        });
+
+        npaescanear49.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear49.setText("02DE504");
+
+        QT49.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT49.setText("QT:");
+
+        FQT49.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT49.setText("FQT:");
+
+        DISP49.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP49.setText("IDSP:");
+
+        idsp49.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp49.setText("A");
+
+        descripcion49.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion49.setText("SCREW M4x8mm Hexflng");
+
+        npecaneado49.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado49.setText("PF  2L01-LM28");
+
+        serial49.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial49.setText("-             -            -");
+
+        cantidadrequerida49.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida49.setText("00002");
+
+        cantidadfinal49.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal49.setText("00000");
+
+        javax.swing.GroupLayout NPS49Layout = new javax.swing.GroupLayout(NPS49);
+        NPS49.setLayout(NPS49Layout);
+        NPS49Layout.setHorizontalGroup(
+            NPS49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS49Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS49Layout.createSequentialGroup()
+                        .addComponent(npecaneado49, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial49, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 24, Short.MAX_VALUE))
+                    .addGroup(NPS49Layout.createSequentialGroup()
+                        .addGroup(NPS49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS49Layout.createSequentialGroup()
+                                .addComponent(DISP49)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp49)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion49, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS49Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear49)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT49)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida49)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT49)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal49)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(25, Short.MAX_VALUE))
+        );
+        NPS49Layout.setVerticalGroup(
+            NPS49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS49Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear49)
+                    .addComponent(QT49)
+                    .addComponent(FQT49)
+                    .addComponent(cantidadrequerida49)
+                    .addComponent(cantidadfinal49))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP49)
+                    .addComponent(idsp49)
+                    .addComponent(descripcion49))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS49Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado49)
+                    .addComponent(serial49))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS50.setBackground(new java.awt.Color(255, 255, 255));
+        NPS50.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS50.setFocusable(false);
+        NPS50.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS50MouseClicked(evt);
+            }
+        });
+
+        npaescanear50.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear50.setText("46C6380");
+
+        QT50.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT50.setText("QT:");
+
+        FQT50.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT50.setText("FQT:");
+
+        DISP50.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP50.setText("IDSP:");
+
+        idsp50.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp50.setText("A");
+
+        descripcion50.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion50.setText("SCREW M5x16 BLACK");
+
+        npecaneado50.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado50.setText("PF  2L01-LM28");
+
+        serial50.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial50.setText("-             -            -");
+
+        cantidadrequerida50.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida50.setText("00004");
+
+        cantidadfinal50.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal50.setText("00000");
+
+        javax.swing.GroupLayout NPS50Layout = new javax.swing.GroupLayout(NPS50);
+        NPS50.setLayout(NPS50Layout);
+        NPS50Layout.setHorizontalGroup(
+            NPS50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS50Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS50Layout.createSequentialGroup()
+                        .addComponent(npecaneado50, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial50, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS50Layout.createSequentialGroup()
+                        .addGroup(NPS50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS50Layout.createSequentialGroup()
+                                .addComponent(DISP50)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp50)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion50, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS50Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear50)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT50)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida50)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT50)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal50)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS50Layout.setVerticalGroup(
+            NPS50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS50Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear50)
+                    .addComponent(QT50)
+                    .addComponent(FQT50)
+                    .addComponent(cantidadrequerida50)
+                    .addComponent(cantidadfinal50))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP50)
+                    .addComponent(idsp50)
+                    .addComponent(descripcion50))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS50Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado50)
+                    .addComponent(serial50))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout Material_tornillo504Layout = new javax.swing.GroupLayout(Material_tornillo504);
+        Material_tornillo504.setLayout(Material_tornillo504Layout);
+        Material_tornillo504Layout.setHorizontalGroup(
+            Material_tornillo504Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(NPS50, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(Material_tornillo504Layout.createSequentialGroup()
+                .addGroup(Material_tornillo504Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(NPS47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NPS48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(NPS49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        Material_tornillo504Layout.setVerticalGroup(
+            Material_tornillo504Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_tornillo504Layout.createSequentialGroup()
+                .addComponent(NPS47, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS48, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS49, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS50, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        Imagen_tornillo504.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_tornillo504.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/AOCDEPOP.jpg"))); // NOI18N
+
+        change15.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change15.setText("Incompleto");
+        change15.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change15StateChanged(evt);
+            }
+        });
+        change15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change15ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Imagen_tornillo504Layout = new javax.swing.GroupLayout(Imagen_tornillo504);
+        Imagen_tornillo504.setLayout(Imagen_tornillo504Layout);
+        Imagen_tornillo504Layout.setHorizontalGroup(
+            Imagen_tornillo504Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_tornillo504Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Imagen_tornillo504Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel39)
+                    .addComponent(change15))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Imagen_tornillo504Layout.setVerticalGroup(
+            Imagen_tornillo504Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_tornillo504Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel39)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(change15)
+                .addContainerGap(26, Short.MAX_VALUE))
+        );
+
+        Ir_door.setBackground(new java.awt.Color(255, 255, 255));
+        Ir_door.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel40.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        jLabel40.setText("NON - PART INSTRUCTION");
+
+        javax.swing.GroupLayout Ir_doorLayout = new javax.swing.GroupLayout(Ir_door);
+        Ir_door.setLayout(Ir_doorLayout);
+        Ir_doorLayout.setHorizontalGroup(
+            Ir_doorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Ir_doorLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel40)
+                .addGap(54, 54, 54))
+        );
+        Ir_doorLayout.setVerticalGroup(
+            Ir_doorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Ir_doorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel40)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Imagen_ir_door.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_ir_door.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/DOORFLASH.jpg"))); // NOI18N
+
+        change16.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change16.setText("Incompleto");
+        change16.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change16StateChanged(evt);
+            }
+        });
+        change16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change16ActionPerformed(evt);
+            }
+        });
+
+        Boton_complete3.setFont(new java.awt.Font("Century Gothic", 1, 16)); // NOI18N
+        Boton_complete3.setText("Complete");
+        Boton_complete3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Boton_complete3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Imagen_ir_doorLayout = new javax.swing.GroupLayout(Imagen_ir_door);
+        Imagen_ir_door.setLayout(Imagen_ir_doorLayout);
+        Imagen_ir_doorLayout.setHorizontalGroup(
+            Imagen_ir_doorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_ir_doorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Imagen_ir_doorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel41)
+                    .addGroup(Imagen_ir_doorLayout.createSequentialGroup()
+                        .addComponent(change16)
+                        .addGap(18, 18, 18)
+                        .addComponent(Boton_complete3)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Imagen_ir_doorLayout.setVerticalGroup(
+            Imagen_ir_doorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_ir_doorLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel41)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(Imagen_ir_doorLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(change16, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Boton_complete3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        Material_seguro_ethe.setBackground(new java.awt.Color(255, 255, 255));
+        Material_seguro_ethe.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        NPS51.setBackground(new java.awt.Color(255, 255, 255));
+        NPS51.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS51.setFocusable(false);
+        NPS51.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS51MouseClicked(evt);
+            }
+        });
+
+        npaescanear51.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear51.setText("03FP239");
+
+        QT51.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT51.setText("QT:");
+
+        FQT51.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT51.setText("FQT:");
+
+        DISP51.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP51.setText("IDSP:");
+
+        idsp51.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp51.setText("A");
+
+        descripcion51.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion51.setText("MECH ASM    rj45 cover");
+
+        npecaneado51.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado51.setText("PF  2L01-LM08");
+
+        serial51.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial51.setText("-             -            -");
+
+        cantidadrequerida51.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida51.setText("00001");
+
+        cantidadfinal51.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal51.setText("00000");
+
+        javax.swing.GroupLayout NPS51Layout = new javax.swing.GroupLayout(NPS51);
+        NPS51.setLayout(NPS51Layout);
+        NPS51Layout.setHorizontalGroup(
+            NPS51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS51Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS51Layout.createSequentialGroup()
+                        .addComponent(npecaneado51, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial51, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 26, Short.MAX_VALUE))
+                    .addGroup(NPS51Layout.createSequentialGroup()
+                        .addGroup(NPS51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS51Layout.createSequentialGroup()
+                                .addComponent(DISP51)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp51)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion51, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS51Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear51)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT51)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida51)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT51)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal51)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(26, Short.MAX_VALUE))
+        );
+        NPS51Layout.setVerticalGroup(
+            NPS51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS51Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear51)
+                    .addComponent(QT51)
+                    .addComponent(FQT51)
+                    .addComponent(cantidadrequerida51)
+                    .addComponent(cantidadfinal51))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP51)
+                    .addComponent(idsp51)
+                    .addComponent(descripcion51))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS51Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado51)
+                    .addComponent(serial51))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        NPS53.setBackground(new java.awt.Color(255, 255, 255));
+        NPS53.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        NPS53.setFocusable(false);
+        NPS53.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NPS53MouseClicked(evt);
+            }
+        });
+
+        npaescanear53.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npaescanear53.setText("03FP239");
+
+        QT53.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        QT53.setText("QT:");
+
+        FQT53.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        FQT53.setText("FQT:");
+
+        DISP53.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        DISP53.setText("IDSP:");
+
+        idsp53.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        idsp53.setText("A");
+
+        descripcion53.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        descripcion53.setText("MECH ASM    rj45 cover");
+
+        npecaneado53.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        npecaneado53.setText("PF  2L01-LM13");
+
+        serial53.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        serial53.setText("-             -            -");
+
+        cantidadrequerida53.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadrequerida53.setText("00001");
+
+        cantidadfinal53.setFont(new java.awt.Font("Century Gothic", 1, 14)); // NOI18N
+        cantidadfinal53.setText("00000");
+
+        javax.swing.GroupLayout NPS53Layout = new javax.swing.GroupLayout(NPS53);
+        NPS53.setLayout(NPS53Layout);
+        NPS53Layout.setHorizontalGroup(
+            NPS53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS53Layout.createSequentialGroup()
+                .addGap(17, 17, 17)
+                .addGroup(NPS53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(NPS53Layout.createSequentialGroup()
+                        .addComponent(npecaneado53, javax.swing.GroupLayout.PREFERRED_SIZE, 118, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(serial53, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(NPS53Layout.createSequentialGroup()
+                        .addGroup(NPS53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(NPS53Layout.createSequentialGroup()
+                                .addComponent(DISP53)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(idsp53)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(descripcion53, javax.swing.GroupLayout.PREFERRED_SIZE, 175, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(NPS53Layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(npaescanear53)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(QT53)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadrequerida53)
+                                .addGap(28, 28, 28)
+                                .addComponent(FQT53)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(cantidadfinal53)))
+                        .addGap(12, 12, 12)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        NPS53Layout.setVerticalGroup(
+            NPS53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(NPS53Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(NPS53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npaescanear53)
+                    .addComponent(QT53)
+                    .addComponent(FQT53)
+                    .addComponent(cantidadrequerida53)
+                    .addComponent(cantidadfinal53))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(NPS53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DISP53)
+                    .addComponent(idsp53)
+                    .addComponent(descripcion53))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(NPS53Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(npecaneado53)
+                    .addComponent(serial53))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout Material_seguro_etheLayout = new javax.swing.GroupLayout(Material_seguro_ethe);
+        Material_seguro_ethe.setLayout(Material_seguro_etheLayout);
+        Material_seguro_etheLayout.setHorizontalGroup(
+            Material_seguro_etheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_seguro_etheLayout.createSequentialGroup()
+                .addGroup(Material_seguro_etheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(NPS51, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(NPS53, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        Material_seguro_etheLayout.setVerticalGroup(
+            Material_seguro_etheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Material_seguro_etheLayout.createSequentialGroup()
+                .addComponent(NPS51, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(NPS53, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        Imagen_seg_ethe.setBackground(new java.awt.Color(255, 255, 255));
+        Imagen_seg_ethe.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+
+        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/mfs/Img/RNEBMC.jpg"))); // NOI18N
+
+        change17.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
+        change17.setText("Incompleto");
+        change17.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                change17StateChanged(evt);
+            }
+        });
+        change17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                change17ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout Imagen_seg_etheLayout = new javax.swing.GroupLayout(Imagen_seg_ethe);
+        Imagen_seg_ethe.setLayout(Imagen_seg_etheLayout);
+        Imagen_seg_etheLayout.setHorizontalGroup(
+            Imagen_seg_etheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_seg_etheLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(Imagen_seg_etheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel42)
+                    .addComponent(change17))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        Imagen_seg_etheLayout.setVerticalGroup(
+            Imagen_seg_etheLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Imagen_seg_etheLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel42)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(change17)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout bloque1Layout = new javax.swing.GroupLayout(bloque1);
         bloque1.setLayout(bloque1Layout);
         bloque1Layout.setHorizontalGroup(
             bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bloque1Layout.createSequentialGroup()
+                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Material_bracket_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Material_ship841, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(Imagen_ship841, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Imagen_bracket_panel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(17, 17, 17))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bloque1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addGroup(bloque1Layout.createSequentialGroup()
+                        .addComponent(Material_rasta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Imagen_rasta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, bloque1Layout.createSequentialGroup()
+                        .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addComponent(Material_ship513, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Material_tornillo618, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Material_seguro_ethe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Material_sidepanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(Imagen_sidepanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Imagen_tornillo618, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Imagen_ship513, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Imagen_seg_ethe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(bloque1Layout.createSequentialGroup()
+                        .addComponent(Material_ir2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Imagen_ir2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addGap(16, 16, 16))
             .addGroup(bloque1Layout.createSequentialGroup()
                 .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(bloque1Layout.createSequentialGroup()
                         .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(bisagraslatch, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(bloque4, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(bisagraslatch1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(bloque5, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(bloque6, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(Material_flag, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Material_cover1u, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Material_cover3u, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(bloqueimagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(bloqueimagen1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(bloqueimagen2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(bloqueimagen3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(bloquebisagras, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Bisagrastraseras, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(bloque1Layout.createSequentialGroup()
-                        .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(bloque1_1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(bloque2, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(bloque3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(imagen, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jPanel4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(Imagen_flag, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(Imagen_cover1u, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(imagen_cover3u, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, bloque1Layout.createSequentialGroup()
+                            .addComponent(Material_ir, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(Imagen_ir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, bloque1Layout.createSequentialGroup()
+                            .addComponent(Material_tornillo504, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(Imagen_tornillo504, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.LEADING, bloque1Layout.createSequentialGroup()
+                            .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addGroup(bloque1Layout.createSequentialGroup()
+                                    .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                        .addComponent(Ir_door, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(Material_door_flag, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(Material_puerta691, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(Material_llave, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
+                                .addGroup(bloque1Layout.createSequentialGroup()
+                                    .addComponent(Material_door105, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                    .addGap(7, 7, 7)))
+                            .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(Imagen_puerta691, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Imagen_llave, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Imagen_door_flag, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Imagen_door_105, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(Imagen_ir_door, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         bloque1Layout.setVerticalGroup(
@@ -4281,37 +7474,77 @@ public class Clean_Claim extends javax.swing.JFrame {
             .addGroup(bloque1Layout.createSequentialGroup()
                 .addGap(4, 4, 4)
                 .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(bloque1_1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(imagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Material_flag, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Imagen_flag, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(bloque2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(136, 136, 136)
-                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(bloqueimagen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bloque3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Material_cover1u, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Imagen_cover1u, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(bloqueimagen1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bloque4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Material_cover3u, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(imagen_cover3u, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(bloqueimagen2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bloque5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Imagen_ir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Material_ir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(bisagraslatch, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bloquebisagras, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Imagen_llave, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Material_llave, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(bloque6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(bloqueimagen3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(Imagen_door_flag, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Material_door_flag, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(bisagraslatch1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Bisagrastraseras, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(635, Short.MAX_VALUE))
+                    .addComponent(Imagen_ir_door, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Ir_door, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Imagen_puerta691, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Material_puerta691, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Imagen_door_105, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Material_door105, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Material_tornillo504, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Imagen_tornillo504, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Imagen_ship841, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Material_ship841, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Imagen_bracket_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Material_bracket_panel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Imagen_sidepanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Material_sidepanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Imagen_tornillo618, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Material_tornillo618, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Imagen_ir2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Material_ir2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Material_ship513, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Imagen_ship513, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Imagen_seg_ethe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Material_seguro_ethe, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(bloque1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(Imagen_rasta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(Material_rasta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(402, Short.MAX_VALUE))
         );
 
         cuerpo.setViewportView(bloque1);
@@ -4410,8 +7643,7 @@ public class Clean_Claim extends javax.swing.JFrame {
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(cuerpo, javax.swing.GroupLayout.DEFAULT_SIZE, 6154, Short.MAX_VALUE)
-                .addContainerGap())
+                .addComponent(cuerpo, javax.swing.GroupLayout.DEFAULT_SIZE, 779, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -4422,7 +7654,7 @@ public class Clean_Claim extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 6407, Short.MAX_VALUE)
+            .addComponent(jPanel3, javax.swing.GroupLayout.DEFAULT_SIZE, 1026, Short.MAX_VALUE)
         );
 
         pack();
@@ -4438,8 +7670,8 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } /*else if (evt.getClickCount()==1){
-            NPSFocusGained(null);
+        } else if (evt.getClickCount()==1){
+            
             pn = this.npaescanear1.getText().toUpperCase();
             pn2 = this.npaescanear1.getText().substring(3).toUpperCase();
             nm = 1;
@@ -4454,7 +7686,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear1.setForeground(Color.white);
             this.npecaneado1.setForeground(Color.white);
             this.serial1.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS1MouseClicked
 
     private void NPS3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS3MouseClicked
@@ -4467,7 +7699,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } /*else {
+        }else {
             pn = this.npaescanear3.getText().toUpperCase();
             pn2 = this.npaescanear3.getText().substring(3).toUpperCase();
             nm = 3;
@@ -4482,7 +7714,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear3.setForeground(Color.white);
             this.npecaneado3.setForeground(Color.white);
             this.serial3.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS3MouseClicked
 
     private void NPS2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS2MouseClicked
@@ -4495,7 +7727,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } /*else {
+        }else {
             pn = this.npaescanear2.getText().toUpperCase();
             pn2 = this.npaescanear2.getText().substring(3).toUpperCase();
             nm = 2;
@@ -4510,7 +7742,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear2.setForeground(Color.white);
             this.npecaneado2.setForeground(Color.white);
             this.serial2.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS2MouseClicked
 
     private void ReworkActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ReworkActionPerformed
@@ -4571,6 +7803,13 @@ public class Clean_Claim extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
                 }
                 break;
+            case 8:
+                if (idsp8.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
             case 9:
                 if (idsp9.getText().equals("I")){
                    all.rework.setVisible(true); 
@@ -4580,6 +7819,20 @@ public class Clean_Claim extends javax.swing.JFrame {
                 break;
             case 10:
                 if (idsp10.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+             case 11:
+                if (idsp11.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 12:
+                if (idsp12.getText().equals("I")){
                    all.rework.setVisible(true); 
                 } else {
                     JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
@@ -4663,35 +7916,42 @@ public class Clean_Claim extends javax.swing.JFrame {
                 }
                 break;
             case 24:
-//                if (idsp24.getText().equals("I")){
-  //                 all.rework.setVisible(true); 
-    //            } else {
-      //              JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
-        //        }
-          //      break;
-            //case 25:
-              //  if (idsp25.getText().equals("I")){
-                //   all.rework.setVisible(true); 
-//                } else {
-  //                  JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
-    //            }
-      //          break;
-        //    case 26:
-          //      if (idsp26.getText().equals("I")){
-            //       all.rework.setVisible(true); 
-              //  } else {
-                //    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
-//                }
-  //              break;
-    //        case 27:
-      //          if (idsp27.getText().equals("I")){
-        //           all.rework.setVisible(true); 
-          //      } else {
-            //        JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
-              //  }
-                //break;
+                if (idsp24.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 25:
+                if (idsp25.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 26:
+                if (idsp26.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+           case 27:
+                if (idsp27.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
             case 28:
                 if (idsp28.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 29:
+                if (idsp29.getText().equals("I")){
                    all.rework.setVisible(true); 
                 } else {
                     JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
@@ -4711,28 +7971,176 @@ public class Clean_Claim extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
                 }
                 break;
+            case 32:
+                if (idsp32.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 33:
+                if (idsp33.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 34:
+                if (idsp34.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 35:
+                if (idsp35.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 36:
+                if (idsp36.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 37:
+                if (idsp37.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 38:
+                if (idsp38.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 39:
+                if (idsp39.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 40:
+                if (idsp40.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 41:
+                if (idsp41.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 42:
+                if (idsp42.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 43:
+                if (idsp43.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 44:
+                if (idsp44.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 45:
+                if (idsp45.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 46:
+                if (idsp46.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 47:
+                if (idsp47.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 48:
+                if (idsp48.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 49:
+                if (idsp49.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 50:
+                if (idsp50.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 51:
+                if (idsp51.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
+            case 53:
+                if (idsp53.getText().equals("I")){
+                   all.rework.setVisible(true); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "Invalid Part to Rework");
+                }
+                break;
         }
     }//GEN-LAST:event_ReworkActionPerformed
 
     private void f2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_f2ActionPerformed
         Map<String, String[]> map = new HashMap <>();
-        map.put("01KL468", label3);
-        map.put("69Y1649", label5);
-        map.put("03FP534", label6);
-        map.put("44V4664", label7);
-        map.put("01KL396", label5);
-        map.put("39J1952", label4);
-        map.put("03JG485", label8);
-        map.put("03JG489", label8);
-        map.put("03FP231", label8);
+        map.put("97H9754", label5);
+        map.put("97H9755", label5);
+        map.put("01EL917", label4);
+        map.put("01KV618", label5);
+        map.put("42V2119", label5);
+        map.put("01KU105", label4);
+        map.put("01KL691", label4);
+        map.put("01GY513", label4);
+        map.put("00FW841", label4);
         map.put("46C6380", label5);
-        map.put("74F1823", label7);
-        map.put("69Y2042", label5);
-        map.put("01KL425", label4);
-        map.put("01KL421", label4);
-        map.put("01KU111", label4);
-        map.put("01KU112", label4);
-        map.put("01KU137", label4);
+        map.put("00RN838", label5);
+        map.put("02YK527", label5);
+        map.put("24L0503", label7);
+        map.put("00RP319", label5);
+        map.put("01AF376", label5);
+        map.put("02YK752", label5);
+        map.put("02DE504", label5);
+        map.put("03FP239", label5);
         nps = map.get(pn);
         if (nps == label1){
             all.barcode.setVisible(true);
@@ -4764,14 +8172,14 @@ public class Clean_Claim extends javax.swing.JFrame {
     }//GEN-LAST:event_f2ActionPerformed
 
     private void formMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMousePressed
-        xx=evt.getX();
-        yy=evt.getY();
+       // xx=evt.getX(); Esto es para poder mover la pantalla libremente
+       // yy=evt.getY();
     }//GEN-LAST:event_formMousePressed
 
     private void formMouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_formMouseDragged
-        int x =evt.getXOnScreen();
-        int y=evt.getYOnScreen();
-        this.setLocation(x-xx, y-yy);
+       // int x =evt.getXOnScreen();  Esto es para poder mover la pantalla libremente
+       // int y=evt.getYOnScreen();
+       // this.setLocation(x-xx, y-yy);
     }//GEN-LAST:event_formMouseDragged
 
     private void changeStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_changeStateChanged
@@ -4793,7 +8201,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             }
         }  else if (evt.getClickCount()== 1) {
             NPSFocusGained(null);
-            /* pn = this.npaescanear.getText().toUpperCase();
+             pn = this.npaescanear.getText().toUpperCase();
             pn2 = this.npaescanear.getText().substring(3).toUpperCase();
             nm = 0;
             this.NPS.setBackground(Color.black);
@@ -4806,7 +8214,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.idsp.setForeground(Color.white);
             this.npaescanear.setForeground(Color.white);
             this.npecaneado.setForeground(Color.white);
-            this.serial.setForeground(Color.white); */
+            this.serial.setForeground(Color.white); 
         }
     }//GEN-LAST:event_NPSMouseClicked
 
@@ -4820,7 +8228,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } /*else {
+        } else {
             pn = this.npaescanear5.getText().toUpperCase();
             pn2 = this.npaescanear5.getText().substring(3).toUpperCase();
             nm = 5;
@@ -4835,11 +8243,11 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear5.setForeground(Color.white);
             this.npecaneado5.setForeground(Color.white);
             this.serial5.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS5MouseClicked
 
     private void change1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change1StateChanged
-       if (idsp1.getText().equals("I") && idsp2.getText().equals("I") && idsp3.getText().equals("I") && idsp5.getText().equals("I")){
+       if (idsp1.getText().equals("I") && idsp2.getText().equals("I") && idsp3.getText().equals("I") && idsp4.getText().equals("I") && idsp5.getText().equals("I") && idsp6.getText().equals("I") && idsp7.getText().equals("I") && idsp8.getText().equals("I") && idsp9.getText().equals("I") && idsp10.getText().equals("I") && idsp11.getText().equals("I") && idsp12.getText().equals("I")){
             change1.setSelected(true);
             change1ActionPerformed(null);
         }
@@ -4859,7 +8267,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } /*else {
+        } else {
             pn = this.npaescanear4.getText().toUpperCase();
             pn2 = this.npaescanear4.getText().substring(3).toUpperCase();
             nm = 4;
@@ -4874,7 +8282,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear4.setForeground(Color.white);
             this.npecaneado4.setForeground(Color.white);
             this.serial4.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS4MouseClicked
 
     private void NPS6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS6MouseClicked
@@ -4887,7 +8295,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } /*else {
+        } else {
             pn = this.npaescanear6.getText().toUpperCase();
             pn2 = this.npaescanear6.getText().substring(3).toUpperCase();
             nm = 6;
@@ -4902,11 +8310,11 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear6.setForeground(Color.white);
             this.npecaneado6.setForeground(Color.white);
             this.serial6.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS6MouseClicked
 
     private void change2StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change2StateChanged
-         if (idsp4.getText().equals("I") && idsp6.getText().equals("I")){
+         if (idsp13.getText().equals("I") && idsp14.getText().equals("I") && idsp15.getText().equals("I") && idsp16.getText().equals("I") && idsp17.getText().equals("I") && idsp18.getText().equals("I") && idsp19.getText().equals("I") && idsp20.getText().equals("I") && idsp21.getText().equals("I") && idsp22.getText().equals("I")){
             change2.setSelected(true);
             change2ActionPerformed(null);
         }
@@ -4922,7 +8330,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } /*else {
+        } else {
             pn = this.npaescanear7.getText().toUpperCase();
             pn2 = this.npaescanear7.getText().substring(3).toUpperCase();
             nm = 7;
@@ -4937,11 +8345,11 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear7.setForeground(Color.white);
             this.npecaneado7.setForeground(Color.white);
             this.serial7.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS7MouseClicked
 
     private void change3StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change3StateChanged
-        if (idsp7.getText().equals("I")){
+        if (idsp23.getText().equals("I") && idsp24.getText().equals("I") && idsp25.getText().equals("I")){
             change3.setSelected(true);
             change3ActionPerformed(null);
         }
@@ -4957,7 +8365,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } /*else {
+        } else {
             pn = this.npaescanear9.getText().toUpperCase();
             pn2 = this.npaescanear9.getText().substring(3).toUpperCase();
             nm = 9;
@@ -4972,11 +8380,11 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear9.setForeground(Color.white);
             this.npecaneado9.setForeground(Color.white);
             this.serial9.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS9MouseClicked
 
     private void change4StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change4StateChanged
-        if (idsp9.getText().equals("I")){
+        if (idsp26.getText().equals("I")){
             change4.setSelected(true);
             change4ActionPerformed(null);
         }
@@ -4992,7 +8400,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } /*else {
+        } else {
             pn = this.npaescanear10.getText().toUpperCase();
             pn2 = this.npaescanear10.getText().substring(3).toUpperCase();
             nm = 10;
@@ -5007,7 +8415,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear10.setForeground(Color.white);
             this.npecaneado10.setForeground(Color.white);
             this.serial10.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS10MouseClicked
 
     private void NPS13MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS13MouseClicked
@@ -5020,7 +8428,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } /*else {
+        } else {
             pn = this.npaescanear13.getText().toUpperCase();
             nm = 13;
             pn2 = this.npaescanear13.getText().substring(3).toUpperCase();
@@ -5035,7 +8443,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear13.setForeground(Color.white);
             this.npecaneado13.setForeground(Color.white);
             this.serial13.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS13MouseClicked
 
     private void NPS14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS14MouseClicked
@@ -5048,7 +8456,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } /*else {
+        } else {
             pn = this.npaescanear14.getText().toUpperCase();
             pn2 = this.npaescanear14.getText().substring(3).toUpperCase();
             nm = 14;
@@ -5063,7 +8471,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear14.setForeground(Color.white);
             this.npecaneado14.setForeground(Color.white);
             this.serial14.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS14MouseClicked
 
     private void NPS15MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS15MouseClicked
@@ -5076,7 +8484,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        }else {
             pn = this.npaescanear15.getText().toUpperCase();
             nm = 15;
             pn2 = this.npaescanear15.getText().substring(3).toUpperCase();
@@ -5091,7 +8499,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear15.setForeground(Color.white);
             this.npecaneado15.setForeground(Color.white);
             this.serial15.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS15MouseClicked
 
     private void NPS16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS16MouseClicked
@@ -5104,7 +8512,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        } else {
             pn = this.npaescanear16.getText().toUpperCase();
             pn2 = this.npaescanear16.getText().substring(3).toUpperCase();
             nm = 16;
@@ -5119,7 +8527,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear16.setForeground(Color.white);
             this.npecaneado16.setForeground(Color.white);
             this.serial16.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS16MouseClicked
 
     private void NPS17MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS17MouseClicked
@@ -5132,7 +8540,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        } else {
             pn = this.npaescanear17.getText().toUpperCase();
             pn2 = this.npaescanear17.getText().substring(3).toUpperCase();
             nm = 17;
@@ -5147,7 +8555,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear17.setForeground(Color.white);
             this.npecaneado17.setForeground(Color.white);
             this.serial17.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS17MouseClicked
 
     private void NPS18MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS18MouseClicked
@@ -5160,7 +8568,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        } else {
             pn = this.npaescanear18.getText().toUpperCase();
             pn2 = this.npaescanear18.getText().substring(3).toUpperCase();
             nm = 18;
@@ -5175,7 +8583,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear18.setForeground(Color.white);
             this.npecaneado18.setForeground(Color.white);
             this.serial18.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS18MouseClicked
 
     private void NPS19MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS19MouseClicked
@@ -5188,7 +8596,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        } else {
             pn = this.npaescanear19.getText().toUpperCase();
             pn2 = this.npaescanear19.getText().substring(3).toUpperCase();
             nm = 19;
@@ -5203,7 +8611,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear19.setForeground(Color.white);
             this.npecaneado19.setForeground(Color.white);
             this.serial19.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS19MouseClicked
 
     private void NPS20MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS20MouseClicked
@@ -5216,7 +8624,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        } else {
             pn = this.npaescanear20.getText().toUpperCase();
             pn2 = this.npaescanear20.getText().substring(3).toUpperCase();
             nm = 20;
@@ -5231,7 +8639,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear20.setForeground(Color.white);
             this.npecaneado20.setForeground(Color.white);
             this.serial20.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS20MouseClicked
 
     private void NPS21MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS21MouseClicked
@@ -5244,7 +8652,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        } else {
             pn = this.npaescanear21.getText().toUpperCase();
             pn2 = this.npaescanear21.getText().substring(3).toUpperCase();
             nm = 21;
@@ -5259,7 +8667,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear21.setForeground(Color.white);
             this.npecaneado21.setForeground(Color.white);
             this.serial21.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS21MouseClicked
 
     private void NPS22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS22MouseClicked
@@ -5272,7 +8680,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        } else {
             pn = this.npaescanear22.getText().toUpperCase();
             pn2 = this.npaescanear22.getText().substring(3).toUpperCase();
             nm = 22;
@@ -5287,7 +8695,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear22.setForeground(Color.white);
             this.npecaneado22.setForeground(Color.white);
             this.serial22.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS22MouseClicked
 
     private void NPS23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS23MouseClicked
@@ -5300,7 +8708,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        } else {
             pn = this.npaescanear23.getText().toUpperCase();
             pn2 = this.npaescanear23.getText().substring(3).toUpperCase();
             nm = 23;
@@ -5315,11 +8723,11 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear23.setForeground(Color.white);
             this.npecaneado23.setForeground(Color.white);
             this.serial23.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS23MouseClicked
 
     private void change5StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change5StateChanged
-        if (idsp10.getText().equals("I") && idsp13.getText().equals("I") && idsp14.getText().equals("I") && idsp15.getText().equals("I") && idsp16.getText().equals("I") && idsp17.getText().equals("I") && idsp18.getText().equals("I") && idsp19.getText().equals("I") && idsp20.getText().equals("I") && idsp21.getText().equals("I") && idsp22.getText().equals("I") && idsp23.getText().equals("I")){
+        if (idsp32.getText().equals("I") && idsp33.getText().equals("I") && idsp34.getText().equals("I") && idsp35.getText().equals("I") ){
             change5.setSelected(true);
             change5ActionPerformed(null);
         }
@@ -5335,7 +8743,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        } else {
             pn = this.npaescanear28.getText().toUpperCase();
             pn2 = this.npaescanear28.getText().substring(3).toUpperCase();
             nm = 28;
@@ -5350,7 +8758,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear28.setForeground(Color.white);
             this.npecaneado28.setForeground(Color.white);
             this.serial28.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS28MouseClicked
 
     private void NPS30MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS30MouseClicked
@@ -5363,7 +8771,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        } /*else {
+        }else {
             pn = this.npaescanear30.getText().toUpperCase();
             pn2 = this.npaescanear30.getText().substring(3).toUpperCase();
             nm = 30;
@@ -5378,7 +8786,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear30.setForeground(Color.white);
             this.npecaneado30.setForeground(Color.white);
             this.serial30.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS30MouseClicked
 
     private void NPS31MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS31MouseClicked
@@ -5391,7 +8799,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        } else {
             pn = this.npaescanear31.getText().toUpperCase();
             pn2 = this.npaescanear31.getText().substring(3).toUpperCase();
             nm = 31;
@@ -5406,11 +8814,11 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear31.setForeground(Color.white);
             this.npecaneado31.setForeground(Color.white);
             this.serial31.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS31MouseClicked
 
     private void change7StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change7StateChanged
-        if (idsp28.getText().equals("I") && idsp30.getText().equals("I") && idsp31.getText().equals("I")){
+        if (idsp28.getText().equals("I") && idsp29.getText().equals("I") && idsp30.getText().equals("I") && idsp31.getText().equals("I")){
             change7.setSelected(true);
             change7ActionPerformed(null);
         }
@@ -5425,81 +8833,81 @@ public class Clean_Claim extends javax.swing.JFrame {
     }//GEN-LAST:event_changeActionPerformed
 
     private void EndJobActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_EndJobActionPerformed
-        if (idsp.getText().equals("I") && idsp1.getText().equals("I") && idsp2.getText().equals("I") && idsp3.getText().equals("I") && idsp4.getText().equals("I") && idsp5.getText().equals("I") && idsp6.getText().equals("I") && idsp7.getText().equals("I") && idsp9.getText().equals("I") && idsp10.getText().equals("I") && idsp13.getText().equals("I") && idsp14.getText().equals("I") && idsp15.getText().equals("I") && idsp16.getText().equals("I") && idsp17.getText().equals("I") && idsp18.getText().equals("I") && idsp19.getText().equals("I") && idsp20.getText().equals("I") && idsp21.getText().equals("I") && idsp22.getText().equals("I") && idsp23.getText().equals("I")  && idsp28.getText().equals("I") && idsp30.getText().equals("I") && idsp31.getText().equals("I") && idsp29.getText().equals("I") && idsp32.getText().equals("I") && idsp33.getText().equals("I") && idsp35.getText().equals("I") && change.getText().equals("Completo") && change1.getText().equals("Completo") && change2.getText().equals("Completo") && change3.getText().equals("Completo") && change4.getText().equals("Completo") && change5.getText().equals("Completo") && change6.getText().equals("Completo") && change7.getText().equals("Completo")){
-            if (change.isSelected() && change1.isSelected() && change2.isSelected() && change3.isSelected() && change4.isSelected() && change5.isSelected() && change6.isSelected() && change7.isSelected()){
+        if (idsp.getText().equals("I") && idsp1.getText().equals("I") && idsp2.getText().equals("I") && idsp3.getText().equals("I") && idsp4.getText().equals("I") && idsp5.getText().equals("I") && idsp6.getText().equals("I") && idsp7.getText().equals("I") && idsp8.getText().equals("I") && idsp9.getText().equals("I") && idsp10.getText().equals("I") && idsp11.getText().equals("I") && idsp12.getText().equals("I") && idsp13.getText().equals("I") && idsp14.getText().equals("I") && idsp15.getText().equals("I") && idsp16.getText().equals("I") && idsp17.getText().equals("I") && idsp18.getText().equals("I") && idsp19.getText().equals("I") && idsp20.getText().equals("I") && idsp21.getText().equals("I") && idsp22.getText().equals("I") && idsp23.getText().equals("I") && idsp24.getText().equals("I") && idsp25.getText().equals("I") && idsp26.getText().equals("I") && idsp27.getText().equals("I") && idsp28.getText().equals("I") && idsp29.getText().equals("I") && idsp30.getText().equals("I") && idsp31.getText().equals("I") && idsp32.getText().equals("I") && idsp33.getText().equals("I") && idsp34.getText().equals("I") && idsp35.getText().equals("I") && idsp36.getText().equals("I") && idsp37.getText().equals("I") && idsp38.getText().equals("I") && idsp39.getText().equals("I") && idsp40.getText().equals("I") && idsp41.getText().equals("I") && idsp42.getText().equals("I") && idsp43.getText().equals("I") && idsp44.getText().equals("I") && idsp45.getText().equals("I") && idsp46.getText().equals("I") && idsp47.getText().equals("I") && idsp48.getText().equals("I") && idsp49.getText().equals("I") && idsp50.getText().equals("I") && idsp51.getText().equals("I") && idsp53.getText().equals("I") && change.getText().equals("Completo") && change1.getText().equals("Completo") && change2.getText().equals("Completo") && change3.getText().equals("Completo") && change4.getText().equals("Completo") && change5.getText().equals("Completo") && change6.getText().equals("Completo") && change7.getText().equals("Completo") && change8.getText().equals("Completo") && change9.getText().equals("Completo") && change10.getText().equals("Completo") && change11.getText().equals("Completo") && change12.getText().equals("Completo") && change13.getText().equals("Completo") && change14.getText().equals("Completo") && change15.getText().equals("Completo") && change16.getText().equals("Completo") && change17.getText().equals("Completo")){
+            if (change.isSelected() && change1.isSelected() && change2.isSelected() && change3.isSelected() && change4.isSelected() && change5.isSelected() && change6.isSelected() && change7.isSelected() && change8.isSelected() && change9.isSelected() && change10.isSelected() && change11.isSelected() && change12.isSelected() && change13.isSelected() && change14.isSelected() && change15.isSelected() && change16.isSelected() && change17.isSelected()){
             JOptionPane.showMessageDialog(null, "Operación finalizada....");
             this.setVisible(false);
             TotalWU ++;
             all.crono.mTimer.stop();
             all.entrenador.totalwuentto.setText("" + TotalWU);
             if (all.entrenador.jLabel13.getText().equals(" ")){
-                all.entrenador.jLabel13.setText("Easy");
+                all.entrenador.jLabel13.setText("Shipping Bracket");
                 all.entrenador.jLabel23.setText(Cronometro.getText());
                 all.entrenador.jLabel33.setText(all.login.usuario);
-                all.limpiar.Limpiar_empty_easy();
+                all.limpiar.Limpiar_clean();
                 all.crono.reboot();
                 all.abrir.setVisible(true);
             } else if (all.entrenador.jLabel14.getText().equals(" ")){
-                all.entrenador.jLabel14.setText("Easy");
+                all.entrenador.jLabel14.setText("Shipping Bracket");
                 all.entrenador.jLabel24.setText(Cronometro.getText());
                 all.entrenador.jLabel34.setText(all.login.usuario);
-                all.limpiar.Limpiar_empty_easy();
+                all.limpiar.Limpiar_clean();
                 all.crono.reboot();
                 all.abrir.setVisible(true);
                 } else if (all.entrenador.jLabel15.getText().equals(" ")){
-                    all.entrenador.jLabel15.setText("Easy");
+                    all.entrenador.jLabel15.setText("Shipping Bracket");
                     all.entrenador.jLabel25.setText(Cronometro.getText());
                     all.entrenador.jLabel35.setText(all.login.usuario);
-                    all.limpiar.Limpiar_empty_easy();
+                    all.limpiar.Limpiar_clean();
                     all.crono.reboot();
                     all.abrir.setVisible(true);
                     } else if (all.entrenador.jLabel16.getText().equals(" ")){
-                        all.entrenador.jLabel16.setText("Easy");
+                        all.entrenador.jLabel16.setText("Shipping Bracket");
                         all.entrenador.jLabel26.setText(Cronometro.getText());
                         all.entrenador.jLabel36.setText(all.login.usuario);
-                        all.limpiar.Limpiar_empty_easy();
+                        all.limpiar.Limpiar_clean();
                         all.crono.reboot();
                         all.abrir.setVisible(true);
                         } else if (all.entrenador.jLabel18.getText().equals(" ")){
-                            all.entrenador.jLabel18.setText("Easy");
+                            all.entrenador.jLabel18.setText("Shipping Bracket");
                             all.entrenador.jLabel28.setText(Cronometro.getText());
                             all.entrenador.jLabel38.setText(all.login.usuario);
-                            all.limpiar.Limpiar_empty_easy();
+                            all.limpiar.Limpiar_clean();
                             all.crono.reboot();
                             all.abrir.setVisible(true);
                             } else if (all.entrenador.jLabel17.getText().equals(" ")){
-                                all.entrenador.jLabel17.setText("Easy");
+                                all.entrenador.jLabel17.setText("Shipping Bracket");
                                 all.entrenador.jLabel27.setText(Cronometro.getText());
                                 all.entrenador.jLabel37.setText(all.login.usuario);
-                                all.limpiar.Limpiar_empty_easy();
+                                all.limpiar.Limpiar_clean();
                                 all.crono.reboot();
                                 all.abrir.setVisible(true);
                                 } else if (all.entrenador.jLabel19.getText().equals(" ")){
-                                       all.entrenador.jLabel19.setText("Easy");
+                                       all.entrenador.jLabel19.setText("Shipping Bracket");
                                        all.entrenador.jLabel29.setText(Cronometro.getText());
                                        all.entrenador.jLabel39.setText(all.login.usuario);
-                                       all.limpiar.Limpiar_empty_easy();
+                                       all.limpiar.Limpiar_clean();
                                        all.crono.reboot();
                                        all.abrir.setVisible(true);
                                        } else if (all.entrenador.jLabel20.getText().equals(" ")){
-                                           all.entrenador.jLabel20.setText("Easy");
+                                           all.entrenador.jLabel20.setText("Shipping Bracket");
                                            all.entrenador.jLabel30.setText(Cronometro.getText());
                                            all.entrenador.jLabel40.setText(all.login.usuario);
-                                           all.limpiar.Limpiar_empty_easy();
+                                           all.limpiar.Limpiar_clean();
                                            all.crono.reboot();
                                            all.abrir.setVisible(true);
                                              } else if (all.entrenador.jLabel21.getText().equals(" ")){
-                                                 all.entrenador.jLabel21.setText("Easy");
+                                                 all.entrenador.jLabel21.setText("Shipping Bracket");
                                                  all.entrenador.jLabel31.setText(Cronometro.getText());
                                                  all.entrenador.jLabel41.setText(all.login.usuario);
-                                                 all.limpiar.Limpiar_empty_easy();
+                                                 all.limpiar.Limpiar_clean();
                                                  all.crono.reboot();
                                                  all.abrir.setVisible(true);
                                                    } else if (all.entrenador.jLabel12.getText().equals(" ")){
-                                                        all.entrenador.jLabel12.setText("Easy");
+                                                        all.entrenador.jLabel12.setText("Shipping Bracket");
                                                         all.entrenador.jLabel22.setText(Cronometro.getText());
                                                         all.entrenador.jLabel32.setText(all.login.usuario);
-                                                        all.limpiar.Limpiar_empty_easy();
+                                                        all.limpiar.Limpiar_clean();
                                                         all.crono.reboot();
                                                         all.abrir.setVisible(true);
                                                         }
@@ -5583,11 +8991,20 @@ public class Clean_Claim extends javax.swing.JFrame {
         }else if (idsp7.getText().equals("A")){
             pn = this.npaescanear7.getText().toUpperCase();
             f2ActionPerformed(null);
+        }else if (idsp8.getText().equals("A")){
+            pn = this.npaescanear8.getText().toUpperCase();
+            f2ActionPerformed(null);
         }else if (idsp9.getText().equals("A")){
             pn = this.npaescanear9.getText().toUpperCase();
             f2ActionPerformed(null);
         }else if (idsp10.getText().equals("A")){
             pn = this.npaescanear10.getText().toUpperCase();
+            f2ActionPerformed(null);
+        }else if (idsp11.getText().equals("A")){
+            pn = this.npaescanear11.getText().toUpperCase();
+            f2ActionPerformed(null);
+        }else if (idsp12.getText().equals("A")){
+            pn = this.npaescanear7.getText().toUpperCase();
             f2ActionPerformed(null);
         }else if (idsp13.getText().equals("A")){
             pn = this.npaescanear13.getText().toUpperCase();
@@ -5622,6 +9039,18 @@ public class Clean_Claim extends javax.swing.JFrame {
         }else if (idsp23.getText().equals("A")){
             pn = this.npaescanear23.getText().toUpperCase();
             f2ActionPerformed(null);
+        }else if (idsp24.getText().equals("A")){
+            pn = this.npaescanear24.getText().toUpperCase();
+            f2ActionPerformed(null);
+        }else if (idsp25.getText().equals("A")){
+            pn = this.npaescanear25.getText().toUpperCase();
+            f2ActionPerformed(null);
+        }else if (idsp26.getText().equals("A")){
+            pn = this.npaescanear26.getText().toUpperCase();
+            f2ActionPerformed(null);
+        }else if (idsp27.getText().equals("A")){
+            pn = this.npaescanear27.getText().toUpperCase();
+            f2ActionPerformed(null);
         }else if (idsp28.getText().equals("A")){
             pn = this.npaescanear28.getText().toUpperCase();
             f2ActionPerformed(null);
@@ -5640,8 +9069,44 @@ public class Clean_Claim extends javax.swing.JFrame {
         }else if (idsp33.getText().equals("A")){
             pn = this.npaescanear33.getText().toUpperCase();
             f2ActionPerformed(null);
+        }else if (idsp34.getText().equals("A")){
+            pn = this.npaescanear34.getText().toUpperCase();
+            f2ActionPerformed(null);
         }else if (idsp35.getText().equals("A")){
             pn = this.npaescanear35.getText().toUpperCase();
+            f2ActionPerformed(null);
+         }else if (idsp36.getText().equals("A")){
+            pn = this.npaescanear36.getText().toUpperCase();
+            f2ActionPerformed(null);
+         }else if (idsp37.getText().equals("A")){
+            pn = this.npaescanear37.getText().toUpperCase();
+            f2ActionPerformed(null);
+        }else if (idsp38.getText().equals("A")){
+            pn = this.npaescanear38.getText().toUpperCase();
+            f2ActionPerformed(null);
+        }else if (idsp39.getText().equals("A")){
+            pn = this.npaescanear39.getText().toUpperCase();
+            f2ActionPerformed(null);
+        }else if (idsp40.getText().equals("A")){
+            pn = this.npaescanear40.getText().toUpperCase();
+            f2ActionPerformed(null);
+        }else if (idsp41.getText().equals("A")){
+            pn = this.npaescanear41.getText().toUpperCase();
+            f2ActionPerformed(null);
+        }else if (idsp42.getText().equals("A")){
+            pn = this.npaescanear42.getText().toUpperCase();
+            f2ActionPerformed(null);
+        }else if (idsp43.getText().equals("A")){
+            pn = this.npaescanear43.getText().toUpperCase();
+            f2ActionPerformed(null);
+        }else if (idsp44.getText().equals("A")){
+            pn = this.npaescanear44.getText().toUpperCase();
+            f2ActionPerformed(null);
+        }else if (idsp45.getText().equals("A")){
+            pn = this.npaescanear45.getText().toUpperCase();
+            f2ActionPerformed(null);
+        }else if (idsp46.getText().equals("A")){
+            pn = this.npaescanear46.getText().toUpperCase();
             f2ActionPerformed(null);
         }
     }//GEN-LAST:event_AutoLogActionPerformed
@@ -5709,6 +9174,13 @@ public class Clean_Claim extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
                 }
                 break;
+            case 8:
+                if (idsp8.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
             case 9:
                 if (idsp9.getText().equals("R")){
                    all.rework.remplacedActionPerformed(null); 
@@ -5718,6 +9190,20 @@ public class Clean_Claim extends javax.swing.JFrame {
                 break;
             case 10:
                 if (idsp10.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 11:
+                if (idsp11.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 12:
+                if (idsp12.getText().equals("R")){
                    all.rework.remplacedActionPerformed(null); 
                 } else {
                     JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
@@ -5800,35 +9286,42 @@ public class Clean_Claim extends javax.swing.JFrame {
                     JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
                 }
                 break;
-//            case 24:
-//                if (idsp24.getText().equals("R")){
-  //                 all.rework.remplacedActionPerformed(null); 
-    //            } else {
-      //              JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
-        //        }
-          //      break;
-            //case 25:
-              //  if (idsp25.getText().equals("R")){
-                //   all.rework.remplacedActionPerformed(null); 
-//                } else {
-  //                  JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
-    //            }
-      //          break;
-        //    case 26:
-          //      if (idsp26.getText().equals("R")){
-            //       all.rework.remplacedActionPerformed(null); 
-              //  } else {
-                //    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
-//                }
-  //              break;
-    //        case 27:
-      //          if (idsp27.getText().equals("R")){
-        //           all.rework.remplacedActionPerformed(null); 
-          //      } else {
-            //        JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
-              //  }
-                //break;
+            case 24:
+                if (idsp24.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 25:
+                if (idsp25.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 26:
+                if (idsp26.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+               break;
+            case 27:
+                if (idsp27.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
             case 28:
+                if (idsp28.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 29:
                 if (idsp28.getText().equals("R")){
                    all.rework.remplacedActionPerformed(null); 
                 } else {
@@ -5844,6 +9337,111 @@ public class Clean_Claim extends javax.swing.JFrame {
                 break;
             case 31:
                 if (idsp31.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 32:
+                if (idsp32.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 33:
+                if (idsp33.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 34:
+                if (idsp34.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 35:
+                if (idsp35.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 36:
+                if (idsp36.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 37:
+                if (idsp37.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 38:
+                if (idsp38.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 39:
+                if (idsp39.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 40:
+                if (idsp40.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 41:
+                if (idsp41.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 42:
+                if (idsp42.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 43:
+                if (idsp43.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 44:
+                if (idsp44.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 45:
+                if (idsp45.getText().equals("R")){
+                   all.rework.remplacedActionPerformed(null); 
+                } else {
+                    JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
+                }
+                break;
+            case 46:
+                if (idsp46.getText().equals("R")){
                    all.rework.remplacedActionPerformed(null); 
                 } else {
                     JOptionPane.showMessageDialog(null, "There are no Parts That Can Be Remove");
@@ -6183,7 +9781,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        } else {
             pn = this.npaescanear29.getText().toUpperCase();
             pn2 = this.npaescanear29.getText().substring(3).toUpperCase();
             nm = 29;
@@ -6198,7 +9796,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear29.setForeground(Color.white);
             this.npecaneado29.setForeground(Color.white);
             this.serial29.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS29MouseClicked
 
     private void NPS32MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS32MouseClicked
@@ -6211,7 +9809,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        } else {
             pn = this.npaescanear32.getText().toUpperCase();
             pn2 = this.npaescanear32.getText().substring(3).toUpperCase();
             nm = 32;
@@ -6226,7 +9824,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear32.setForeground(Color.white);
             this.npecaneado32.setForeground(Color.white);
             this.serial32.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS32MouseClicked
 
     private void NPS33MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS33MouseClicked
@@ -6239,7 +9837,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        } else {
             pn = this.npaescanear33.getText().toUpperCase();
             pn2 = this.npaescanear33.getText().substring(3).toUpperCase();
             nm = 33;
@@ -6254,7 +9852,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear33.setForeground(Color.white);
             this.npecaneado33.setForeground(Color.white);
             this.serial33.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS33MouseClicked
 
     private void NPS35MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS35MouseClicked
@@ -6267,7 +9865,7 @@ public class Clean_Claim extends javax.swing.JFrame {
             } else {
                 JOptionPane.showMessageDialog(null, "Invalid Part to Add");
             }
-        }/* else {
+        } else {
             pn = this.npaescanear35.getText().toUpperCase();
             pn2 = this.npaescanear35.getText().substring(3).toUpperCase();
             nm = 35;
@@ -6282,11 +9880,11 @@ public class Clean_Claim extends javax.swing.JFrame {
             this.npaescanear35.setForeground(Color.white);
             this.npecaneado35.setForeground(Color.white);
             this.serial35.setForeground(Color.white);
-        }*/
+        }
     }//GEN-LAST:event_NPS35MouseClicked
 
     private void change6StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change6StateChanged
-        if (idsp29.getText().equals("I") && idsp32.getText().equals("I") && idsp33.getText().equals("I") && idsp35.getText().equals("I")){
+        if (idsp36.getText().equals("I") && idsp37.getText().equals("I")){
             change6.setSelected(true);
             change6ActionPerformed(null);
         }
@@ -6343,16 +9941,866 @@ public class Clean_Claim extends javax.swing.JFrame {
     }//GEN-LAST:event_NPS3KeyTyped
 
     private void NPS8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS8MouseClicked
-        // TODO add your handling code here:
+        if (evt.getClickCount()>1){
+            if (this.idsp8.getText().equals("A")){
+                pn = this.npaescanear8.getText().toUpperCase();
+                pn2 = this.npaescanear8.getText().substring(3).toUpperCase();
+                nm = 8;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+       } else {
+            pn = this.npaescanear8.getText().toUpperCase();
+            pn2 = this.npaescanear8.getText().substring(3).toUpperCase();
+            nm = 8;
+            this.NPS8.setBackground(Color.black);
+            this.DISP8.setForeground(Color.white);
+            this.FQT8.setForeground(Color.white);
+            this.QT8.setForeground(Color.white);
+            this.cantidadfinal8.setForeground(Color.white);
+            this.cantidadrequerida8.setForeground(Color.white);
+            this.descripcion8.setForeground(Color.white);
+            this.idsp8.setForeground(Color.white);
+            this.npaescanear8.setForeground(Color.white);
+            this.npecaneado8.setForeground(Color.white);
+            this.serial8.setForeground(Color.white);
+       }
     }//GEN-LAST:event_NPS8MouseClicked
 
     private void NPS11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS11MouseClicked
-        // TODO add your handling code here:
+        if (evt.getClickCount()>1){
+            if (this.idsp11.getText().equals("A")){
+                pn = this.npaescanear11.getText().toUpperCase();
+                pn2 = this.npaescanear11.getText().substring(3).toUpperCase();
+                nm = 11;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear11.getText().toUpperCase();
+            pn2 = this.npaescanear11.getText().substring(3).toUpperCase();
+            nm = 11;
+            this.NPS11.setBackground(Color.black);
+            this.DISP11.setForeground(Color.white);
+            this.FQT11.setForeground(Color.white);
+            this.QT11.setForeground(Color.white);
+            this.cantidadfinal11.setForeground(Color.white);
+            this.cantidadrequerida11.setForeground(Color.white);
+            this.descripcion11.setForeground(Color.white);
+            this.idsp11.setForeground(Color.white);
+            this.npaescanear11.setForeground(Color.white);
+            this.npecaneado11.setForeground(Color.white);
+            this.serial11.setForeground(Color.white);
+        }
     }//GEN-LAST:event_NPS11MouseClicked
 
     private void NPS12MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS12MouseClicked
-        // TODO add your handling code here:
+        if (evt.getClickCount()>1){
+            if (this.idsp12.getText().equals("A")){
+                pn = this.npaescanear12.getText().toUpperCase();
+                pn2 = this.npaescanear12.getText().substring(3).toUpperCase();
+                nm = 12;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear12.getText().toUpperCase();
+            pn2 = this.npaescanear12.getText().substring(3).toUpperCase();
+            nm = 12;
+            this.NPS12.setBackground(Color.black);
+            this.DISP12.setForeground(Color.white);
+            this.FQT12.setForeground(Color.white);
+            this.QT12.setForeground(Color.white);
+            this.cantidadfinal12.setForeground(Color.white);
+            this.cantidadrequerida12.setForeground(Color.white);
+            this.descripcion12.setForeground(Color.white);
+            this.idsp12.setForeground(Color.white);
+            this.npaescanear12.setForeground(Color.white);
+            this.npecaneado12.setForeground(Color.white);
+            this.serial12.setForeground(Color.white);
+        }
     }//GEN-LAST:event_NPS12MouseClicked
+
+    private void NPS24MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS24MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp24.getText().equals("A")){
+                pn = this.npaescanear24.getText().toUpperCase();
+                pn2 = this.npaescanear24.getText().substring(3).toUpperCase();
+                nm = 24;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        }else {
+            pn = this.npaescanear24.getText().toUpperCase();
+            pn2 = this.npaescanear24.getText().substring(3).toUpperCase();
+            nm = 24;
+            this.NPS24.setBackground(Color.black);
+            this.DISP24.setForeground(Color.white);
+            this.FQT24.setForeground(Color.white);
+            this.QT24.setForeground(Color.white);
+            this.cantidadfinal24.setForeground(Color.white);
+            this.cantidadrequerida24.setForeground(Color.white);
+            this.descripcion24.setForeground(Color.white);
+            this.idsp24.setForeground(Color.white);
+            this.npaescanear24.setForeground(Color.white);
+            this.npecaneado24.setForeground(Color.white);
+            this.serial24.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS24MouseClicked
+
+    private void NPS25MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS25MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp25.getText().equals("A")){
+                pn = this.npaescanear25.getText().toUpperCase();
+                pn2 = this.npaescanear25.getText().substring(3).toUpperCase();
+                nm = 25;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear25.getText().toUpperCase();
+            pn2 = this.npaescanear25.getText().substring(3).toUpperCase();
+            nm = 25;
+            this.NPS25.setBackground(Color.black);
+            this.DISP25.setForeground(Color.white);
+            this.FQT25.setForeground(Color.white);
+            this.QT25.setForeground(Color.white);
+            this.cantidadfinal25.setForeground(Color.white);
+            this.cantidadrequerida25.setForeground(Color.white);
+            this.descripcion25.setForeground(Color.white);
+            this.idsp25.setForeground(Color.white);
+            this.npaescanear25.setForeground(Color.white);
+            this.npecaneado25.setForeground(Color.white);
+            this.serial25.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS25MouseClicked
+
+    private void NPS26MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS26MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp26.getText().equals("A")){
+                pn = this.npaescanear26.getText().toUpperCase();
+                pn2 = this.npaescanear26.getText().substring(3).toUpperCase();
+                nm = 26;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear26.getText().toUpperCase();
+            pn2 = this.npaescanear26.getText().substring(3).toUpperCase();
+            nm = 26;
+            this.NPS26.setBackground(Color.black);
+            this.DISP26.setForeground(Color.white);
+            this.FQT26.setForeground(Color.white);
+            this.QT26.setForeground(Color.white);
+            this.cantidadfinal26.setForeground(Color.white);
+            this.cantidadrequerida26.setForeground(Color.white);
+            this.descripcion26.setForeground(Color.white);
+            this.idsp26.setForeground(Color.white);
+            this.npaescanear26.setForeground(Color.white);
+            this.npecaneado26.setForeground(Color.white);
+            this.serial26.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS26MouseClicked
+
+    private void change8StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change8StateChanged
+       
+    }//GEN-LAST:event_change8StateChanged
+
+    private void change8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change8ActionPerformed
+        if (change8.isSelected()){
+        change8.setText("Completo");
+        } else {
+            change8.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change8ActionPerformed
+
+    private void NPS27MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS27MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp27.getText().equals("A")){
+                pn = this.npaescanear27.getText().toUpperCase();
+                pn2 = this.npaescanear27.getText().substring(3).toUpperCase();
+                nm = 27;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear27.getText().toUpperCase();
+            pn2 = this.npaescanear27.getText().substring(3).toUpperCase();
+            nm = 27;
+            this.NPS27.setBackground(Color.black);
+            this.DISP27.setForeground(Color.white);
+            this.FQT27.setForeground(Color.white);
+            this.QT27.setForeground(Color.white);
+            this.cantidadfinal27.setForeground(Color.white);
+            this.cantidadrequerida27.setForeground(Color.white);
+            this.descripcion27.setForeground(Color.white);
+            this.idsp27.setForeground(Color.white);
+            this.npaescanear27.setForeground(Color.white);
+            this.npecaneado27.setForeground(Color.white);
+            this.serial27.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS27MouseClicked
+
+    private void change9StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change9StateChanged
+        if (idsp27.getText().equals("I")){
+            change9.setSelected(true);
+            change9ActionPerformed(null);
+        }
+    }//GEN-LAST:event_change9StateChanged
+
+    private void change9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change9ActionPerformed
+        if (change9.isSelected()){
+        change9.setText("Completo");
+        } else {
+            change9.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change9ActionPerformed
+
+    private void NPS34MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS34MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp34.getText().equals("A")){
+                pn = this.npaescanear34.getText().toUpperCase();
+                pn2 = this.npaescanear34.getText().substring(3).toUpperCase();
+                nm = 34;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear34.getText().toUpperCase();
+            pn2 = this.npaescanear34.getText().substring(3).toUpperCase();
+            nm = 34;
+            this.NPS34.setBackground(Color.black);
+            this.DISP34.setForeground(Color.white);
+            this.FQT34.setForeground(Color.white);
+            this.QT34.setForeground(Color.white);
+            this.cantidadfinal34.setForeground(Color.white);
+            this.cantidadrequerida34.setForeground(Color.white);
+            this.descripcion34.setForeground(Color.white);
+            this.idsp34.setForeground(Color.white);
+            this.npaescanear34.setForeground(Color.white);
+            this.npecaneado34.setForeground(Color.white);
+            this.serial34.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS34MouseClicked
+
+    private void NPS36MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS36MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp36.getText().equals("A")){
+                pn = this.npaescanear36.getText().toUpperCase();
+                pn2 = this.npaescanear36.getText().substring(3).toUpperCase();
+                nm = 36;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear36.getText().toUpperCase();
+            pn2 = this.npaescanear36.getText().substring(3).toUpperCase();
+            nm = 36;
+            this.NPS36.setBackground(Color.black);
+            this.DISP36.setForeground(Color.white);
+            this.FQT36.setForeground(Color.white);
+            this.QT36.setForeground(Color.white);
+            this.cantidadfinal36.setForeground(Color.white);
+            this.cantidadrequerida36.setForeground(Color.white);
+            this.descripcion36.setForeground(Color.white);
+            this.idsp36.setForeground(Color.white);
+            this.npaescanear36.setForeground(Color.white);
+            this.npecaneado36.setForeground(Color.white);
+            this.serial36.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS36MouseClicked
+
+    private void NPS37MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS37MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp37.getText().equals("A")){
+                pn = this.npaescanear37.getText().toUpperCase();
+                pn2 = this.npaescanear37.getText().substring(3).toUpperCase();
+                nm = 37;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear37.getText().toUpperCase();
+            pn2 = this.npaescanear37.getText().substring(3).toUpperCase();
+            nm = 37;
+            this.NPS37.setBackground(Color.black);
+            this.DISP37.setForeground(Color.white);
+            this.FQT37.setForeground(Color.white);
+            this.QT37.setForeground(Color.white);
+            this.cantidadfinal37.setForeground(Color.white);
+            this.cantidadrequerida37.setForeground(Color.white);
+            this.descripcion37.setForeground(Color.white);
+            this.idsp37.setForeground(Color.white);
+            this.npaescanear37.setForeground(Color.white);
+            this.npecaneado37.setForeground(Color.white);
+            this.serial37.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS37MouseClicked
+
+    private void NPS38MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS38MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp38.getText().equals("A")){
+                pn = this.npaescanear38.getText().toUpperCase();
+                pn2 = this.npaescanear38.getText().substring(3).toUpperCase();
+                nm = 38;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear38.getText().toUpperCase();
+            pn2 = this.npaescanear38.getText().substring(3).toUpperCase();
+            nm = 38;
+            this.NPS38.setBackground(Color.black);
+            this.DISP38.setForeground(Color.white);
+            this.FQT38.setForeground(Color.white);
+            this.QT38.setForeground(Color.white);
+            this.cantidadfinal38.setForeground(Color.white);
+            this.cantidadrequerida38.setForeground(Color.white);
+            this.descripcion38.setForeground(Color.white);
+            this.idsp38.setForeground(Color.white);
+            this.npaescanear38.setForeground(Color.white);
+            this.npecaneado38.setForeground(Color.white);
+            this.serial38.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS38MouseClicked
+
+    private void NPS39MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS39MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp39.getText().equals("A")){
+                pn = this.npaescanear39.getText().toUpperCase();
+                pn2 = this.npaescanear39.getText().substring(3).toUpperCase();
+                nm = 39;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear39.getText().toUpperCase();
+            pn2 = this.npaescanear39.getText().substring(3).toUpperCase();
+            nm = 39;
+            this.NPS39.setBackground(Color.black);
+            this.DISP39.setForeground(Color.white);
+            this.FQT39.setForeground(Color.white);
+            this.QT39.setForeground(Color.white);
+            this.cantidadfinal39.setForeground(Color.white);
+            this.cantidadrequerida39.setForeground(Color.white);
+            this.descripcion39.setForeground(Color.white);
+            this.idsp39.setForeground(Color.white);
+            this.npaescanear39.setForeground(Color.white);
+            this.npecaneado39.setForeground(Color.white);
+            this.serial39.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS39MouseClicked
+
+    private void change10StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change10StateChanged
+        if (idsp38.getText().equals("I") && idsp39.getText().equals("I")){
+            change10.setSelected(true);
+            change10ActionPerformed(null);
+        }
+    }//GEN-LAST:event_change10StateChanged
+
+    private void change10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change10ActionPerformed
+        if (change10.isSelected()){
+        change10.setText("Completo");
+        } else {
+            change10.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change10ActionPerformed
+
+    private void NPS40MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS40MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp40.getText().equals("A")){
+                pn = this.npaescanear40.getText().toUpperCase();
+                pn2 = this.npaescanear40.getText().substring(3).toUpperCase();
+                nm = 40;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear40.getText().toUpperCase();
+            pn2 = this.npaescanear40.getText().substring(3).toUpperCase();
+            nm = 40;
+            this.NPS40.setBackground(Color.black);
+            this.DISP40.setForeground(Color.white);
+            this.FQT40.setForeground(Color.white);
+            this.QT40.setForeground(Color.white);
+            this.cantidadfinal40.setForeground(Color.white);
+            this.cantidadrequerida40.setForeground(Color.white);
+            this.descripcion40.setForeground(Color.white);
+            this.idsp40.setForeground(Color.white);
+            this.npaescanear40.setForeground(Color.white);
+            this.npecaneado40.setForeground(Color.white);
+            this.serial40.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS40MouseClicked
+
+    private void NPS41MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS41MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp41.getText().equals("A")){
+                pn = this.npaescanear41.getText().toUpperCase();
+                pn2 = this.npaescanear41.getText().substring(3).toUpperCase();
+                nm = 41;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear41.getText().toUpperCase();
+            pn2 = this.npaescanear41.getText().substring(3).toUpperCase();
+            nm = 41;
+            this.NPS41.setBackground(Color.black);
+            this.DISP41.setForeground(Color.white);
+            this.FQT41.setForeground(Color.white);
+            this.QT41.setForeground(Color.white);
+            this.cantidadfinal41.setForeground(Color.white);
+            this.cantidadrequerida41.setForeground(Color.white);
+            this.descripcion41.setForeground(Color.white);
+            this.idsp41.setForeground(Color.white);
+            this.npaescanear41.setForeground(Color.white);
+            this.npecaneado41.setForeground(Color.white);
+            this.serial41.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS41MouseClicked
+
+    private void NPS42MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS42MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp42.getText().equals("A")){
+                pn = this.npaescanear42.getText().toUpperCase();
+                pn2 = this.npaescanear42.getText().substring(3).toUpperCase();
+                nm = 42;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear42.getText().toUpperCase();
+            pn2 = this.npaescanear42.getText().substring(3).toUpperCase();
+            nm = 42;
+            this.NPS42.setBackground(Color.black);
+            this.DISP42.setForeground(Color.white);
+            this.FQT42.setForeground(Color.white);
+            this.QT42.setForeground(Color.white);
+            this.cantidadfinal42.setForeground(Color.white);
+            this.cantidadrequerida42.setForeground(Color.white);
+            this.descripcion42.setForeground(Color.white);
+            this.idsp42.setForeground(Color.white);
+            this.npaescanear42.setForeground(Color.white);
+            this.npecaneado42.setForeground(Color.white);
+            this.serial42.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS42MouseClicked
+
+    private void NPS43MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS43MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp43.getText().equals("A")){
+                pn = this.npaescanear43.getText().toUpperCase();
+                pn2 = this.npaescanear43.getText().substring(3).toUpperCase();
+                nm = 43;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear43.getText().toUpperCase();
+            pn2 = this.npaescanear43.getText().substring(3).toUpperCase();
+            nm = 43;
+            this.NPS43.setBackground(Color.black);
+            this.DISP43.setForeground(Color.white);
+            this.FQT43.setForeground(Color.white);
+            this.QT43.setForeground(Color.white);
+            this.cantidadfinal43.setForeground(Color.white);
+            this.cantidadrequerida43.setForeground(Color.white);
+            this.descripcion43.setForeground(Color.white);
+            this.idsp43.setForeground(Color.white);
+            this.npaescanear43.setForeground(Color.white);
+            this.npecaneado43.setForeground(Color.white);
+            this.serial43.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS43MouseClicked
+
+    private void NPS44MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS44MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp44.getText().equals("A")){
+                pn = this.npaescanear44.getText().toUpperCase();
+                pn2 = this.npaescanear44.getText().substring(3).toUpperCase();
+                nm = 44;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear44.getText().toUpperCase();
+            pn2 = this.npaescanear44.getText().substring(3).toUpperCase();
+            nm = 44;
+            this.NPS44.setBackground(Color.black);
+            this.DISP44.setForeground(Color.white);
+            this.FQT44.setForeground(Color.white);
+            this.QT44.setForeground(Color.white);
+            this.cantidadfinal44.setForeground(Color.white);
+            this.cantidadrequerida44.setForeground(Color.white);
+            this.descripcion44.setForeground(Color.white);
+            this.idsp44.setForeground(Color.white);
+            this.npaescanear44.setForeground(Color.white);
+            this.npecaneado44.setForeground(Color.white);
+            this.serial44.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS44MouseClicked
+
+    private void NPS45MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS45MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp45.getText().equals("A")){
+                pn = this.npaescanear45.getText().toUpperCase();
+                pn2 = this.npaescanear45.getText().substring(3).toUpperCase();
+                nm = 45;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear45.getText().toUpperCase();
+            pn2 = this.npaescanear45.getText().substring(3).toUpperCase();
+            nm = 45;
+            this.NPS45.setBackground(Color.black);
+            this.DISP45.setForeground(Color.white);
+            this.FQT45.setForeground(Color.white);
+            this.QT45.setForeground(Color.white);
+            this.cantidadfinal45.setForeground(Color.white);
+            this.cantidadrequerida45.setForeground(Color.white);
+            this.descripcion45.setForeground(Color.white);
+            this.idsp45.setForeground(Color.white);
+            this.npaescanear45.setForeground(Color.white);
+            this.npecaneado45.setForeground(Color.white);
+            this.serial45.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS45MouseClicked
+
+    private void change11StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change11StateChanged
+        if (idsp40.getText().equals("I") && idsp41.getText().equals("I") && idsp42.getText().equals("I") && idsp43.getText().equals("I") && idsp44.getText().equals("I") && idsp45.getText().equals("I")){
+            change11.setSelected(true);
+            change11ActionPerformed(null);
+        }
+    }//GEN-LAST:event_change11StateChanged
+
+    private void change11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change11ActionPerformed
+        if (change11.isSelected()){
+        change11.setText("Completo");
+        } else {
+            change11.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change11ActionPerformed
+
+    private void NPS46MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS46MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp46.getText().equals("A")){
+                pn = this.npaescanear46.getText().toUpperCase();
+                pn2 = this.npaescanear46.getText().substring(3).toUpperCase();
+                nm = 46;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear46.getText().toUpperCase();
+            pn2 = this.npaescanear46.getText().substring(3).toUpperCase();
+            nm = 46;
+            this.NPS46.setBackground(Color.black);
+            this.DISP46.setForeground(Color.white);
+            this.FQT46.setForeground(Color.white);
+            this.QT46.setForeground(Color.white);
+            this.cantidadfinal46.setForeground(Color.white);
+            this.cantidadrequerida46.setForeground(Color.white);
+            this.descripcion46.setForeground(Color.white);
+            this.idsp46.setForeground(Color.white);
+            this.npaescanear46.setForeground(Color.white);
+            this.npecaneado46.setForeground(Color.white);
+            this.serial46.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS46MouseClicked
+
+    private void change12StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change12StateChanged
+        if (idsp46.getText().equals("I")){
+            change12.setSelected(true);
+            change12ActionPerformed(null);
+        }
+    }//GEN-LAST:event_change12StateChanged
+
+    private void change12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change12ActionPerformed
+        if (change12.isSelected()){
+        change12.setText("Completo");
+        } else {
+            change12.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change12ActionPerformed
+
+    private void change13StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change13StateChanged
+        
+    }//GEN-LAST:event_change13StateChanged
+
+    private void change13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change13ActionPerformed
+        if (change13.isSelected()){
+        change13.setText("Completo");
+        } else {
+            change13.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change13ActionPerformed
+
+    private void change14StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change14StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_change14StateChanged
+
+    private void change14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change14ActionPerformed
+        if (change14.isSelected()){
+        change14.setText("Completo");
+        } else {
+            change14.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change14ActionPerformed
+
+    private void change15StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change15StateChanged
+        if (idsp47.getText().equals("I") && idsp48.getText().equals("I") && idsp49.getText().equals("I") && idsp50.getText().equals("I")){
+            change15.setSelected(true);
+            change15ActionPerformed(null);
+        }
+    }//GEN-LAST:event_change15StateChanged
+
+    private void change15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change15ActionPerformed
+        if (change15.isSelected()){
+        change15.setText("Completo");
+        } else {
+            change15.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change15ActionPerformed
+
+    private void NPS47MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS47MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp47.getText().equals("A")){
+                pn = this.npaescanear47.getText().toUpperCase();
+                pn2 = this.npaescanear47.getText().substring(3).toUpperCase();
+                nm = 47;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear47.getText().toUpperCase();
+            pn2 = this.npaescanear47.getText().substring(3).toUpperCase();
+            nm = 47;
+            this.NPS47.setBackground(Color.black);
+            this.DISP47.setForeground(Color.white);
+            this.FQT47.setForeground(Color.white);
+            this.QT47.setForeground(Color.white);
+            this.cantidadfinal47.setForeground(Color.white);
+            this.cantidadrequerida47.setForeground(Color.white);
+            this.descripcion47.setForeground(Color.white);
+            this.idsp47.setForeground(Color.white);
+            this.npaescanear47.setForeground(Color.white);
+            this.npecaneado47.setForeground(Color.white);
+            this.serial47.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS47MouseClicked
+
+    private void NPS48MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS48MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp48.getText().equals("A")){
+                pn = this.npaescanear48.getText().toUpperCase();
+                pn2 = this.npaescanear48.getText().substring(3).toUpperCase();
+                nm = 48;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear48.getText().toUpperCase();
+            pn2 = this.npaescanear48.getText().substring(3).toUpperCase();
+            nm = 48;
+            this.NPS48.setBackground(Color.black);
+            this.DISP48.setForeground(Color.white);
+            this.FQT48.setForeground(Color.white);
+            this.QT48.setForeground(Color.white);
+            this.cantidadfinal48.setForeground(Color.white);
+            this.cantidadrequerida48.setForeground(Color.white);
+            this.descripcion48.setForeground(Color.white);
+            this.idsp48.setForeground(Color.white);
+            this.npaescanear48.setForeground(Color.white);
+            this.npecaneado48.setForeground(Color.white);
+            this.serial48.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS48MouseClicked
+
+    private void NPS49MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS49MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp49.getText().equals("A")){
+                pn = this.npaescanear49.getText().toUpperCase();
+                pn2 = this.npaescanear49.getText().substring(3).toUpperCase();
+                nm = 49;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear49.getText().toUpperCase();
+            pn2 = this.npaescanear49.getText().substring(3).toUpperCase();
+            nm = 49;
+            this.NPS49.setBackground(Color.black);
+            this.DISP49.setForeground(Color.white);
+            this.FQT49.setForeground(Color.white);
+            this.QT49.setForeground(Color.white);
+            this.cantidadfinal49.setForeground(Color.white);
+            this.cantidadrequerida49.setForeground(Color.white);
+            this.descripcion49.setForeground(Color.white);
+            this.idsp49.setForeground(Color.white);
+            this.npaescanear49.setForeground(Color.white);
+            this.npecaneado49.setForeground(Color.white);
+            this.serial49.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS49MouseClicked
+
+    private void NPS50MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS50MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp50.getText().equals("A")){
+                pn = this.npaescanear50.getText().toUpperCase();
+                pn2 = this.npaescanear50.getText().substring(3).toUpperCase();
+                nm = 50;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear50.getText().toUpperCase();
+            pn2 = this.npaescanear50.getText().substring(3).toUpperCase();
+            nm = 50;
+            this.NPS50.setBackground(Color.black);
+            this.DISP50.setForeground(Color.white);
+            this.FQT50.setForeground(Color.white);
+            this.QT50.setForeground(Color.white);
+            this.cantidadfinal50.setForeground(Color.white);
+            this.cantidadrequerida50.setForeground(Color.white);
+            this.descripcion50.setForeground(Color.white);
+            this.idsp50.setForeground(Color.white);
+            this.npaescanear50.setForeground(Color.white);
+            this.npecaneado50.setForeground(Color.white);
+            this.serial50.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS50MouseClicked
+
+    private void change16StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change16StateChanged
+        // TODO add your handling code here:
+    }//GEN-LAST:event_change16StateChanged
+
+    private void change16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change16ActionPerformed
+        if (change16.isSelected()){
+        change16.setText("Completo");
+        } else {
+            change16.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change16ActionPerformed
+
+    private void Boton_completeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton_completeActionPerformed
+        change13.setSelected(true);
+        change13ActionPerformed(null);
+    }//GEN-LAST:event_Boton_completeActionPerformed
+
+    private void NPS28MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS28MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_NPS28MouseEntered
+
+    private void NPS51MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS51MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp51.getText().equals("A")){
+                pn = this.npaescanear51.getText().toUpperCase();
+                pn2 = this.npaescanear51.getText().substring(3).toUpperCase();
+                nm = 51;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear51.getText().toUpperCase();
+            pn2 = this.npaescanear51.getText().substring(3).toUpperCase();
+            nm = 51;
+            this.NPS51.setBackground(Color.black);
+            this.DISP51.setForeground(Color.white);
+            this.FQT51.setForeground(Color.white);
+            this.QT51.setForeground(Color.white);
+            this.cantidadfinal51.setForeground(Color.white);
+            this.cantidadrequerida51.setForeground(Color.white);
+            this.descripcion51.setForeground(Color.white);
+            this.idsp51.setForeground(Color.white);
+            this.npaescanear51.setForeground(Color.white);
+            this.npecaneado51.setForeground(Color.white);
+            this.serial51.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS51MouseClicked
+
+    private void NPS53MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NPS53MouseClicked
+        if (evt.getClickCount()>1){
+            if (this.idsp53.getText().equals("A")){
+                pn = this.npaescanear53.getText().toUpperCase();
+                pn2 = this.npaescanear53.getText().substring(3).toUpperCase();
+                nm = 53;
+                f2ActionPerformed(null);
+            } else {
+                JOptionPane.showMessageDialog(null, "Invalid Part to Add");
+            }
+        } else {
+            pn = this.npaescanear53.getText().toUpperCase();
+            pn2 = this.npaescanear53.getText().substring(3).toUpperCase();
+            nm = 53;
+            this.NPS53.setBackground(Color.black);
+            this.DISP53.setForeground(Color.white);
+            this.FQT53.setForeground(Color.white);
+            this.QT53.setForeground(Color.white);
+            this.cantidadfinal53.setForeground(Color.white);
+            this.cantidadrequerida53.setForeground(Color.white);
+            this.descripcion53.setForeground(Color.white);
+            this.idsp53.setForeground(Color.white);
+            this.npaescanear53.setForeground(Color.white);
+            this.npecaneado53.setForeground(Color.white);
+            this.serial53.setForeground(Color.white);
+        }
+    }//GEN-LAST:event_NPS53MouseClicked
+
+    private void change17StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_change17StateChanged
+        if (idsp51.getText().equals("I") && idsp53.getText().equals("I")){
+            change17.setSelected(true);
+            change17ActionPerformed(null);
+        }
+    }//GEN-LAST:event_change17StateChanged
+
+    private void change17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_change17ActionPerformed
+        if (change17.isSelected()){
+        change17.setText("Completo");
+        } else {
+            change17.setText("Incompleto");
+        }
+    }//GEN-LAST:event_change17ActionPerformed
+
+    private void Boton_complete1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton_complete1ActionPerformed
+        change8.setSelected(true);
+        change8ActionPerformed(null);
+    }//GEN-LAST:event_Boton_complete1ActionPerformed
+
+    private void Boton_complete3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton_complete3ActionPerformed
+        change16.setSelected(true);
+        change16ActionPerformed(null);
+    }//GEN-LAST:event_Boton_complete3ActionPerformed
+
+    private void Boton_complete2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Boton_complete2ActionPerformed
+        change14.setSelected(true);
+        change14ActionPerformed(null);
+    }//GEN-LAST:event_Boton_complete2ActionPerformed
 
     private void Cambios() {
     switch (nm){
@@ -6374,7 +10822,10 @@ public class Clean_Claim extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton AutoLog;
-    private javax.swing.JPanel Bisagrastraseras;
+    private javax.swing.JButton Boton_complete;
+    private javax.swing.JButton Boton_complete1;
+    private javax.swing.JButton Boton_complete2;
+    private javax.swing.JButton Boton_complete3;
     private javax.swing.JLabel Cntr;
     public javax.swing.JLabel Cronometro;
     public javax.swing.JLabel DISP;
@@ -6394,6 +10845,10 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel DISP21;
     public javax.swing.JLabel DISP22;
     public javax.swing.JLabel DISP23;
+    public javax.swing.JLabel DISP24;
+    public javax.swing.JLabel DISP25;
+    public javax.swing.JLabel DISP26;
+    public javax.swing.JLabel DISP27;
     public javax.swing.JLabel DISP28;
     public javax.swing.JLabel DISP29;
     public javax.swing.JLabel DISP3;
@@ -6401,9 +10856,27 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel DISP31;
     public javax.swing.JLabel DISP32;
     public javax.swing.JLabel DISP33;
+    public javax.swing.JLabel DISP34;
     public javax.swing.JLabel DISP35;
+    public javax.swing.JLabel DISP36;
+    public javax.swing.JLabel DISP37;
+    public javax.swing.JLabel DISP38;
+    public javax.swing.JLabel DISP39;
     public javax.swing.JLabel DISP4;
+    public javax.swing.JLabel DISP40;
+    public javax.swing.JLabel DISP41;
+    public javax.swing.JLabel DISP42;
+    public javax.swing.JLabel DISP43;
+    public javax.swing.JLabel DISP44;
+    public javax.swing.JLabel DISP45;
+    public javax.swing.JLabel DISP46;
+    public javax.swing.JLabel DISP47;
+    public javax.swing.JLabel DISP48;
+    public javax.swing.JLabel DISP49;
     public javax.swing.JLabel DISP5;
+    public javax.swing.JLabel DISP50;
+    public javax.swing.JLabel DISP51;
+    public javax.swing.JLabel DISP53;
     public javax.swing.JLabel DISP6;
     public javax.swing.JLabel DISP7;
     public javax.swing.JLabel DISP8;
@@ -6427,6 +10900,10 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel FQT21;
     public javax.swing.JLabel FQT22;
     public javax.swing.JLabel FQT23;
+    public javax.swing.JLabel FQT24;
+    public javax.swing.JLabel FQT25;
+    public javax.swing.JLabel FQT26;
+    public javax.swing.JLabel FQT27;
     public javax.swing.JLabel FQT28;
     public javax.swing.JLabel FQT29;
     public javax.swing.JLabel FQT3;
@@ -6434,13 +10911,66 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel FQT31;
     public javax.swing.JLabel FQT32;
     public javax.swing.JLabel FQT33;
+    public javax.swing.JLabel FQT34;
     public javax.swing.JLabel FQT35;
+    public javax.swing.JLabel FQT36;
+    public javax.swing.JLabel FQT37;
+    public javax.swing.JLabel FQT38;
+    public javax.swing.JLabel FQT39;
     public javax.swing.JLabel FQT4;
+    public javax.swing.JLabel FQT40;
+    public javax.swing.JLabel FQT41;
+    public javax.swing.JLabel FQT42;
+    public javax.swing.JLabel FQT43;
+    public javax.swing.JLabel FQT44;
+    public javax.swing.JLabel FQT45;
+    public javax.swing.JLabel FQT46;
+    public javax.swing.JLabel FQT47;
+    public javax.swing.JLabel FQT48;
+    public javax.swing.JLabel FQT49;
     public javax.swing.JLabel FQT5;
+    public javax.swing.JLabel FQT50;
+    public javax.swing.JLabel FQT51;
+    public javax.swing.JLabel FQT53;
     public javax.swing.JLabel FQT6;
     public javax.swing.JLabel FQT7;
     public javax.swing.JLabel FQT8;
     public javax.swing.JLabel FQT9;
+    public javax.swing.JPanel Imagen_bracket_panel;
+    private javax.swing.JPanel Imagen_cover1u;
+    private javax.swing.JPanel Imagen_door_105;
+    private javax.swing.JPanel Imagen_door_flag;
+    public javax.swing.JPanel Imagen_flag;
+    private javax.swing.JPanel Imagen_ir;
+    private javax.swing.JPanel Imagen_ir2;
+    private javax.swing.JPanel Imagen_ir_door;
+    public javax.swing.JPanel Imagen_llave;
+    public javax.swing.JPanel Imagen_puerta691;
+    private javax.swing.JPanel Imagen_rasta;
+    private javax.swing.JPanel Imagen_seg_ethe;
+    private javax.swing.JPanel Imagen_ship513;
+    public javax.swing.JPanel Imagen_ship841;
+    private javax.swing.JPanel Imagen_sidepanel;
+    private javax.swing.JPanel Imagen_tornillo504;
+    private javax.swing.JPanel Imagen_tornillo618;
+    private javax.swing.JPanel Ir_door;
+    public javax.swing.JPanel Material_bracket_panel;
+    public javax.swing.JPanel Material_cover1u;
+    public javax.swing.JPanel Material_cover3u;
+    private javax.swing.JPanel Material_door105;
+    private javax.swing.JPanel Material_door_flag;
+    public javax.swing.JPanel Material_flag;
+    private javax.swing.JPanel Material_ir;
+    private javax.swing.JPanel Material_ir2;
+    public javax.swing.JPanel Material_llave;
+    public javax.swing.JPanel Material_puerta691;
+    private javax.swing.JPanel Material_rasta;
+    private javax.swing.JPanel Material_seguro_ethe;
+    private javax.swing.JPanel Material_ship513;
+    public javax.swing.JPanel Material_ship841;
+    public javax.swing.JPanel Material_sidepanel;
+    private javax.swing.JPanel Material_tornillo504;
+    private javax.swing.JPanel Material_tornillo618;
     public javax.swing.JPanel NPS;
     public javax.swing.JPanel NPS1;
     public javax.swing.JPanel NPS10;
@@ -6458,6 +10988,10 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JPanel NPS21;
     public javax.swing.JPanel NPS22;
     public javax.swing.JPanel NPS23;
+    public javax.swing.JPanel NPS24;
+    public javax.swing.JPanel NPS25;
+    public javax.swing.JPanel NPS26;
+    public javax.swing.JPanel NPS27;
     public javax.swing.JPanel NPS28;
     public javax.swing.JPanel NPS29;
     public javax.swing.JPanel NPS3;
@@ -6465,9 +10999,27 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JPanel NPS31;
     public javax.swing.JPanel NPS32;
     public javax.swing.JPanel NPS33;
+    public javax.swing.JPanel NPS34;
     public javax.swing.JPanel NPS35;
+    public javax.swing.JPanel NPS36;
+    public javax.swing.JPanel NPS37;
+    public javax.swing.JPanel NPS38;
+    public javax.swing.JPanel NPS39;
     public javax.swing.JPanel NPS4;
+    public javax.swing.JPanel NPS40;
+    public javax.swing.JPanel NPS41;
+    public javax.swing.JPanel NPS42;
+    public javax.swing.JPanel NPS43;
+    public javax.swing.JPanel NPS44;
+    public javax.swing.JPanel NPS45;
+    public javax.swing.JPanel NPS46;
+    public javax.swing.JPanel NPS47;
+    public javax.swing.JPanel NPS48;
+    public javax.swing.JPanel NPS49;
     public javax.swing.JPanel NPS5;
+    public javax.swing.JPanel NPS50;
+    public javax.swing.JPanel NPS51;
+    public javax.swing.JPanel NPS53;
     public javax.swing.JPanel NPS6;
     public javax.swing.JPanel NPS7;
     public javax.swing.JPanel NPS8;
@@ -6489,6 +11041,10 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel QT21;
     public javax.swing.JLabel QT22;
     public javax.swing.JLabel QT23;
+    public javax.swing.JLabel QT24;
+    public javax.swing.JLabel QT25;
+    public javax.swing.JLabel QT26;
+    public javax.swing.JLabel QT27;
     public javax.swing.JLabel QT28;
     public javax.swing.JLabel QT29;
     public javax.swing.JLabel QT3;
@@ -6496,9 +11052,27 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel QT31;
     public javax.swing.JLabel QT32;
     public javax.swing.JLabel QT33;
+    public javax.swing.JLabel QT34;
     public javax.swing.JLabel QT35;
+    public javax.swing.JLabel QT36;
+    public javax.swing.JLabel QT37;
+    public javax.swing.JLabel QT38;
+    public javax.swing.JLabel QT39;
     public javax.swing.JLabel QT4;
+    public javax.swing.JLabel QT40;
+    public javax.swing.JLabel QT41;
+    public javax.swing.JLabel QT42;
+    public javax.swing.JLabel QT43;
+    public javax.swing.JLabel QT44;
+    public javax.swing.JLabel QT45;
+    public javax.swing.JLabel QT46;
+    public javax.swing.JLabel QT47;
+    public javax.swing.JLabel QT48;
+    public javax.swing.JLabel QT49;
     public javax.swing.JLabel QT5;
+    public javax.swing.JLabel QT50;
+    public javax.swing.JLabel QT51;
+    public javax.swing.JLabel QT53;
     public javax.swing.JLabel QT6;
     public javax.swing.JLabel QT7;
     public javax.swing.JLabel QT8;
@@ -6508,21 +11082,8 @@ public class Clean_Claim extends javax.swing.JFrame {
     private javax.swing.JButton Suspender;
     public javax.swing.JLabel User500;
     private javax.swing.JButton ViewIns;
-    public javax.swing.JPanel bisagraslatch;
-    public javax.swing.JPanel bisagraslatch1;
     public javax.swing.JLabel bisagratraserair;
     public javax.swing.JPanel bloque1;
-    public javax.swing.JPanel bloque1_1;
-    public javax.swing.JPanel bloque2;
-    public javax.swing.JPanel bloque3;
-    public javax.swing.JPanel bloque4;
-    public javax.swing.JPanel bloque5;
-    public javax.swing.JPanel bloque6;
-    public javax.swing.JPanel bloquebisagras;
-    public javax.swing.JPanel bloqueimagen;
-    public javax.swing.JPanel bloqueimagen1;
-    public javax.swing.JPanel bloqueimagen2;
-    public javax.swing.JPanel bloqueimagen3;
     public javax.swing.JLabel cantidadfinal;
     public javax.swing.JLabel cantidadfinal1;
     public javax.swing.JLabel cantidadfinal10;
@@ -6540,6 +11101,10 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel cantidadfinal21;
     public javax.swing.JLabel cantidadfinal22;
     public javax.swing.JLabel cantidadfinal23;
+    public javax.swing.JLabel cantidadfinal24;
+    public javax.swing.JLabel cantidadfinal25;
+    public javax.swing.JLabel cantidadfinal26;
+    public javax.swing.JLabel cantidadfinal27;
     public javax.swing.JLabel cantidadfinal28;
     public javax.swing.JLabel cantidadfinal29;
     public javax.swing.JLabel cantidadfinal3;
@@ -6547,9 +11112,27 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel cantidadfinal31;
     public javax.swing.JLabel cantidadfinal32;
     public javax.swing.JLabel cantidadfinal33;
+    public javax.swing.JLabel cantidadfinal34;
     public javax.swing.JLabel cantidadfinal35;
+    public javax.swing.JLabel cantidadfinal36;
+    public javax.swing.JLabel cantidadfinal37;
+    public javax.swing.JLabel cantidadfinal38;
+    public javax.swing.JLabel cantidadfinal39;
     public javax.swing.JLabel cantidadfinal4;
+    public javax.swing.JLabel cantidadfinal40;
+    public javax.swing.JLabel cantidadfinal41;
+    public javax.swing.JLabel cantidadfinal42;
+    public javax.swing.JLabel cantidadfinal43;
+    public javax.swing.JLabel cantidadfinal44;
+    public javax.swing.JLabel cantidadfinal45;
+    public javax.swing.JLabel cantidadfinal46;
+    public javax.swing.JLabel cantidadfinal47;
+    public javax.swing.JLabel cantidadfinal48;
+    public javax.swing.JLabel cantidadfinal49;
     public javax.swing.JLabel cantidadfinal5;
+    public javax.swing.JLabel cantidadfinal50;
+    public javax.swing.JLabel cantidadfinal51;
+    public javax.swing.JLabel cantidadfinal53;
     public javax.swing.JLabel cantidadfinal6;
     public javax.swing.JLabel cantidadfinal7;
     public javax.swing.JLabel cantidadfinal8;
@@ -6571,6 +11154,10 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel cantidadrequerida21;
     public javax.swing.JLabel cantidadrequerida22;
     public javax.swing.JLabel cantidadrequerida23;
+    public javax.swing.JLabel cantidadrequerida24;
+    public javax.swing.JLabel cantidadrequerida25;
+    public javax.swing.JLabel cantidadrequerida26;
+    public javax.swing.JLabel cantidadrequerida27;
     public javax.swing.JLabel cantidadrequerida28;
     public javax.swing.JLabel cantidadrequerida29;
     public javax.swing.JLabel cantidadrequerida3;
@@ -6578,21 +11165,49 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel cantidadrequerida31;
     public javax.swing.JLabel cantidadrequerida32;
     public javax.swing.JLabel cantidadrequerida33;
+    public javax.swing.JLabel cantidadrequerida34;
     public javax.swing.JLabel cantidadrequerida35;
+    public javax.swing.JLabel cantidadrequerida36;
+    public javax.swing.JLabel cantidadrequerida37;
+    public javax.swing.JLabel cantidadrequerida38;
+    public javax.swing.JLabel cantidadrequerida39;
     public javax.swing.JLabel cantidadrequerida4;
+    public javax.swing.JLabel cantidadrequerida40;
+    public javax.swing.JLabel cantidadrequerida41;
+    public javax.swing.JLabel cantidadrequerida42;
+    public javax.swing.JLabel cantidadrequerida43;
+    public javax.swing.JLabel cantidadrequerida44;
+    public javax.swing.JLabel cantidadrequerida45;
+    public javax.swing.JLabel cantidadrequerida46;
+    public javax.swing.JLabel cantidadrequerida47;
+    public javax.swing.JLabel cantidadrequerida48;
+    public javax.swing.JLabel cantidadrequerida49;
     public javax.swing.JLabel cantidadrequerida5;
+    public javax.swing.JLabel cantidadrequerida50;
+    public javax.swing.JLabel cantidadrequerida51;
+    public javax.swing.JLabel cantidadrequerida53;
     public javax.swing.JLabel cantidadrequerida6;
     public javax.swing.JLabel cantidadrequerida7;
     public javax.swing.JLabel cantidadrequerida8;
     public javax.swing.JLabel cantidadrequerida9;
     public javax.swing.JCheckBox change;
     public javax.swing.JCheckBox change1;
+    public javax.swing.JCheckBox change10;
+    public javax.swing.JCheckBox change11;
+    public javax.swing.JCheckBox change12;
+    public javax.swing.JCheckBox change13;
+    public javax.swing.JCheckBox change14;
+    public javax.swing.JCheckBox change15;
+    public javax.swing.JCheckBox change16;
+    public javax.swing.JCheckBox change17;
     public javax.swing.JCheckBox change2;
     public javax.swing.JCheckBox change3;
     public javax.swing.JCheckBox change4;
     public javax.swing.JCheckBox change5;
     public javax.swing.JCheckBox change6;
     public javax.swing.JCheckBox change7;
+    public javax.swing.JCheckBox change8;
+    public javax.swing.JCheckBox change9;
     public javax.swing.JScrollPane cuerpo;
     public javax.swing.JLabel descripcion;
     public javax.swing.JLabel descripcion1;
@@ -6611,6 +11226,10 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel descripcion21;
     public javax.swing.JLabel descripcion22;
     public javax.swing.JLabel descripcion23;
+    public javax.swing.JLabel descripcion24;
+    public javax.swing.JLabel descripcion25;
+    public javax.swing.JLabel descripcion26;
+    public javax.swing.JLabel descripcion27;
     public javax.swing.JLabel descripcion28;
     public javax.swing.JLabel descripcion29;
     public javax.swing.JLabel descripcion3;
@@ -6618,9 +11237,27 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel descripcion31;
     public javax.swing.JLabel descripcion32;
     public javax.swing.JLabel descripcion33;
+    public javax.swing.JLabel descripcion34;
     public javax.swing.JLabel descripcion35;
+    public javax.swing.JLabel descripcion36;
+    public javax.swing.JLabel descripcion37;
+    public javax.swing.JLabel descripcion38;
+    public javax.swing.JLabel descripcion39;
     public javax.swing.JLabel descripcion4;
+    public javax.swing.JLabel descripcion40;
+    public javax.swing.JLabel descripcion41;
+    public javax.swing.JLabel descripcion42;
+    public javax.swing.JLabel descripcion43;
+    public javax.swing.JLabel descripcion44;
+    public javax.swing.JLabel descripcion45;
+    public javax.swing.JLabel descripcion46;
+    public javax.swing.JLabel descripcion47;
+    public javax.swing.JLabel descripcion48;
+    public javax.swing.JLabel descripcion49;
     public javax.swing.JLabel descripcion5;
+    public javax.swing.JLabel descripcion50;
+    public javax.swing.JLabel descripcion51;
+    public javax.swing.JLabel descripcion53;
     public javax.swing.JLabel descripcion6;
     public javax.swing.JLabel descripcion7;
     public javax.swing.JLabel descripcion8;
@@ -6643,6 +11280,10 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel idsp21;
     public javax.swing.JLabel idsp22;
     public javax.swing.JLabel idsp23;
+    public javax.swing.JLabel idsp24;
+    public javax.swing.JLabel idsp25;
+    public javax.swing.JLabel idsp26;
+    public javax.swing.JLabel idsp27;
     public javax.swing.JLabel idsp28;
     public javax.swing.JLabel idsp29;
     public javax.swing.JLabel idsp3;
@@ -6650,19 +11291,38 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel idsp31;
     public javax.swing.JLabel idsp32;
     public javax.swing.JLabel idsp33;
+    public javax.swing.JLabel idsp34;
     public javax.swing.JLabel idsp35;
+    public javax.swing.JLabel idsp36;
+    public javax.swing.JLabel idsp37;
+    public javax.swing.JLabel idsp38;
+    public javax.swing.JLabel idsp39;
     public javax.swing.JLabel idsp4;
+    public javax.swing.JLabel idsp40;
+    public javax.swing.JLabel idsp41;
+    public javax.swing.JLabel idsp42;
+    public javax.swing.JLabel idsp43;
+    public javax.swing.JLabel idsp44;
+    public javax.swing.JLabel idsp45;
+    public javax.swing.JLabel idsp46;
+    public javax.swing.JLabel idsp47;
+    public javax.swing.JLabel idsp48;
+    public javax.swing.JLabel idsp49;
     public javax.swing.JLabel idsp5;
+    public javax.swing.JLabel idsp50;
+    public javax.swing.JLabel idsp51;
+    public javax.swing.JLabel idsp53;
     public javax.swing.JLabel idsp6;
     public javax.swing.JLabel idsp7;
     public javax.swing.JLabel idsp8;
     public javax.swing.JLabel idsp9;
-    public javax.swing.JPanel imagen;
+    public javax.swing.JPanel imagen_cover3u;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton9;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
@@ -6670,10 +11330,34 @@ public class Clean_Claim extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel18;
+    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
+    private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
@@ -6682,7 +11366,6 @@ public class Clean_Claim extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPanel jPanel4;
     public javax.swing.JLabel milisegundos;
     public javax.swing.JLabel npaescanear;
     public javax.swing.JLabel npaescanear1;
@@ -6701,6 +11384,10 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel npaescanear21;
     public javax.swing.JLabel npaescanear22;
     public javax.swing.JLabel npaescanear23;
+    public javax.swing.JLabel npaescanear24;
+    public javax.swing.JLabel npaescanear25;
+    public javax.swing.JLabel npaescanear26;
+    public javax.swing.JLabel npaescanear27;
     public javax.swing.JLabel npaescanear28;
     public javax.swing.JLabel npaescanear29;
     public javax.swing.JLabel npaescanear3;
@@ -6708,9 +11395,27 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel npaescanear31;
     public javax.swing.JLabel npaescanear32;
     public javax.swing.JLabel npaescanear33;
+    public javax.swing.JLabel npaescanear34;
     public javax.swing.JLabel npaescanear35;
+    public javax.swing.JLabel npaescanear36;
+    public javax.swing.JLabel npaescanear37;
+    public javax.swing.JLabel npaescanear38;
+    public javax.swing.JLabel npaescanear39;
     public javax.swing.JLabel npaescanear4;
+    public javax.swing.JLabel npaescanear40;
+    public javax.swing.JLabel npaescanear41;
+    public javax.swing.JLabel npaescanear42;
+    public javax.swing.JLabel npaescanear43;
+    public javax.swing.JLabel npaescanear44;
+    public javax.swing.JLabel npaescanear45;
+    public javax.swing.JLabel npaescanear46;
+    public javax.swing.JLabel npaescanear47;
+    public javax.swing.JLabel npaescanear48;
+    public javax.swing.JLabel npaescanear49;
     public javax.swing.JLabel npaescanear5;
+    public javax.swing.JLabel npaescanear50;
+    public javax.swing.JLabel npaescanear51;
+    public javax.swing.JLabel npaescanear53;
     public javax.swing.JLabel npaescanear6;
     public javax.swing.JLabel npaescanear7;
     public javax.swing.JLabel npaescanear8;
@@ -6732,6 +11437,10 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel npecaneado21;
     public javax.swing.JLabel npecaneado22;
     public javax.swing.JLabel npecaneado23;
+    public javax.swing.JLabel npecaneado24;
+    public javax.swing.JLabel npecaneado25;
+    public javax.swing.JLabel npecaneado26;
+    public javax.swing.JLabel npecaneado27;
     public javax.swing.JLabel npecaneado28;
     public javax.swing.JLabel npecaneado29;
     public javax.swing.JLabel npecaneado3;
@@ -6739,9 +11448,27 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel npecaneado31;
     public javax.swing.JLabel npecaneado32;
     public javax.swing.JLabel npecaneado33;
+    public javax.swing.JLabel npecaneado34;
     public javax.swing.JLabel npecaneado35;
+    public javax.swing.JLabel npecaneado36;
+    public javax.swing.JLabel npecaneado37;
+    public javax.swing.JLabel npecaneado38;
+    public javax.swing.JLabel npecaneado39;
     public javax.swing.JLabel npecaneado4;
+    public javax.swing.JLabel npecaneado40;
+    public javax.swing.JLabel npecaneado41;
+    public javax.swing.JLabel npecaneado42;
+    public javax.swing.JLabel npecaneado43;
+    public javax.swing.JLabel npecaneado44;
+    public javax.swing.JLabel npecaneado45;
+    public javax.swing.JLabel npecaneado46;
+    public javax.swing.JLabel npecaneado47;
+    public javax.swing.JLabel npecaneado48;
+    public javax.swing.JLabel npecaneado49;
     public javax.swing.JLabel npecaneado5;
+    public javax.swing.JLabel npecaneado50;
+    public javax.swing.JLabel npecaneado51;
+    public javax.swing.JLabel npecaneado53;
     public javax.swing.JLabel npecaneado6;
     public javax.swing.JLabel npecaneado7;
     public javax.swing.JLabel npecaneado8;
@@ -6764,6 +11491,10 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel serial21;
     public javax.swing.JLabel serial22;
     public javax.swing.JLabel serial23;
+    public javax.swing.JLabel serial24;
+    public javax.swing.JLabel serial25;
+    public javax.swing.JLabel serial26;
+    public javax.swing.JLabel serial27;
     public javax.swing.JLabel serial28;
     public javax.swing.JLabel serial29;
     public javax.swing.JLabel serial3;
@@ -6771,9 +11502,27 @@ public class Clean_Claim extends javax.swing.JFrame {
     public javax.swing.JLabel serial31;
     public javax.swing.JLabel serial32;
     public javax.swing.JLabel serial33;
+    public javax.swing.JLabel serial34;
     public javax.swing.JLabel serial35;
+    public javax.swing.JLabel serial36;
+    public javax.swing.JLabel serial37;
+    public javax.swing.JLabel serial38;
+    public javax.swing.JLabel serial39;
     public javax.swing.JLabel serial4;
+    public javax.swing.JLabel serial40;
+    public javax.swing.JLabel serial41;
+    public javax.swing.JLabel serial42;
+    public javax.swing.JLabel serial43;
+    public javax.swing.JLabel serial44;
+    public javax.swing.JLabel serial45;
+    public javax.swing.JLabel serial46;
+    public javax.swing.JLabel serial47;
+    public javax.swing.JLabel serial48;
+    public javax.swing.JLabel serial49;
     public javax.swing.JLabel serial5;
+    public javax.swing.JLabel serial50;
+    public javax.swing.JLabel serial51;
+    public javax.swing.JLabel serial53;
     public javax.swing.JLabel serial6;
     public javax.swing.JLabel serial7;
     public javax.swing.JLabel serial8;

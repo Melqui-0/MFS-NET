@@ -3,8 +3,9 @@ package mfs;
 import java.util.HashMap;
 import java.util.Map;
 import javax.swing.JOptionPane;
-import static mfs.Empty_med.nps;
-import static mfs.Empty_med.pn;
+import static mfs.all.nps;
+import static mfs.all.pn;
+
 
 
 public class Funcion_f2 {
@@ -86,4 +87,15 @@ public class Funcion_f2 {
             JOptionPane.showMessageDialog(null, "Invalid Add Part");
         }
     }
+    /* switch nos = label2:
+            all.barcode_1.SetVisible(true)
+       break;
+     switch npa = lbel3:
+    ...
+    break 
+    default == else 
+    
+    
+    
+    */
 }

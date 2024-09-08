@@ -2300,7 +2300,7 @@ public class Material_pdu_485 extends javax.swing.JPanel {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cantidadfinal39)))
                         .addGap(12, 12, 12)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(37, Short.MAX_VALUE))
         );
         NPS39Layout.setVerticalGroup(
             NPS39Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

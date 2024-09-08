@@ -10,6 +10,11 @@ package mfs;
  */
 public class all {
     
+    
+    public static String pn, pn2;
+    public static int nm, TotalWU;
+    public static String nps [];
+    
     public static Login login = new Login();
     public static Inicio abrir = new Inicio();
     public static WorkUnit work = new WorkUnit();
@@ -21,6 +26,7 @@ public class all {
     public static Empty_231 empty_231 = new Empty_231();
     public static Empty_med empty_medium = new Empty_med ();
     public static Clean_Claim clean_claim = new Clean_Claim();
+    public static Clean_Claim_Empty clean_claim_empty = new Clean_Claim_Empty();
     public static Barcode barcode =  new Barcode();
     public static Diccionario dic = new Diccionario();
     public static Barcode_1 barcode_1 = new Barcode_1();
@@ -60,5 +66,27 @@ public class all {
     public static Imagen_material_bisagras_del_421 imagen_bisagras_del_421 = new Imagen_material_bisagras_del_421();
     public static Material_pdu_485_vert material_pdu_485_vert = new Material_pdu_485_vert();
     public static Imagen_pdu_485_vert imagen_pdu_485_vert = new Imagen_pdu_485_vert();
-    public static int bar = 3;
+    public static Material_Bisagras_Tras_111 material_bisagras_tras_111 = new Material_Bisagras_Tras_111();
+    public static Imagen_Material_Bisagras_Tras_111 imagen_material_bisagras_tras_111 = new Imagen_Material_Bisagras_Tras_111();
+    public static Material_Bisagras_Del_111 material_bisagras_del_111 = new Material_Bisagras_Del_111();
+    public static Imagen_Material_Bisagras_Del_111 imagen_material_bisagras_del_111 = new Imagen_Material_Bisagras_Del_111();
+    public static Material_contrapesos material_contrapesos = new Material_contrapesos();
+    public static Imagen_contrapesos imagen_contrapesos = new Imagen_contrapesos();
+    public static Material_extensiones material_extensiones = new Material_extensiones();
+    public static Imagen_extensiones imagen_extensiones = new Imagen_extensiones();
+    public static Material_Monitor material_monitor = new Material_Monitor();
+    public static Imagen_Material_Monitor imagen_material_monitor = new Imagen_Material_Monitor();
+    public static Material_Cable_Monitor material_cable_monitor = new Material_Cable_Monitor();
+    public static Imagen_Material_Cable_Material imagen_material_cable_monitor = new Imagen_Material_Cable_Material();
+    public static Material_Switch material_switch = new Material_Switch();
+    public static Imagen_Material_Switch imagen_material_switch = new Imagen_Material_Switch();
+    public static Material_Llantas material_llantas = new Material_Llantas();
+    public static Imagen_Material_Llantas imagen_material_llantas = new Imagen_Material_Llantas();
+    public static Material_Ext_Denali material_ext_denali = new Material_Ext_Denali();
+    public static Imagen_Material_Ext_Denali imagen_material_ext_denali = new Imagen_Material_Ext_Denali();
+    public static Consultas consulta = new Consultas();
+    public static Prueba_subir_imagen Prueba_subir_imagenes = new Prueba_subir_imagen(); 
+    
+    
+    
 }

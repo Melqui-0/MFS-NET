@@ -45,6 +45,7 @@ public class Customization extends javax.swing.JFrame {
         Switch = new javax.swing.ButtonGroup();
         Patas_estabilizadoras = new javax.swing.ButtonGroup();
         Llantas_estabilizadoras = new javax.swing.ButtonGroup();
+        Placa_Denali = new javax.swing.ButtonGroup();
         Cuerpo = new javax.swing.JPanel();
         Cuerpo_desliz = new javax.swing.JScrollPane();
         Contenido = new javax.swing.JPanel();
@@ -221,9 +222,11 @@ public class Customization extends javax.swing.JFrame {
         LM49 = new javax.swing.JCheckBox();
         LM50 = new javax.swing.JCheckBox();
         LM70 = new javax.swing.JCheckBox();
+        jLabel14 = new javax.swing.JLabel();
+        placasi = new javax.swing.JRadioButton();
+        placano = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(1280, 1024));
 
         Cuerpo.setPreferredSize(new java.awt.Dimension(1280, 1024));
 
@@ -1332,9 +1335,7 @@ public class Customization extends javax.swing.JFrame {
                         .addComponent(LM62)
                         .addGap(18, 18, 18)
                         .addComponent(LM63)
-                        .addGap(18, 18, 18)
-                        .addComponent(LM43)
-                        .addGap(18, 18, 18)
+                        .addGap(93, 93, 93)
                         .addComponent(LM44)
                         .addGap(18, 18, 18)
                         .addComponent(LM45)
@@ -1356,7 +1357,6 @@ public class Customization extends javax.swing.JFrame {
                         .addComponent(LM8)
                         .addGap(18, 18, 18)
                         .addGroup(Panel_monitor_LMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel16)
                             .addGroup(Panel_monitor_LMLayout.createSequentialGroup()
                                 .addComponent(LM9)
                                 .addGap(18, 18, 18)
@@ -1368,13 +1368,17 @@ public class Customization extends javax.swing.JFrame {
                                 .addGap(18, 18, 18)
                                 .addComponent(LM67)
                                 .addGap(18, 18, 18)
-                                .addComponent(LM49)))
-                        .addGap(18, 18, 18)
-                        .addComponent(LM50)
-                        .addGap(18, 18, 18)
-                        .addComponent(LM51)
-                        .addGap(18, 18, 18)
-                        .addComponent(LM52))
+                                .addComponent(LM49)
+                                .addGap(18, 18, 18)
+                                .addComponent(LM50)
+                                .addGap(18, 18, 18)
+                                .addComponent(LM51)
+                                .addGap(18, 18, 18)
+                                .addComponent(LM52))
+                            .addGroup(Panel_monitor_LMLayout.createSequentialGroup()
+                                .addComponent(jLabel16)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(LM43))))
                     .addGroup(Panel_monitor_LMLayout.createSequentialGroup()
                         .addComponent(LM47)
                         .addGap(18, 18, 18)
@@ -1395,14 +1399,20 @@ public class Customization extends javax.swing.JFrame {
                         .addComponent(LM57)
                         .addGap(18, 18, 18)
                         .addComponent(LM58)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(38, 38, 38))
         );
         Panel_monitor_LMLayout.setVerticalGroup(
             Panel_monitor_LMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Panel_monitor_LMLayout.createSequentialGroup()
-                .addGap(18, 18, 18)
-                .addComponent(jLabel16)
-                .addGap(18, 18, 18)
+                .addGroup(Panel_monitor_LMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Panel_monitor_LMLayout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel16)
+                        .addGap(18, 18, 18))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Panel_monitor_LMLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(LM43)
+                        .addGap(3, 3, 3)))
                 .addGroup(Panel_monitor_LMLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LM3)
                     .addComponent(LM2)
@@ -1434,7 +1444,6 @@ public class Customization extends javax.swing.JFrame {
                     .addComponent(LM61)
                     .addComponent(LM62)
                     .addComponent(LM63)
-                    .addComponent(LM43)
                     .addComponent(LM44)
                     .addComponent(LM45)
                     .addComponent(LM46))
@@ -1453,6 +1462,25 @@ public class Customization extends javax.swing.JFrame {
                 .addContainerGap(32, Short.MAX_VALUE))
         );
 
+        jLabel14.setFont(new java.awt.Font("Century Gothic", 1, 30)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel14.setText("Placa Denali");
+
+        Placa_Denali.add(placasi);
+        placasi.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        placasi.setText("Si");
+        placasi.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        placasi.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                placasiActionPerformed(evt);
+            }
+        });
+
+        Placa_Denali.add(placano);
+        placano.setFont(new java.awt.Font("Century Gothic", 1, 18)); // NOI18N
+        placano.setText("No");
+        placano.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+
         javax.swing.GroupLayout ContenidoLayout = new javax.swing.GroupLayout(Contenido);
         Contenido.setLayout(ContenidoLayout);
         ContenidoLayout.setHorizontalGroup(
@@ -1462,176 +1490,182 @@ public class Customization extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addGap(397, 397, 397))
             .addGroup(ContenidoLayout.createSequentialGroup()
-                .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(ContenidoLayout.createSequentialGroup()
-                        .addGap(45, 45, 45)
-                        .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addComponent(llantassi)
-                                .addGap(50, 50, 50)
-                                .addComponent(llantasno))
-                            .addComponent(jLabel12)
-                            .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addComponent(patassi)
-                                .addGap(50, 50, 50)
-                                .addComponent(patasno))
-                            .addComponent(jLabel13)
-                            .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addComponent(switchsi)
-                                .addGap(50, 50, 50)
-                                .addComponent(switchno))
-                            .addComponent(jLabel9)
-                            .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addComponent(monitorsi)
-                                .addGap(50, 50, 50)
-                                .addComponent(monitorno))
-                            .addComponent(jLabel10)
-                            .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addComponent(extmangsi)
-                                .addGap(50, 50, 50)
-                                .addComponent(extmangno))
-                            .addComponent(jLabel11)
-                            .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addComponent(sismicsi)
-                                .addGap(50, 50, 50)
-                                .addComponent(sismicno))
-                            .addComponent(jLabel8)
-                            .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addComponent(extsi)
-                                .addGap(50, 50, 50)
-                                .addComponent(extno))
-                            .addComponent(jLabel7)
-                            .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addComponent(Agency)
-                                .addGap(50, 50, 50)
-                                .addComponent(pesos)
-                                .addGap(50, 50, 50)
-                                .addComponent(wee)
-                                .addGap(50, 50, 50)
-                                .addComponent(etiquetasna))
-                            .addComponent(jLabel6)
-                            .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addComponent(contrasi)
-                                .addGap(50, 50, 50)
-                                .addComponent(contrano))
-                            .addComponent(jLabel5)
-                            .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addComponent(bistras111)
-                                .addGap(50, 50, 50)
-                                .addComponent(bistrasna))
-                            .addComponent(jLabel4)
-                            .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addComponent(bis111)
-                                .addGap(50, 50, 50)
-                                .addComponent(bis421)
-                                .addGap(50, 50, 50)
-                                .addComponent(bisdelna))
-                            .addComponent(jLabel3)
-                            .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                .addComponent(Titulovt)
+                .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGroup(ContenidoLayout.createSequentialGroup()
+                            .addGap(45, 45, 45)
+                            .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addGroup(ContenidoLayout.createSequentialGroup()
-                                    .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(ContenidoLayout.createSequentialGroup()
-                                            .addComponent(jLabel2)
-                                            .addGap(478, 478, 478)
-                                            .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(ContenidoLayout.createSequentialGroup()
-                                                    .addGap(73, 73, 73)
-                                                    .addComponent(jLabel17))
-                                                .addGroup(ContenidoLayout.createSequentialGroup()
-                                                    .addComponent(pdu)
-                                                    .addGap(46, 46, 46)
-                                                    .addComponent(limite)
-                                                    .addGap(46, 46, 46)
-                                                    .addComponent(ambospos))))
-                                        .addComponent(ambospdu)
-                                        .addGroup(ContenidoLayout.createSequentialGroup()
-                                            .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(p485)
-                                                .addComponent(p489)
-                                                .addComponent(p231))
-                                            .addGap(18, 18, 18)
-                                            .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(ContenidoLayout.createSequentialGroup()
-                                                    .addComponent(pdu23101)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu23102)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu23103)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu23104)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu23105)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu23106)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu23107)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu23108)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu23109)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu23110)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu23111)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu23112))
-                                                .addGroup(ContenidoLayout.createSequentialGroup()
-                                                    .addComponent(pdu48901)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48902)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48903)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48904)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48905)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48906)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48907)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48908)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48909)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48910)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48911)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48912))
-                                                .addGroup(ContenidoLayout.createSequentialGroup()
-                                                    .addComponent(pdu48501)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48502)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48503)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48504)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48505)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48506)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48507)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48508)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48509)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48510)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48511)
-                                                    .addGap(18, 18, 18)
-                                                    .addComponent(pdu48512)))))
-                                    .addGap(93, 93, 93)
-                                    .addComponent(cantidadpduver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(60, 60, 60)))
-                            .addGroup(ContenidoLayout.createSequentialGroup()
-                                .addGap(518, 518, 518)
-                                .addComponent(Iniciar))))
-                    .addComponent(Panel_LM_PDU, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(Panel_monitor_LM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                    .addComponent(llantassi)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(llantasno))
+                                .addComponent(jLabel12)
+                                .addGroup(ContenidoLayout.createSequentialGroup()
+                                    .addComponent(patassi)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(patasno))
+                                .addComponent(jLabel13)
+                                .addGroup(ContenidoLayout.createSequentialGroup()
+                                    .addComponent(switchsi)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(switchno))
+                                .addComponent(jLabel9)
+                                .addGroup(ContenidoLayout.createSequentialGroup()
+                                    .addComponent(monitorsi)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(monitorno))
+                                .addComponent(jLabel10)
+                                .addGroup(ContenidoLayout.createSequentialGroup()
+                                    .addComponent(extmangsi)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(extmangno))
+                                .addComponent(jLabel11)
+                                .addGroup(ContenidoLayout.createSequentialGroup()
+                                    .addComponent(sismicsi)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(sismicno))
+                                .addComponent(jLabel8)
+                                .addGroup(ContenidoLayout.createSequentialGroup()
+                                    .addComponent(extsi)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(extno))
+                                .addComponent(jLabel7)
+                                .addGroup(ContenidoLayout.createSequentialGroup()
+                                    .addComponent(Agency)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(pesos)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(wee)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(etiquetasna))
+                                .addComponent(jLabel6)
+                                .addGroup(ContenidoLayout.createSequentialGroup()
+                                    .addComponent(contrasi)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(contrano))
+                                .addComponent(jLabel5)
+                                .addGroup(ContenidoLayout.createSequentialGroup()
+                                    .addComponent(bistras111)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(bistrasna))
+                                .addComponent(jLabel4)
+                                .addGroup(ContenidoLayout.createSequentialGroup()
+                                    .addComponent(bis111)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(bis421)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(bisdelna))
+                                .addComponent(jLabel3)
+                                .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(Titulovt)
+                                    .addGroup(ContenidoLayout.createSequentialGroup()
+                                        .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(ContenidoLayout.createSequentialGroup()
+                                                .addComponent(jLabel2)
+                                                .addGap(478, 478, 478)
+                                                .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(ContenidoLayout.createSequentialGroup()
+                                                        .addGap(73, 73, 73)
+                                                        .addComponent(jLabel17))
+                                                    .addGroup(ContenidoLayout.createSequentialGroup()
+                                                        .addComponent(pdu)
+                                                        .addGap(46, 46, 46)
+                                                        .addComponent(limite)
+                                                        .addGap(46, 46, 46)
+                                                        .addComponent(ambospos))))
+                                            .addComponent(ambospdu)
+                                            .addGroup(ContenidoLayout.createSequentialGroup()
+                                                .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addComponent(p485)
+                                                    .addComponent(p489)
+                                                    .addComponent(p231))
+                                                .addGap(18, 18, 18)
+                                                .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                    .addGroup(ContenidoLayout.createSequentialGroup()
+                                                        .addComponent(pdu23101)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu23102)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu23103)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu23104)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu23105)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu23106)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu23107)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu23108)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu23109)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu23110)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu23111)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu23112))
+                                                    .addGroup(ContenidoLayout.createSequentialGroup()
+                                                        .addComponent(pdu48901)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48902)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48903)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48904)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48905)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48906)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48907)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48908)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48909)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48910)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48911)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48912))
+                                                    .addGroup(ContenidoLayout.createSequentialGroup()
+                                                        .addComponent(pdu48501)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48502)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48503)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48504)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48505)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48506)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48507)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48508)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48509)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48510)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48511)
+                                                        .addGap(18, 18, 18)
+                                                        .addComponent(pdu48512)))))
+                                        .addGap(93, 93, 93)
+                                        .addComponent(cantidadpduver, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(60, 60, 60)))
+                                .addGroup(ContenidoLayout.createSequentialGroup()
+                                    .addComponent(placasi)
+                                    .addGap(50, 50, 50)
+                                    .addComponent(placano))
+                                .addComponent(jLabel14)))
+                        .addComponent(Panel_LM_PDU, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(Panel_monitor_LM, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(ContenidoLayout.createSequentialGroup()
+                        .addGap(543, 543, 543)
+                        .addComponent(Iniciar)))
                 .addContainerGap(15, Short.MAX_VALUE))
         );
         ContenidoLayout.setVerticalGroup(
@@ -1772,9 +1806,15 @@ public class Customization extends javax.swing.JFrame {
                 .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(llantasno)
                     .addComponent(llantassi))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 45, Short.MAX_VALUE)
+                .addGap(33, 33, 33)
+                .addComponent(jLabel14)
+                .addGap(37, 37, 37)
+                .addGroup(ContenidoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(placano)
+                    .addComponent(placasi))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
                 .addComponent(Iniciar)
-                .addGap(302, 302, 302))
+                .addGap(174, 174, 174))
         );
 
         Cuerpo_desliz.setViewportView(Contenido);
@@ -1787,7 +1827,7 @@ public class Customization extends javax.swing.JFrame {
         );
         CuerpoLayout.setVerticalGroup(
             CuerpoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Cuerpo_desliz, javax.swing.GroupLayout.DEFAULT_SIZE, 2758, Short.MAX_VALUE)
+            .addComponent(Cuerpo_desliz, javax.swing.GroupLayout.DEFAULT_SIZE, 2924, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -1798,7 +1838,7 @@ public class Customization extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Cuerpo, javax.swing.GroupLayout.DEFAULT_SIZE, 2758, Short.MAX_VALUE)
+            .addComponent(Cuerpo, javax.swing.GroupLayout.DEFAULT_SIZE, 2924, Short.MAX_VALUE)
         );
 
         pack();
@@ -2506,13 +2546,246 @@ public class Customization extends javax.swing.JFrame {
             all.empty_medium.Imagen_ext_mangueras.add(all.imagen_extmangueras, BorderLayout.CENTER);
             all.empty_medium.Imagen_ext_mangueras.revalidate();
             all.empty_medium.Imagen_ext_mangueras.repaint();
-        } else {
+        } else if (extmangno.isSelected()) {
             all.empty_medium.Material_ext_magueras.setVisible(false);
             all.empty_medium.Imagen_ext_mangueras.setVisible(false);
         }
+         if (bis111.isSelected()){
+            all.material_bisagras_del_111.setSize(331,626);
+            all.empty_medium.Material_Bisagras_Del_111.removeAll();
+            all.empty_medium.Material_Bisagras_Del_111.add(all.material_bisagras_del_111, BorderLayout.CENTER);
+            all.empty_medium.Material_Bisagras_Del_111.revalidate();
+            all.empty_medium.Material_Bisagras_Del_111.repaint();
+            
+            all.imagen_material_bisagras_del_111.setSize(912,626);
+            all.empty_medium.Imagen_Material_Bisagra_Del_111.removeAll();
+            all.empty_medium.Imagen_Material_Bisagra_Del_111.add(all.imagen_material_bisagras_del_111, BorderLayout.CENTER);
+            all.empty_medium.Imagen_Material_Bisagra_Del_111.revalidate();
+            all.empty_medium.Imagen_Material_Bisagra_Del_111.repaint();
+        } else {
+            all.empty_medium.Material_Bisagras_Del_111.setVisible(false);
+            all.empty_medium.Imagen_Material_Bisagra_Del_111.setVisible(false);
+        }
+        if (bis421.isSelected()){
+            all.material_bisagras_del_421.setSize(331,626);
+            all.empty_medium.Material_bisagras_del_421.removeAll();
+            all.empty_medium.Material_bisagras_del_421.add(all.material_bisagras_del_421, BorderLayout.CENTER);
+            all.empty_medium.Material_bisagras_del_421.revalidate();
+            all.empty_medium.Material_bisagras_del_421.repaint();
+            
+            all.imagen_bisagras_del_421.setSize(912,626);
+            all.empty_medium.Imagen_bisagras_del_421.removeAll();
+            all.empty_medium.Imagen_bisagras_del_421.add(all.imagen_bisagras_del_421, BorderLayout.CENTER);
+            all.empty_medium.Imagen_bisagras_del_421.revalidate();
+            all.empty_medium.Imagen_bisagras_del_421.repaint();
+        } else {
+            all.empty_medium.Material_bisagras_del_421.setVisible(false);
+            all.empty_medium.Imagen_bisagras_del_421.setVisible(false);
+        }
+        if (bisdelna.isSelected()){
+            all.empty_medium.Material_bisagras_del_421.setVisible(false);
+            all.empty_medium.Imagen_bisagras_del_421.setVisible(false);
+            all.empty_medium.Material_Bisagras_Del_111.setVisible(false);
+            all.empty_medium.Imagen_Material_Bisagra_Del_111.setVisible(false);
+        }
+        if (bistras111.isSelected()){
+            all.material_bisagras_tras_111.setSize(331,626);
+            all.empty_medium.Material_Bisagra_Tras_111.removeAll();
+            all.empty_medium.Material_Bisagra_Tras_111.add(all.material_bisagras_tras_111, BorderLayout.CENTER);
+            all.empty_medium.Material_Bisagra_Tras_111.revalidate();
+            all.empty_medium.Material_Bisagra_Tras_111.repaint();
+            
+            all.imagen_material_bisagras_tras_111.setSize(912,626);
+            all.empty_medium.Imagen_Material_Bisagras_Tras_111.removeAll();
+            all.empty_medium.Imagen_Material_Bisagras_Tras_111.add(all.imagen_material_bisagras_tras_111, BorderLayout.CENTER);
+            all.empty_medium.Imagen_Material_Bisagras_Tras_111.revalidate();
+            all.empty_medium.Imagen_Material_Bisagras_Tras_111.repaint();
+        } else if (bistrasna.isSelected()){
+            all.empty_medium.Material_Bisagra_Tras_111.setVisible(false);
+            all.empty_medium.Imagen_Material_Bisagras_Tras_111.setVisible(false);
+        }
+        if (contrasi.isSelected()){
+            all.material_contrapesos.setSize(331,1136);
+            all.empty_medium.Material_Contrapesos.removeAll();
+            all.empty_medium.Material_Contrapesos.add(all.material_contrapesos, BorderLayout.CENTER);
+            all.empty_medium.Material_Contrapesos.revalidate();
+            all.empty_medium.Material_Contrapesos.repaint();
+            
+            all.imagen_contrapesos.setSize(912,1136);
+            all.empty_medium.Imagen_contrapesos.removeAll();
+            all.empty_medium.Imagen_contrapesos.add(all.imagen_contrapesos, BorderLayout.CENTER);
+            all.empty_medium.Imagen_contrapesos.revalidate();
+            all.empty_medium.Imagen_contrapesos.repaint();
+        } else if (contrano.isSelected()){
+            all.empty_medium.Material_Contrapesos.setVisible(false);
+            all.empty_medium.Imagen_contrapesos.setVisible(false);
+        }
+        if (Agency.isSelected()){
+            all.material_etiqueta_534.setSize(331,626);
+            all.empty_medium.Material_etiqueta_534.removeAll();
+            all.empty_medium.Material_etiqueta_534.add(all.material_etiqueta_534, BorderLayout.CENTER);
+            all.empty_medium.Material_etiqueta_534.revalidate();
+            all.empty_medium.Material_etiqueta_534.repaint();
+            
+            all.imagen_etiqueta_534.setSize(912,626);
+            all.empty_medium.Imagen_etiqueta_534.removeAll();
+            all.empty_medium.Imagen_etiqueta_534.add(all.imagen_etiqueta_534, BorderLayout.CENTER);
+            all.empty_medium.Imagen_etiqueta_534.revalidate();
+            all.empty_medium.Imagen_etiqueta_534.repaint();
+        } else {
+            all.empty_medium.Material_etiqueta_534.setVisible(false);
+            all.empty_medium.Imagen_etiqueta_534.setVisible(false);
+        }
+        if (pesos.isSelected()){
+            all.material_etiqueta_396.setSize(331,626);
+            all.empty_medium.Material_etiqueta_396.removeAll();
+            all.empty_medium.Material_etiqueta_396.add(all.material_etiqueta_396, BorderLayout.CENTER);
+            all.empty_medium.Material_etiqueta_396.revalidate();
+            all.empty_medium.Material_etiqueta_396.repaint();
+            
+            all.imagen_etiqueta_396.setSize(912,626);
+            all.empty_medium.Imagen_etiqueta_396.removeAll();
+            all.empty_medium.Imagen_etiqueta_396.add(all.imagen_etiqueta_396, BorderLayout.CENTER);
+            all.empty_medium.Imagen_etiqueta_396.revalidate();
+            all.empty_medium.Imagen_etiqueta_396.repaint();
+        } else {
+            all.empty_medium.Material_etiqueta_396.setVisible(false);
+            all.empty_medium.Imagen_etiqueta_396.setVisible(false);
+        }
+        if (wee.isSelected()){
+            all.material_etiqueta_1952.setSize(331,626);
+            all.empty_medium.Material_etiqueta_1952.removeAll();
+            all.empty_medium.Material_etiqueta_1952.add(all.material_etiqueta_1952, BorderLayout.CENTER);
+            all.empty_medium.Material_etiqueta_1952.revalidate();
+            all.empty_medium.Material_etiqueta_1952.repaint();
+            
+            all.imagen_etiqueta_1952.setSize(912,626);
+            all.empty_medium.Imagen_etiqueta_1952.removeAll();
+            all.empty_medium.Imagen_etiqueta_1952.add(all.imagen_etiqueta_1952, BorderLayout.CENTER);
+            all.empty_medium.Imagen_etiqueta_1952.revalidate();
+            all.empty_medium.Imagen_etiqueta_1952.repaint();
+        } else {
+            all.empty_medium.Material_etiqueta_1952.setVisible(false);
+            all.empty_medium.Imagen_etiqueta_1952.setVisible(false);
+        }
+        if (etiquetasna.isSelected()){
+            all.empty_medium.Material_etiqueta_534.setVisible(false);
+            all.empty_medium.Imagen_etiqueta_534.setVisible(false);
+            all.empty_medium.Material_etiqueta_396.setVisible(false);
+            all.empty_medium.Imagen_etiqueta_396.setVisible(false);
+            all.empty_medium.Material_etiqueta_1952.setVisible(false);
+            all.empty_medium.Imagen_etiqueta_1952.setVisible(false);
+        }
+        if (extsi.isSelected()){
+            all.material_extensiones.setSize(331,2357);
+            all.empty_medium.Material_extensiones.removeAll();
+            all.empty_medium.Material_extensiones.add(all.material_extensiones, BorderLayout.CENTER);
+            all.empty_medium.Material_extensiones.revalidate();
+            all.empty_medium.Material_extensiones.repaint();
+            
+            all.imagen_extensiones.setSize(912,2357);
+            all.empty_medium.Imagen_extensiones.removeAll();
+            all.empty_medium.Imagen_extensiones.add(all.imagen_extensiones, BorderLayout.CENTER);
+            all.empty_medium.Imagen_extensiones.revalidate();
+            all.empty_medium.Imagen_extensiones.repaint();
+        }
+        else if (extno.isSelected()){
+            all.empty_medium.Material_extensiones.setVisible(false);
+            all.empty_medium.Imagen_extensiones.setVisible(false);
+        }
+        if (monitorsi.isSelected()){
+            all.material_monitor.setSize(331,505);
+            all.empty_medium.Material_monitor.removeAll();
+            all.empty_medium.Material_monitor.add(all.material_monitor, BorderLayout.CENTER);
+            all.empty_medium.Material_monitor.revalidate();
+            all.empty_medium.Material_monitor.repaint();
+            
+            all.imagen_material_monitor.setSize(912,505);
+            all.empty_medium.Imagen_monitor.removeAll();
+            all.empty_medium.Imagen_monitor.add(all.imagen_material_monitor, BorderLayout.CENTER);
+            all.empty_medium.Imagen_monitor.revalidate();
+            all.empty_medium.Imagen_monitor.repaint();
+            
+            all.material_cable_monitor.setSize(331,626);
+            all.empty_medium.Cable_monitor.removeAll();
+            all.empty_medium.Cable_monitor.add(all.material_cable_monitor, BorderLayout.CENTER);
+            all.empty_medium.Cable_monitor.revalidate();
+            all.empty_medium.Cable_monitor.repaint();
+            
+            all.imagen_material_cable_monitor.setSize(912,626);
+            all.empty_medium.Imagen_cable_monitor.removeAll();
+            all.empty_medium.Imagen_cable_monitor.add(all.imagen_material_cable_monitor, BorderLayout.CENTER);
+            all.empty_medium.Imagen_cable_monitor.revalidate();
+            all.empty_medium.Imagen_cable_monitor.repaint();
+        }
+        else if (extno.isSelected()){
+            all.empty_medium.Material_monitor.setVisible(false);
+            all.empty_medium.Imagen_monitor.setVisible(false);
+            all.empty_medium.Cable_monitor.setVisible(false);
+            all.empty_medium.Imagen_cable_monitor.setVisible(false);
+        }
+        if (switchsi.isSelected()){
+            all.material_switch.setSize(331,89);
+            all.empty_medium.Material_Switch.removeAll();
+            all.empty_medium.Material_Switch.add(all.material_switch, BorderLayout.CENTER);
+            all.empty_medium.Material_Switch.revalidate();
+            all.empty_medium.Material_Switch.repaint();
+            
+            all.imagen_material_switch.setSize(912,89);
+            all.empty_medium.Imagen_Material_Swithc.removeAll();
+            all.empty_medium.Imagen_Material_Swithc.add(all.imagen_material_switch, BorderLayout.CENTER);
+            all.empty_medium.Imagen_Material_Swithc.revalidate();
+            all.empty_medium.Imagen_Material_Swithc.repaint();
+        }
+        else if (switchno.isSelected()){
+            all.empty_medium.Material_Switch.setVisible(false);
+            all.empty_medium.Imagen_Material_Swithc.setVisible(false);
+        }
+        if (llantassi.isSelected()){
+            all.material_llantas.setSize(331,2357);
+            all.empty_medium.Material_Llantas.removeAll();
+            all.empty_medium.Material_Llantas.add(all.material_llantas, BorderLayout.CENTER);
+            all.empty_medium.Material_Llantas.revalidate();
+            all.empty_medium.Material_Llantas.repaint();
+            
+            all.imagen_material_llantas.setSize(912,2357);
+            all.empty_medium.Imagen_Material_Llantas.removeAll();
+            all.empty_medium.Imagen_Material_Llantas.add(all.imagen_material_llantas, BorderLayout.CENTER);
+            all.empty_medium.Imagen_Material_Llantas.revalidate();
+            all.empty_medium.Imagen_Material_Llantas.repaint();
+        }
+        else if (switchno.isSelected()){
+            all.empty_medium.Material_Llantas.setVisible(false);
+            all.empty_medium.Imagen_Material_Llantas.setVisible(false);
+        }
+        if (placasi.isSelected()){
+            all.material_ext_denali.setSize(331,504); //Se aplica el tamaño deseado (de preferencia el que ya esta por default cuando terminas el diesño).
+            all.empty_medium.Material_Ext_Denali.removeAll();//Remueve todo lo que se encuentre en ese objeto.
+            all.empty_medium.Material_Ext_Denali.add(all.material_ext_denali, BorderLayout.CENTER);//Agrega lo que se manda a llamar, (Primero se define el lugar destino y después el objeto a traer y lo coloca de manera centrada).
+            all.empty_medium.Material_Ext_Denali.revalidate();// Valida que todo se encuentre bien.
+            all.empty_medium.Material_Ext_Denali.repaint();//Imprime el objeto en la ubicación de acuerdo a las sentencias anteriores.
+            
+            all.imagen_material_ext_denali.setSize(912,504);
+            all.empty_medium.Imagen_Material_Ext_Denali.removeAll();
+            all.empty_medium.Imagen_Material_Ext_Denali.add(all.imagen_material_ext_denali, BorderLayout.CENTER);
+            all.empty_medium.Imagen_Material_Ext_Denali.revalidate();
+            all.empty_medium.Imagen_Material_Ext_Denali.repaint();
+        }
+        else if (placano.isSelected()){
+            all.empty_medium.Material_Ext_Denali.setVisible(false);
+            all.empty_medium.Imagen_Material_Ext_Denali.setVisible(false);
+        }
         
-        all.empty_medium.setVisible(true);
+                all.empty_medium.Material_pdu_485.setVisible(false);
+                all.empty_medium.Imagen_pdu_485.setVisible(false);
+                all.empty_medium.Material_rieles_PDU.setVisible(false);
+                all.empty_medium.Imagen_rieles_pdu.setVisible(false);
+                all.empty_medium.setVisible(true);
     }//GEN-LAST:event_IniciarActionPerformed
+
+    private void placasiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_placasiActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_placasiActionPerformed
 
     /**
      * @param args the command line arguments
@@ -2656,6 +2929,7 @@ public class Customization extends javax.swing.JFrame {
     public javax.swing.JPanel Panel_LM_PDU;
     private javax.swing.JPanel Panel_monitor_LM;
     private javax.swing.ButtonGroup Patas_estabilizadoras;
+    private javax.swing.ButtonGroup Placa_Denali;
     private javax.swing.ButtonGroup Posicion_PDU;
     private javax.swing.ButtonGroup Posicion_monitor;
     private javax.swing.ButtonGroup Switch;
@@ -2681,6 +2955,7 @@ public class Customization extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+    private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
@@ -2740,6 +3015,8 @@ public class Customization extends javax.swing.JFrame {
     public javax.swing.JRadioButton pdu48911;
     public javax.swing.JRadioButton pdu48912;
     public javax.swing.JCheckBox pesos;
+    public javax.swing.JRadioButton placano;
+    public javax.swing.JRadioButton placasi;
     public javax.swing.JRadioButton sismicno;
     public javax.swing.JRadioButton sismicsi;
     public javax.swing.JRadioButton switchno;

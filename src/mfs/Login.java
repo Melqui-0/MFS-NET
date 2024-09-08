@@ -3,17 +3,34 @@ package mfs;
 import java.awt.GraphicsEnvironment;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 
 
 
 public class Login extends javax.swing.JFrame {  
     
-    public static String us = "1";
-    public static String pass = "1";
-    public static String usentto = "2";
-    public static String passentto = "2";
-    public String usuario;
+    // Declaramos la conexion a mysql
+    private static Connection con;
+    // Declaramos los datos de conexion a la bd
+    private static final String driver="com.mysql.jdbc.Driver";
+    private static final String user="root";
+    private static final String pass="Admin1";
+    private static final String url="jdbc:mysql://localhost:3306/mfs_training";
+    
+    
+    
+    
+    public static String entrenador = "PS991435";
+    public static String entrenador2 = "PS31460";
+    public static String prac1 = "113842";
+    public static String pract2 = "PS227594";
+    public static String pract3 = "PS06510";
+    public static String contraseña = "ABCD123456EFGH";
+    public static String usentto = "ADMINISTRADOR";
+    public static String passentto = "ADMINISTRADOR";
+    public static String usuario;
     
     int xx;
     int yy;
@@ -30,6 +47,10 @@ public class Login extends javax.swing.JFrame {
         initComponents();
         extender();
         this.setLayout(null);
+        
+        //Prueba de conexion de bd
+        //Conexion.Conexionbd conexionbd = new Conexion.Conexionbd();
+        //conexionbd.Conexion();
     }
     
 
@@ -254,15 +275,47 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_ExitActionPerformed
 
     private void LogActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogActionPerformed
-       String user = User.getText();
-       String password = new String (Password.getPassword());
-       if (user.equals(us) && password.equals(pass)){
+
+        Conexion.Login login = new Conexion.Login();
+        login.ValidarUsuario(User, Password);
+        User.setText("");
+        Password.setText("");
+        this.setVisible(false);
+        
+        
+      /* String user = User.getText().toUpperCase();
+       String password = new String (Password.getPassword()).toUpperCase();
+       if (user.equals(entrenador) && password.equals(contraseña)){
            usuario = user;
             User.setText("");
             Password.setText("");
             all.abrir.setVisible(true);
             this.setVisible(false);
-       } else if(user.equals(usentto) && password.equals(passentto)){
+       }else if (user.equals(entrenador2) && password.equals(contraseña)){
+           usuario = user;
+            User.setText("");
+            Password.setText("");
+            all.abrir.setVisible(true);
+            this.setVisible(false);
+       }       else if (user.equals(prac1) && password.equals(contraseña)){
+           usuario = user;
+            User.setText("");
+            Password.setText("");
+            all.abrir.setVisible(true);
+            this.setVisible(false);
+       }else if (user.equals(pract2) && password.equals(contraseña)){
+           usuario = user;
+            User.setText("");
+            Password.setText("");
+            all.abrir.setVisible(true);
+            this.setVisible(false);
+       }else if (user.equals(pract3) && password.equals(contraseña)){
+           usuario = user;
+            User.setText("");
+            Password.setText("");
+            all.abrir.setVisible(true);
+            this.setVisible(false);
+       }else if(user.equals(usentto) && password.equals(passentto)){
            User.setText("");
            Password.setText(""); 
            all.entrenador.setVisible(true);
@@ -271,7 +324,7 @@ public class Login extends javax.swing.JFrame {
             User.setText("");
             Password.setText("");
             JOptionPane.showMessageDialog(null, "Contraseña y/o Usuario incorrectos ");
-       }
+       }*/
     }//GEN-LAST:event_LogActionPerformed
 
     private void ClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClearActionPerformed

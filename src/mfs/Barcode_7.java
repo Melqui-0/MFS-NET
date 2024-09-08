@@ -7,6 +7,7 @@ import java.awt.Color;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
 import static mfs.Empty.nm;
+import static mfs.Clean_Claim.nm;
 
 
 /**
@@ -15,17 +16,14 @@ import static mfs.Empty.nm;
  */
 public class Barcode_7 extends javax.swing.JFrame {
 
-    /**
-     *
-     */
+    String npescaneado, npingresado;
 
 
     
     public Barcode_7() {
         //this.npescaneado = npscan.getText();
         initComponents();
-        
-        
+             
     }
 
     /**
@@ -47,6 +45,7 @@ public class Barcode_7 extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
 
         npscan.setFont(new java.awt.Font("Century Gothic", 1, 24)); // NOI18N
         npscan.addActionListener(new java.awt.event.ActionListener() {
@@ -141,14 +140,20 @@ public class Barcode_7 extends javax.swing.JFrame {
 
     private void npscanKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_npscanKeyTyped
         char enter = evt.getKeyChar();
+        this.npescaneado = npscan.getText();
         if (enter == KeyEvent.VK_ESCAPE){
         CancelActionPerformed(null);
-        }
+        } if (enter == KeyEvent.VK_ENTER){
+             if(npescaneado.toUpperCase().equals("LOG")){
+                        npscan.setText("");
+                        LogpartActionPerformed(null);  
+                }}
+        
     }//GEN-LAST:event_npscanKeyTyped
 
     private void LogpartActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LogpartActionPerformed
         if (all.opcempty.empty == true){
-            switch (nm){
+            switch (Empty.nm){
             case 6:
                 all.empty.npaescanear6.setText("00044V4664");
                 all.empty.idsp6.setText("I");
@@ -339,6 +344,49 @@ public class Barcode_7 extends javax.swing.JFrame {
                 JOptionPane.showMessageDialog(null, "FC15 ");
                 break;        
         }
+        } else if (all.work.clean == true){
+            switch (Clean_Claim.nm){
+                case 0:
+                    all.clean_claim.npaescanear.setText("00024L0503");
+                    all.clean_claim.idsp.setText("I");
+                    all.clean_claim.npecaneado.setText("00024L0503");
+                    all.clean_claim.cantidadfinal.setText(all.clean_claim.cantidadrequerida.getText());
+                    all.clean_claim.NPS.setBackground(Color.BLUE);
+                    all.clean_claim.npaescanear.setForeground(Color.WHITE);
+                    all.clean_claim.QT.setForeground(Color.WHITE);
+                    all.clean_claim.cantidadrequerida.setForeground(Color.WHITE);
+                    all.clean_claim.FQT.setForeground(Color.WHITE);
+                    all.clean_claim.cantidadfinal.setForeground(Color.WHITE);
+                    all.clean_claim.DISP.setForeground(Color.WHITE);
+                    all.clean_claim.idsp.setForeground(Color.WHITE);
+                    all.clean_claim.descripcion.setForeground(Color.WHITE);
+                    all.clean_claim.npecaneado.setForeground(Color.WHITE);
+                    all.clean_claim.serial.setForeground(Color.WHITE);
+                    this.setVisible(false);
+                break;
+                    
+            }
+        } else if (all.work.clean_empty == true){
+            switch (Clean_Claim_Empty.nm){
+                case 0:
+                    all.clean_claim_empty.npaescanear.setText("00024L0503");
+                    all.clean_claim_empty.idsp.setText("I");
+                    all.clean_claim_empty.npecaneado.setText("00024L0503");
+                    all.clean_claim_empty.cantidadfinal.setText(all.clean_claim_empty.cantidadrequerida.getText());
+                    all.clean_claim_empty.NPS.setBackground(Color.BLUE);
+                    all.clean_claim_empty.npaescanear.setForeground(Color.WHITE);
+                    all.clean_claim_empty.QT.setForeground(Color.WHITE);
+                    all.clean_claim_empty.cantidadrequerida.setForeground(Color.WHITE);
+                    all.clean_claim_empty.FQT.setForeground(Color.WHITE);
+                    all.clean_claim_empty.cantidadfinal.setForeground(Color.WHITE);
+                    all.clean_claim_empty.DISP.setForeground(Color.WHITE);
+                    all.clean_claim_empty.idsp.setForeground(Color.WHITE);
+                    all.clean_claim_empty.descripcion.setForeground(Color.WHITE);
+                    all.clean_claim_empty.npecaneado.setForeground(Color.WHITE);
+                    all.clean_claim_empty.serial.setForeground(Color.WHITE);
+                    this.setVisible(false);
+                break;
+            }
         }
     }//GEN-LAST:event_LogpartActionPerformed
 
